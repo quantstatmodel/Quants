@@ -1,0 +1,828 @@
+<!DOCTYPE html>
+<html lang = "en">
+
+<head>	
+	<meta name = "robots" content = "noindex">
+	<meta name="googlebot" content = "noindex">
+	<meta name="Googlebot-News" content = "noindex, nofollow">
+	<meta name="googlebot" content = "noindex, nofollow">
+	<meta name="robots" content = "noindex, nofollow">
+	<meta name="googlebot" content = "unavailable_after: 25-Aug-2011 15:00:00 EST">
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-116711226-1"></script>
+	<script>
+		window.dataLayer = window.dataLayer || [];
+		function gtag(){dataLayer.push(arguments);}
+		gtag('js', new Date());
+
+		gtag('config', 'UA-116711226-1');
+	</script>
+
+	<meta charset = "utf-8" />
+	<meta http-equiv = "X-UA-Compatible" content = "IE=edge">
+	<meta name = "viewport" content = "width = device-width, initial-scale = 1">
+	<title> Information | Option Contracts </title>
+	
+	<script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js">      </script>
+	<script src = "http://code.jquery.com/jquery-1.11.3.min.js"></script>
+	<link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel = "stylesheet" href = "https://cdn.jsdelivr.net/npm/animate.css@3.5.2/animate.min.css">
+	<link rel = "stylesheet" type = "text/css" href = "CSS/Style1.css">	
+	<link href="https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap" rel="stylesheet">
+	
+  	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">   </script>
+  	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
+  	<script src = "https://www.amcharts.com/lib/3/amcharts.js">                            </script>
+    <script src = "https://www.amcharts.com/lib/3/serial.js">                              </script>
+    <script src = "https://www.amcharts.com/lib/3/amstock.js">                             </script>
+    <script src = "https://www.amcharts.com/lib/3/themes/light.js">                        </script>
+    <script src = "https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js">.  </script>
+	<script src = "JS/JS.js">.  </script>	
+	<script src = "https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+	<script id = "MathJax-script" async
+		src = "https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+	</script>
+  	
+  	<link rel = "icon" href = "data:image/x-icon;base64,AAABAAEAEBAAAAEAIABoBAAAFgAAACgAAAAQAAAAIAAAAAEAIAAAAAAAAAQAAAAAAAAAAAAAAAAAAAAAAABdAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/wAAAAAAAAAAAAAAAF0Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf+ugNYIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAK3/XQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQCt/10Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0Arf9dAK3/XQCt/10Arf9dAK3/XQCt/10Arf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQCt/10Arf9dAK3/XQCt/10Arf9dAK3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0Arf9dAK3/XQCt/10Arf9dAK3/XQCt/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAK3/XQCt/10Arf9dAK3/XQCt/10Arf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQCt/10Arf9dAK3/XQCt/10Arf9dAK3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAABdAK3/XQCt/10Arf9dAK3/AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQCt/10Arf9dAK3/XQCt/wAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAF0Arf9dAK3/XQCt/10Arf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAXQCt/10Arf8AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAADgBwAA4A8AAPAPAADwDwAA8A8AAPAfAAD4HwAA+B8AAPgfAAD4HwAA/D8AAPw/AAD8PwAA/n8AAA==" type = "image/x-icon">
+
+  	<style>
+		@font-face {
+				font-family: "BebasNeue";
+				src: url("FONT/BebasNeue.otf");
+			}
+		@font-face {
+				font-family: "Drugs";
+				src: url("FONT/Drugs.otf");
+			}
+		@font-face {
+				font-family: "Genome";
+				src: url("FONT/Genome.otf");
+			}
+		@font-face {
+				font-family: "Audrey";
+				src: url("FONT/Audrey-Normal.otf");
+			}
+		@font-face {
+				font-family: "Kirnberg";
+				src: url("FONT/Kirnberg.ttf");
+			}
+		@font-face {
+				font-family: "Nobis";
+				src: url("FONT/Calibri.ttf");
+			}
+	</style>
+
+	<style>
+		@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+	</style>
+</head>
+
+<body>	
+	<header>		
+		<div class = "skewed"></div>
+		<div class = "Nevigation_Container">
+			<div class = "Nevigation_0">
+				<div class = "Home_Container" onclick = "location.href = 'https://www.arunsaha.in/';" style = "cursor: pointer;"></div>
+			</div>
+			<div class = "Nevigation_1">
+				<div class = "one"><div class = "container1 brackets"><a href = "/Quant_Understanding/Hull-Martingale.html" rel = "">HULL Martingale</a></div></div>
+			</div>
+			<div class = "Nevigation_2">
+				<div class = "one"><div class = "container1 brackets"><a href = "/Quant_Understanding/Derivative-Process.html" rel = "">Derivative Process</a></div></div>
+			</div>
+			<div class = "Nevigation_3">
+				<div class = "one"><div class = "container1 brackets"><a href = "/Quant_Understanding/Option-Contracts.html" rel = "">Options Contracts</a></div></div>
+			</div>
+			<div class = "Nevigation_4">
+				<div class = "one"><div class = "container1 brackets"><a href = "/Quant_Understanding/Derivative-Process.html" rel = "">Statistics</a></div></div>
+			</div>
+			<div class = "Nevigation_5">
+				<div class = "one"><div class = "container1 brackets"><a href = "/Quant_Understanding/Derivative-Process.html" rel = "">Others</a></div></div>
+			</div>
+		</div>
+	</header>
+	<div class = 'Blog_Container'>
+		<div class = 'Indiv_Content' style = 'border-color: #00a896; padding-bottom: 20px;'>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = "width: 97%; height: 140px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							1
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+						<u>Asay Formula</u> for Options Price on Futures - A modification to Black's
+						<br>
+						<br>
+						Options' Premium is paid into an Account which get Interests. Traded in Sydney. In the Formula, there is NO Interest Term!!!
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\(  c =\! F N \left( d_1 \right) - K N \left( d_2 \right) \)</span>
+					</div>
+				</div>
+				<div style = "width: 97%; height: 490px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							2
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px; letter-spacing: 0px;">
+						<span class = 'Notes'>ATM Forward Value Symmerty</span>. At this Strike, they also have <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( \theta, \rho \right) \)</span> symmetry.
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( c =\! p \right) \)</span> if <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\(  S =\! K e^{-bT} \)</span>
+						<br>
+						<br>
+						<span class = 'Notes'>PUT-CALL</span> <u>Super-Symmetry</u>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( c \left( S, K, \sigma, r, b, T \right) = p \left( - \! S, - \! K, - \! \sigma, r, b, T \right) \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( c \left( S, K, \sigma, r, b, T \right) = - \! p \left( S, K, - \! \sigma, r, b, T \right) \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( c \left( S, K, V, r, b, T \right) = - \! c \left( - \! S, - \! K, - \! V, - \! r, - \! b, - \! T \right) \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( p \left( S, K, V, r, b, T \right) = - \! p \left( - \! S, - \! K, - \! V, - \! r, - \! b, - \! T \right), \:\: V = \! \sigma^2 \)</span>
+						<br>
+						American Option : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( p \left( S, K, \sigma, r, b, T \right) = c \left( S, K, \sigma, r-\!b, -\!b, T \right) \)</span>
+						<br>
+						<br>
+						<span class = 'Notes'>Other</span> <u>Super-Symmetry</u> <a href="https://quant.stackexchange.com/questions/55077/short-maturity-implied-volatility-in-heston-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( c_{BS} \left( \sigma = \! 0 \right) =\! \left( S - K e^{-rT} \right)^+ \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( p_{BS} \left( \sigma = \! 0 \right) =\! \left( K e^{-rT} - S \right)^+ \)</span>
+						<br>
+						&nbsp;&nbsp;&nbsp;<B>WHY?</B> Here, the Underlying will grow EXACTLY at Risk-free rate i.e. <span class = 'Math'>\( \left[ S_T =\! S_0e^{rT} \right] \)</span>. Hence above results.
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( c_{BS} \left( \sigma = \! \infty \right) =\! S \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( p_{BS} \left( \sigma = \! \infty \right) =\! K e^{-rT} \)</span>
+						<br>
+						&nbsp;&nbsp;&nbsp;<B>WHY?</B> Here, We have <span class = 'Math'>\( \left[ d_1 =\! \infty, \: d_2 =\! -\!\! \infty \right] \)</span><a href="https://quant.stackexchange.com/questions/39490/value-of-call-option-as-volatility-goes-to-infinity#:~:text=2%20Answers&text=The%20stock%20price%20may%20fall,but%20the%20downside%20is%20bounded.&text=The%20value%20of%20a%20call%20option%20DOES%20NOT%20go%20to,the%20volatility%20goes%20to%20infinity." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. So Results. For CALL & PUT Options' Prices, use this <a href="https://www.macroption.com/black-scholes-formula/" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						<br>
+					</div>
+				</div>
+				<div style = "width: 97%; height: 80px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							3
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px; letter-spacing: 0px;">
+						Forward Price <u>after</u> Inception -
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( F_V = \ \! e^{-r T} \left( S e^{bT} - F_0 \right) \)</span>
+					</div>
+				</div>	
+				<div style = "width: 97%; height: 80px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							4
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px; letter-spacing: 0px;">
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( b > \!r \right) \) </span> then, American CALL is SAME to European CALL
+					</div>
+				</div>					
+			</div>
+			<div style = "margin: 0; padding: 0; width: calc(50%); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = "width: 97%; height: 360px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							5
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px; letter-spacing: 0px;">
+						Can DELTA be <u>more than 1</u> ?
+						<br>
+						Delta is <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( e^{\left( b-r \right) T} N \left( d_1 \right) \)</span>. So, for Deep ITM <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( N \left( d_1 \right) =\! 1  \)</span>, But We can have <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( e^{\left( b-r \right) T} > 1  \)</span> if CC is more than IR OR IR is Negative.
+						<br>
+						<br>
+						Few Important Greeks -
+						<br>
+						<u>Charm, Delta-Bleed</u> : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{d \Delta}{dt} \right]  \)</span>
+						<br>
+						<u>Color</u> : Change in Options' Gamma w.r.t. <u>1%</u> Change in Time
+						<br>
+						<u>Elasticity</u> : Change in Options' Price w.r.t. <u>1%</u> Change in Underlying
+						<br>
+						<u>Speed</u> : Change in Options' Gamma w.r.t. <u>1%</u> Change in Spot i.e. the 3<sup>rd</sup> Derivative
+						<br>
+						<u>Zomma</u> : Change in Options' Gamma w.r.t. <u>1%</u> Change in Volatility
+						<br>
+						<u>Vomma/Volga</u> : Change in Options' Vega w.r.t. <u>1%</u> Change in Volatility. If it is POSITIVE then, Long Option Holder will profilt from Volatility increase.
+						<br>
+						<u>Vanna</u> : Change in Vega w.r.t. Underlying's Price
+						<br>
+						<u>Sticky Delta Volatility Smile</u> : Shape of Volatility Smile sticks to Delta BUT NOT Strike. In other word, For a given Strike, Volatility moves as Underlying moves.
+					</div>
+				</div>
+				<div style = "width: 97%; height: 350px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							6
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+						<span class = 'Notes'>Implied Volatility</span><a href="https://www.quora.com/What-is-the-difference-between-implied-volatility-and-local-volatility" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+						<br>
+						This is basically the <u>Volatility Value</u>, when is applied to some Model (e.g. BS Formula), the Model will give SAME Derivative's Price (e.g. Options Price) as the Market Price. IV is essentially an output from Black-Scholes Model when it is matched with the existing option price.
+						<br>
+						<br>
+						<span class = 'Notes'>Local Volatility</span>
+						<br>
+						This is generally applied in some Stochastic Process i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dS =\! \mu_S dt + \sigma_S dW_t \)</span>. In this case  <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ \sigma_S \right] \)</span> can be thought of Local Volatility e.g. like <i>Instantaneous volatility<i> e.g. <span class = 'Math'>\( \left( \sigma_S^2 = 2 \left[ \frac{ \frac{\delta c}{\delta t} + qc + \left( r-q \right) K \frac{\delta c}{\delta K} }{ K^2 \frac{\delta^2 c}{\delta t^2} } \right]_{K=S, T=t} \right) \)</span> <a href="https://quant.stackexchange.com/questions/39494/problems-with-local-volatility-models-vs-stochastic-volatility-models?noredirect=1&lq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>In local Volatility there is NO Random Process for the Volatility, so there is NO CORR between Underlying & Volatility. BUT, Volatility Skew comes from such CORR. Therefore, to Price EXOTIC Options, <span class = 'Notes'>Stochastic Volatility</span> is <u>BETTER</u> <a href="https://quant.stackexchange.com/questions/9350/for-pricing-what-types-of-exotic-options-are-suitable-using-local-volatility-mo?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						<br>Local Volatility is <u>NOT EQUAL</u> to the <span class = 'Notes'>Implied Volatility</span> except in the trivial case where both are constant i.e. BS World <a href="https://quant.stackexchange.com/questions/16898/local-volatility-surface-corresponding-to-the-implied-volatility-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. However from IV I can get LV <a href="https://quant.stackexchange.com/questions/50017/how-to-get-the-local-volatility-from-iv-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</div>
+				</div>
+				<div style = "width: 97%; height: 210px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							7
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+						WHAT is the <u>interpretation of the Volatility Term</u> in the Drift in GBM Process <a href="https://quant.stackexchange.com/questions/10681/geometric-brownian-motion-volatility-interpretation-in-the-drift-term?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
+						<br>
+						<br>
+						For GBM, the Terminal Price is : <span class = 'Math'>\( \left[ S_t =\! S_0 e^{ \left( r - 0.5 \sigma^2 \right) T + \sigma W_T } \right] \)</span>. <br> Now, under GBM, the Log-Price follows a Normal Dist<sup>n</sup>. Fundamentally, when We convert Log-Normal Dist<sup>n</sup> to Normal Dist<sup>n</sup>, as per the fundamental calculation, the <span class = 'Math'>\( \{ \sigma \} \)</span> term is added to the Expectation. <br>This Mathematical addition will make sure that, in the Risk-Neutral World, Price grows at Risk-Free Rate i.e. <span class = 'Math'>\( \left[ S_T =\! S_0 e^{ rT } \right] \)</span>.
+					</div>
+				</div>
+				<div style = "width: 97%; height: 220px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							8
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+						Calculate <span class = 'Math'>\( E \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{\frac{S_{t+1}}{S_t} < K} \right] \)</span> <a href="https://quant.stackexchange.com/questions/17014/how-to-compute-the-conditional-expected-value-of-a-geometric-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
+						<br>
+						<br>
+						Use Formula : 
+						<br>
+						<span class = 'Math'>\( E \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{\frac{S_{t+1}}{S_t} < K} \right] =\! K E \left[ 1_{\frac{S_{t+1}}{S_t}} \right] -\! E \left[ \left( K -\! \frac{S_{t+1}}{S_t} \right) 1_{\frac{S_{t+1}}{S_t}} \right] =\! K P \left[ \frac{S_{t+1}}{S_t} <\! K \right] -\!  E \left[ \left( K -\! \frac{S_{t+1}}{S_t} \right)^+ \right] \)</span>
+						<br>
+						The 2<sup>nd</sup> Part can be calculated using PUT Options Pricing Formula.
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class = 'Indiv_Content' style = 'border-color: #da627d; font-style: normal;'>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 33.33%; height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac; '>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						American
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Barone, Adesi
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Approx.
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						American Perpetual
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Merton, McKean
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Variable Purchase
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						<span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max \left[ nS-\!K \right], n =\! \left[ \frac{K}{S_T d} \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Power Contract
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 6px;'>
+						Shaw. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{S}{X} \right]^i \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 30px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff; margin-bottom: 25px;'>
+					<div style = 'height: 100%; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						<span class = 'Notes'>Hedge</span> : We can have <u>Static Hedging</u> with a Portfolio of Options with <u>diff. Strikes</u> BUT, Number of Options may become Large. So, We should have Dynamic Hedging <a href="http://janroman.dhis.org/finance/Exotic%20Options/Presentation%20Exotics/L2note.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Capped Power
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Esser. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \min \left[ \max \left( X^i, K \right) , C \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Powered
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Esser. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max \left[ S -\! K, 0 \right]^i \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Moneyness
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						BSM
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>					
+				</div>
+				<div style = 'height: 30px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 85%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : Vanilla Option where, Strike is some Percentage of Future/Forward.
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Asian - GM
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Kemma, Vorst
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Asian - AM
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Turnbull, Wakeman
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Approx.
+					</div>
+				</div>
+
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 33.33%; height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Log
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Wilmott. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ \log\left( \frac{S}{K} \right), 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Forward Start
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Rubinstein
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 140px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : Consider this Option Payoff <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \left( \max \left[ \frac{{S_T}_2}{{S_T}_{1}} - K, 0  \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/57142/ratio-of-the-same-process-at-different-times/57143?noredirect=1#comment80695_57143" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>This is a type of Forward-Start Option. Here, I need to the Marginal (hence Joint) Dist<sup>n</sup> of <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \left( {S_T}_1, {S_T}_2 \right) \)</span>. Other way is : Get Estimate of <span class = 'Notes'>Implied Forward Volatility</span> between <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \left( T_1, T_2 \right) \)</span>, which will determine Option's Value. <b>IMP :</b> If the CORR between <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \left( {S_T}_1, {S_T}_2 \right) \)</span> is ZERO then, ofcourse this Volatility Estimate will be ZERO.
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Rachet
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						NA. A Portfolio of Forward Starts. Strikes to be fixed at Previous Exercise date.
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Reset Strike
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Gary, Whaley. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ \frac{S-K}{K}, 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 30px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 99%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : Strike will be reset if, Original Strike is above/below the Underlying at a fixed future time.
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Option on Option
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Geske. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ c-K, 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 30px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 99%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : PUT-CALL Parity - CALL-on-CALL + Discounted Strike EQUAL TO PUT-on-CALL + Vanilla CALL
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Fade-In
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Long, Martin. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ S- \!K, 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 85%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : This Option will pay ONLY if, <u>during some Fixing interval, all prices are within a Range</u>. Ofcourse if, Volatility is Less & Range is High then, it is Vanilla Option.
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Choser
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Rubinstein. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ c, \: p  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 30px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 85%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : CALL/PUT to be decided at the Payoff time <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( t < T \)</span>. <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( T \)</span> is Option's expiry.
+						<br>
+						Replication : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( c \left(K, T \right) + e^{-\!q \left( T - t \right)} p \left(Ke^{-\! \left( r-q \right) \left( T - t \right)}, t \right) \)</span>
+					</div>
+				</div>
+				<div style = 'height: 110px; width: 95%; margin: 0 auto; padding: 0; margin-top: 60px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Contingent Premium
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Premium is paid at the time of Exercise. This Option = <span class = 'Notes'>CALL - DIGITAL</span>, <br>SAME Strike. AND, NO Premium At Inception <a href="http://janroman.dhis.org/finance/Exotic%20Options/Presentation%20Exotics/L2note.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+					<div style = 'height: 100%; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
+						NOTE : This Option can be used to Hedge unfavorable movement. In this case, CALL will be OTM AND, ALSO will NOT be ANY Payment for DIGITAL (i.e. Premium). However, for favorable movement, this Options can be Expensive.
+					</div>
+				</div>
+			</div>
+
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 33.33%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Lookback
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Gatto. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ S -\! S_{\min}, 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Lookback
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Viswanathan. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ S_{\max} - K , 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Barrier
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Rubinstein
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Cash-or-Nothing
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Rubinstein
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Relative Outperformance
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Zhang. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ \frac{S_1}{S_2} - K , 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Product
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Zhang. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ S_1S_2 - K , 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						2 Assets CORR
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 0px;'>
+						Zhang. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ S_1 - K , 0  \right] \)</span> if <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( S_2 \!>\!\! K_2 \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Exchange-1-Asset
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 5px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Margabe. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ Q_1S_1 - Q_2S_2 , 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Spread
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									text-align: left; font-size: 16px; padding-top: 8px;'>
+						Kirk. Pays : <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \max  \left[ S_1-S_2 - K , 0  \right] \)</span>
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
+					<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+						Foreign Underlying
+					</div>
+					<div style = 'height: 100%; width: 50%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 1px solid #3bceac;
+									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Reiner
+					</div>
+					<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #ede7e3; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left; font-size: 16px;'>
+						Closed
+					</div>
+				</div>
+			</div>
+		</div>	
+		<div class = 'Indiv_Content' style = 'border-color: #00a8e8'>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
+				<div class = 'Blog_Header' style = 'width: 150%; background-color: #dbcdf0'>
+					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
+							Digital Option : <b>DELTA</b> & <b>GAMMA</b>
+					</div>
+				</div>				
+				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
+					Digital-Option's price's Formula is just like Vanilla-Option's Delta's Formula. So, Digital-Option's Delta is like Vanilla-Option's Gamma i.e. <u>like Normal PDF</u>. AND, that will be flatter if ToM increases. 
+					<br>
+					BUT, if <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( T \longrightarrow 0 \right) \)</span> then, <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( \Delta \longrightarrow \infty \right) \)</span>, i.e. eventually it will become <span class = 'Notes'>Dirac's Delta</span>. Because, in that case, if there is a SMALL change in Underlying, then Option's value can be <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( 0 \right) \)</span> or <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( X \right) \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					<br>
+					<br>
+					Below is also the shape of <u>GAMMA</u> i.e. Derivative of <i>Normal Distribution</i> <a href="https://cedar.buffalo.edu/~srihari/CSE555/Normal2.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> - <img src = "Normal_Derivative.png" style = "margin: auto; width: 600px; display: block" />
+				</div>
+				<div class = 'Blog_Header' style = 'width: 150%; background-color: #dbcdf0; margin-top: 20px;'>
+					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
+							Digital Option : <b>VEGA</b>
+					</div>
+				</div>	
+				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
+					When Option is ATM, Vega's Sensitivity to Underlying's Price will be MAX. Because, at this stage, Option's Price can go anywhere. Now, for D-ITM i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( S_t \longrightarrow \infty \right) \)</span>, Volatility will have zero Impact because, it already deep in ITM. So, in this case, the Sensitivity will be MIN. Similarly for the D-OTM. So, overall it will look like <u>Normal Curve</u>. <a href="https://www.binarytrading.com/binary-options-greeks/" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <img src = "3-vega-greek-in-binary-options.jpg" style = "margin: auto; width: 400px; display: block" />
+				</div>
+				<div class = 'Blog_Header' style = 'width: 150%; background-color: #dbcdf0; margin-top: 20px;'>
+					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
+							Digital Option : <b>HEDGE</b>
+					</div>
+				</div>				
+				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
+					Just visualise the Digital-Option's Payoff. So this Payoff can be replicated by some <u>BULL Spread</u>.
+					<br>
+					A Digital-CALL on AAPL that pays $1000 if the stock is over $150 at expiry. This is SAME as - 100 $140/$150 BULL Spreads.
+				</div>
+			</div>
+			<div style = "margin: 0; padding: 0; width: calc(50%); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
+				<div class = 'Blog_Header' style = 'width: 150%; background-color: #e9c46a'>
+					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
+							Barrier Option : <b>DELTA</b>
+					</div>
+				</div>				
+				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
+					This is evident from below picture. <a href="http://janroman.dhis.org/finance/Exotics/Thesis2005_DolgovaNatalia%20BarrierOptions.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <img src = "Barrier_Delta.png" style = "margin: auto; width: 500px; display: block" />
+				</div>
+				<div class = 'Blog_Header' style = 'width: 150%; background-color: #e9c46a'>
+					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
+							Barrier Option : <b>VEGA</b>
+					</div>
+				</div>				
+				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
+					Assume that : Underlying's Price is close to the Barrier. In this case, Option's Price's Sensitivity to Volatility will be SMALL because, anyway this Option is going to be WORTHLESS. Therefore, We will have below figure. <a href="http://janroman.dhis.org/finance/Exotics/Thesis2005_DolgovaNatalia%20BarrierOptions.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <img src = "Barrier_Vega.png" style = "margin: auto; width: 500px; display: block" />
+				</div>
+				<div class = 'Blog_Header' style = 'width: 150%; background-color: #e9c46a'>
+					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
+							Barrier Option : <b>HEDGE</b>
+					</div>
+				</div>				
+				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
+					Hedging is defined by below Equ<sup>n</sup> - <a href="https://quant.stackexchange.com/questions/29885/hedging-barrier-options" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					Up-Out CALL/PUT + Up-In CALL/PUT = Vanilla CALL/PUT
+					<br>
+					Down-Out CALL/PUT + Down-In CALL/PUT = Vanilla CALL/PUT
+				</div>
+			</div>
+		</div>
+	</div>	
+	<div class = 'Blog_Footer'>
+		<div style = 'height: auto;
+						width: auto;
+						min-width: 20px;
+						min-height: 20px;
+						font-size: 12px;
+						color: #fff;
+						background-color: rgba(0,0,0,.0);
+						text-align: center;
+						position: absolute;
+						bottom: 2px;
+						left: 50%;
+						transform: translateX(-50%);
+						z-index: 100;'>
+			The Profile picture of this Article was obtained from random Google search. For any copyright issue, let me know; I will remove it
+		</div>	
+		<div style="position: absolute; height: 105%; width: 105%; overflow: hidden; left: -3%; bottom: -5%;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M-0.71,96.87 C295.00,103.76 314.19,-82.49 500.00,49.92 L500.00,149.80 L-0.00,149.80 Z" style="stroke: none; fill: rgba(0,136,255,.7);"></path></svg></div>
+		<div style="position: absolute; height: 105%; width: 105%;overflow: hidden; left: -3%; bottom: -5%;" ><svg viewBox="0 0 500 150" preserveAspectRatio="none" style="height: 100%; width: 100%;"><path d="M0.41,15.06 C700.76,-53.91 199.07,217.11 271.87,158.95 L500.00,149.80 L-0.00,149.80 Z" style="stroke: none; fill: rgba(121, 75, 196, .7);"></path></svg></div>
+		<div class = 'About_Me'>
+			<div class = 'Name'>ARUN KUMAR SAHA, FRM</div>
+			<div class = 'Desc'>
+				Arun has more than decade long professional experience in front-face Market Risk Management and Consulting practices as well as designing and implementing technology enabled transformations in proprietary Risk platforms and operations within diverse array of setup - top tier Investment bank, KPO, Dealer-Broker, Insurance/Re-insurance, Consultancy, and Fintech-Startup. He has spearheaded various pioneering concepts in the Market Risk Management Software and Consulting industries – from Risk Analytics, Business Intelligence, HPC, Automation to Predictive Analytics, Reporting and Visualization. He is a FRM Charter and holds full time Post Graduate degree in Mathematical Statistics.
+			</div>
+			<div class = 'Mail_Me'>
+				<div>
+					<a href = "https://in.linkedin.com/in/ArunFRM" target = "_blank">
+						<img src = "LinkedIn.png" height = '50px' width = '50px'>
+					</a>
+				</div>
+				<div style = 'height: 100%; width: 60px;'></div>
+				<div>
+					<a href = "mailto: arun.kumar.saha@gmail.com" target = "_blank">
+						<img src = "Mail.jpg" height = '50px' width = '50px'>
+					</a>
+				</div>				
+			</div>
+			<div class = 'Copyright'>&#9400;&ensp;2020 All Rights Reserved</div>
+		</div>			
+	</div>
+</body>
+
