@@ -201,20 +201,20 @@
 							<br>
 							Let, We are changing the Numeraire from <span class = "Math">\( g \)</span> to <span class = "Math">\( h \)</span>, then that Drift's change <span class = "Math">\( \alpha =\! \left( \sigma_h - \sigma_g  \right) \sigma_1 \)</span>.
 							<br>
-							Assume <span class = "Math">\( \left[ w =\!\! \frac{g}{h}  \right] \)</span>, and it's Volatility <span class = "Math">\( \left[ \sigma_w = \sigma_h - \sigma_g \right] \)</span> (using Ito's Lemma on Log-Price). Therefore, that Drift's change <span class = "Math">\( \alpha =\! \sigma_w \sigma_1 \)</span>. This is just, <span class = "Math">\( COV \left[ f_1, w \right] \)</span> because,
+							Assume <span class = "Math">\( \left[ w =\!\! \frac{h}{g}  \right] \)</span>, and it's Volatility <span class = "Math">\( \big[ \sigma_w = \sigma_h - \sigma_g \big] \)</span> (using Ito's Lemma on Log-Price). Therefore, that Drift's change <span class = "Math">\( \big[ \alpha =\! \sigma_w \sigma_1 \big] \)</span>. This is just, <span class = "Math">\( COV \big[ f_1, w \big] \)</span> because,
 							<br>
 							<br>
-							<span class = "Math">\( \Delta f_1 = a \left(\Delta t\right) + f_1 \sum \sigma_{f_1, i} \epsilon_i \left( \Delta t \right)^{0.50} \)</span>
+							<span class = "Math">\( \Delta f_1 = a \left(\Delta t\right) + f_1 \sum \sigma_{1, i} \epsilon_i \left( \Delta t \right)^{0.50} \)</span>
 							<br>
 							<span class = "Math">\( \Delta w = b \left(\Delta t\right) + w \sum \sigma_{w, i} \epsilon_i \left( \Delta t \right)^{0.50} \)</span>
 							<br>
 							<br>
 							So, the COVARIANCE between them is -
 							<br>
-							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[ \rho \left( \sigma_{f_1} f_1 \right) \left( \sigma_{w} w \right) = E\big[ \left( \Delta f_1 \right) \left( \Delta w \right)  \big] - E\big[ \left( \Delta f_1 \right) \big] E\big[ \left( \Delta w \right) \big] = f_1 w \sum \sigma_{f_1, i} \sigma_{w, i} \big] \)</span>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[ \rho \left( \sigma_{1} f_1 \right) \left( \sigma_{w} w \right) = E\big[ \left( \Delta f_1 \right) \left( \Delta w \right)  \big] - E\big[ \left( \Delta f_1 \right) \big] E\big[ \left( \Delta w \right) \big] = f_1 w \sum \sigma_{1, i} \sigma_{w, i} \big] \)</span>
 							<br>
 							<br>
-							So, We have <span class = "Math">\( \big[ \rho \sigma_{f_1} \sigma_{w} = \sum \sigma_{f_1, i} \sigma_{w, i} \big] \)</span>. If We assume : There is ONLY ONE Risk factor i.e. <span class = "Math">\( \epsilon \)</span> then, above equ<sup>n</sup> will hold.
+							So, We have <span class = "Math">\( \big[ \rho \sigma_{1} \sigma_{w} = \sum \sigma_{1, i} \sigma_{w, i} \big] \)</span>. If We assume : There is ONLY ONE Risk factor i.e. <span class = "Math">\( \left( \epsilon \right) \)</span> then, above equ<sup>n</sup> will hold.
 						</div>
 					</div>
 				</div>
