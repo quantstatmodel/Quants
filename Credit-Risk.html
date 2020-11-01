@@ -33,10 +33,10 @@
   	<script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js">   </script>
   	<script src = "https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js"></script>
   	<script src = "https://www.amcharts.com/lib/3/amcharts.js">                            </script>
-    <script src = "https://www.amcharts.com/lib/3/serial.js">                              </script>
-    <script src = "https://www.amcharts.com/lib/3/amstock.js">                             </script>
-    <script src = "https://www.amcharts.com/lib/3/themes/light.js">                        </script>
-    <script src = "https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js">.  </script>
+    	<script src = "https://www.amcharts.com/lib/3/serial.js">                              </script>
+    	<script src = "https://www.amcharts.com/lib/3/amstock.js">                             </script>
+    	<script src = "https://www.amcharts.com/lib/3/themes/light.js">                        </script>
+   	<script src = "https://www.amcharts.com/lib/3/plugins/dataloader/dataloader.min.js">.  </script>
 	<script src = "JS/JS.js">.  </script>	
 	<script src = "https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
 	<script id = "MathJax-script" async
@@ -102,8 +102,30 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #06d6a0'>
-			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
+		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal;'>
+			<div style = "margin: 0; padding: 10px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
+				<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
+				<div style = "height: 220px; width: 60%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;">
+					<img src = "ACDR.png" style = "margin: auto; width: 100%; display: block" />
+				</div>
+				<div style = "height: 240px; width: 40%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;
+							padding-left: 10px; font-size: 16px;">
+					Prob. that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
+					<br>
+					<br>
+					Prob. that : Bond rated below <u>Caa</u> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
+					<br>
+					<br>
+					Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+				</div>
+				Assume : <u>HR</u> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \lambda \big( t \big) \)</span>. AND, <u>Cumulative Prob. of Survival</u> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( V \big( t \big) \)</span>. So,
+				<br><br>
+				&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
+				<br>
+				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e ^{- \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ Q \big( t \big) = 1 - e ^{- \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} = 1 - e ^{-  \overline {\lambda  \big( \tau \big)} t} \right] \)</span>
+
+				<div style = "height: 4px; width: 100%; margin: 0; padding: 0; background-color: #9d4edd; border-radius: 10px; margin-top: 30px; margin-bottom: 30px;"></div>
+
 				
 
 			</div>
