@@ -124,6 +124,10 @@
 					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ Q \big( t \big) = 1 - e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} = 1 - e^{-\! \big[ \overline {\lambda  \big( t \big)} \big] t} \right] \)</span>
+					<br>
+					<br>
+					<b>BBG's Default Risk Data</b> <a href="https://www.bloomberg.com/professional/blog/assessing-firms-credit-default-risk-supply-chain-impacts/#:~:text=The%20Bloomberg%20Default%20Risk%20(DRSK,4.85%25%20probability%20of%20Carillion%27s%20default." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
+					<img src = "https://assets.bbhub.io/professional/sites/10/Graph-2-800x325.png" style = "margin: auto; width: 100%; display: block" />
 				</div>
 
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
@@ -188,20 +192,74 @@
 					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>.
 					<br>
 					<br>
-					So, <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} = \big[ B_{r,\: T_0} - B_{y,\: T_o} \big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_o} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
+					So, <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} = \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
 					<br>
 					<br>
 					
 					<div style = "height: 2px; width: 90%; margin: 0 auto; padding: 0; background-color: #fca311; margin-bottom: 30px;"></div>
 
-					So, with Bonds for varying <span class = "Math">\( \big[T\big] \)</span>, We can build the Term-Structure of <span class = "Math">\( \big[Q\big] \)</span>. This is <span class = "Notes">Risk-Neutral PD Estimate</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. This is LESS then the <span class = "Notes">Real-World PD Estimate</span> because of the <span class = "Notes">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE numbers of Bond. So, Bond Traders will earn Extra Return to bear this Risk.
+					So, with Bonds for varying <span class = "Math">\( \big[T\big] \)</span>, We can build the Term-Structure of <span class = "Math">\( \big[Q\big] \)</span>. This is <span class = "Notes">Risk-Neutral PD Estimate</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. This is LESS then the <span class = "Notes">Real-World PD Estimate</span> because of the <span class = "Notes">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
 					<br>
 				</div>
 
-
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							3
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 22px; color: #555b6e;
+										display: flex; justify-content: center; flex-direction: column; text-align: left !important; padding-left: 30px;">
+							Using Equity Price (Merton's Formula)
+						</div>
+					</div>
+				</div>
+				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					Assume that, a Company has ONLY 1 Bond outstanding at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, V_t, B_t \big] \)</span>.
+					<br>
+					<br>
+					So, We must have <span class = "Math">\( E_T = MAX \big[ V_T - B_T, \: 0 \big] \)</span>.
+					<br>
+					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 N \big( d_1 \big) - B_T e^{-rT} N \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
+					<br>
+					<br>
+					The <span class = "Notes">Risk-Neutral PD</span> is <span class = "Math">\( N \big( \!\!-\!\!d_2 \big) \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! N \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V N \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+				</div>
 			</div>
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
-
+				<div class = 'Blog_Header'>
+					Adjust : Derivative's Value for Counterparty PD i.e. cVA
+				</div>
+				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					Assume, I have a Derivative that lasts till time <span class = "Math">\( \big[ T \big] \)</span>. It's Default can happen at time <span class = "Math">\( \big[ T_1, T_2, ..., T_n=T \big] \)</span>.
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is <u>NO Default</u> then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The, <span class = "Notes">Risk-Neutral PD</span> at time <span class = "Math">\( \big[ T_i \big] \)</span> is <span class = "Math">\( \big[ q_{T_i} \big] \)</span>. This is INDEP. of the Derivative's Value.
+					<br>
+					<br>
+					Here, My Exposure at time <span class = "Math">\( \big[ T_i \big] \)</span> is equal to, the Potential Loss : <span class = "Math">\( MAX \big[ f_{T_i}, 0 \big] \)</span>.
+					<br>
+					<br>
+					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) E \big[ MAX \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
+					<br>
+					<br>
+					It is Easy to understand that, if My Derivative's only Payoff is at time <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) \big] \)</span>. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) \big] \)</span>.
+					<br>
+					<br>
+					One such Derivative is ZCB, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
+					<br>
+					This gives <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} e^{- \big( y^{*} - y \big) T } \big] \)</span>. Here, <span class = "Math">\( \big[ y^{*}, y \big] \)</span> are the Yields for My Counterparty's ZCB and Risk-Free ZCB.
+					<br>
+					<br>
+					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">This shows that: Any European style Derivative Credit-Adjusted Value can be calculated by <u>increasing the Discounting Rate appropriately</u>.
+				</div>
 			</div>
 		</div>	
 	</div>	
