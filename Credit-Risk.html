@@ -103,30 +103,101 @@
 	</header>
 	<div class = 'Blog_Container'>
 		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal;'>
-			<div style = "margin: 0; padding: 10px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
-				<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
-				<div style = "height: 220px; width: 60%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;">
-					<img src = "ACDR.png" style = "margin: auto; width: 100%; display: block" />
+			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 1px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = "margin: 0; padding: 10px;">
+					<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
+					<div style = "height: 220px; width: 60%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;">
+						<img src = "ACDR.png" style = "margin: auto; width: 100%; display: block" />
+					</div>
+					<div style = "height: 240px; width: 40%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;
+								padding-left: 10px; font-size: 16px;">
+						Prob. that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
+						<br>
+						<br>
+						Prob. that : Bond rated below <u>Caa</u> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
+						<br>
+						<br>
+						Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+					</div>
+					Assume : <u>HR</u> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \lambda \big( t \big) \)</span>. AND, <u>Cumulative Prob. of Survival</u> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( V \big( t \big) \)</span>. So,
+					<br><br>
+					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ Q \big( t \big) = 1 - e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} = 1 - e^{-\! \big[ \overline {\lambda  \big( t \big)} \big] t} \right] \)</span>
 				</div>
-				<div style = "height: 240px; width: 40%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;
-							padding-left: 10px; font-size: 16px;">
-					Prob. that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
-					<br>
-					<br>
-					Prob. that : Bond rated below <u>Caa</u> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
-					<br>
-					<br>
-					Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+
+				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
+					Estimation of Default Prob.
 				</div>
-				Assume : <u>HR</u> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \lambda \big( t \big) \)</span>. AND, <u>Cumulative Prob. of Survival</u> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( V \big( t \big) \)</span>. So,
-				<br><br>
-				&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
-				<br>
-				&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e ^{- \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ Q \big( t \big) = 1 - e ^{- \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} = 1 - e ^{-  \overline {\lambda  \big( \tau \big)} t} \right] \)</span>
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							1
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 22px; color: #555b6e;
+										display: flex; justify-content: center; flex-direction: column; text-align: left !important; padding-left: 30px;">
+							Using Corporate Bond's Spread
+						</div>
+					</div>
+				</div>
+				<div style = "height: 340px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) Q \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
+					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 15px; margin-left: 15px; font-size: 18px;">
+						This is basically, 2-Factor formula i.e. CS and RR.
+					</div>
+					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
+						Different Bonds will have different Maturities. Therefore, We can have Default Prob's Term-Structure.
+					</div>
+					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
+						In above formula, We should have <span class = "Math">\( \big[ s \: \leq Q  \big] \)</span>. However, in Real-life, this is <u>NOT</u> the case.
+					</div>
 
-				<div style = "height: 4px; width: 100%; margin: 0; padding: 0; background-color: #9d4edd; border-radius: 10px; margin-top: 30px; margin-bottom: 30px;"></div>
+					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 2px;">
+						Here, the Assumption is : Corporate Bond's Value only depends on PD. This is FALSE As, it also depends on Liquidity.
+					</div>
+				</div>
 
-				
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							2
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 22px; color: #555b6e;
+										display: flex; justify-content: center; flex-direction: column; text-align: left !important; padding-left: 30px;">
+							Using Corporate Bond's Spread - A MORE EXACT Calculation
+						</div>
+					</div>
+				</div>
+				<div style = "height: 560px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					Consider a regular coupon paying Corporate Bond with Yield <span class = "Math">\( \big[y\%\big] \)</span> & RFR <span class = "Math">\( \big[r\%\big] \)</span> & Life <span class = "Math">\( \big[T\big] \)</span> years. Also consider that, during the life-time, this Bond can Default at times <span class = "Math">\( \big[ T_1, T_2, ..., T_n \big] \)</span> which, usually coincides with the Coupon paying dates.
+					<br>
+					<br>
+					If <span class = "Math">\( \big[ Q \big] \)</span> is the <u>Unconditional Prob. of Default Per Year for <span class = "Math">\( \big[T\big] \)</span> years</u> then, At time <span class = "Math">\( \big[ T_i \big] \)</span> <span class = "Notes">LGD</span> is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] \)</span>. Here <span class = "Math">\( \big[ B_{r,\: T_i} \big] \)</span> is the Bond's Value if NO Default at that Time i.e. When, Bond's Value is calculated using Forward <u>RFR</u>.
+					<br>
+					<br>
+					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>.
+					<br>
+					<br>
+					So, <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} = \big[ B_{r,\: T_0} - B_{y,\: T_o} \big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_o} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
+					<br>
+					<br>
+					
+					<div style = "height: 2px; width: 90%; margin: 0 auto; padding: 0; background-color: #fca311; margin-bottom: 30px;"></div>
+
+					So, with Bonds for varying <span class = "Math">\( \big[T\big] \)</span>, We can build the Term-Structure of <span class = "Math">\( \big[Q\big] \)</span>. This is <span class = "Notes">Risk-Neutral PD Estimate</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. This is LESS then the <span class = "Notes">Real-World PD Estimate</span> because of the <span class = "Notes">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE numbers of Bond. So, Bond Traders will earn Extra Return to bear this Risk.
+					<br>
+				</div>
+
 
 			</div>
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
