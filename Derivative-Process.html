@@ -138,7 +138,7 @@
 					</div>
 					
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
+				<div style = "margin: 0; padding: 10px; height: 140px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
 					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ S_t =\! S_0 + \int\limits_{0}^{t} \mu_u S_u du + \int\limits_{0}^{t} \sigma_u S_u dW_u \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[  \int\limits_{0}^{T} \sigma^2_s ds = -2\mathbb{LOG} \frac{S_T}{S_0} + \int\limits_{0}^{T} \frac{2}{S_u} dS_u \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
@@ -262,22 +262,22 @@
 					Using Ito's Lemma - 
 					<span class = 'Math'>\( dY_t = \left[ .5k e^{.5kt}S_t -.5k S_t e^{.5kt}   \right]dt + \left[ 0.5 \beta e^{.5kt} \right] dW_t = \left[ 0.5 \beta e^{.5kt} \right] dW_t \)</span>. <br>Therefore, it just has a Normal Dist<sup>n</sup>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
+				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Assume <span class = 'Math'>\( \big[ dS_t =\! \mu_t dt + f \big( W_t \big) dW_t \big] \)</span> then WHAT is <span class = 'Math'>\( \{ F \} \)</span> that makes <span class = 'Math'>\( \left[ M_t =\! S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} \right] \)</span> <span class = 'Notes'>Martingale ? </span>  <a href="https://quant.stackexchange.com/questions/17290/transformation-into-martingale?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
+					Assume <span class = 'Math'>\( \big[ dS_t =\! \mu_t dt + f \big( W_t \big) dW_t \big] \)</span> then WHAT is <span class = 'Math'>\( \big[ F \big] \)</span> that makes <span class = 'Math'>\( \left[ M_t =\! S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} \right] \)</span> <span class = 'Notes'>Martingale ? </span>  <a href="https://quant.stackexchange.com/questions/17290/transformation-into-martingale?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Use Ito's Lemma on <span class = 'Math'>\( \{ M_t \} \)</span>
+					Use Ito's Lemma on <span class = 'Math'>\( \big[ M_t \big] \)</span>
 					<br>
 					<span class = 'Math'>\(  dM_t = dS_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t d \left[ e^{\int\limits_{0}^{t} F \big( S_u \big) du} \right] = \big( \mu_t dt + f \big( W_t \big) dW_t \big) e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} F \big( S_t \big) dt \)</span>
 					<br>
 					For Martingale, We need to show : The Term for <span class = 'Math'>\( \big( dt \big) \)</span> is ZERO. So,
 					<br>
-					<span class = 'Math'>\( \mu_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} F \big( S_t \big) = 0 \)</span>. This gives <span class = 'Math'>\( F \big( S_t \big) = -\! \left[ \frac{\mu_t}{S_t} \right] \)</span>
+					<span class = 'Math'>\( \mu_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} F \big( S_t \big) = 0 \)</span>. This gives <span class = 'Math'>\( F \big( S_t \big) = -\! \left[ \frac{\mu_t}{S_t} \right] \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
 					Price of an Option with Payoff <span class = 'Math'>\( \left[ 1 + \big( \frac{T}{2} + \mathbb{LOG} S_T \big)^2 \right]^{0.5} \)</span> will NOT EXCEED <span class = 'Math'>\( \big( 1+T \big)^{0.5} \)</span>. Given <span class = 'Math'>\( \big[ \sigma = 1, r = 0 \big] \)</span>
@@ -291,7 +291,7 @@
 				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Price of an Option with Payoff <span class = 'Math'>\( \big( S_T \mathbb{MAX} \left[ S_T-K, 0 \right] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					Price of an Option with Payoff <span class = 'Math'>\( \big( S_T \mathbb{MAX} \big[ S_T-K, 0 \big] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
@@ -463,7 +463,7 @@
 					Let calculate the Mean and Variance - <br>
 					<span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = 0 \)</span>
 					<br>
-					<span class = 'Math'>\( \mathbb{V} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = \mathbb{E} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right]^2 = \mathbb{E} \left[ \int\limits_{0}^{t} \{  \lambda_1 + \lambda_2 \big( t-s \big) \}^2 ds \right] \)</span>. <i>This can easily be derived Now ...</i>
+					<span class = 'Math'>\( \mathbb{V} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = \mathbb{E} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right]^2 = \mathbb{E} \left[ \int\limits_{0}^{t} \big[  \lambda_1 + \lambda_2 \big( t-s \big) \big]^2 ds \right] \)</span>. <i>This can easily be derived Now ...</i>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 445px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
