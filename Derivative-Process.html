@@ -291,7 +291,7 @@
 				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Price of an Option with Payoff <span class = 'Math'>\( \big( S_T \max \left[ S_T-K, 0 \right] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					Price of an Option with Payoff <span class = 'Math'>\( \big( S_T \mathbb{MAX} \left[ S_T-K, 0 \right] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
@@ -301,7 +301,7 @@
 					<br>
 					So, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r+0.5 \sigma^2 \big)T + \sigma W'_T } \right] \)</span>
 					<br><br>
-					Option's Price <span class = 'Notes'>w.r.t. Stock Measure</span> : <br><br> <span class = 'Math'>\( \left[ \frac{c_0}{S_0} \right] = \mathbb{E}^{W'} \left[ \frac{c_T}{S_T} \right] = \mathbb{E}^{W'} \max \big[ S_T-K, 0 \big] = \mathbb{E}^{W'} \big[ S_T \big] N \big( d_1 \big) - K N \big( d_2 \big) \)</span>. See Page 351, HULL for reference.
+					Option's Price <span class = 'Notes'>w.r.t. Stock Measure</span> : <br><br> <span class = 'Math'>\( \left[ \frac{c_0}{S_0} \right] = \mathbb{E}^{W'} \left[ \frac{c_T}{S_T} \right] = \mathbb{E}^{W'} \mathbb{MAX} \big[ S_T-K, 0 \big] = \mathbb{E}^{W'} \big[ S_T \big] N \big( d_1 \big) - K N \big( d_2 \big) \)</span>. See Page 351, HULL for reference.
 					<br><br>
 					So, We can say that : Under this New Measure, the Price Process has Expectation as is <span class = 'Math'>\( \left[ \mu_1 =\! \big( \mu +\! \sigma^2 \big) \right] \)</span>. So from this, We can calculate the Expectation.
 				</div>
@@ -386,7 +386,7 @@
 					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \left(  \frac{\delta f}{\delta S} S \:- f \right) dt \)</span>
 					<br>
 					<br>
-					This will give the Final Result. To solve this for CALL Options price, we need to apply the <span class = 'Notes'>Boundary condition</span> as <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f_T = \max \big[ S_T - K, 0\big] \)</span>. Similarly for the PUT Options. Ofcourse for different kind of Derivatives i.e. for different shapes of <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \)</span>, We will get different values.
+					This will give the Final Result. To solve this for CALL Options price, we need to apply the <span class = 'Notes'>Boundary condition</span> as <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f_T = \mathbb{MAX} \big[ S_T - K, 0\big] \)</span>. Similarly for the PUT Options. Ofcourse for different kind of Derivatives i.e. for different shapes of <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \)</span>, We will get different values.
 					<br><br>
 					Solution of above Differential equation will be the Price of a Tradable Security. If, for a Derivative's Price, above equation does not hold, then that Derivative can NOT be any Tradable Security. Therefore <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ e^S \right] \)</span> can NOT be a Derivative (there will be Arbitrage Opportunity).
 				</div>
