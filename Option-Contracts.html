@@ -215,8 +215,8 @@
 					</div>
 				</div>						
 			</div>
-			<div style = "margin: 0; padding: 0; width: calc(50%); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
-				<div style = "width: 97%; height: 495px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+			<div style = "margin: 0; padding: 0; width: calc(50%); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
+				<div style = "width: 97%; height: 680px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
@@ -225,30 +225,92 @@
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px; letter-spacing: 0px;">
+									font-size: 16px; letter-spacing: 0px; overflow: hidden; ">
 						Can <span class = "Notes">DELTA be MORE than 1</span> ?
 						<br>
 						Delta is <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ e^{\big( b\:-r \big) T} N \big( d_1 \big) \right] \)</span>. So, for <span class = "Notes">D-ITM OR <span class = "Math">\( \big[\sigma \rightarrow \infty\big] \)</span></span> <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ N \big( d_1 =\!\! \infty \big) =\! 1 \big] \)</span>, But We can have <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ e^{\big( b\:-r \big) T} > 1 \right] \)</span> if CC is MORE than IR OR IR is -VE.
 						<br>
 						<br>
-						Few Important Greeks -
-						<br>
-						<u>Charm, Delta-Bleed</u> : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{d \Delta}{dt} \right]  \)</span>
-						<br>
-						<u>Color</u> : Change in Options' Gamma w.r.t. <u>1%</u> Change in Time
-						<br>
-						<u>Elasticity</u> : Change in Options' Price w.r.t. <u>1%</u> Change in Underlying
-						<br>
-						<u>Speed</u> : Change in Options' Gamma w.r.t. <u>1%</u> Change in Spot i.e. the 3<sup>rd</sup> Derivative
-						<br>
-						<u>Zomma</u> : Change in Options' Gamma w.r.t. <u>1%</u> Change in Volatility
-						<br>
-						<u>Vomma/Volga</u> : Change in Options' Vega w.r.t. <u>1%</u> Change in Volatility. If it is POSITIVE then, Long Option Holder will profilt from Volatility increase.
-						<br>
-						<u>Vanna</u> : Change in Vega w.r.t. Underlying's Price
-						<br>
-						<u>Sticky Delta Volatility Smile</u> : Shape of Volatility Smile sticks to Delta BUT NOT Strike. In other word, For a given Strike, Volatility moves as Underlying moves.
-						<br>
+						<div style = 'height: 50px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Charm, Delta-Bleed
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{d \Delta}{dt} \right]  \)</span>
+							</div>
+						</div>
+						<div style = 'height: 50px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Color
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Change in Options' Gamma w.r.t. <span class = "Notes">1%</span> Change in Time
+							</div>
+						</div>
+						<div style = 'height: 50px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Elasticity
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Change in Options' Price w.r.t. <span class = "Notes">1%</span> Change in Underlying
+							</div>
+						</div>
+						<div style = 'height: 50px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Speed
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Change in Options' Gamma w.r.t. <span class = "Notes">1%</span> Change in Spot i.e. the 3<sup>rd</sup> Derivative
+							</div>
+						</div>
+						<div style = 'height: 50px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Zomma
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Change in Options' Gamma w.r.t. <span class = "Notes">1%</span> Change in Volatility
+							</div>
+						</div>
+						<div style = 'height: 60px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Vomma/Volga
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Change in Options' Vega w.r.t. <span class = "Notes">1%</span> Change in Volatility. If it is POSITIVE then, Long Option Holder will profilt from Volatility increase
+							</div>
+						</div>
+						<div style = 'height: 50px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									border-bottom: 0px;'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Vanna
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Change in Vega w.r.t. Underlying's Price
+							</div>
+						</div>
+						<div style = 'height: 60px; width: 104%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; margin-left: -2%; 
+									'>
+							<div style = 'height: 100%; width: 30%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+								Sticky Delta Volatility Smile
+							</div>
+							<div style = 'height: 100%; width: 70%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 8px;'>
+								Shape of Volatility Smile sticks to Delta BUT NOT Strike. In other word, For a given Strike, Volatility moves as Underlying moves
+							</div>
+						</div>
 						<br>
 						When Vols change, the <span class = "Notes">Short-Dated-Options' IVs</span> will change by <span class = "Notes">MORE</span> than, the Long-Dated-Options' IVs. So, Port's VEGA is often calculated by changing the Vols of Short-Dated-Options by MORE than that of Long-Dated-Options [417].
 					</div>
