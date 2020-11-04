@@ -114,7 +114,7 @@
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-						<u>Asay Formula</u> for Options Price on Futures - A modification to Black's
+						<span class = "Notes">Asay Formula</span> for Options Price on Futures - A modification to Black's
 						<br>
 						<br>
 						Options' Premium is paid into an Account which get Interests. Traded in Sydney. In the Formula, there is NO Interest Term!!!
@@ -205,7 +205,7 @@
 									font-size: 16px; letter-spacing: 0px;">
 						<span class = "Notes">Volatility Tax</span> <a href="https://en.m.wikipedia.org/wiki/Volatility_tax" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 						<br>
-						It is Difference between AM & GM of Asset's Return. If <u>Arithmatic Average</u> Return is <span class = "Math">\( \big[ \mu \big] \)</span> then, the <u>Geometric Average</u> Return is <span class = "Math">\( \big[ \mu - 0.5 \sigma^2 \big] \)</span>. This <span class = "Math">\( \big[ 0.5 \sigma^2 \big] \)</span> is the Volatility Tax.
+						It is Difference between AM & GM of Asset's Return. If <span class = "Notes">AM-Return</span> is <span class = "Math">\( \big[ \mu \big] \)</span> then, the <span class = "Notes">GM-Return</span> is <span class = "Math">\( \big[ \mu - 0.5 \sigma^2 \big] \)</span>. This <span class = "Math">\( \big[ 0.5 \sigma^2 \big] \)</span> is the Volatility Tax.
 						<br>
 						<br>
 						Why this happens ??? Assume that Arithmatic & Geometric Returns are <span class = "Math">\( \big[ r_A, r_G \big] \)</span>. Therefore, <span class = "Math">\( \big[ P_0 e^{r_G} = P_0 \big(1 + r_{A}\big) \big] \Rightarrow \big[ r_G = \mathbb{LOG} \! \big(1 + r_A \big) \big] \)</span>. Now, <span class = "Math">\( \big[ \mathbb{LOG}x  \big] \)</span> is <span class = "Notes">Concave Function</span>. So, it increasingly penalizes -VE Arithmetic Returns the more -VE they are.
@@ -250,10 +250,10 @@
 						<u>Sticky Delta Volatility Smile</u> : Shape of Volatility Smile sticks to Delta BUT NOT Strike. In other word, For a given Strike, Volatility moves as Underlying moves.
 						<br>
 						<br>
-						When Vols change, the <u>IVs of Short-Dated Options</u> tend to change by <u>MORE</u> than, the IVs of Long-Dated Options. So, Port's VEGA is often calculated by changing the Vols of Short-Dated Options by MORE than that of Long-Dated Options [417].
+						When Vols change, the <span class = "Notes">Short-Dated-Options' IVs</span> will change by <span class = "Notes">MORE</span> than, the Long-Dated-Options' IVs. So, Port's VEGA is often calculated by changing the Vols of Short-Dated-Options by MORE than that of Long-Dated-Options [417].
 					</div>
 				</div>
-				<div style = "width: 97%; height: 405px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+				<div style = "width: 97%; height: 394px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
@@ -265,13 +265,13 @@
 									font-size: 16px;">
 						<span class = 'Notes'>Implied Volatility</span><a href="https://www.quora.com/What-is-the-difference-between-implied-volatility-and-local-volatility" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 						<br>
-						This is basically the <u>Volatility Value</u>, when is applied to some Model (e.g. BS Formula), the Model will give SAME Derivative's Price (e.g. Options Price) as the Market Price. IV is essentially an output from Black-Scholes Model when it is matched with the existing option price.
+						This is basically the Volatility Value, when is applied to some Model (e.g. BS Formula), the Model will give SAME Derivative's Price (e.g. Options Price) as the Market Price. IV is essentially an output from Black-Scholes Model when it is matched with the existing option price.
 						<br>
 						<br>
 						<span class = 'Notes'>Local Volatility</span>
 						<br>
 						This is generally applied in some Stochastic Process i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[dS =\! \mu_S dt + \sigma_S dW_t \big] \)</span>. In this case  <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ \sigma_S \big] \)</span> can be thought of Local Volatility e.g. like <i>Instantaneous volatility<i> e.g. <span class = 'Math'>\( \left( \sigma_S^2 = 2 \left[ \frac{ \left(\frac{\delta c}{\delta t}\right) \:+ qc \:+ \left( r\:-q \right) K \left(\frac{\delta c}{\delta K}\right) }{ K^2 \left(\frac{\delta^2 c}{\delta t^2}\right) } \right]_{K=S, T=t} \right) \)</span> <a href="https://quant.stackexchange.com/questions/39494/problems-with-local-volatility-models-vs-stochastic-volatility-models?noredirect=1&lq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>In local Volatility there is NO Random Process for the Volatility, so there is NO CORR between Underlying & Volatility. BUT, Volatility Skew comes from such CORR. Therefore, to Price EXOTIC Options, <span class = 'Notes'>Stochastic Volatility</span> is BETTER <a href="https://quant.stackexchange.com/questions/9350/for-pricing-what-types-of-exotic-options-are-suitable-using-local-volatility-mo?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
-						<br>Local Volatility is <u>NOT EQUAL</u> to the <span class = 'Notes'>Implied Volatility</span> except in the trivial case where both are constant i.e. BS World <a href="https://quant.stackexchange.com/questions/16898/local-volatility-surface-corresponding-to-the-implied-volatility-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. However from IV I can get LV <a href="https://quant.stackexchange.com/questions/50017/how-to-get-the-local-volatility-from-iv-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						<br><span class = 'Notes'>LV <span class = "Math">\( \:\ne \)</span> IV</span> except in the trivial case where both are constant i.e. BS World <a href="https://quant.stackexchange.com/questions/16898/local-volatility-surface-corresponding-to-the-implied-volatility-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. However from IV I can get LV <a href="https://quant.stackexchange.com/questions/50017/how-to-get-the-local-volatility-from-iv-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</div>
 				</div>
 				<div style = "width: 97%; height: 210px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
@@ -284,7 +284,7 @@
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-						WHAT is the <u>interpretation of the Volatility Term</u> in the Drift in GBM Process <a href="https://quant.stackexchange.com/questions/10681/geometric-brownian-motion-volatility-interpretation-in-the-drift-term?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
+						WHAT is the <span class = "Notes">interpretation of the Volatility Term</span> in the Drift in GBM Process <a href="https://quant.stackexchange.com/questions/10681/geometric-brownian-motion-volatility-interpretation-in-the-drift-term?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
 						<br>
 						<br>
 						For GBM, the Terminal Price is : <span class = 'Math'>\( \left[ S_t =\! S_0 e^{ \big( r \:- 0.5 \sigma^2 \big) T \:+ \sigma W_T } \right] \)</span>. <br> Now, under GBM, the Log-Price follows a Normal Dist<sup>n</sup>. Fundamentally, when We convert Log-Normal Dist<sup>n</sup> to Normal Dist<sup>n</sup>, as per the fundamental calculation, the <span class = 'Math'>\( \big[ \sigma \big] \)</span> term is added to the Expectation. <br>This Mathematical addition will make sure that, in the Risk-Neutral World, Price grows at Risk-Free Rate i.e. <span class = 'Math'>\( \left[ S_T =\! S_0 e^{ rT } \right] \)</span>.
@@ -372,9 +372,9 @@
 						Closed
 					</div>
 				</div>
-				<div style = 'height: 30px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff; margin-bottom: 25px;'>
+				<div style = 'height: 38px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff; margin-bottom: 25px;'>
 					<div style = 'height: 100%; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
-						<span class = 'Notes'>Hedge</span> : We can have <u>Static Hedging</u> with a Portfolio of Options with <u>diff. Strikes</u> BUT, Number of Options may become Large. So, We should have Dynamic Hedging <a href="http://janroman.dhis.org/finance/Exotic%20Options/Presentation%20Exotics/L2note.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						<span class = 'Notes'>Hedge</span> : We can have <span class = "Notes">Static Hedging</span> with a Portfolio of Options with <span class = "Notes">different Strikes</span> BUT, Number of Options may become Large. So, We should have Dynamic Hedging <a href="http://janroman.dhis.org/finance/Exotic%20Options/Presentation%20Exotics/L2note.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</div>
 				</div>
 				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
@@ -554,9 +554,9 @@
 						Closed
 					</div>
 				</div>
-				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
+				<div style = 'height: 75px; width: 95%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #fff'>
 					<div style = 'height: 100%; width: 85%; margin: 0 auto; padding: 0; margin-top: 4px; border: 0px solid #3bceac; float: right; display: inline-block; background-color: rgba(0,0,0,.0);'>
-						NOTE : This Option will pay ONLY if, <u>during some Fixing interval, all prices are within a Range</u>. Ofcourse if, Volatility is Less & Range is High then, it is Vanilla Option.
+						NOTE : This Option will pay ONLY if, during some <span class = "Notes">Fixing interval</span>, all prices are <span class = "Notes">within a Range</span>. Ofcourse if, Volatility is Less & Range is High then, it is Vanilla Option.
 					</div>
 				</div>
 				<div style = 'height: 50px; width: 95%; margin: 0 auto; padding: 0; margin-top: 10px; border: 1px solid #3bceac'>
