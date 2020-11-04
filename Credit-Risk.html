@@ -119,7 +119,7 @@
 						<br>
 						Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
 					</div>
-					Assume : <span class = 'Notes'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \lambda \big( t \big) \)</span>. AND, <span class = "Notes">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( V \big( t \big) \)</span>. So,
+					Assume : <span class = 'Notes'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ \lambda \big( t \big) \big] \)</span>. AND, <span class = "Notes">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ V \big( t \big) \big] \)</span>. So,
 					<br><br>
 					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
 					<br>
@@ -247,7 +247,7 @@
 					Here, My Exposure at time <span class = "Math">\( \big[ T_i \big] \)</span> is equal to, the Potential Loss : <span class = "Math">\( \mathbb{MAX} \big[ f_{T_i}, 0 \big] \)</span>.
 					<br>
 					<br>
-					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) E \big[ \mathbb{MAX} \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
+					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \mathbb{E} \big[ \mathbb{MAX} \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
 					<br>
 					<br>
 					It is Easy to understand that, if My Derivative's only Payoff is at time <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>.
