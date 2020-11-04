@@ -111,15 +111,15 @@
 					</div>
 					<div style = "height: 240px; width: 40%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;
 								padding-left: 10px; font-size: 16px;">
-						Prob. that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
+						Prob. that : Bond rated <span class = "Notes">below Caa</span> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
 						<br>
 						<br>
-						Prob. that : Bond rated below <u>Caa</u> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
+						Prob. that : Bond rated below <span class = "Notes">below Caa</span> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
 						<br>
 						<br>
-						Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated below <u>Caa</u> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+						Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
 					</div>
-					Assume : <u>HR</u> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \lambda \big( t \big) \)</span>. AND, <u>Cumulative Prob. of Survival</u> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( V \big( t \big) \)</span>. So,
+					Assume : <span class = 'Notes'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \lambda \big( t \big) \)</span>. AND, <span class = "Notes">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( V \big( t \big) \)</span>. So,
 					<br><br>
 					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
 					<br>
@@ -158,7 +158,7 @@
 						Different Bonds will have different Maturities. Therefore, We can have Default Prob's Term-Structure.
 					</div>
 					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
-						In above formula, We should have <span class = "Math">\( \big[ s \: \leq Q  \big] \)</span>. However, in Real-life, this is <u>NOT</u> the case.
+						In above formula, We should have <span class = "Math">\( \big[ s \: \leq Q  \big] \)</span>. However, in Real-life, this is <span class = "Notes">NOT</span> the case.
 					</div>
 
 					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 2px;">
@@ -186,7 +186,7 @@
 					Consider a regular coupon paying Corporate Bond with Yield <span class = "Math">\( \big[y\%\big] \)</span> & RFR <span class = "Math">\( \big[r\%\big] \)</span> & Life <span class = "Math">\( \big[T\big] \)</span> years. Also consider that, during the life-time, this Bond can Default at times <span class = "Math">\( \big[ T_1, T_2, ..., T_n \big] \)</span> which, usually coincides with the Coupon paying dates.
 					<br>
 					<br>
-					If <span class = "Math">\( \big[ Q \big] \)</span> is the <u>Unconditional Prob. of Default Per Year for <span class = "Math">\( \big[T\big] \)</span> years</u> then, At time <span class = "Math">\( \big[ T_i \big] \)</span> <span class = "Notes">LGD</span> is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] \)</span>. Here <span class = "Math">\( \big[ B_{r,\: T_i} \big] \)</span> is the Bond's Value if NO Default at that Time i.e. When, Bond's Value is calculated using Forward <u>RFR</u>.
+					If <span class = "Math">\( \big[ Q \big] \)</span> is the <span class = "Notes">Unconditional PD/Y for <span class = "Math">\( \big[T\big] \)</span> Years</span> then, At time <span class = "Math">\( \big[ T_i \big] \)</span> <span class = "Notes">LGD</span> is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] \)</span>. Here <span class = "Math">\( \big[ B_{r,\: T_i} \big] \)</span> is the Bond's Value if NO Default at that Time i.e. When, Bond's Value is calculated using Forward <span class = "Notes">RFR</span>.
 					<br>
 					<br>
 					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>.
@@ -222,7 +222,7 @@
 					Assume that, a Company has ONLY 1 Bond outstanding at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, V_t, B_t \big] \)</span>.
 					<br>
 					<br>
-					So, We must have <span class = "Math">\( E_T = MAX \big[ V_T - B_T, \: 0 \big] \)</span>.
+					So, We must have <span class = "Math">\( E_T = \mathbb{MAX} \big[ V_T - B_T, \: 0 \big] \)</span>.
 					<br>
 					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 N \big( d_1 \big) - B_T e^{-rT} N \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
 					<br>
@@ -239,27 +239,27 @@
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					Assume, I have a Derivative that lasts till time <span class = "Math">\( \big[ T \big] \)</span>. It's Default can happen at time <span class = "Math">\( \big[ T_1, T_2, ..., T_n=T \big] \)</span>.
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is <u>NO Default</u> then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is NO Default then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The, <span class = "Notes">Risk-Neutral PD</span> at time <span class = "Math">\( \big[ T_i \big] \)</span> is <span class = "Math">\( \big[ q_{T_i} \big] \)</span>. This is INDEP. of the Derivative's Value.
 					<br>
 					<br>
-					Here, My Exposure at time <span class = "Math">\( \big[ T_i \big] \)</span> is equal to, the Potential Loss : <span class = "Math">\( MAX \big[ f_{T_i}, 0 \big] \)</span>.
+					Here, My Exposure at time <span class = "Math">\( \big[ T_i \big] \)</span> is equal to, the Potential Loss : <span class = "Math">\( \mathbb{MAX} \big[ f_{T_i}, 0 \big] \)</span>.
 					<br>
 					<br>
-					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) E \big[ MAX \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
+					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) E \big[ \mathbb{MAX} \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
 					<br>
 					<br>
-					It is Easy to understand that, if My Derivative's only Payoff is at time <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) \big] \)</span>. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) \big] \)</span>.
+					It is Easy to understand that, if My Derivative's only Payoff is at time <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>.
 					<br>
 					<br>
-					One such Derivative is ZCB, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \left( 1-R \right) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
+					One such Derivative is ZCB, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
 					<br>
 					This gives <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} e^{- \big( y^{*} - y \big) T } \big] \)</span>. Here, <span class = "Math">\( \big[ y^{*}, y \big] \)</span> are the Yields for My Counterparty's ZCB and Risk-Free ZCB.
 					<br>
 					<br>
 					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">
-						This shows that: Any European style Derivative Credit-Adjusted Value can be calculated by <u>increasing the Discounting Rate appropriately</u>.
+						This shows that: Any European style Derivative Credit-Adjusted Value can be calculated by -  <br> <span class = "Notes">Increase the Discounting Rate appropriately</span>.
 					</div>
 				</div>	
 				<div class = 'Blog_Header' style = "margin-top: 300px;">
@@ -278,7 +278,7 @@
 					<br>
 					We assume that : Default will happen by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. So, We have  :
 					<br>
-					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \left( Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \right) \)</span>.
+					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \big( Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \big) \)</span>.
 					<br>
 					<br>
 					So, the Prob. of Default GIVEN  <span class = "Math">\( \big[ F \big] \)</span> is : <span class = "Math">\( P \left[ Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \right] =\! \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \)</span>.					
@@ -287,7 +287,7 @@
 					Credit Risk VaR
 				</div>	
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					Assume : A Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \left( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \right) \)</span>.
+					Assume : A Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \big( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \big) \)</span>.
 					<br>
 					<br>
 					We know that <span class = "Math">\(  \big[ F \sim N \big(0, 1 \big) \big]  \)</span>. So, We will have :
@@ -305,7 +305,7 @@
 					So, there is <span class = "Math">\(  \big[ x\% \big]  \)</span> Prob. that, % of Defaults in time <span class = "Math">\(  \big[ T \big]  \)</span> will be LESS than <span class = "Math">\(  \big[ V \big( T, x \big) \big]  \)</span>. Remember, <span class = "Math">\(  \big[ Q_i \big( T \big) \big]  \)</span> is the PD in time <span class = "Math">\(  \big[ T \big]  \)</span>.
 					<br>
 					<br>
-					So If, the TOTAL Loan Port. is  <span class = "Math">\(  \big[ $L \big]  \)</span> then, the <u>MAX. Possible Loss</u> will be <span class = "Math">\(  \big[ $L \big(1-R\big) V \big( T, x \big) \big]  \)</span>. This is Credit VaR with appropriate C.F. And, the i<sup>th</sup> Bond's Contribution is <span class = "Math">\(  \big[ $L_i \big(1-R\big) V \big( T, x \big) \big]  \)</span>.
+					So If, the TOTAL Loan Port. is  <span class = "Math">\(  \big[ $L \big]  \)</span> then, the <span class = "Notes">MAX Possible Loss</span> will be <span class = "Math">\(  \big[ $L \big(1-R\big) V \big( T, x \big) \big]  \)</span>. This is Credit VaR with appropriate C.F. And, the i<sup>th</sup> Bond's Contribution is <span class = "Math">\(  \big[ $L_i \big(1-R\big) V \big( T, x \big) \big]  \)</span>.
 				</div>		
 			</div>
 		</div>	
