@@ -1263,7 +1263,7 @@ div.container1 a
 	position: relative;
 	overflow: hidden;
 	font-family: "Calibri";
-	
+	overflow: hidden;
 }
 .Blog_Header {
 	width: 115%;
