@@ -213,6 +213,28 @@
 						<br>
 						In this case, a Portfolio’s +25% Average Arithmetic Return into a 0 CAGR i.e. Geometric Average Return. Hence, leaves the Portfolio with 0 Profit i.e. Volatility Tax.
 					</div>
+				</div>
+				<div style = "width: 97%; height: 250px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							6
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+						Calculate <span class = 'Math'>\( \mathbb{E} \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{\left[\frac{S_{t+1}}{S_t} \:< K\right]} \right] \)</span> <a href="https://quant.stackexchange.com/questions/17014/how-to-compute-the-conditional-expected-value-of-a-geometric-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
+						<br>
+						<br>
+						Use Formula : 
+						<br>
+						<span class = 'Math'>\( \mathbb{E} \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{ \left[\frac{S_{t+1}}{S_t} \:< K\right]} \right] =\! K \mathbb{E} \left[ 1_{\left[\frac{S_{t+1}}{S_t}\right]} \right] -\! \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right) 1_{\left[\frac{S_{t+1}}{S_t}\right]} \right] \)</span>
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = 'Math'>\(=\! K P \left[ \left[\frac{S_{t+1}}{S_t}\right] <\! K \right] -\!  \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right)^+ \right] \)</span>
+						<br>
+						The 2<sup>nd</sup> Part can be calculated using PUT Options Pricing Formula.
+					</div>
 				</div>						
 			</div>
 			<div style = "margin: 0; padding: 0; width: calc(50%); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
@@ -221,7 +243,7 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							6
+							7
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -320,7 +342,7 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							7
+							8
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -341,7 +363,7 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							8
+							9
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -350,28 +372,6 @@
 						<br>
 						<br>
 						For GBM, the Terminal Price is : <span class = 'Math'>\( \left[ S_t =\! S_0 e^{ \big( r \:- 0.5 \sigma^2 \big) T \:+ \sigma W_T } \right] \)</span>. <br> Now, under GBM, the Log-Price follows a Normal Dist<sup>n</sup>. Fundamentally, when We convert Log-Normal Dist<sup>n</sup> to Normal Dist<sup>n</sup>, as per the fundamental calculation, the <span class = 'Math'>\( \big[ \sigma \big] \)</span> term is added to the Expectation. <br>This Mathematical addition will make sure that, in the Risk-Neutral World, Price grows at Risk-Free Rate i.e. <span class = 'Math'>\( \left[ S_T =\! S_0 e^{ rT } \right] \)</span>.
-					</div>
-				</div>
-				<div style = "width: 97%; height: 250px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
-					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
-									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							9
-						</div>
-					</div>
-					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px;">
-						Calculate <span class = 'Math'>\( \mathbb{E} \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{\left[\frac{S_{t+1}}{S_t} \:< K\right]} \right] \)</span> <a href="https://quant.stackexchange.com/questions/17014/how-to-compute-the-conditional-expected-value-of-a-geometric-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
-						<br>
-						<br>
-						Use Formula : 
-						<br>
-						<span class = 'Math'>\( \mathbb{E} \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{ \left[\frac{S_{t+1}}{S_t} \:< K\right]} \right] =\! K \mathbb{E} \left[ 1_{\left[\frac{S_{t+1}}{S_t}\right]} \right] -\! \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right) 1_{\left[\frac{S_{t+1}}{S_t}\right]} \right] \)</span>
-						<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = 'Math'>\(=\! K P \left[ \left[\frac{S_{t+1}}{S_t}\right] <\! K \right] -\!  \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right)^+ \right] \)</span>
-						<br>
-						The 2<sup>nd</sup> Part can be calculated using PUT Options Pricing Formula.
 					</div>
 				</div>
 			</div>
