@@ -253,7 +253,7 @@
 						[417] When Vols change, the <u>IVs of Short-Dated Options</u> tend to change by <u>MORE</u> than, the IVs of Long-Dated Options. So, Port's VEGA is often calculated by changing the Vols of Short-Dated Options by MORE than that of Long-Dated Options.
 					</div>
 				</div>
-				<div style = "width: 97%; height: 370px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
+				<div style = "width: 97%; height: 405px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
@@ -270,7 +270,7 @@
 						<br>
 						<span class = 'Notes'>Local Volatility</span>
 						<br>
-						This is generally applied in some Stochastic Process i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[dS =\! \mu_S dt + \sigma_S dW_t \big] \)</span>. In this case  <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ \sigma_S \big] \)</span> can be thought of Local Volatility e.g. like <i>Instantaneous volatility<i> e.g. <span class = 'Math'>\( \left( \sigma_S^2 = 2 \left[ \frac{ \frac{\delta c}{\delta t} + qc + \left( r-q \right) K \frac{\delta c}{\delta K} }{ K^2 \frac{\delta^2 c}{\delta t^2} } \right]_{K=S, T=t} \right) \)</span> <a href="https://quant.stackexchange.com/questions/39494/problems-with-local-volatility-models-vs-stochastic-volatility-models?noredirect=1&lq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>In local Volatility there is NO Random Process for the Volatility, so there is NO CORR between Underlying & Volatility. BUT, Volatility Skew comes from such CORR. Therefore, to Price EXOTIC Options, <span class = 'Notes'>Stochastic Volatility</span> is <u>BETTER</u> <a href="https://quant.stackexchange.com/questions/9350/for-pricing-what-types-of-exotic-options-are-suitable-using-local-volatility-mo?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						This is generally applied in some Stochastic Process i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[dS =\! \mu_S dt + \sigma_S dW_t \big] \)</span>. In this case  <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ \sigma_S \big] \)</span> can be thought of Local Volatility e.g. like <i>Instantaneous volatility<i> e.g. <span class = 'Math'>\( \left( \sigma_S^2 = 2 \left[ \frac{ \left(\frac{\delta c}{\delta t}\right) \:+ qc \:+ \left( r\:-q \right) K \left(\frac{\delta c}{\delta K}\right) }{ K^2 \left(\frac{\delta^2 c}{\delta t^2}\right) } \right]_{K=S, T=t} \right) \)</span> <a href="https://quant.stackexchange.com/questions/39494/problems-with-local-volatility-models-vs-stochastic-volatility-models?noredirect=1&lq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>In local Volatility there is NO Random Process for the Volatility, so there is NO CORR between Underlying & Volatility. BUT, Volatility Skew comes from such CORR. Therefore, to Price EXOTIC Options, <span class = 'Notes'>Stochastic Volatility</span> is <u>BETTER</u> <a href="https://quant.stackexchange.com/questions/9350/for-pricing-what-types-of-exotic-options-are-suitable-using-local-volatility-mo?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 						<br>Local Volatility is <u>NOT EQUAL</u> to the <span class = 'Notes'>Implied Volatility</span> except in the trivial case where both are constant i.e. BS World <a href="https://quant.stackexchange.com/questions/16898/local-volatility-surface-corresponding-to-the-implied-volatility-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. However from IV I can get LV <a href="https://quant.stackexchange.com/questions/50017/how-to-get-the-local-volatility-from-iv-surface?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</div>
 				</div>
@@ -752,7 +752,7 @@
 					</div>
 				</div>				
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
-					Digital-Option's price's Formula is just like Vanilla-Option's Delta's Formula. So, Digital-Option's Delta is like Vanilla-Option's Gamma i.e. <u>like Normal PDF</u>. AND, that will be flatter if ToM increases. 
+					Digital-Option's price's Formula is just like Vanilla-Option's Delta's Formula. So, Digital-Option's Delta is like Vanilla-Option's Gamma i.e. <span class = "Notes">like Normal PDF</span>. AND, that will be flatter if ToM increases. 
 					<br>
 					BUT, if <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ T \rightarrow  0 \big] \)</span> then, <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ \Delta \rightarrow  \infty \big] \)</span>, i.e. eventually it will become <span class = 'Notes'>Dirac's Delta</span>. Because, in that case, if there is a SMALL change in Underlying, then Option's value can be <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ 0 \big] \)</span> or <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ X \big] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					<br>
@@ -765,7 +765,7 @@
 					</div>
 				</div>	
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
-					When Option is ATM, Vega's Sensitivity to Underlying's Price will be MAX. Because, at this stage, Option's Price can go anywhere. Now, for D-ITM i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ S_t \rightarrow \infty \big] \)</span>, Volatility will have zero Impact because, it already deep in ITM. So, in this case, the Sensitivity will be MIN. Similarly for the D-OTM. So, overall it will look like <u>Normal Curve</u>. <a href="https://www.binarytrading.com/binary-options-greeks/" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <img src = "3-vega-greek-in-binary-options.jpg" style = "margin: auto; width: 400px; display: block" />
+					When Option is ATM, Vega's Sensitivity to Underlying's Price will be MAX. Because, at this stage, Option's Price can go anywhere. Now, for D-ITM i.e. <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ S_t \rightarrow \infty \big] \)</span>, Volatility will have zero Impact because, it already deep in ITM. So, in this case, the Sensitivity will be MIN. Similarly for the D-OTM. So, overall it will look like <span class = "Notes">Normal Curve</span>. <a href="https://www.binarytrading.com/binary-options-greeks/" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <br><br><img src = "3-vega-greek-in-binary-options.jpg" style = "margin: auto; width: 400px; display: block" />
 				</div>
 				<div class = 'Blog_Header' style = 'width: 150%; background-color: #dbcdf0; margin-top: 20px;'>
 					<div style = 'margin-left: 0%; font-style: normal; font-family: Calibri; '>
@@ -773,7 +773,7 @@
 					</div>
 				</div>				
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; font-style: normal;">
-					Just visualise the Digital-Option's Payoff. So this Payoff can be replicated by some <u>BULL Spread</u>.
+					Just visualise the Digital-Option's Payoff. So this Payoff can be replicated by some <span class = "Notes">BULL Spread</span>.
 					<br>
 					A Digital-CALL on AAPL that pays $1000 if the stock is over $150 at expiry. This is SAME as - 100 $140/$150 BULL Spreads.
 				</div>
