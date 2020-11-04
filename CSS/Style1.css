@@ -1247,6 +1247,7 @@ div.container1 a
 	display: flex; align-items: left; justify-content: top; flex-direction: column; text-align: center;
 	position: relative;
 	font-family: "Calibri";
+	overflow: hidden;
 }
 
 .Indiv_Content {
