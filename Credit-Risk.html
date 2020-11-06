@@ -119,7 +119,7 @@
 						<br>
 						Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
 					</div>
-					Assume : <span class = 'Notes'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ \lambda \big( t \big) \big] \)</span>. AND, <span class = "Notes">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ V \big( t \big) \big] \)</span>. So,
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = 'Notes'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ \lambda \big( t \big) \big] \)</span>. AND, <span class = "Notes">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ V \big( t \big) \big] \)</span>. So,
 					<br><br>
 					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
 					<br>
@@ -162,7 +162,7 @@
 					</div>
 
 					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 2px;">
-						Here, the Assumption is : Corporate Bond's Value only depends on PD. This is FALSE As, it also depends on Liquidity.
+						Here, the <span class = "Math">\( \mathbb{ASSUMPTION} \)</span> is : Corporate Bond's Value only depends on PD. This is FALSE As, it also depends on Liquidity.
 					</div>
 				</div>
 
@@ -219,7 +219,7 @@
 					</div>
 				</div>
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					Assume that, a Company has ONLY 1 Bond outstanding at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, V_t, B_t \big] \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Company has ONLY 1 Bond outstanding at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, V_t, B_t \big] \)</span>.
 					<br>
 					<br>
 					So, We must have <span class = "Math">\( E_T = \mathbb{MAX} \big[ V_T - B_T, \: 0 \big] \)</span>.
@@ -239,7 +239,7 @@
 					Adjust : Derivative's Value for Counterparty PD i.e. cVA
 				</div>
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					Assume, I have a Derivative that lasts till time <span class = "Math">\( \big[ T \big] \)</span>. It's Default can happen at time <span class = "Math">\( \big[ T_1, T_2, ..., T_n=T \big] \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> I have a Derivative that lasts <span class = "Notes2">till time</span> <span class = "Math">\( \big[ T \big] \)</span>. It's Default can happen at time <span class = "Math">\( \big[ T_1, T_2, ..., T_n=T \big] \)</span>.
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is NO Default then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
 					<br>
@@ -252,7 +252,7 @@
 					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \mathbb{E} \big[ \mathbb{MAX} \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
 					<br>
 					<br>
-					It is Easy to understand that, if My Derivative's only Payoff is at time <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> My Derivative's <span class = "Notes1">ONLY</span> Payoff is <span class = "Notes2">at time</span> <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. It is <span class = "Notes1">EASY</span> to understand that. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>.
 					<br>
 					<br>
 					One such Derivative is ZCB, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
@@ -272,13 +272,13 @@
 						With Gaussian Copula, We represent : The CORR Structure of 2 Variables Which are NOT Normal. <br>With Gaussian Copula, We estimate : The underlying Variables' CORR Structure from their Marginal Dist<sup>n</sup>.
 					</div>
 					<br>
-					Assume, there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim N \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is CDF of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default CORR between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the CORR between Equities.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim N \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is CDF of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default CORR between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the CORR between Equities.
 					<br>
 					<br>
 					Typically, We consider <span class = "Notes">One Factor Model</span> i.e. <span class = "Math">\( \big[ x_i = a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \)</span>. Here, <span class = "Math">\( \big[ F \sim N \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
 					<br>
 					<br>
-					We assume that : Default will happen by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. So, We have  :
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> : Default will happen by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. So, We have  :
 					<br>
 					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \big( Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \big) \)</span>.
 					<br>
@@ -289,7 +289,7 @@
 					Credit Risk VaR
 				</div>	
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					Assume : A Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \big( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \big) \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \big( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \big) \)</span>.
 					<br>
 					<br>
 					We know that <span class = "Math">\(  \big[ F \sim N \big(0, 1 \big) \big]  \)</span>. So, We will have :

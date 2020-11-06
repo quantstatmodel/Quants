@@ -1620,7 +1620,7 @@ div.container1 a
 	font-style: italic;
 }
 
-.Notes {
+.Notes, .Notes1, .Notes2 {
 	padding: 5px;
 	padding-right: 8px;
 	padding-right: 8px;
@@ -1628,6 +1628,12 @@ div.container1 a
 	border-radius: 9999px;
 	color: #fff;
 	font-weight: bold;
+}
+.Notes1 {
+	background-color: #007f5f;
+}
+.Notes2 {
+	background-color: #ff006e;
 }
 .Math {
 	margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;
