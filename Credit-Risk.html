@@ -145,24 +145,24 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 22px; color: #555b6e;
 										display: flex; justify-content: center; flex-direction: column; text-align: left !important; padding-left: 30px;">
-							Using Corporate Bond's Spread
+							Using Corporate Bond's Spread [546]
 						</div>
 					</div>
 				</div>
 				<div style = "height: 340px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) Q \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
-					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 15px; margin-left: 15px; font-size: 18px;">
+					<div style = "height: 55px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 15px; margin-left: 15px; font-size: 18px;">
 						This is basically, 2-Factor formula i.e. CS and RR.
 					</div>
-					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
-						Different Bonds will have different Maturities. Therefore, We can have Default Prob's Term-Structure.
+					<div style = "height: 55px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
+						Different Bonds will have different Maturities. Therefore, We can have Default Prob's <span class = "Notes2">Term-Structure</span>.
 					</div>
-					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
+					<div style = "height: 55px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
 						In above formula, We should have <span class = "Math">\( \big[ s \: \leq Q  \big] \)</span>. However, in Real-life, this is <span class = "Notes">NOT</span> the case.
 					</div>
 
-					<div style = "height: 55px; width: 90%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 2px;">
-						Here, the <span class = "Math">\( \mathbb{ASSUMPTION} \)</span> is : Corporate Bond's Value only depends on PD. This is FALSE As, it also depends on Liquidity.
+					<div style = "height: 68px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 3px;">
+						Here, the <span class = "Math">\( \mathbb{ASSUMPTION} \)</span> is : Corporate Bond's Value only depends on PD. This is <span class = "Math">\( \mathbb{FALSE} \)</span> As, it also <span class = "Notes1">depends on Liquidity</span>.
 					</div>
 				</div>
 
@@ -178,21 +178,22 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 22px; color: #555b6e;
 										display: flex; justify-content: center; flex-direction: column; text-align: left !important; padding-left: 30px;">
-							Using Corporate Bond's Spread - A MORE EXACT Calculation
+							Using Corporate Bond's Spread - A MORE EXACT Calculation [546]
 						</div>
 					</div>
 				</div>
 				<div style = "height: 560px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					Consider a regular coupon paying Corporate Bond with Yield <span class = "Math">\( \big[y\%\big] \)</span> & RFR <span class = "Math">\( \big[r\%\big] \)</span> & Life <span class = "Math">\( \big[T\big] \)</span> years. Also consider that, during the life-time, this Bond can Default at times <span class = "Math">\( \big[ T_1, T_2, ..., T_n \big] \)</span> which, usually coincides with the Coupon paying dates.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> a regular coupon paying Corporate Bond with Yield <span class = "Math">\( \big[y\%\big] \)</span> & RFR <span class = "Math">\( \big[r\%\big] \)</span> & Life <span class = "Math">\( \big[T\big] \)</span> years. <br><span class = "Math">\( \mathbb{ASSUME} \)</span> during the life-time, this Bond can Default at times <span class = "Math">\( \big[ T_1, T_2, ..., T_n \big] \)</span> which, usually coincides with the Coupon paying dates.
+					<br><span class = "Math">\(  \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[Q =\! \mathbb{PD}_{\mathbb{UNCOND}}/\mathbb{YEAR}_{ \big[0,\: T\big]} \right] \)</span>.
 					<br>
 					<br>
-					If <span class = "Math">\( \big[ Q \big] \)</span> is the <span class = "Notes">Unconditional PD/Y for <span class = "Math">\( \big[T\big] \)</span> Years</span> then, At time <span class = "Math">\( \big[ T_i \big] \)</span> <span class = "Notes">LGD</span> is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] \)</span>. Here <span class = "Math">\( \big[ B_{r,\: T_i} \big] \)</span> is the Bond's Value if NO Default at that Time i.e. When, Bond's Value is calculated using Forward <span class = "Notes">RFR</span>.
+					So,  <span class = "Math">\( \big[ \mathbb{LGD}_{T_{i}} =\! \big( B_{r,\: T_i} - R \big) Q  \big] \)</span>. Here <span class = "Math">\( \big[ B_{r,\: T_i} \big] \)</span> is the Bond's Value if NO Default at that Time i.e. When, Bond's Value is calculated using Forward <span class = "Notes">RFR</span>.
 					<br>
 					<br>
-					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>.
+					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \mathbb{LGD}_{\mathbb{PV}} =\! \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q   e^{-r T_i} \big] \)</span>.
 					<br>
 					<br>
-					So, <span class = "Math">\( \big[ \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} = \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
+					So, <span class = "Math">\( \big[ \big( B_{r,\: T_0} - B_{y,\: T_0} \big) =\! \mathbb{LGD}_{\mathbb{PV}}\big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
 					<br>
 					<br>
 					
