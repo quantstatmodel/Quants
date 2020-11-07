@@ -101,7 +101,7 @@
 			</div>
 		</div>
 	</header>
-	<div class = 'Blog_Container' style = "height: 2400px;"">
+	<div class = 'Blog_Container' style = "height: 2900px;"">
 		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "margin: 0; padding: 10px;">
@@ -186,7 +186,7 @@
 					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \mathbb{LGD}_{\mathbb{PV}} =\! \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q   e^{-r T_i} \big] \)</span>.
 					<br>
 					<br>
-					So, <span class = "Math">\( \big[ \big( B_{r,\: T_0} - B_{y,\: T_0} \big) =\! \mathbb{LGD}_{\mathbb{PV}}\big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
+					So, <span class = "Math">\( \big[ \big( B_{r,\: T_0} - B_{y,\: T_0} \big) =\! \mathbb{LGD}_{\mathbb{PV}}\big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q =\! Q_{\mathbb{RISK\:NEUTRAL}} \big] \)</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. <BR>So, if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
 					
 					<div style = "height: 105px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 40px; margin-left: 15px; font-size: 18px;">
 						Different Bonds will have different Maturities. Therefore, We can have Default Prob's <span class = "Notes2">Term-Structure</span>. <span class = "Math">\( \mathbb{ASSUME} \)</span>. We have Bonds with Maturities <span class = "Math">\( \big[3\mathbb{Y}, 5\mathbb{Y}, 7\mathbb{Y}\big] \)</span>. 1<sup>st</sup> is used to estimate Yearly <span class = "Math">\( \mathbb{PD} \)</span> for <span class = "Math">\( \big[ 3\mathbb{Y} \big] \)</span>. 2<sup>nd</sup> is used to estimate Yearly <span class = "Math">\( \mathbb{PD} \)</span> for <span class = "Math">\( \big[ 4,5\mathbb{Y} \big] \)</span> etc.
@@ -212,7 +212,7 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 280px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Company has ONLY 1 Bond outstanding at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, V_t, B_t \big] \)</span>.
 					<br>
 					<br>
@@ -225,11 +225,7 @@
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! N \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V N \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>
-			</div>
-			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
-			</div>
-			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
-				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 0px solid #666666; border-bottom: 1px solid #666666; margin-top: 0px;">
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
@@ -278,7 +274,10 @@
 					<br>
 					ALL above basically says : Bond's <span class = "Notes2">ASS's PV</span>  <span class = "Math">\( \mathbb{EQUALS} \)</span> : HOW this Bond's Price <span class = "Math">\( \mathbb{EXCEEDS} \)</span> SIMILAR Risk-Free Bond's Price.<br> Therefore using this Info. We can calculate <span class = "Math">\( \big[  B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> hence, <span class = "Math">\( \big[ Q \big] \)</span>.
 				</div>
-
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div class = 'Blog_Header' style = "background-color: #fb8500">
 					Compare : Various PDs [548]
 				</div>
@@ -292,10 +291,55 @@
 				</div>
 
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #fb8500; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #fb8500; font-size: 24px;">
-					Few Other Information
+					WHY Corporate Bond Traders earn MORE Return then RFR ??? [551]
 				</div>
-				<div style = "height: 254px; width: 100%; margin: 0; padding: 0; border-top: 0px solid #666666; border-bottom: 0px solid #666666; margin-top: 20px;">
-
+				<div style = "height: 384px; width: 100%; margin: 0; padding: 10px; border-top: 0px solid #666666; border-bottom: 0px solid #666666; margin-top: 20px;">
+					There are MANY Reasons for that :
+					<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; border-bottom: 0px solid #fb8500; margin-top: 10px;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #fb8500; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #fb8500">
+							<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #fee6cc; font-size: 22px; color: #555b6e;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+								1
+							</div>
+						</div>
+						<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 20px; padding-top: 14px;">
+								Corporate Bonds are <span class = "Notes">Illiquid</span>. So, Traders demands HIGH Return.
+							</div>
+						</div>
+					</div>
+					<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; border-bottom: 0px solid #fb8500; margin-top: 2px;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #fb8500; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #fb8500">
+							<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #fee6cc; font-size: 22px; color: #555b6e;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+								2
+							</div>
+						</div>
+						<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 20px; padding-top: 14px;">
+								Corporate Bonds Traders weigh <span class = "Notes">Depression Scenarios</span> MORE than, Historical Realisations.
+							</div>
+						</div>
+					</div>
+					<div style = "height: 164px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; border-bottom: 1px solid #fb8500; margin-top: 2px;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #fb8500; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #fb8500">
+							<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #fee6cc; font-size: 22px; color: #555b6e;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+								3
+							</div>
+						</div>
+						<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 20px; padding-top: 14px; padding-right: 4px;">
+								There is <span class = "Notes2">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes2">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
+							</div>
+						</div>
+					</div>
 				</div>
 
 				<div class = 'Blog_Header'>
