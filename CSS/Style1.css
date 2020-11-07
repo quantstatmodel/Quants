@@ -7,6 +7,7 @@
 @import url('https://fonts.googleapis.com/css2?family=PT+Serif:ital@1&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fira+Code&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
 
 @font-face {
   font-family: "Nobis";
@@ -1637,4 +1638,16 @@ div.container1 a
 }
 .Math {
 	margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;
+}
+
+.Page_Number, .Page_Number1 {
+	font-family: 'Fjalla One', sans-serif;
+	display: contents;
+	font-size: 23px;
+	margin-top: 8px;	
+	color: #333333;
+}
+.Page_Number1 {
+	font-size: 18px;
+	color: #b2b2b2;
 }
