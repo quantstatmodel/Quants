@@ -123,7 +123,7 @@
 					<br><br>
 					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ \frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ \frac{dV \big( t \big)}{V \big( t \big)} \right] = - \lambda \big( t \big) dt \right] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ Q \big( t \big) = 1 - e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} = 1 - e^{-\! \big[ \overline {\lambda  \big( t \big)} \big] t} \right] \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ Q \big( t \big) = 1 - e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} = 1 - e^{-\! \big[ \overline {\lambda  \big( t \big)} \big] t} \right] \Rightarrow \left[ \overline {\lambda  \big( T \big)} =\! \frac{-\mathbb{LOG}\big(1-\!Q\big(T\big)\big)}{T} \right] \)</span>
 					<br>
 					<br>
 					<b>BBG's Default Risk Data</b> <a href="https://www.bloomberg.com/professional/blog/assessing-firms-credit-default-risk-supply-chain-impacts/#:~:text=The%20Bloomberg%20Default%20Risk%20(DRSK,4.85%25%20probability%20of%20Carillion%27s%20default." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
@@ -149,20 +149,13 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 340px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) Q \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
-					<div style = "height: 55px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 15px; margin-left: 15px; font-size: 18px;">
+				<div style = "height: 240px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) \overline {\lambda  \big( T \big)} \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
+					<div style = "height: 55px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 15px; margin-left: 15px; font-size: 18px; padding-top: 15px;">
 						This is basically, 2-Factor formula i.e. CS and RR.
 					</div>
-					<div style = "height: 55px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
-						Different Bonds will have different Maturities. Therefore, We can have Default Prob's <span class = "Notes2">Term-Structure</span>.
-					</div>
-					<div style = "height: 55px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
-						In above formula, We should have <span class = "Math">\( \big[ s \: \leq Q  \big] \)</span>. However, in Real-life, this is <span class = "Notes">NOT</span> the case.
-					</div>
-
-					<div style = "height: 68px; width: 93%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 3px;">
-						Here, the <span class = "Math">\( \mathbb{ASSUMPTION} \)</span> is : Corporate Bond's Value only depends on PD. This is <span class = "Math">\( \mathbb{FALSE} \)</span> As, it also <span class = "Notes1">depends on Liquidity</span>.
+					<div style = "height: 55px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
+						In above formula, We should have <span class = "Math">\( \big[ s \: \leq \overline {\lambda  \big( T \big)}  \big] \)</span>. However, in Real-life, this is <span class = "Notes">NOT</span> the case.
 					</div>
 				</div>
 
@@ -182,7 +175,7 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 560px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 620px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> a regular coupon paying Corporate Bond with Yield <span class = "Math">\( \big[y\%\big] \)</span> & RFR <span class = "Math">\( \big[r\%\big] \)</span> & Life <span class = "Math">\( \big[T\big] \)</span> years. <br><span class = "Math">\( \mathbb{ASSUME} \)</span> during the life-time, this Bond can Default at times <span class = "Math">\( \big[ T_1, T_2, ..., T_n \big] \)</span> which, usually coincides with the Coupon paying dates.
 					<br><span class = "Math">\(  \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[Q =\! \mathbb{PD}_{\mathbb{UNCOND}}/\mathbb{YEAR}_{ \big[0,\: T\big]} \right] \)</span>.
 					<br>
@@ -194,13 +187,13 @@
 					<br>
 					<br>
 					So, <span class = "Math">\( \big[ \big( B_{r,\: T_0} - B_{y,\: T_0} \big) =\! \mathbb{LGD}_{\mathbb{PV}}\big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q \big] \)</span>. So if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
-					<br>
-					<br>
 					
-					<div style = "height: 2px; width: 90%; margin: 0 auto; padding: 0; background-color: #fca311; margin-bottom: 30px;"></div>
-
-					So, with Bonds for varying <span class = "Math">\( \big[T\big] \)</span>, We can build the Term-Structure of <span class = "Math">\( \big[Q\big] \)</span>. This is <span class = "Notes">Risk-Neutral PD Estimate</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. This is LESS then the <span class = "Notes">Real-World PD Estimate</span> because of the <span class = "Notes2">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes2">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
-					<br>
+					<div style = "height: 105px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 40px; margin-left: 15px; font-size: 18px;">
+						Different Bonds will have different Maturities. Therefore, We can have Default Prob's <span class = "Notes2">Term-Structure</span>. <span class = "Math">\( \mathbb{ASSUME} \)</span>. We have Bonds with Maturities <span class = "Math">\( \big[3\mathbb{Y}, 5\mathbb{Y}, 7\mathbb{Y}\big] \)</span>. 1<sup>st</sup> is used to estimate Yearly <span class = "Math">\( \mathbb{PD} \)</span> for <span class = "Math">\( \big[ 3\mathbb{Y} \big] \)</span>. 2<sup>nd</sup> is used to estimate Yearly <span class = "Math">\( \mathbb{PD} \)</span> for <span class = "Math">\( \big[ 4,5\mathbb{Y} \big] \)</span> etc.
+					</div>
+					<div style = "height: 90px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 12px;">
+						Here, the <span class = "Math">\( \mathbb{ASSUMPTION} \)</span> is : Corporate Bond's Value only depends on <span class = "Math">\( \mathbb{PD} \)</span>. This is <span class = "Math">\( \mathbb{FALSE} \)</span> As, it also <span class = "Notes1">depends on Liquidity</span>.
+					</div>
 				</div>
 
 				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
@@ -228,7 +221,7 @@
 					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 N \big( d_1 \big) - B_T e^{-rT} N \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
 					<br>
 					<br>
-					The <span class = "Notes">Risk-Neutral PD</span> is <span class = "Math">\( N \big( \!\!-\!\!d_2 \big) \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
+					Here. <span class = "Math">\( \big[ \mathbb{PD_{\mathbb{RISK\:NEUTRAL}}} =\! N \big( \!\!-\!\!d_2 \big) \big] \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! N \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V N \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>
@@ -286,10 +279,29 @@
 					ALL above basically says : Bond's <span class = "Notes2">ASS's PV</span>  <span class = "Math">\( \mathbb{EQUALS} \)</span> : HOW this Bond's Price <span class = "Math">\( \mathbb{EXCEEDS} \)</span> SIMILAR Risk-Free Bond's Price.<br> Therefore using this Info. We can calculate <span class = "Math">\( \big[  B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> hence, <span class = "Math">\( \big[ Q \big] \)</span>.
 				</div>
 
+				<div class = 'Blog_Header' style = "background-color: #cdb4db">
+					Compare : Various PDs [548]
+				</div>
+				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					Generally, <span class = "Math">\( \big[ \mathbb{PD}_{\mathbb{HIST}} \leq \mathbb{PD}_{\mathbb{BOND\:IMP.}} \big] \)</span>. <br>This <span class = "Math">\( \mathbb{DIFFERENCE} \)</span> is <span class = "Math">\( \mathbb{LARGE} \)</span> during Credit-Crisis due to, <span class = "Notes1">Flight-For-Safety</span>.
+					<br>
+					<br>
+					From, Our ACDR Table, <span class = "Math">\( \left[ \mathbb{HR}_{\mathbb{HIST},\: 7\mathbb{Y},\: \mathbb{A}} =\: \overline {\lambda  \big( 7\mathbb{Y} \big)} =\! \left( \frac{-\mathbb{LOG}\big(1-\!1.179/100\big)}{7} \right) =\: 0.0017 \right] \)</span>.
+					<br><br>
+					Now, We estimate <span class = "Math">\( \big[ \mathbb{HR}_{\mathbb{BOND\:IMP.},\: 7\mathbb{Y},\: \mathbb{A}} \big] \)</span>. We use, Yields Info. published by <span class = "Notes1">Merrill Lynch</span>. These Bonds have life of  <span class = "Math">\( \big[ 7\mathbb{Y} \big] \)</span>. <br>So, <span class = "Math">\( \left[ \mathbb{HR}_{\mathbb{BOND\:IMP.},\: 7\mathbb{Y},\: \mathbb{A}} =\! \frac{s}{1 \:-\:R} =\! \frac{5.995% - 5.308%}{1 \:-\:40%} =\! 0.01145 \right] \)</span>. So, <span class = "Math">\( \big[ \mathbb{HR}_{\mathbb{HIST}} \leq \mathbb{HR}_{\mathbb{BOND\:IMP.}} \big] \)</span>
+				</div>
+
+				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #fb8500; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #fb8500; font-size: 24px;">
+					Few Other Information
+				</div>
+				<div style = "height: 254px; width: 100%; margin: 0; padding: 0; border-top: 0px solid #666666; border-bottom: 0px solid #666666; margin-top: 20px;">
+
+				</div>
+
 				<div class = 'Blog_Header'>
 					Adjust : Derivative's Value for Counterparty PD i.e. cVA
 				</div>
-				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 290px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> I have a Derivative that lasts <span class = "Notes2">till time</span> <span class = "Math">\( \big[ T \big] \)</span>. It's Default can happen at time <span class = "Math">\( \big[ T_1, T_2, ..., T_n=T \big] \)</span>.
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is NO Default then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
