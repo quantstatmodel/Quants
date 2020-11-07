@@ -236,6 +236,56 @@
 			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
 			</div>
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 0px solid #666666; border-bottom: 1px solid #666666; margin-top: 0px;">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							4
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 22px; color: #555b6e;
+										display: flex; justify-content: center; flex-direction: column; text-align: left !important; padding-left: 30px;">
+							Using Asset Swap's Spread [548]
+						</div>
+					</div>
+				</div>
+				<div style = "height: 440px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					A <span class = "Notes">Bond's ASS</span> <span class = "Math">\( \big[ y_{\mathbb{ASS}} \% \big] \)</span> estimates : Spread between Bond's Yield & LIBOR-SWAP Curve i.e. RFR. With Bond's ASS <span class = "Math">\( \big[ y_{\mathbb{ASS}} \% \big] \)</span> & Coupon <span class = "Math">\( \big[ c \% \big] \)</span>, We have : Below Scenarios -<br>
+
+					<div style = 'height: 60px; width: 98%; margin: 0 auto; padding: 0; margin-top: 20px; border: 1px solid #3bceac; '>
+						<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+							This Bold sells <span class = "Math">\( \mathbb{PAR} \)</span>
+						</div>
+						<div style = 'height: 100%; width: 80%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 10px;'>
+							A Swap with this Bond will exchange : This Bond's <span class = "Math">\( \big[ c \% \big] \)</span> w.r.t. <span class = "Math">\( \big[ r +\! y_{\mathbb{ASS}} \big] \% \)</span>.
+						</div>
+					</div>
+					<div style = 'height: 60px; width: 98%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; border-top: 1px;'>
+						<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+							This Bold sells <span class = "Math">\( \mathbb{DISCOUNT} \)</span>
+						</div>
+						<div style = 'height: 100%; width: 80%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 10px;'>
+							A Swap with this Bond will exchange : This Bond's <span class = "Math">\( \big[ c \% +\! \mathbb{DISCOUNT} \big] \)</span> w.r.t. <span class = "Math">\( \big[ r +\! y_{\mathbb{ASS}} \big] \% \)</span>.
+						</div>
+					</div>
+					<div style = 'height: 60px; width: 98%; margin: 0 auto; padding: 0; margin-top: 2px; border: 1px solid #3bceac; border-top: 1px;'>
+						<div style = 'height: 100%; width: 20%; margin: 0 auto; padding: 0; background-color: #3bceac; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; font-size: 16px;'>
+							This Bold sells <span class = "Math">\( \mathbb{PREMIUM} \)</span>
+						</div>
+						<div style = 'height: 100%; width: 80%; margin: 0 auto; padding: 0; background-color: #fff; display: inline-block; float: left; padding-left: 10px; border-right: 0px solid #3bceac; text-align: left; font-size: 16px; padding-top: 10px;'>
+							A Swap with this Bond will exchange : This Bond's <span class = "Math">\( \big[ c \% -\! \mathbb{PREMIUM} \big] \)</span> w.r.t. <span class = "Math">\( \big[ r +\! y_{\mathbb{ASS}} \big] \% \)</span>.
+						</div>
+					</div>
+					<br>
+					ALL above basically says : Bond's <span class = "Notes2">ASS's PV</span>  <span class = "Math">\( \mathbb{EQUALS} \)</span> : HOW this Bond's Price <span class = "Math">\( \mathbb{EXCEEDS} \)</span> SIMILAR Risk-Free Bond's Price.<br> Therefore using this Info. We can calculate <span class = "Math">\( \big[  B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> hence, <span class = "Math">\( \big[ Q \big] \)</span>.
+				</div>
+
 				<div class = 'Blog_Header'>
 					Adjust : Derivative's Value for Counterparty PD i.e. cVA
 				</div>
