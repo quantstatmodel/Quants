@@ -270,7 +270,9 @@
 				</div>
 				<div style = "height: 240px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">
-						With Gaussian Copula, We represent : The CORR Structure of 2 Variables Which are NOT Normal. <br>With Gaussian Copula, We estimate : The underlying Variables' CORR Structure from their Marginal Dist<sup>n</sup>.
+						With Gaussian Copula, We <span class = "Notes">estimate</span> : The underlying Variables' <span class = "Notes2">CORR Structure</span> from their Marginal Dist<sup>n</sup>.
+						<br>
+						With Gaussian Copula, We <span class = "Notes">represent</span> : The CORR Structure of 2 Variables Which are NOT Normal.
 					</div>
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim N \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is CDF of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default CORR between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the CORR between Equities.
@@ -281,7 +283,7 @@
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> : Default will happen by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. So, We have  :
 					<br>
-					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \big( Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \big) \)</span>.
+					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \left( Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \right) \)</span>.
 					<br>
 					<br>
 					So, the Prob. of Default GIVEN  <span class = "Math">\( \big[ F \big] \)</span> is : <span class = "Math">\( P \left[ Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \right] =\! \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \)</span>.					
@@ -290,7 +292,7 @@
 					Credit Risk VaR
 				</div>	
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \big( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \big) \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \left( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \right) \)</span>.
 					<br>
 					<br>
 					We know that <span class = "Math">\(  \big[ F \sim N \big(0, 1 \big) \big]  \)</span>. So, We will have :
