@@ -101,8 +101,8 @@
 			</div>
 		</div>
 	</header>
-	<div class = 'Blog_Container' style = "height: 2900px;"">
-		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal;'>
+	<div class = 'Blog_Container'>
+		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal; height: 2900px;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "margin: 0; padding: 10px;">
 					<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
@@ -336,7 +336,7 @@
 						<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 							<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 20px; padding-top: 14px; padding-right: 4px;">
-								There is <span class = "Notes2">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes2">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
+								There is <span class = "Notes">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
 							</div>
 						</div>
 					</div>
@@ -380,10 +380,10 @@
 						With Gaussian Copula, We <span class = "Notes">represent</span> : The CORR Structure of 2 Variables Which are NOT Normal.
 					</div>
 					<br>
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim N \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is CDF of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default CORR between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the CORR between Equities.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim \mathbb{N} \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is <span class = "Math">\( \mathbb{CDF} \)</span> of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default <span class = "Math">\( \mathbb{CORR} \)</span> between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the <span class = "Math">\( \mathbb{CORR} \)</span> between Equities.
 					<br>
 					<br>
-					Typically, We consider <span class = "Notes">One Factor Model</span> i.e. <span class = "Math">\( \big[ x_i = a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \)</span>. Here, <span class = "Math">\( \big[ F \sim N \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
+					Typically, We consider <span class = "Notes">One Factor Model</span> i.e. <span class = "Math">\( \big[ x_i = a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \)</span>. Here, <span class = "Math">\( \big[ F \sim \mathbb{N} \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
 					<br>
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> : Default will happen by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. So, We have  :
@@ -400,7 +400,7 @@
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Bank has Large Portfolio of Loans. Prob. & CORR of Defaults are ALL Same. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \left( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \right) \)</span>.
 					<br>
 					<br>
-					We know that <span class = "Math">\(  \big[ F \sim N \big(0, 1 \big) \big]  \)</span>. So, We will have :
+					We know that <span class = "Math">\(  \big[ F \sim \mathbb{N} \big(0, 1 \big) \big]  \)</span>. So, We will have :
 					<br>
 					<br>
 					<span class = "Math">\(x = P \big[ F > \Phi^{-1} \big(1 - x\big) \big] = P \big[ F > -\Phi^{-1} \big(x\big) \big] \)</span>
@@ -419,7 +419,29 @@
 				</div>		
 			</div>
 		</div>	
+
+		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 2900px;'>
+			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
+				<div class = 'Blog_Header' style = "background-color: #bde0fe">
+					Credit Derivative : CDS [570]
+				</div>
+				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+
+				</div>	
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
+				<div class = 'Blog_Header' style = "background-color: #83c5be">
+					Credit Derivative : CDO
+				</div>
+				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+
+				</div>	
+			</div>
+		</div>	
 	</div>	
+
 	<div class = 'Blog_Footer'>
 		<div style = 'height: auto;
 						width: auto;
