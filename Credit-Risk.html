@@ -294,13 +294,12 @@
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is NO Default then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;The, <span class = "Notes">Risk-Neutral PD</span> at time <span class = "Math">\( \big[ T_i \big] \)</span> is <span class = "Math">\( \big[ q_{T_i} \big] \)</span>. This is INDEP. of the Derivative's Value.
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Here, My Exposure at time <span class = "Math">\( \big[ T_i \big] \)</span> is equal to, the Potential Loss : <span class = "Math">\( \mathbb{MAX} \big[ f_{T_i}, 0 \big] \)</span>.
 					<br>
 					<br>
-					Here, My Exposure at time <span class = "Math">\( \big[ T_i \big] \)</span> is equal to, the Potential Loss : <span class = "Math">\( \mathbb{MAX} \big[ f_{T_i}, 0 \big] \)</span>.
-					<br>
-					<br>
-					So, My <span class = "Notes">Risk-Neutral LGD</span> is <span class = "Math">\( \big[ \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \mathbb{E} \big[ \mathbb{MAX} \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA.
+					
+					So, <span class = "Math">\( \big[ \mathbb{LGD}_{\mathbb{RISK.NEUTRAL}} = \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \mathbb{E} \big[ \mathbb{MAX} \big[ f_{T_i}, 0 \big] \big] e^{-\!r_{T_i}} \big] \)</span>, <span class = "Math">\( \big[ q_{T_i} = \mathbb{PD}_{\mathbb{RISK.NEUTRAL}, \: T_i} \big] \)</span>. This Value to be deducted from the Derivative's Value with NO Default. Hence the cVA. 
+					<br><br><span class = "Math">\( \big[ q_{T_i} \big] \)</span> is is INDEP. of the Derivative's Value.
 					<br>
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> My Derivative's <span class = "Notes1">ONLY</span> Payoff is <span class = "Notes2">at time</span> <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. It is <span class = "Notes1">EASY</span> to understand that. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>.
