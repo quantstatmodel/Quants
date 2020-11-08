@@ -102,7 +102,7 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal; height: 2800px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal; height: 3130px;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "margin: 0; padding: 10px;">
 					<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
@@ -128,6 +128,25 @@
 					<br>
 					<b>BBG's Default Risk Data</b> <a href="https://www.bloomberg.com/professional/blog/assessing-firms-credit-default-risk-supply-chain-impacts/#:~:text=The%20Bloomberg%20Default%20Risk%20(DRSK,4.85%25%20probability%20of%20Carillion%27s%20default." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
 					<img src = "https://assets.bbhub.io/professional/sites/10/Graph-2-800x325.png" style = "margin: auto; width: 100%; display: block" />
+				</div>
+
+
+				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
+					Details on Survival & Default Probabilities <a href="https://math.stackexchange.com/questions/3899088/estimation-of-survival-probability" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+				</div>
+				<div style = "height: 270px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					Consider the <span class = "Math">\( \mathbb{R.V.}\big[ N \big] \)</span> : Default happens on the Year <span class = "Math">\( \big[ n, n = 1\big(1\big)\infty \big] \)</span>. So,
+					<br>
+					<span class = "Math">\( \big[ \mathbb{D}_n = \mathbb{PD}_{\mathbb{UNCOND},\: \mathbb{DURING}\big[n\big]} = \mathbb{P}\big[N =\! n\big] \big], \:  \big[ \mathbb{S}_n =\! \mathbb{PD}_{\mathbb{UNCOND},\: \mathbb{AFTER}\big[n\big]} =\! \mathbb{P}\big[N > n \big]\big] \)</span>
+					<br>
+					<br>
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> that, <span class = "Math">\( \big[ D_1 =\! \rho,\: S_1 =\! \big(1 - \rho\big) \big] \)</span>
+					<br>
+					<br>
+					So, <span class = "Math">\( D_2 =\! \mathbb{P}\big[N =\! 2\big] = \mathbb{P}\big[N =\! 2 | N =\! 1\big]\mathbb{P}\big[N =\! 1\big] +\! \mathbb{P}\big[N =\! 2 \:|\: N >\! 1\big]\mathbb{P}\big[N >\! 1\big] = 0 +\! D_1 S_1 = \big[ \rho \big(1 - \rho\big) \big] \)</span>
+					<br>
+					<br>
+					AND, <span class = "Math">\(\big[S_1 = D_2 +\! S_2\big] \Rightarrow S_2 =\! \big(1 -\! \rho\big) -\! \big[ \rho \big(1 -\! \rho\big) \big] =\! \big(1 - \rho\big)^2 \)</span>.
 				</div>
 
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
@@ -465,7 +484,7 @@
 					</div> 
 					CDS's Valuation <span class = "Page_Number1">[573]</span>
 				</div>	
-				<div style = "height: 570px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden;">
+				<div style = "height: 540px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden;">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> I buy a CDS with NOTIONAL <span class = "Math">\( \big[ $1 \big] \)</span> At Time <span class = "Math">\( \big[ T_0 \big] \)</span>, ends At Time <span class = "Math">\( \big[ T_N \big] \)</span>. Yearly CDS-Spread's Payments At <span class = "Math">\( \big[ T_1, T_2, ..., T_N \big] \)</span>.
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> CDS can ONLY default At Time <span class = "Math">\( \left[ T_{\mathbb{DEFAULT},\: i} =\! \left(T_{\frac{i \:+ \big(i-\!1\big)}{2}}\right),\: i = 1\big(1\big)\big(N\big) \right] \)</span>.
@@ -475,8 +494,6 @@
 					<br>
 					<br>
 					<span class = "Math">\( \big[ \big[ \mathbb{PSV}_{\mathbb{UNCOND},\: \mathbb{UNTIL}\big[T_{0}\big]} =\! 0 \big],\: \big[ \mathbb{PD}_{\mathbb{UNCOND},\: \mathbb{DURING}\big[T_{N+\!1}\big]} =\! 0 \big], \:\big[i = 1\big(1\big)\big(N\!+\!\!1\big) \big]\big] \)</span> AND,
-					<br>
-					<span class = "Math">\( \big[\big( \mathbb{PSV}_{\mathbb{UNCOND},\: \mathbb{UNTIL}\big[T_{i\:+1}\big]} -\! \mathbb{PSV}_{\mathbb{UNCOND},\: \mathbb{UNTIL}\big[T_{i}\big]}\big) =\! \mathbb{PD}_{\mathbb{UNCOND},\: \mathbb{DURING}\big[T_{i\:+1}\big]}\big] \)</span> AND,
 					<br>
 					<span class = "Math">\( \big[ \big( \mathbb{PSV}_{\mathbb{RISK\:NEUTRAL}} =\! \mathbb{PSV}_{\mathbb{UNCOND},\: \mathbb{UNTIL}\big[T_{i}\big]}\big),\: \big(\mathbb{PD}_{\mathbb{RISK\:NEUTRAL}} =\! \mathbb{PD}_{\mathbb{UNCOND},\: \mathbb{DURING}\big[T_{i}\big]} \big)\big]  \)</span>.
 					<br>
