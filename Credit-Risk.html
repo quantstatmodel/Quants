@@ -389,7 +389,17 @@
 						This shows that: Any European style Derivative Credit-Adjusted Value can be calculated by -  <br> <span class = "Notes">Increase the Discounting Rate appropriately</span>.
 					</div>
 				</div>	
-				<div class = 'Blog_Header' style = "margin-top: 300px;">
+				<div style = "height: 210px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(242,204,143,.3); border-left: 15px solid #001233; margin-top: 260px;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
+						WRONG WAY RISK
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Notes2">Credit-Exposure</span> depends on Counterparty's Credit-Rating. <br><br><span class = "Math">\( \mathbb{ASSUME} \)</span> I have a <span class = "Notes1">Swap w.r.t. GOLD-Mining Company</span> Where, I pay GLOD Price & receive Fix. If, GOLD's Price falls then, My Credit-Exposure with increase. BUT, My Counterparty's Credit-Rating will fall.
+					</span>
+				</div>
+				<div class = 'Blog_Header' style = "margin-top: 40px;">
 					Gaussian Copula Model : The Time-To-Default
 				</div>
 				<div style = "height: 240px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
@@ -439,7 +449,7 @@
 			</div>
 		</div>	
 
-		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 2270px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 1970px;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
 				<div class = 'Blog_Header' style = "background-color: #bde0fe">
 					Credit Derivative : CDS <span class = "Page_Number">[570]</span>
@@ -527,11 +537,15 @@
 				</div>	
 				<div style = "height: 300px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden;">
 					<span class = "Math">\(\mathbb{ASSUME}\)</span> My CDS's <span class = "Notes2">Ref. Entity is a Bond-Basket</span> with <span class = "Math">\( \big[ \mathbb{PD}_{\mathbb{RISK\:NEUTRAL},\: \mathbb{BOND}_{i}} =\! 2\% ,\: i = 1\big(1\big)100 \big] \)</span>.
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> TOTAL Number of Defaults during applicable Time-line is <span class = "Math">\( \big[N \sim \mathbb{BIN}\big(100, 0.02\big)\big] \)</span>. <br><br>So, <span class = "Math">\(\big[ \mathbb{P}\big[N \geq\! 1 \big] = 86.73\% \big], \: \big[ \mathbb{P}\big[N \geq\! 10 \big] = 00.34\% \big] \)</span> <a href="https://stattrek.com/online-calculator/binomial.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>Therefore the <span class = "Notes1">First//Tenth-To-Default CDS</span> is Expensive//Cheap Which, will decrease//increase if <span class = "Math">\( \big[p \rightarrow 1\big] \)</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> TOTAL Number of Defaults during applicable Time-line is <span class = "Math">\( \big[N\big] \sim \mathbb{BIN}\big(100, 0.02\big) \)</span>. <br><br>So, <span class = "Math">\(\big[ \mathbb{P}\big[N \geq\! 1 \big] = 86.73\% \big], \: \big[ \mathbb{P}\big[N \geq\! 10 \big] = 00.34\% \big] \)</span> <a href="https://stattrek.com/online-calculator/binomial.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. <br>Therefore the <span class = "Notes1">First//Tenth-To-Default CDS</span> is Expensive//Cheap Which, will decrease//increase if <span class = "Math">\( \big[p \rightarrow 1\big] \)</span>.
 					<br>
 					<br>
 					Value of <span class = "Notes">S-CDO</span> will SIMILARly be impacted by the <span class = "Math">\(\mathbb{CORR}\)</span>. If <span class = "Math">\(\big[\mathbb{CORR} \rightarrow 0\big]\)</span> then, <span class = "Notes2">Junior-Equity-Tranch</span> is RISKY.
-				</div>
+				</div>				
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
+			</div>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div class = 'Blog_Header' style = "background-color: #f2cc8f">
 					Credit Derivative : TRS <span class = "Page_Number">[580]</span>
 				</div>
@@ -543,18 +557,7 @@
 						<span class = "Math">\( \mathbb{ASSUME} \)</span> Receiver wants to finance Some Float-Bond Investment. So, He will find a Payer/Bank for TRS. So, Receiver will pay the Float-Interest to Payer Which, Receiver will get from that Float-Bond. <br>ALSO, Payer/Bank will <span class = "Notes1">retain that Bond</span> to mitiget CR. So Here, TRS is <span class = "Notes">like REPOS</span>.
 					</span>
 				</div>		
-			</div>
-			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
-			</div>
-			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
-				<div class = 'Blog_Header' style = "background-color: #83c5be">
-					Credit Derivative : CDO <span class = "Page_Number">[584]</span>
-				</div>
-				<div style = "height: 410px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(131,197,190,.1); border-left: 15px solid #001233;">
-					<span class = "Other_Span" style = "color: #395e7e">
-						CDO is...
-					</span>
-				</div>		
+		
 			</div>
 		</div>	
 	</div>	
