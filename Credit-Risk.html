@@ -404,7 +404,7 @@
 				<div class = 'Blog_Header' style = "margin-top: 40px;">
 					Gaussian Copula Model : The Time-To-Default
 				</div>
-				<div style = "height: 310px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 330px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">
 						With Gaussian Copula, We <span class = "Notes">estimate</span> : The underlying Variables' <span class = "Notes1">CORR Structure</span> from their Marginal Dist<sup>n</sup>.
 						<br>
@@ -414,7 +414,7 @@
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim \mathbb{N} \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is <span class = "Math">\( \mathbb{CDF} \)</span> of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default <span class = "Math">\( \mathbb{CORR} \)</span> between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the <span class = "Math">\( \mathbb{CORR} \)</span> between Equities.
 					<br>
 					<br>
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> : <span class = "Notes2">One Factor Model</span> i.e. <span class = "Math">\( \big[ x_i = a_i F + \sqrt{ 1 - a_i^2 } Z_i \big] \)</span>. <br>Here, <span class = "Math">\( \big[ F \sim \mathbb{N} \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> : <span class = "Notes2">One Factor Model</span> i.e. <span class = "Math">\( \left[ x_i = a_i F + \sqrt{ 1 - a_i^2 } Z_i \right] \)</span>. <br>Here, <span class = "Math">\( \big[ F \sim \mathbb{N} \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
 					<br>
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> : <span class = "Notes2">Default will happen</span> by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. <br><br>So, We have  :
