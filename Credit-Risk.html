@@ -242,7 +242,7 @@
 					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 N \big( d_1 \big) - B_T e^{-rT} N \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
 					<br>
 					<br>
-					Here. <span class = "Math">\( \big[ \mathbb{PD_{\mathbb{RISK\:NEUTRAL}}} =\! N \big( \!\!-\!\!d_2 \big) \big] \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
+					Here. <span class = "Math">\( \big[ \mathbb{PD_{\mathbb{RISK\:NEUTRAL}}} =\! \Phi \big( \!\!-\!\!d_2 \big) \big] \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! N \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V N \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>
@@ -422,7 +422,7 @@
 					<span class = "Math">\( \left[ \Phi^{-1} \big[ Q_i \big( T \big) \big] > a_i F + \sqrt{ 1 - a_i^2 } Z_i \right] \Rightarrow \left[ Z_i <\! \left( \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right) \right] \)</span>.
 					<br>
 					<br>
-					So, <span class = "Math">\(\mathbb{PD}\)</span> GIVEN  <span class = "Math">\( \big[ F \big] \)</span> : <span class = "Math">\( P \left[ Z_i <\! \left( \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right) \right] =\! \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right] \)</span>.					
+					So, <span class = "Math">\(\mathbb{PD}\)</span> GIVEN  <span class = "Math">\( \big[ F \big] \)</span> : <span class = "Math">\( \mathbb{P} \left[ Z_i <\! \left( \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right) \right] =\! \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right] \)</span>.					
 				</div>
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 280px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
 					Credit Risk VaR - HULL
@@ -434,13 +434,13 @@
 					We know that <span class = "Math">\(  \big[ F \sim \mathbb{N} \big(0, 1 \big) \big]  \)</span>. So, We will have :
 					<br>
 					<br>
-					<span class = "Math">\(x = P \big[ F > \Phi^{-1} \big(1 - x\big) \big] = P \big[ F > -\Phi^{-1} \big(x\big) \big] \)</span>
+					<span class = "Math">\(x = \mathbb{P} \left[ F > \Phi^{-1} \big(1 - x\big) \big] = \mathbb{P} \big[ F > -\Phi^{-1} \big(x\big) \right] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \big[ -\sqrt{\mathstrut \: \rho \: } F < \rho^{0.5} \Phi^{-1} \big(x\big) \big ] \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= \mathbb{P} \left[ -\sqrt{\big[ \rho \big]} F < \sqrt{\big[ \rho \big]} \Phi^{-1} \big(x\big) \right] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \rho^{0.5} F}{\sqrt{ 1 \:- \rho }} \right] < \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \rho^{0.5} \Phi^{-1} \big(x\big)}{\sqrt{ 1 \:- \rho }} \right] \right] \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= \mathbb{P} \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \sqrt{\big[ \rho \big]} F}{\sqrt{ 1 \:- \rho }} \right] < \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \sqrt{\big[ \rho \big]} \Phi^{-1} \big(x\big)}{\sqrt{ 1 \:- \rho }} \right] \right] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \rho^{0.5} F}{\sqrt{ 1 \:- \rho }} \right] < V \big( T, x \big) \right] \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= \mathbb{P} \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \sqrt{\big[ \rho \big]} F}{\sqrt{ 1 \:- \rho }} \right] < V \big( T, x \big) \right] \)</span>
 					<br>
 					<br>
 					So, there is <span class = "Math">\(  \big[ x\% \big]  \)</span> Prob. that, <span class = "Notes2">% of Defaults</span> in time <span class = "Math">\(  \big[ T \big]  \)</span> will be LESS than <span class = "Math">\(  \big[ V \big( T, x \big) \big]  \)</span>. Remember, <span class = "Math">\(  \big[ Q_i \big( T \big) \big]  \)</span> is the <span class = "Math">\(  \mathbb{PD}  \)</span> in time <span class = "Math">\(  \big[ T \big]  \)</span>.
