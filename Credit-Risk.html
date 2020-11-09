@@ -404,9 +404,9 @@
 				<div class = 'Blog_Header' style = "margin-top: 40px;">
 					Gaussian Copula Model : The Time-To-Default
 				</div>
-				<div style = "height: 240px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 310px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">
-						With Gaussian Copula, We <span class = "Notes">estimate</span> : The underlying Variables' <span class = "Notes2">CORR Structure</span> from their Marginal Dist<sup>n</sup>.
+						With Gaussian Copula, We <span class = "Notes">estimate</span> : The underlying Variables' <span class = "Notes1">CORR Structure</span> from their Marginal Dist<sup>n</sup>.
 						<br>
 						With Gaussian Copula, We <span class = "Notes">represent</span> : The CORR Structure of 2 Variables Which are NOT Normal.
 					</div>
@@ -414,21 +414,21 @@
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim \mathbb{N} \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is <span class = "Math">\( \mathbb{CDF} \)</span> of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default <span class = "Math">\( \mathbb{CORR} \)</span> between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the <span class = "Math">\( \mathbb{CORR} \)</span> between Equities.
 					<br>
 					<br>
-					Typically, We consider <span class = "Notes">One Factor Model</span> i.e. <span class = "Math">\( \big[ x_i = a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \)</span>. Here, <span class = "Math">\( \big[ F \sim \mathbb{N} \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> : <span class = "Notes2">One Factor Model</span> i.e. <span class = "Math">\( \big[ x_i = a_i F + \sqrt{ 1 - a_i^2 } Z_i \big] \)</span>. <br>Here, <span class = "Math">\( \big[ F \sim \mathbb{N} \big(0, 1 \big) \big] \)</span> is Common Factor affecting Companies. And, <span class = "Math">\( \big[ Z_i \big] \)</span> affecting i<sup>th</sup> Company.
 					<br>
 					<br>
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> : Default will happen by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. So, We have  :
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> : <span class = "Notes2">Default will happen</span> by time  <span class = "Math">\( \big[ T \big] \)</span> if <span class = "Math">\( \big[ x_i < \Phi^{-1} \big[ Q_i \big( T \big) \big] \)</span>. <br><br>So, We have  :
 					<br>
-					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \left( Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \right) \)</span>.
+					<span class = "Math">\( \big[ \Phi^{-1} \big[ Q_i \big( T \big) \big] > a_i F + \big( 1 - a_i^2 \big)^{0.50} Z_i \big] \Rightarrow \left[ Z_i <\! \left( \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right) \right] \)</span>.
 					<br>
 					<br>
-					So, the Prob. of Default GIVEN  <span class = "Math">\( \big[ F \big] \)</span> is : <span class = "Math">\( P \left[ Z_i <\! \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \right] =\! \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right] \)</span>.					
+					So, <span class = "Math">\(\mathbb{PD}\)</span> GIVEN  <span class = "Math">\( \big[ F \big] \)</span> : <span class = "Math">\( P \left[ Z_i <\! \left( \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right) \right] =\! \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right] \)</span>.					
 				</div>
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 280px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
 					Credit Risk VaR - HULL
 				</div>	
 				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Bank has Large Portfolio of Loans. For those Bonds, ALL <span class = "Math">\( \mathbb{PD} \)</span> are <span class = "Notes1">SAME</span> AND, ALL <span class = "Math">\( \big[\mathbb{CoD} =\! \rho\big] \)</span> are <span class = "Notes1">SAME</span>. It is TRUE that, Approximately % of Bonds will default in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \left( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - a_i F}{\big(1 -  a_i^2 \big)^{0.50}} \right], \: a_i^2 =\! \rho \right) \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Bank has Large Portfolio of Loans. For those Bonds, ALL <span class = "Math">\( \mathbb{PD} \)</span> are <span class = "Notes1">SAME</span> AND, ALL <span class = "Math">\( \big[\mathbb{CoD} =\! \rho\big] \)</span> are <span class = "Notes1">SAME</span>. It is TRUE that, Approximately <span class = "Notes">% of Bonds will default</span> in time <span class = "Math">\( \big[ T \big] \)</span> is <span class = "Math">\( \left( \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - a_i F}{\sqrt{ 1 - a_i^2 }} \right], \: a_i^2 =\! \rho \right) \)</span>.
 					<br>
 					<br>
 					We know that <span class = "Math">\(  \big[ F \sim \mathbb{N} \big(0, 1 \big) \big]  \)</span>. So, We will have :
@@ -438,15 +438,15 @@
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \big[ -\rho^{0.5} F < \rho^{0.5} \Phi^{-1} \big(x\big) \big ] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - \rho^{0.5} F}{\big(1 -  \rho \big)^{0.50}} \right] < \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - \rho^{0.5} \Phi^{-1} \big(x\big)}{\big(1 -  \rho \big)^{0.50}} \right] \right] \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \rho^{0.5} F}{\sqrt{ 1 \:- \rho }} \right] < \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \rho^{0.5} \Phi^{-1} \big(x\big)}{\sqrt{ 1 \:- \rho }} \right] \right] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big) - \rho^{0.5} F}{\big(1 -  \rho \big)^{0.50}} \right] < V \big( T, x \big) \right] \)</span>
-					<br>
-					<br>
-					So, there is <span class = "Math">\(  \big[ x\% \big]  \)</span> Prob. that, % of Defaults in time <span class = "Math">\(  \big[ T \big]  \)</span> will be LESS than <span class = "Math">\(  \big[ V \big( T, x \big) \big]  \)</span>. Remember, <span class = "Math">\(  \big[ Q_i \big( T \big) \big]  \)</span> is the PD in time <span class = "Math">\(  \big[ T \big]  \)</span>.
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= P \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \rho^{0.5} F}{\sqrt{ 1 \:- \rho }} \right] < V \big( T, x \big) \right] \)</span>
 					<br>
 					<br>
-					So If, the TOTAL Loan Port. is  <span class = "Math">\(  \big[ $L \big]  \)</span> then, the <span class = "Notes">MAX Possible Loss</span> will be <span class = "Math">\(  \big[ $L \big(1-R\big) V \big( T, x \big) \big]  \)</span>. This is Credit VaR with appropriate C.F. And, the i<sup>th</sup> Bond's Contribution is <span class = "Math">\(  \big[ $L_i \big(1-R\big) V \big( T, x \big) \big]  \)</span>.
+					So, there is <span class = "Math">\(  \big[ x\% \big]  \)</span> Prob. that, <span class = "Notes2">% of Defaults</span> in time <span class = "Math">\(  \big[ T \big]  \)</span> will be LESS than <span class = "Math">\(  \big[ V \big( T, x \big) \big]  \)</span>. Remember, <span class = "Math">\(  \big[ Q_i \big( T \big) \big]  \)</span> is the <span class = "Math">\(  \mathbb{PD}  \)</span> in time <span class = "Math">\(  \big[ T \big]  \)</span>.
+					<br>
+					<br>
+					So If, the TOTAL Loan Port. is  <span class = "Math">\(  \big[ $L \big]  \)</span> then, the <span class = "Notes2">MAX Possible Loss</span> will be <span class = "Math">\(  \big[ $L \big(1-R\big) V \big( T, x \big) \big]  \)</span>. <BR>This is <span class = "Notes">Credit VaR</span> with appropriate <span class = "Math">\(  \mathbb{C.L.}  \)</span> And, the i<sup>th</sup> Bond's Contribution is <span class = "Math">\(  \big[ $L_i \big(1-R\big) V \big( T, x \big) \big]  \)</span>.
 				</div>		
 			</div>
 		</div>	
