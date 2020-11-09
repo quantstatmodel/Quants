@@ -106,18 +106,21 @@
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "margin: 0; padding: 10px;">
 					<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
-					<div style = "height: 220px; width: 60%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;">
+					<div style = "height: 220px; width: 57%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;">
 						<img src = "ACDR.png" style = "margin: auto; width: 100%; display: block" />
 					</div>
-					<div style = "height: 240px; width: 40%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;
-								padding-left: 10px; font-size: 16px;">
-						Prob. that : Bond rated <span class = "Notes">below Caa</span> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
-						<br>
-						<br>
-						Prob. that : Bond rated below <span class = "Notes">below Caa</span> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
-						<br>
-						<br>
-						Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+					<div style = "height: 260px; width: 43%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: -8px; margin-bottom: 8px; padding: 5px; font-size: 16px; border: 1px solid #CCCCCC; border-radius: 8px; background-color: #fff">
+						<div style = "height: 100%; width: 100%; border: 8px solid #CCCCCC; border-radius: 8px;">
+							<div style = "height: 84px; width: 100%; margin: 0; padding: 0; background-color: #F9F9F9; padding: 8px;">
+								Prob. that : Bond rated <span class = "Notes1">below Caa</span> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
+							</div>
+							<div style = "height: 58px; width: 100%; margin: 0; padding: 0; background-color: #fff; padding: 8px;">
+								Prob. that : Bond rated below <span class = "Notes1">below Caa</span> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
+							</div>							
+							<div style = "height: calc(100% - 84px - 58px); width: 100%; margin: 0; padding: 0; background-color: #F9F9F9; padding: 8px; padding-right: 2px;">
+								Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes1">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+							</div>	
+						</div>
 					</div>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = 'Notes'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ \lambda \big( t \big) \big] \)</span>. AND, <span class = "Notes">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ V \big( t \big) \big] \)</span>. So,
 					<br><br>
