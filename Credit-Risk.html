@@ -239,12 +239,12 @@
 					<br>
 					So, We must have <span class = "Math">\( E_T = \mathbb{MAX} \big[ V_T - B_T, \: 0 \big] \)</span>.
 					<br>
-					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 N \big( d_1 \big) - B_T e^{-rT} N \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
+					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 \Phi \big( d_1 \big) - B_T e^{-rT} \Phi \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
 					<br>
 					<br>
 					Here. <span class = "Math">\( \big[ \mathbb{PD_{\mathbb{RISK\:NEUTRAL}}} =\! \Phi \big( \!\!-\!\!d_2 \big) \big] \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! N \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V N \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! \Phi \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V \Phi \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
