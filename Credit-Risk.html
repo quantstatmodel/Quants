@@ -404,13 +404,14 @@
 				<div class = 'Blog_Header' style = "margin-top: 40px;">
 					Gaussian Copula Model : The Time-To-Default
 				</div>
-				<div style = "height: 360px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">
+				<div style = "height: 90px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(189,224,254,.3); border-left: 15px solid #001233;">
+					<span class = "Other_Span" style = "color: #395e7e">
 						With Gaussian Copula, We <span class = "Notes">estimate</span> : The underlying Variables' <span class = "Notes1">CORR Structure</span> from their Marginal Dist<sup>n</sup>.
 						<br>
 						With Gaussian Copula, We <span class = "Notes">represent</span> : The CORR Structure of 2 Variables Which are NOT Normal.
-					</div>
-					<br>
+					</span>
+				</div>	
+				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); margin-top: 10px;">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> there are 2 Companies & Time-To-Default are <span class = "Math">\( \big[ t_1, t_2 \big] \)</span>. Then We transform them as <span class = "Math">\( \big[ x_i = \Phi^{-1} \big[ Q_i \big( t_i \big) \big] \sim \mathbb{N} \big(0, 0, 1, 1, \rho \big), i = 1,2 \big] \)</span> Where, <span class = "Math">\( \big[ Q_i \big] \)</span> is <span class = "Math">\( \mathbb{CDF} \)</span> of <span class = "Math">\( \big[ t_i \big] \)</span>. The Default <span class = "Math">\( \mathbb{CORR} \)</span> between <span class = "Math">\( \big[ t_1, t_2 \big] \)</span> is estimated as <span class = "Math">\( \big[ \rho \big] \)</span> Which, is estimated as the <span class = "Math">\( \mathbb{CORR} \)</span> between Equities.
 					<br>
 					<br>
