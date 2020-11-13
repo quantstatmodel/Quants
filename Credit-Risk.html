@@ -567,7 +567,30 @@
 						<br>
 						<span class = "Math">\( \mathbb{ASSUME} \)</span> Receiver wants to finance Some Float-Bond Investment. So, He will find a Payer/Bank for TRS. So, Receiver will pay the Float-Interest to Payer Which, Receiver will get from that Float-Bond. <br>ALSO, Payer/Bank will <span class = "Notes1">retain that Bond</span> to mitiget CR. So Here, TRS is <span class = "Notes">like REPOS</span>.
 					</span>
-				</div>			
+				</div>	
+				<div class = 'Blog_Header' style = "background-color: #fb8500; margin-top: 50px;">
+					ASSET VALUE MODEL : Migration-Probabilities' Changes' Joint-Dist <span class = "Page_Number">[JP-101]</span>
+				</div>
+				<div style = "height: 90px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233;">
+					<span class = "Other_Span" style = "color: #395e7e">
+						<span class = "Math">\( \mathbb{ASSUME} \)</span> a Process : Company's <span class = "Notes">Asset Value //AV//</span>. <br>This Process's Changes <span class = "Notes1">drives</span> Credit-Ratings' Changes because, this determines : Company's Ability to pay Debts. 
+					</span>
+				</div>	
+				<div style = "height: 760px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden;">					
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ p_{i,\: \big[...\big]} \right] \)</span> is : Probability of Credit-Rating's Change to <span class = "Math">\( \big[ ...\! \big] \)</span> from Current using, <span class = "Notes2">Transition Matrix</span> for <span class = "Math">\( \big[i^{\mathbb{TH}}\big] \)</span> Company.
+					<br>
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ \begin{bmatrix} \:R_{1,\: \mathbb{AV\:CHANGE}}\: \\ \:R_{2,\: \mathbb{AV\:CHANGE}}\: \\ ... \\ \:R_{N,\: \mathbb{AV\:CHANGE}}\: \end{bmatrix} \sim \mathbb{N} \big(0, \big[\big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}} \times \sigma_{i,\: \mathbb{AV\:CHANGE}} \times \sigma_{j,\: \mathbb{AV\:CHANGE}}\big]\big]\big)\right] \)</span>
+					<BR>
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> 
+					<br>
+					&nbsp;&nbsp;<span class = "Math">\( \big[R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}}\big] \ni \big[\mathbb{P}\big[R_{i,\: \mathbb{AV\:CHANGE}} < R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}} \big] \!=\! p_{i,\: \mathbb{DEFAULT}}\big] \)</span>
+					<BR>
+					&nbsp;&nbsp;<span class = "Math">\( \big[R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{CCC}}\big] \ni \big[\mathbb{P}\big[ R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}} < R_{i,\: \mathbb{AV\:CHANGE}} < R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{CCC}} \big] \!=\! p_{i,\: \mathbb{CCC}}\big] \)</span>
+					<br>
+					&nbsp;&nbsp;<span class = "Math">\( \big[...\!\big] \)</span>.
+					<br><br>
+					Using Above, We get <span class = "Math">\( \left[ R_{i,\: \mathbb{AV\:CHANGE},\: \big[...\big]} =\! \Phi^{-1}\left(Z_{\big[...\big]}\right) \sigma_{i,\: \mathbb{AV\:CHANGE}} \right] \)</span>.
+				</div>		
 			</div>
 		</div>	
 	</div>	
