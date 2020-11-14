@@ -611,7 +611,9 @@
 					Joint Default CORR
 				</div>		
 				<div style = "height: 185px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					<span class = "Math">\(\left[ \rho_{i,\: j,\: \mathbb{DEFAULT}} =\! \left[\frac{\big(p_{i,\:j\: \mathbb{DEFAULT}}\big) \:-\: \big(p_{i\: \mathbb{DEFAULT}}\big)\big(p_{j\: \mathbb{DEFAULT}}\big)}{\sqrt{p_{i\: \mathbb{DEFAULT}} \big(1\:-\:p_{j\: \mathbb{DEFAULT}}\big)p_{j\: \mathbb{DEFAULT}} \big(1\:-\:p_{i\: \mathbb{DEFAULT}}\big)}}\right]\right]  \)</span><br> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.e. <span class = "Math">\( \big[ \rho_{i,\: j,\: \mathbb{AV\:CHANGE}} \rightarrow \rho_{i,\: j,\: \mathbb{DEFAULT}} \big] \)</span>. Typically,  <span class = "Math">\( \big[ 60\% \rightarrow 4\% \big] \)</span>.
+					<span class = "Math">\(\left[ \rho_{i,\: j,\: \mathbb{DEFAULT}} =\! \left[\frac{\big(p_{i,\:j\: \mathbb{DEFAULT}}\big) \:-\: \big(p_{i\: \mathbb{DEFAULT}}\big)\big(p_{j\: \mathbb{DEFAULT}}\big)}{\sqrt{p_{i\: \mathbb{DEFAULT}} \big(1\:-\:p_{j\: \mathbb{DEFAULT}}\big)p_{j\: \mathbb{DEFAULT}} \big(1\:-\:p_{i\: \mathbb{DEFAULT}}\big)}}\right]\right]  \)</span>
+					<br> 
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;i.e. <span class = "Math">\( \big[ \rho_{i,\: j,\: \mathbb{AV\:CHANGE}} \rightarrow \rho_{i,\: j,\: \mathbb{DEFAULT}} \big] \)</span>. Typically,  <span class = "Math">\( \big[ 60\% \rightarrow 4\% \big] \)</span>.
 					<br>
 					<br>
 					Hence, the CORR getting <span class = "Notes">BIG Lower</span>. Below shows that : For Junk Bonds, the <span class = "Notes2">DEFAULTs are HIGH CORRed</span> - <br><br> <img src = "Default_Prob.png" style = "margin: auto; width: 600px; display: block" />
@@ -624,16 +626,41 @@
 							2
 					</div> 
 					Estimate : Asset CORR - APPROX. 30%
+				</div>	
+				<div style = "height: calc(35px + 180px + 90px + 20px); width: 100%; margin: 0; padding: 0px; background-color: #fef5ec; overflow: hidden;">
+					<div style = "height: 35px; width: 95%; margin: 0; padding: 5px; float: right; background-color: #7161ef; color: #fff; border-bottom-left-radius: 35px; padding-left: 40px;">
+						2-Step Process
+					</div>
+					<div style = "height: 180px; width: 91%; margin: 0; padding: 15px; float: right; background-color: #d4cffa; border-bottom-left-radius: 35px; padding-left: 25px; position: relative;">
+						Build <span class = "Math">\( \big[\mathbb{SD},\: \mathbb{CORR} \big] \)</span> for <span class = "Notes">Country-Industry Combination/Pair</span> e.g. German Chemical Industry w.r.t. US Insurance Industry <br>&nbsp;&nbsp; Use <span class = "Math">\( \big[\mathbb{FREQ^n} \:\rightarrow\: \mathbb{STD.}|\:\mathbb{WEEK} \big] \)</span> & <span class = "Math">\( \mathbb{ASSUME} \)</span> it reflects <span class = "Math">\( \big[ \mathbb{YEAR}/\mathbb{QUARTER} \big] \)</span> Stats <br>&nbsp;&nbsp;&nbsp;&nbsp;For <span class = "Notes2">Country, MSCI Index</span> is used. If, for a Country-Industry Combination/Pair, Industry Data is <span class = "Notes1">NOT</span> avaiable, use <span class = "Notes1">COMBINATION</span> of <span class = "Notes2">MSCI Index</span> &  <span class = "Notes2">MSCI worldwide &lt; Industry &gt; index</span>.
+					</div>
+					<div style = "height: 90px; width: 87%; margin: 0; padding: 15px; float: right; background-color: #e2dffb; border-bottom-left-radius: 35px; padding-left: 25px; position: relative;">
+						<span class = "Math">\( \big[\mathbb{MAP} \big] \)</span> <span class = "Notes1">Obligor</span> to <span class = "Notes">Country-Industry Combination/Pair</span>. A Obligor can be <span class = "Math">\( \big[20\% \big] \)</span> US & <span class = "Math">\( \big[80\% \big] \)</span> UK.
+					</div>
 				</div>		
-				<div style = "height: 60px; width: 95%; margin: 0; padding: 15px; float: right; background-color: #ff70a6; color: #fff; border-bottom-left-radius: 35px; padding-left: 40px;">
-					2-Step Process
-				</div>
-				<div style = "height: 180px; width: 91%; margin: 0; padding: 15px; float: right; background-color: rgba(255,112,166, .3); border-bottom-left-radius: 35px; padding-left: 25px; position: relative;">
-					Build <span class = "Math">\( \big[\mathbb{SD},\: \mathbb{CORR} \big] \)</span> for <span class = "Notes">Country-Industry Combination/Pair</span> e.g. German Chemical Industry w.r.t. US Insurance Industry <br>&nbsp;&nbsp; Use <span class = "Math">\( \big[\mathbb{FREQ^n} \:\rightarrow\: \mathbb{STD.}|\:\mathbb{WEEK} \big] \)</span> & <span class = "Math">\( \mathbb{ASSUME} \)</span> it reflects <span class = "Math">\( \big[ \mathbb{YEAR}/\mathbb{QUARTER} \big] \)</span> Stats <br>&nbsp;&nbsp;&nbsp;&nbsp;For <span class = "Notes2">Country, MSCI Index</span> is used. If, for a Country-Industry Combination/Pair, Industry Data is <span class = "Notes1">NOT</span> avaiable, use <span class = "Notes1">COMBINATION</span> of <span class = "Notes2">MSCI Index</span> &  <span class = "Notes2">MSCI worldwide &lt; Industry &gt; index</span>.
-				</div>
-				<div style = "height: 90px; width: 87%; margin: 0; padding: 15px; float: right; background-color: rgba(255,112,166, .15); border-bottom-left-radius: 35px; padding-left: 25px; position: relative;">
-					<span class = "Math">\( \big[\mathbb{MAP} \big] \)</span> <span class = "Notes1">Obligor</span> to <span class = "Notes">Country-Industry Combination/Pair</span>. A Obligor can be <span class = "Math">\( \big[20\% \big] \)</span> US & <span class = "Math">\( \big[80\% \big] \)</span> UK.
-				</div>
+				
+				<div style = "height: 600px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden;">
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> We have <span class = "Math">\( \big[2\big] \)</span> Obligors with Industries <span class = "Math">\( \big[\mathbb{OBLG}_{1,\: \mathbb{US},\: \mathbb{INDUSTRY}_1},\: \mathbb{OBLG}_{2,\: \mathbb{UK},\: \mathbb{INDUSTRY}_2, \: \mathbb{INDUSTRY}_3}\big] \)</span>.
+					<br>
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> Industry <span class = "Notes1">Concentrations</span> : <span class = "Math">\( \big[\mathbb{W}_{\big[1, \: 1\big]},\: \big(\mathbb{W}_{\big[2, \: 2\big]}, \: \mathbb{W}_{\big[2, \: 3\big]}\big)\big]\% \)</span>.
+					<br>
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> <span class = "Notes1">Index Specific</span> Movements : <span class = "Math">\( \big[\alpha_{\big[1\big]},\: \alpha_{\big[2\big]}\big]\% \)</span>.
+					<br>
+					<br>
+					Therefore, <span class = "Math">\(\mathbb{VOLATILITY}\)</span> of Index Which, is formed by <span class = "Notes">SAME Weightages of Obligors</span> :
+					<br>
+					<br>
+					<span class = "Math">\( \left[ \sigma_{\mathbb{INDEX}, \: \mathbb{OBLG}_k} = \: \sqrt{\sum_{i =\! 1}^n {\mathbb{W}_{\big[k, \: i\big]}}^2 {\sigma_{\mathbb{INDEX}_{\big[k, \: i\big]}}}^2 + \: \sum_{i =\! 1}^n \sum_{j =\! 1}^n {\mathbb{W}_{\big[k, \: i\big]}}{\mathbb{W}_{\big[k, \: j\big]}} {\sigma_{\mathbb{INDEX}_{\big[k, \: i\big]}, \: \mathbb{INDEX}_{\big[k, \: j\big]}}} } \:\: \right] \)</span>.
+					<br>
+					<br>
+					Therefore, We will construct <span class = "Notes2">Obligor's Return</span> :
+					<br>
+					<br>
+					<span class = "Math">\( \left[ R_{\mathbb{OBLG}_k} = \: \alpha_{\big[k\big]} \left( \sum_{i =\! 1}^n \left[\frac{{\mathbb{W}_{\big[k, \: i\big]}} {\sigma_{\mathbb{INDEX}_{\big[k, \: i\big]}}} }{\sigma_{\mathbb{INDEX}, \: \mathbb{OBLG}_k}}\right] \right) R_{\mathbb{INDEX}_{\big[k, \: i\big]}} + \: \sqrt{1 - \: {\alpha_{\big[k\big]}}^2 } R_{\mathbb{OBLG}_{k, \: \mathbb{SPECIFIC}}} \right] \)</span>.
+					<br>
+					<br>
+					Therefore, We calculate <span class = "Math">\( \big[ \rho_{m,\: n,\: \mathbb{AV\:CHANGE}} = \: \mathbb{CORR}\big[R_{\mathbb{OBLG}_m}, R_{\mathbb{OBLG}_n}\big] \big] \)</span> from just the <span class = "Math">\(\mathbb{CORR}\)</span> between <span class = "Notes2">Indices</span>.
+				</div>	
 			</div>
 		</div>	
 	</div>	
