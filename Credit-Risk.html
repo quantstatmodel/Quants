@@ -583,7 +583,7 @@
 						<span class = "Math">\( \mathbb{ASSUME} \)</span> AVs are <span class = "Notes">Perfect CORR</span>. Hence, <span class = "Math">\( \big[ \mathbb{PD}_{i, \:j} = \mathbb{PD}_{i} \big] \)</span>
 					</span>
 				</div>
-				<div style = "height: 610px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden; margin-top: 20px;">					
+				<div style = "height: 630px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden; margin-top: 20px;">					
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ p_{i,\: \big[...\big]} \right] \)</span> is : Probability of Credit-Rating's Change to <span class = "Math">\( \big[ ...\! \big] \)</span> from Current using, <span class = "Notes2">Transition Matrix</span> for <span class = "Math">\( \big[i^{\mathbb{TH}}\big] \)</span> Company.
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ \begin{bmatrix} \:R_{1,\: \mathbb{AV\:CHANGE}}\: \\ \:R_{2,\: \mathbb{AV\:CHANGE}}\: \\ ... \\ \:R_{N,\: \mathbb{AV\:CHANGE}}\: \end{bmatrix} \sim \mathbb{N} \big(0, \big[\big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}} \times \sigma_{i,\: \mathbb{AV\:CHANGE}} \times \sigma_{j,\: \mathbb{AV\:CHANGE}}\big]\big]\big)\right] \)</span>
@@ -599,10 +599,10 @@
 					Using Above, We get <span class = "Math">\( \left[ R_{i,\: \mathbb{AV\:CHANGE},\: \big[...\big]} =\! \Phi^{-1}\left(Z_{\big[...\big]}\right) \sigma_{i,\: \mathbb{AV\:CHANGE}}\:\:\forall i \right] \)</span>. <BR>Then, estimate the <span class = "Notes2">Joint Transition Probabilities Table</span> by : <br>
 					<span class = "Math">\( \mathbb{P}\big[ R_{i,\: \mathbb{AV\:CHANGE}} < R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}},\: R_{j,\: \mathbb{AV\:CHANGE}} < R_{j,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}} \big] =\! p_{i,\:j\: \mathbb{DEFAULT}, \:\mathbb{EST}}\big] \)</span>
 					<br><br>
-					Here, We <span class = "Notes1">need values</span> for <span class = "Math">\( \big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}}\big] \)</span>. BUT, <span class = "Math">\( \big[\sigma_{i,\: \mathbb{AV\:CHANGE}}\big] \)</span> will <span class = "Notes1">CANCEL OUT</span>. <br><br>To understand this <span class = "Math">\( \big[\sigma\big] \)</span> case, <span class = "Math">\(\mathbb{ASSUME}\)</span> We have <span class = "Math">\( \big[2\big] \)</span> Obligors with <span class = "Notes">SAME</span> Credit-Rating BUT, 1<sup>ST</sup> has <span class = "Notes">HIGH</span> <span class = "Math">\( \big[\sigma\big] \)</span>. For this Obligor, THRESHOLDs will be HIGH BUT, Transition Matrix will be SAME. For Credit-Risk, <span class = "Notes2">Transition Matrix</span> is MORE Important.
+					Here, We <span class = "Notes1">need values</span> for <span class = "Math">\( \big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}}\big] \)</span>. BUT, <span class = "Math">\( \big[\sigma_{i,\: \mathbb{AV\:CHANGE}}\big] \)</span> will <span class = "Notes1">CANCEL OUT</span>. <br><br>To understand this <span class = "Math">\( \big[\sigma\big] \)</span> case, <span class = "Math">\(\mathbb{ASSUME}\)</span> We have <span class = "Math">\( \big[2\big] \)</span> Obligors with <span class = "Notes">SAME</span> Credit-Rating BUT, 1<sup>ST</sup> has <span class = "Notes">HIGH</span> <span class = "Math">\( \big[\sigma\big] \)</span>. For this Obligor, <span class = "Notes1">THRESHOLDs</span> will be HIGH BUT, Transition Matrix will be SAME. <br>For Credit-Risk, <span class = "Notes2">Transition Matrix</span> is MORE Important.
 				</div>	
 
-				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #fb8500; border-radius: 0px; margin-top: 60px; padding-left: 60px; border-bottom: 4px solid #fb8500; font-size: 24px; position: relative;">
+				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #fb8500; border-radius: 0px; margin-top: 40px; padding-left: 60px; border-bottom: 4px solid #fb8500; font-size: 24px; position: relative;">
 					<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: rgba(251,133,0,.6); font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;
 										position: absolute; top: -20px; left: 20px;">
