@@ -431,7 +431,7 @@
 				<div class = 'Blog_Header'>
 					Adjust : Derivative's Value for Counterparty PD i.e. cVA
 				</div>
-				<div style = "height: 290px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 380px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> I have a Derivative that lasts <span class = "Notes2">till time</span> <span class = "Math">\( \big[ T \big] \)</span>. It's Default can happen at time <span class = "Math">\( \big[ T_1, T_2, ..., T_n=T \big] \)</span>.
 					<br>
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, there is NO Default then, this Derivative's Value is <span class = "Math">\( \big[ f_{T_i} \big] \)</span>.
@@ -449,14 +449,14 @@
 					<br>
 					One such Derivative is ZCB, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
 					<br>
-					This gives <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} e^{- \big( y^{*} - y \big) T } \big] \)</span>. Here, <span class = "Math">\( \big[ y^{*}, y \big] \)</span> are the Yields for My Counterparty's ZCB and Risk-Free ZCB.
-					<br>
-					<br>
-					<div style = "height: 80px; width: 100%; margin: 0; padding: 10px; border: 1px solid #666666">
-						This shows that: Any European style Derivative Credit-Adjusted Value can be calculated by -  <br> <span class = "Notes">Increase the Discounting Rate appropriately</span>.
-					</div>
+					This gives <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} e^{- \big( y^{*} - y \big) T } \big] \)</span>. Here, <span class = "Math">\( \big[ y^{*}, y \big] \)</span> are the Yields for <span class = "Math">\( \big[\mathbb{ZCB}_{\mathbb{COUNTERPARTY}}\big], \: \big[\mathbb{ZCB}_{\mathbb{RISK\:FREE}}\big] \)</span>.
 				</div>	
-				<div style = "height: 210px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(242,204,143,.3); border-left: 15px solid #001233; margin-top: 260px;">
+				<div style = "height: 85px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 60px; border-bottom: 0px solid #EBDBF8; ">
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						This shows that: Any European style Derivative Credit-Adjusted Value can be calculated by -  <br> <span class = "Notes">Increase the Discounting Rate appropriately</span>.
+					</span>
+				</div>
+				<div style = "height: 210px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(242,204,143,.3); border-left: 15px solid #001233; margin-top: 60px;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
 						WRONG WAY RISK
 					</span>
@@ -466,7 +466,28 @@
 						<span class = "Notes2">Credit-Exposure</span> depends <span class = "Notes">-VEly</span> on Counterparty's <span class = "Notes2">Credit-Rating</span>. <br><br><span class = "Math">\( \mathbb{ASSUME} \)</span> I have a <span class = "Notes1">Swap w.r.t. GOLD-Mining Company</span> Where, I pay GOLD Price & receive Fixed. If, GOLD's Price falls then, My Credit-Exposure with increase. BUT, My Counterparty's Credit-Rating will fall.
 					</span>
 				</div>
-						
+
+				<div class = 'Blog_Header' style = "margin-top: 60px;">
+					PD's Historical Volatility <span class = "Page_Number1">[JP-77]</span>
+				</div>
+				<div style = "height: 300px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					<div style = "height: 140px; width: 58%; margin: 0; padding: 0; display: inline-block; float: left;">
+						There is <span class = "Math">\( \big[\mathbb{VOLATILITY}\big] \)</span> in <span class = "Math">\( \big[\mathbb{PD}\big] \)</span>, because : <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Notes1">HIGH-Yield-Bond's</span> issuance is <span class = "Notes">NOT SAME</span> for every Year OR, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Defaults are just <span class = "Notes">Random-Event</span> OR, <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;There is <span class = "Notes">Business-Cycle</span> Which, drives MORE/LESS Defaults. 
+					</div>
+					<div style = "height: auto; width: 42%; margin: 0; padding: 0; display: inline-block; float: left; margin-top: -10px; margin-left: -10px;">
+						<div style = "height: auto; width: 100%; margin: 0 auto; padding: 0">
+							<img src = "Default_Volatility.png" style = "margin: auto; width: 400px; display: block" />
+						</div>
+					</div>
+				</div>	
+				
+
+				<div class = 'Blog_Header' style = "margin-top: 20px;">
+					Holding-P-Return's Volatility <span class = "Page_Number1">[JP-78]</span>
+				</div>
+				<div style = "height: 140px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					
+				</div>						
 			</div>
 		</div>	
 
