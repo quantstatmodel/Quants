@@ -176,17 +176,21 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 240px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) \overline {\lambda  \big( T \big)} \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
-					<div style = "height: 55px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 15px; margin-left: 15px; font-size: 18px; padding-top: 15px;">
-						This is basically, 2-Factor formula i.e. CS and RR.
-					</div>
-					<div style = "height: 55px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px;">
+				<div style = "height: 25px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) \overline {\lambda  \big( T \big)} \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :					
+				</div>
+				<div style = "height: 55px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 60px; border-bottom: 0px solid #EBDBF8; ">
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						This is basically, <span class = "Notes2">2-Factor formula</span> i.e. CS and RR.
+					</span>
+				</div>
+				<div style = "height: 65px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 0px solid #EBDBF8; ">
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						In above formula, We should have <span class = "Math">\( \big[ s \: \leq \overline {\lambda  \big( T \big)}  \big] \)</span>. However, in Real-life, this is <span class = "Notes">NOT</span> the case.
-					</div>
+					</span>
 				</div>
 
-				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 40px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
@@ -202,7 +206,7 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 620px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 330px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> a regular coupon paying Corporate Bond with Yield <span class = "Math">\( \big[y\%\big] \)</span> & RFR <span class = "Math">\( \big[r\%\big] \)</span> & Life <span class = "Math">\( \big[T\big] \)</span> years. <br><span class = "Math">\( \mathbb{ASSUME} \)</span> during the life-time, this Bond can Default at times <span class = "Math">\( \big[ T_1, T_2, ..., T_n \big] \)</span> which, usually coincides with the Coupon paying dates.
 					<br><span class = "Math">\(  \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[Q =\! \mathbb{PD}_{\mathbb{UNCOND}}/\mathbb{YEAR}_{ \big[0,\: T\big]} \right] \)</span>.
 					<br>
@@ -213,17 +217,20 @@
 					So, the PV of above is <span class = "Math">\( \big[ \big( B_{r,\: T_i} - R \big) Q  \big] e^{-r T_i} \)</span>. Hence Overall PV is <span class = "Math">\( \big[ \mathbb{LGD}_{\mathbb{PV}} =\! \sum_{i=1}^{n} \big( B_{r,\: T_i} - R \big) Q   e^{-r T_i} \big] \)</span>.
 					<br>
 					<br>
-					So, <span class = "Math">\( \big[ \big( B_{r,\: T_0} - B_{y,\: T_0} \big) =\! \mathbb{LGD}_{\mathbb{PV}}\big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q =\! Q_{\mathbb{RISK\:NEUTRAL}} \big] \)</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. <BR>So, if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).
-					
-					<div style = "height: 105px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; margin-top: 40px; margin-left: 15px; font-size: 18px;">
+					So, <span class = "Math">\( \big[ \big( B_{r,\: T_0} - B_{y,\: T_0} \big) =\! \mathbb{LGD}_{\mathbb{PV}}\big] \)</span>. Use this, to calculate <span class = "Math">\( \big[ Q =\! Q_{\mathbb{RISK\:NEUTRAL}} \big] \)</span> As, We discounted using <span class = "Math">\( \big[r\big] \)</span>. <BR>So, if <span class = "Math">\( \big[ B_{r,\: T_0} - B_{y,\: T_0} \big] \)</span> is HIGH then, <span class = "Math">\( \big[Q\big] \)</span> will be HIGH (this happened during 2007 Crisis).					
+				</div>
+				<div style = "height: 85px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 60px; border-bottom: 0px solid #EBDBF8; ">
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						Different Bonds will have different Maturities. Therefore, We can have Default Prob's <span class = "Notes2">Term-Structure</span>. <span class = "Math">\( \mathbb{ASSUME} \)</span>. We have Bonds with Maturities <span class = "Math">\( \big[3\mathbb{Y}, 5\mathbb{Y}, 7\mathbb{Y}\big] \)</span>. 1<sup>st</sup> is used to estimate Yearly <span class = "Math">\( \mathbb{PD} \)</span> for <span class = "Math">\( \big[ 3\mathbb{Y} \big] \)</span>. 2<sup>nd</sup> is used to estimate Yearly <span class = "Math">\( \mathbb{PD} \)</span> for <span class = "Math">\( \big[ 4,5\mathbb{Y} \big] \)</span> etc.
-					</div>
-					<div style = "height: 90px; width: 95%; margin: 0; padding: 10px; border: 1px solid #b2b2b2; border-top: 0px; margin-top: 0px; margin-left: 15px; font-size: 18px; padding-top: 12px;">
-						Here, the <span class = "Math">\( \mathbb{ASSUMPTION} \)</span> is : Corporate Bond's Value only depends on <span class = "Math">\( \mathbb{PD} \)</span>. This is <span class = "Math">\( \mathbb{FALSE} \)</span> As, it also <span class = "Notes1">depends on Liquidity</span>.
-					</div>
+					</span>
+				</div>
+				<div style = "height: 65px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 0px solid #EBDBF8; ">
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\( \mathbb{ASSUMPTION} \)</span> : Corporate Bond's Value only depends on <span class = "Math">\( \mathbb{PD} \)</span>. This is <span class = "Math">\( \mathbb{FALSE} \)</span> As, it also <span class = "Notes1">depends on Liquidity</span>.
+					</span>
 				</div>
 
-				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 40px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
