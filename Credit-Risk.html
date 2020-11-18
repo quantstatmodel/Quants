@@ -242,20 +242,23 @@
 					</div>
 				</div>
 				<div style = "height: 280px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Company has ONLY 1 Bond outstanding at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, V_t, B_t \big] \)</span>.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> a Company has <span class = "Notes2">ONLY 1 Bond outstanding</span> at time <span class = "Math">\( \big[ T \big] \)</span>. It's Equity, Value, Bond are <span class = "Math">\( \big[ E_t, \: V_t, \: B_t \big] \)</span>.
 					<br>
 					<br>
-					So, We must have <span class = "Math">\( E_T = \mathbb{MAX} \big[ V_T - B_T, \: 0 \big] \)</span>.
+					So, We must have : 
 					<br>
-					This is CALL Option Payoff. So, <span class = "Math">\( E_0 = V_0 \Phi \big( d_1 \big) - B_T e^{-rT} \Phi \big( d_2 \big) \)</span>. We know <span class = "Math">\( \big[ E_0 \big] \)</span> from the Stock Market. So, We can calculate  <span class = "Math">\( \big[ V_0 \big] \)</span>.
+					<span class = "Math">\( \big[E_T = \mathbb{MAX} \big[ V_T - B_T, \: 0 \big]\big] \Rightarrow \big[ E_0 = V_0 \Phi \big( d_1 \big) - B_T e^{-rT} \Phi \big( d_2 \big) \big] \)</span>.
 					<br>
 					<br>
-					Here. <span class = "Math">\( \big[ \mathbb{PD_{\mathbb{RISK\:NEUTRAL}}} =\! \Phi \big( \!\!-\!\!d_2 \big) \big] \)</span>. This requires estimates of <span class = "Math">\( \big[ V_0, \sigma_V \big] \)</span>.
+					ALSO,
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  For <span class = "Math">\( \big[ \sigma_V \big] \)</span> We have : <span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! \Phi \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V \Phi \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					<span class = "Math">\( \left[ \frac{dE_0}{E_0} =\! \Phi \big( d_1 \big) \frac{dV_0}{V_0} \frac{V_0}{E_0} \right] \Rightarrow \left[ \sigma_E = \sigma_V \Phi \big( d_1 \big) \frac{V_0}{E_0} \right] \)</span> <a href="https://quant.stackexchange.com/questions/59094/estimation-of-default-probability-using-mertons-model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					<br>
+					<br>
+					From, above 2 Equ<sup>n</sup>, We estimate : <span class = "Math">\( \big[ V_0, \: \sigma_V \big] \)</span>. ALSO, <span class = "Math">\( \big[ \mathbb{PD_{\mathbb{RISK\:NEUTRAL}}} =\! \Phi \big( \!\!-\!\!d_2 \big) \big] \)</span>.
 				</div>
 
-				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 10px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
@@ -279,7 +282,7 @@
 					S&P ALSO gives : Historical <span class = "Math">\( \big[\mathbb{PD}\big] \)</span>, for each Credit-Ratings.
 				</div>
 
-				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 20px;">
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; border-top: 1px solid #666666; border-bottom: 1px solid #666666; margin-top: 10px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #d7b8f1; font-size: 22px; color: #555b6e;
