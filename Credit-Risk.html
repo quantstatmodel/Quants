@@ -528,7 +528,7 @@
 				<div class = 'Blog_Header' style = "background-color: #fb8500; margin-top: 40px;">
 					Recovery Rate <span class = "Page_Number">[JP-93]</span>
 				</div>
-				<div style = "height: 260px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+				<div style = "height: 235px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 					<div style = "height: auto; width: 100%; margin: 0; padding: 0; margin-bottom: 12px;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
 							MAIN ATTRIBUTE :
@@ -565,8 +565,48 @@
 					</div>
 					<br>
 					<div style = "height: auto; width: 100%; margin: 0; padding: 0; background-color: rgba(0,0,0,.0); margin-top: 66px;">
-						<span class = "Math">\(\big[ \mathbb{BETA\:{DIST}^n} \big]\)</span> is considered.
+						<span class = "Math">\(\big[ \big[\mathbb{RR}\big]=X \!\sim\! \mathbb{BETA}\big(\alpha, \: \beta\big) \big]\)</span> is considered. <br><span class = "Math">\(\left[ f_{\big[X,\alpha,\beta\big]}\big(x\big) \!=\! x^{\alpha-1} \big(1-x\big)^{\beta-1}, \: 0 \leq \!x \leq \! 1, \: \big(\alpha,\beta\big) \!>\! 0 \right] \:=\: \left[ f_{\big[X,\beta,\alpha\big]}\big(1\!-\!x\big) \!=\! x^{\beta-1} \big(1-x\big)^{\alpha-1} \right]\)</span> <a href="https://en.wikipedia.org/wiki/Beta_distribution" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</div>
+				</div>
+				<div style = "height: auto; min-height: 10px; width: 55%; margin: 0; padding: 0; display: inline-block; float: left;">
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px; border-bottom: 0px; background-color: #fef9f4">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\( \big[ X \!\sim\! \mathbb{BETA}\big(\alpha, \: \beta\big) \big] \Rightarrow \left[ \frac{\beta X}{\alpha \big(1-X\big)} \!\sim\! \mathbb{F}\big(2\alpha, \: 2\beta\big) \right] \)</span>
+						</div>
+					</div>
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px; border-bottom: 0px; background-color: #fefdfc;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\( \left[ \frac{X}{X\:+\:Y} \!\sim\! \mathbb{BETA}\big(\alpha, \: \beta\big) \right] \Rightarrow \big[ X \!\sim\! \mathbb{G}\big(\alpha,\! \theta\big), \: Y \!\sim\! \mathbb{G}\big(\beta,\! \theta\big)  \big] \)</span>
+						</div>
+					</div>
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px; border-bottom: 0px; background-color: #fef9f4;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\( \left[ \frac{X}{X\:+\:Y} \!\sim\! \mathbb{BETA}\big(\alpha, \: \beta\big) \right] \Rightarrow \big[ X \!\sim\! \chi^2\big(2 \alpha \big), \: Y \!\sim\! \chi^{2}\big(2 \beta \big)  \big] \)</span>
+						</div>
+					</div>
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px; border-bottom: 0px; background-color: #fefdfc;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\( \big[ X \!\sim\! \mathbb{BETA}\big(\alpha, \: 1\big) \big] \Rightarrow \big[ -\! \mathbb{LOG}X \!\sim\! \mathbb{EXPO}\big(\alpha\big) \big] \)</span>
+						</div>
+					</div>
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px; border-bottom: 0px; background-color: #fef9f4;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\( \lim_{\beta \to\infty}\big[ \beta \mathbb{BETA}\big(1, \: \beta\big) = \mathbb{EXPO}\big(1\big) \big] \)</span>
+						</div>
+					</div>
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px; border-bottom: 0px; background-color: #fefdfc;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\( \lim_{\beta \to\infty} \big[ \beta \mathbb{BETA}\big(\alpha, \: \beta\big) = \mathbb{GAMMA}\big(\alpha, \: 1\big) \big] \)</span>
+						</div>
+					</div>
+					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; border: 1px solid #fb8500; position: relative; border-left: 0px;; background-color: #fef9f4">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);width: 100%; text-align: center; align-items: center;">
+							<span class = "Math">\(\big[X \!\sim\!  \mathbb{U}\big(0, \: 1\big) \big] \Rightarrow \big[ \mathbb{BETA}\big(1, \: 1\big) \big], \: \big[ \mathbb{BETA}\big(\alpha, \: 1\big) \big]^{\frac{1}{\alpha}} \)</span>
+						</div>
+					</div>
+				</div>
+				<div style = "height: auto; min-height: 10px; width: 45%; margin: 0; padding: 0; display: inline-block; float: left; padding-top: 30px;">
+					<img src = "Beta_Distribution.jpg" style = "margin: auto; width: 450px; display: block" />
 				</div>
 			</div>
 		</div>	
