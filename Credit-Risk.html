@@ -102,7 +102,7 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal; height: 3600px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #06d6a0; text-align: left; font-size: 18px; font-style: normal; height: 4500px;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; color: #4E276E; border-radius: 0px; margin-top: 0px; padding-left: 30px; border-bottom: 4px solid #06d6a0; font-size: 24px; padding-top: 5px; background-color: rgba(6,214,160, 0.2);">
 					FUNDAMENTAL on Survival & Default Probabilities <a href="https://math.stackexchange.com/questions/3899088/estimation-of-survival-probability" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
@@ -155,6 +155,64 @@
 					<br>
 					<b>BBG's Default Risk Data</b> <a href="https://www.bloomberg.com/professional/blog/assessing-firms-credit-default-risk-supply-chain-impacts/#:~:text=The%20Bloomberg%20Default%20Risk%20(DRSK,4.85%25%20probability%20of%20Carillion%27s%20default." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
 					<img src = "https://assets.bbhub.io/professional/sites/10/Graph-2-800x325.png" style = "margin: auto; width: 100%; display: block" />
+				</div>
+
+				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; color: #4E276E; border-radius: 0px; margin-top: 25px; padding-left: 30px; border-bottom: 4px solid #06d6a0; border-top: 4px solid #06d6a0; font-size: 24px; padding-top: 5px; background-color: rgba(6,214,160, 0.2);">
+					Insights on the Transition Matrix
+				</div>
+				<div style = "height: 330px; width: 100%; margin: 0; padding: 15px; background-color: rgba(6,214,160,0.06); border-bottom: 2px solid rgba(6,214,160,0.4);">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						average transition matrix for consecutive years
+					</span> <a href="https://quant.stackexchange.com/questions/1182/how-do-i-get-the-average-transition-matrix-for-three-consecutive-years" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					<br>
+					<div style = "width: 100%; height: auto; min-height: 10px; margin: 0; padding: 0; padding-left: 20px;">
+						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+							<span class = "Math">\( \mathbb{ASSUME} \)</span>, We have <span class = "Math">\( \big[ \mathbb{TM}_{\mathbb{Y}_1}, \: \mathbb{TM}_{\mathbb{Y}_2}, \: \mathbb{TM}_{\mathbb{Y}_3} \big] \)</span>. Then, We will have : <span class = "Math">\( \big[ \mathbb{TM}_{\mathbb{Y}_{\mathbb{AVG}}} = \sqrt[3]{ \mathbb{TM}_{\mathbb{Y}_1}\mathbb{TM}_{\mathbb{Y}_2}\mathbb{TM}_{\mathbb{Y}_3} } \:\:  \big] \)</span>.
+						</span>
+						<div style = "height: auto; min-height: 10px; width: 100%; margin: 0; padding: 0; margin-top: 20px;">
+							<div style = "height: 210px; width: 82%; margin: 0; padding: 0; display: inline-block; float: left; overflow: hidden; background-color: rgba(0,0,0,.0)">
+								<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+									Use, <span class = "Math">\( \big[ \mathbb{SVD} \:= \big[U^{m \times \! m} D_{\mathbb{DIAG.}} V^{n \times \! n} \big] \: \sim \!\! \big[\mathbb{EVD}\big] \big] \)</span>. Then, calculate <span class = "Math">\( \big[ D_{\mathbb{DIAG.}} \big]^{\frac{1}{3}} \)</span>. <span class = "Notes2">NOT UNIQUE</span>. Therefore, We need to use <span class = "Notes">Regularisation Algo.</span> <a href="https://www.researchgate.net/profile/Alexander_Kreinin/publication/215992315_Regularization_Algorithms_for_Transition_Matrices/links/0912f50d38c9e9ca02000000/Regularization-Algorithms-for-Transition-Matrices.pdf" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+									<br>
+									<br>
+									This will work for <span class = "Notes2">ANY Normal Matrix</span> i.e. <span class = "Math">\( \big[ A_{\mathbb{NORMAL}} \Rightarrow \big[AA^{\mathbb{TC}} = A^{\mathbb{TC}}A \big] \big] \)</span>.
+									<br>
+									<br>
+									Therefore it will work if, <span class = "Notes1">Eigen Values</span> are <span class = "Math">\( \big[ \mathbb{COMPLEX} \big] \)</span>. For <span class = "Math">\( \big[\mathbb{TM} \big] \)</span>, they can be <span class = "Math">\( \big[- \!\! \mathbb{VE} \big]\big[\mathbb{COMPLEX} \big] \)</span> <a href="https://quant.stackexchange.com/questions/10645/scaling-of-a-transition-matrix" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+								</span>
+							</div>
+							<div style = "height: 190px; width: 18%; margin: 0; padding: 0; display: inline-block; float: left; overflow: hidden;">
+								<img src = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c8/Singular_value_decomposition_visualisation.svg/330px-Singular_value_decomposition_visualisation.svg.png" style = "margin: auto; width: 150px; display: block; border: 2px solid #555;" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style = "height: 2px; width: 100%; margin: 0; padding: 0; color: #4E276E; border-radius: 0px; margin-top: 5px; padding-left: 30px; border-bottom: 0px solid #06d6a0; border-top: 0px solid #06d6a0; font-size: 24px; padding-top: 5px; background-color: #06d6a0">
+					
+				</div>
+				<div style = "height: 560px; width: 100%; margin: 0; padding: 15px; background-color: rgba(6,214,160,0.06); border-bottom: 2px solid rgba(6,214,160,0.4);">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						From Average Cumulative Default Rate to Transition Matrix
+					</span> <a href="https://quant.stackexchange.com/questions/59488/calculation-of-the-transition-matrix-for-credit-rating/59494?noredirect=1#comment85633_59494" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					<br>
+					<div style = "width: 100%; height: auto; min-height: 10px; margin: 0; padding: 0; padding-left: 20px;">
+						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+							<span class = "Math">\( \mathbb{ASSUME} \)</span>, <span class = "Math">\( \left[ \mathbb{TM}_{\mathbb{Y}_1} \!=\!\! \left(\begin{array}{cc}  p_{1 \rightarrow 1} & p_{2 \rightarrow 1} & ... & p_{K \rightarrow 1} & 0 \\  p_{1 \rightarrow 2} & p_{2 \rightarrow 2} & ... & p_{K \rightarrow 2} & 0 \\ ... & ... & ... & ... & ... \\  p_{1 \rightarrow K} & p_{2 \rightarrow K} & ... & p_{K \rightarrow K} & 0 \\  p_{1 \rightarrow \mathbb{D}} & p_{2 \rightarrow \mathbb{D}} & ... & p_{K \rightarrow \mathbb{D}} & 1 \\ & & & &   \end{array}\right)  \!=\!\! \left(\begin{array}{cc} M & 0\\ p_{\mathbb{D}} & 1 \end{array}\right) \right] \)</span>. 
+							<br>
+							Therefore, We will have : 
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( p_{\mathbb{D}, \: \mathbb{CUM}, \: 1} \:=\:  p_{\mathbb{D}} \:=\: p_{\mathbb{D}} +\! 0 \times \! M  \)</span>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( p_{\mathbb{D}, \: \mathbb{CUM}, \: 2} \:= \left[ \big[\mathbb{TM}_{\mathbb{Y}_1}\mathbb{TM}_{\mathbb{Y}_1} \big]_{2,\:1} =\! \left[ \left(\begin{array}{cc} M & 0\\ p_{\mathbb{D}} & 1 \end{array}\right) \left(\begin{array}{cc} M & 0\\ p_{\mathbb{D}} & 1 \end{array}\right) \right]_{2,\:1}  \:=\: p_{\mathbb{D}} +\! p_{\mathbb{D}} \times \! M \right] \)</span>
+							<br>
+							Generalising, <span class = "Math"> \(\left[\left(\begin{array}{cc} p_{\mathbb{D}, \: \mathbb{CUM}, \: 1} - p_{\mathbb{D}} \\ p_{\mathbb{D}, \: \mathbb{CUM}, \: 2} - p_{\mathbb{D}} \\ ... \\ ...  \\ \end{array}\right) = \left(\begin{array}{cc} 0 \\ p_{\mathbb{D}} \\ ... \\ ...  \\ \end{array}\right) M \right] \Rightarrow \big[ D = CM \big] \Rightarrow \big[ M = \big(C^{'} C \big)^{-\!1} C^{'} D \big] \) </span>
+							<br>
+							<br>
+							There is <span class = "Notes2">Accuracy Issue</span>. Hence, We calculated <span class = "Math">\( \mathbb{INVERSE} \)</span> like above AND ALSO, We should take <span class = "Math">\( \big[n > \!\!\!\!\! > \!\!K \big] \)</span>.
+						</span>
+					</div>
 				</div>
 
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 40px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
