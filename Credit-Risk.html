@@ -936,6 +936,34 @@
 					<span class = "Other_Span" style = "color: #395e7e">
 						If <span class = "Math">\( \big[ \rho_{i,\: j,\: \mathbb{CREDIT\:EVENT}} \rightarrow \epsilon \big] \)</span> then, <span class = "Notes">Credit-Risk is Low</span> <span class = "Page_Number1">[51-JP]</span>. 
 					</span>
+				</div>
+				<div style = "height: 280px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid rgba(251,133,0,.8); ">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
+						DEFAULT CORR [APPROX.] <span class = "Page_Number1">[98-JP]</span>
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\(\left[ \rho_{i,\: j,\: \mathbb{DEFAULT},\: \big[ \mathbb{AVG.} \big]} =\! \left[ \frac{N \left( \frac{{\sigma_{\mathbb{DEFAULT\:RATE}}}^2}{\mu_\mathbb{DEFAULT\:RATE} \:-\: {mu_\mathbb{DEFAULT\:RATE}}^2} \right) - 1}{N - 1} \right]\right] \approx \left[ \frac{{\sigma_{\mathbb{DEFAULT\:RATE}}}^2}{\mu_\mathbb{DEFAULT\:RATE} \:-\: {mu_\mathbb{DEFAULT\:RATE}}^2} \right] \)</span>
+					</span>
+					<br>
+					&nbsp;&nbsp;&nbsp;&nbsp;Using <span class = "Notes1"><span class = "Other_Span" style = "color: #fff; letter-spacing: 1px; font-size: 14px;">AVERAGE CUMULATIVE DEFAULT RATE MATRIX,</span></span> We can calculate <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}}, \: \sigma_{\mathbb{DEFAULT\:RATE}}, \: \forall\big[...\big] \big] \)</span>.
+					<br>
+					<br>
+					Estimation of <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}}, \: \sigma_{\mathbb{DEFAULT\:RATE}}, \: \forall\big[...\big] \big] \)</span> is <span class = "Notes2">NOISY</span> since, We will NOT have many Companies. ALSO, <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}, \mathbb{EST.}} > 0, \: \forall\big[...\big] \big] \)</span>.
+				</div>	
+				<div style = "height: 280px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233; margin-top: 0px; border-bottom: 1px solid rgba(251,133,0,.8); padding-right: 0px;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
+						Above Formula's Derivation <span class = "Notes1">EASY</span> <span class = "Page_Number1">[175-JP]</span>
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\(\big[ X_i = 1\big(0\big) \:\:\big[\rightarrow \mathbb{COMPANY}_{i, \: i = 1\big(1\big)N} \:\: \mathbb{DEFAULT} \big] \:\: \sim \mathbb{BERNOULLI} \big( \mu_{\mathbb{DEFAULT\:RATE}} \equiv \mu_{\mathbb{DR}} \big) \big] \)</span>
+					</span>
+					<div style = "height: auto; min-height: 30px; width: 97%; margin-left: 3%; background-color: rgba(251,133,0,.20); margin-top: 10px; border-left: 1px solid rgba(251,133,0,.8); padding: 10px;">
+
+					</div>
 				</div>					
 
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #fb8500; border-radius: 0px; margin-top: 60px; padding-left: 60px; border-bottom: 4px solid #fb8500; font-size: 24px; position: relative;">
@@ -947,7 +975,7 @@
 					Estimate VaR : SIMULATION [JP-101]
 				</div>		
 				<div style = "height: 225px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					<span class = "Notes">EASY !!!</span> We have, <span class = "Math">\( \left[ \begin{bmatrix} \:R_{1,\: \mathbb{AV\:CHANGE}}\: \\ \:R_{2,\: \mathbb{AV\:CHANGE}}\: \\ ... \\ \:R_{N,\: \mathbb{AV\:CHANGE}}\: \end{bmatrix} \sim \mathbb{N} \big(0, \big[\big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}}\big]\big]\big)\right] \)</span> because, <span class = "Math">\(\mathbb{SD}\)</span> does <span class = "Notes1">NOT matter</span>.
+					<span class = "Notes1">EASY</span> We have, <span class = "Math">\( \left[ \begin{bmatrix} \:R_{1,\: \mathbb{AV\:CHANGE}}\: \\ \:R_{2,\: \mathbb{AV\:CHANGE}}\: \\ ... \\ \:R_{N,\: \mathbb{AV\:CHANGE}}\: \end{bmatrix} \sim \mathbb{N} \big(0, \big[\big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}}\big]\big]\big)\right] \)</span> because, <span class = "Math">\(\mathbb{SD}\)</span> does <span class = "Notes1">NOT matter</span>.
 					<br>
 					<br>
 					So, We draw Random Numbers form Above Dist<sup>n</sup>. Then, based on the <span class = "Notes2">Thresholds</span>, We will get New Credit-Ratings. Hence, We revalue Our Portfolio and calculate VaR.
@@ -964,7 +992,49 @@
 										position: absolute; top: -20px; left: 20px;">
 							4
 					</div> 
-					Credit-Risk : Different Types of Credit-Instruments [JP-58]
+					Credit-CORR : Estimation from the Bond's Spread [JP-100]
+				</div>
+				<div style = "height: 165px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					Risky's Bond's Model have <span class = "Math">\( \big[3\big]\)</span> <span class = "Math">\( \big[ \mathbb{R.V.} \big] \)</span> :
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						Last <span class = "Math">\( \big[2\big]\)</span> are linked with a <span class = "Notes2">Pricing Model</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, We can estimate <span class = "Math">\( \big[\mathbb{PD}\big]\)</span> from <span class = "Math">\( \big[ \mathbb{CS}_{\mathbb{BOND}} \big] \)</span>. Similarly, for Multiple Bonds, the <span class = "Math">\( \left[ p_{\big(i,\: \big[...\big]\big),\: \big(j,\: \big[...\big]\big)} \right] \)</span>.
+					</span>
+					<div style = "height: 90px; width: 60%; margin: 0; padding: 0; margin-top: 10px; border: 1px solid #fb8500;">
+						<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 1px solid #fb8500; background-color: #fee6cc;">
+							<div style = "position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); ">
+								<span class = "Math">\( \big[ r \% \big] \)</span>
+							</div>
+						</div>
+						<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 1px solid #fb8500; background-color: #fee6cc;">
+							<div style = "position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); ">
+								<span class = "Math">\( \big[ \mathbb{CS}_{\mathbb{BOND}} \big] \)</span>
+							</div>
+							<div style = "height: 24px; width: 120px; margin: 0; padding: 0; position: absolute; bottom: 5px; left: -30%; background-color: rgba(255,255,255,0.9); border-radius: 9999px; font-size: 14px; font-family: 'Fjalla One', sans-serif; letter-spacing: 1px;">
+								<div style = "position: relative; height: 100%; width: 100%; margin: 0; padding: 0">
+									<div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
+										INDEPENDENT
+									</div>
+								</div>								
+							</div>
+						</div>
+						<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 0px solid #fb8500; background-color: #fee6cc; ">
+							<div style = "position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); ">
+								<span class = "Math">\( \big[ \mathbb{IF\:DEFAULT} \big] \)</span>
+							</div>
+							<div style = "height: 24px; width: 120px; margin: 0; padding: 0; position: absolute; bottom: 5px; left: -30%; background-color: rgba(255,255,255,0.9); border-radius: 9999px; font-size: 14px; font-family: 'Fjalla One', sans-serif; letter-spacing: 1px;">
+								<div style = "position: relative; height: 100%; width: 100%; margin: 0; padding: 0">
+									<div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%); ">
+										DEPENDENT
+									</div>
+								</div>								
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class = 'Blog_Header' style = "background-color: #8093f1; margin-top: 130px;">
+					Credit-Risk : Different Types of Credit-Instruments  <span class = "Page_Number">[JP-58]</span>
 				</div>
 				<div style = "height: 134px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 10px; border-right: 0px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 60px; border-right: 0px solid #8093f1; display: inline-block; float: left;
