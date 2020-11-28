@@ -825,7 +825,42 @@
 					<br>
 					<br>
 					So If, the TOTAL Loan Port. is  <span class = "Math">\(  \big[ $L \big]  \)</span> then, the <span class = "Notes2">MAX Possible Loss</span> will be <span class = "Math">\(  \big[ $L \big(1-R\big) V \big( T, x \big) \big]  \)</span>. <BR>This is <span class = "Notes">Credit VaR</span> with appropriate <span class = "Math">\(  \mathbb{C.L.}  \)</span> And, the i<sup>th</sup> Bond's Contribution is <span class = "Math">\(  \big[ $L_i \big(1-R\big) V \big( T, x \big) \big]  \)</span>.
-				</div>			
+				</div>	
+				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 5px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px;">
+					Credit Risk SD <span class = "Page_Number1">[JP-46]</span>
+				</div>	
+				<div style = "height: 150px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
+					<span class = "Math">\( {\sigma_{\mathbb{CR}}}^{2} \:= \left[ \sum_{i\:=1}^{K} \left[ p_{i,\: \big[...\big]} \left[ {\mathbb{BOND}_{\mathbb{VALUE}, \: i}}^2 \right]\right] - {\mu_{\mathbb{PORT}}}^2 \right] \:= \sum_{i\:=1}^{K} \left[ p_{i,\: \big[...\big]} \left[ {\mu_{\mathbb{BOND}, \: i}}^2 + {\sigma_{\mathbb{BOND}, \: i}}^2 \right]\right] - {\mu_{\mathbb{PORT}}}^2 \)</span>
+					<br>
+					<span class = "Math">\( {\mu_{\mathbb{PORT}}} \:= \mathbb{E} \left[ \sum_{i\:=1}^{K} \left[ p_{i,\: \big[...\big]} \big[ {\mathbb{BOND}_{\mathbb{VALUE}, \: i}}^{} \big]\right]\right] \: = \sum_{i\:=1}^{K} \left[ p_{i,\: \big[...\big]} \mu_{\mathbb{BOND}, \: i} \right]  \)</span>
+				</div>	
+
+				<div style = "height: 395px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 0px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
+						Above Formula's Derivation <span class = "Notes1">EASY</span> <span class = "Page_Number1">[171-JP]</span>
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\( \mathbb{ASSUME} \)</span>, We have Just <span class = "Math">\( \big[3\big] \)</span> States. So, <span class = "Math">\( \big[f_{\mathbb{TOTAL\:LOSS}} \big(x\big) = \sum_{i\:=1}^{3} \big[ p_i f_{\mathbb{STATE}_i} \big(x\big) \big]\big] \)</span>
+					</span>
+					<div style = "height: auto; min-height: 30px; width: 100%; margin-left: 3%; background-color: #ced6f9; margin-top: 10px; border-left: 1px solid #a0aff4; padding: 10px; overflow: hidden; margin-bottom: 4px;">
+						<span class = "Math">\( \mu_{\mathbb{TOTAL\:LOSS}} \:= {\displaystyle \int } \big[ x f_{\mathbb{TOTAL\:LOSS}} \big(x\big) \big] dx \:= {\displaystyle \int } \big[ x \sum_{i\:=1}^{3} \big[ p_i f_{\mathbb{STATE}_i} \big(x\big) \big] \big] dx  \:= \left[ \sum_{i\:=1}^{3} p_i \mu_i \right]  \)</span>
+					</div>
+
+					<div style = "height: auto; min-height: 30px; width: 100%; margin-left: 3%; background-color: #ced6f9; margin-top: 2px; border-left: 1px solid #a0aff4; padding: 10px; overflow: hidden; margin-bottom: 10px;">
+						<span class = "Math">\( {\sigma_{\mathbb{TOTAL\:LOSS}}}^2 \:= {\displaystyle \int } \big[ \big( x - \mu_{\mathbb{TOTAL\:LOSS}} \big)^2 f_{\mathbb{TOTAL\:LOSS}} \big(x\big) \big] dx   \)</span>
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class = "Math">\( = {\displaystyle \int } \big[ \big( x^2 - 2x \mu_{\mathbb{TOTAL\:LOSS}} + {\mu_{\mathbb{TOTAL\:LOSS}}}^2 \big) \sum_{i\:=1}^{3} \big[ p_i f_{\mathbb{STATE}_i} \big(x\big) \big] \big] dx   \)</span>
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class = "Math">\( = {\displaystyle \int } \big[ x^2 \sum_{i\:=1}^{3} \big[ p_i f_{\mathbb{STATE}_i} \big(x\big) \big] \big] dx \:-  {\mu_{\mathbb{TOTAL\:LOSS}}}^2 \)</span>
+						<br>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class = "Math">\( = \sum_{i\:=1}^{3} p_i \big( \mu_i^2 \:+ \sigma_i^2 \big) \:-  {\mu_{\mathbb{TOTAL\:LOSS}}}^2 \)</span>
+					</div>
+				</div>	
 			</div>
 			<div style = "margin: 0; padding: 0; padding-bottom: 0px; width: 1px; height: auto; min-height: 10000vh; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; background-color: #818181">
 			</div>
@@ -947,10 +982,10 @@
 						<span class = "Math">\(\left[ \rho_{i,\: j,\: \mathbb{DEFAULT},\: \big[ \mathbb{AVG.} \big]} =\! \left[ \frac{N \left( \frac{{\sigma_{\mathbb{DEFAULT\:RATE}}}^2}{\mu_\mathbb{DEFAULT\:RATE} \:-\: {mu_\mathbb{DEFAULT\:RATE}}^2} \right) - 1}{N - 1} \right]\right] \approx \left[ \frac{{\sigma_{\mathbb{DEFAULT\:RATE}}}^2}{\mu_\mathbb{DEFAULT\:RATE} \:-\: {mu_\mathbb{DEFAULT\:RATE}}^2} \right] \)</span>
 					</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;Using <span class = "Notes1"><span class = "Other_Span" style = "color: #fff; letter-spacing: 1px; font-size: 14px;">AVERAGE CUMULATIVE DEFAULT RATE MATRIX,</span></span> We can calculate <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}}, \: \sigma_{\mathbb{DEFAULT\:RATE}}, \: \forall\big[...\big] \big] \)</span>.
+					&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">Using <span class = "Notes1"><span class = "Other_Span" style = "color: #fff; letter-spacing: 1px; font-size: 14px;">AVERAGE CUMULATIVE DEFAULT RATE MATRIX,</span></span> We can calculate <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}}, \: \sigma_{\mathbb{DEFAULT\:RATE}}, \: \forall\big[...\big] \big] \)</span></span>.
 					<br>
 					<br>
-					Estimation of <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}}, \: \sigma_{\mathbb{DEFAULT\:RATE}}, \: \forall\big[...\big] \big] \)</span> is <span class = "Notes2">NOISY</span> since, We will NOT have many Companies. ALSO, <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}, \mathbb{EST.}} > 0, \: \forall\big[...\big] \big] \)</span>.
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">Estimation of <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}}, \: \sigma_{\mathbb{DEFAULT\:RATE}}, \: \forall\big[...\big] \big] \)</span> is <span class = "Notes2">NOISY</span> since, We will NOT have many Companies. ALSO, <span class = "Math">\( \big[ \mu_{\mathbb{DEFAULT\:RATE}, \mathbb{EST.}} > 0, \: \forall\big[...\big] \big] \)</span></span>.
 				</div>	
 				<div style = "height: 320px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233; margin-top: 0px; border-bottom: 1px solid rgba(251,133,0,.8); padding-right: 0px; overflow: hidden;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
@@ -976,7 +1011,7 @@
 				</div>	
 				<div style = "height: 280px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid rgba(251,133,0,.8); ">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
-						Credit-CORR : Estimation from the Bond's Spread <span class = "Page_Number1">[100-JP]</span>
+						CREDIT-CORR : Estimation from the Bond's Spread <span class = "Page_Number1">[100-JP]</span>
 					</span>
 					<div style = "height: 165px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
 						<span class = "Other_Span">Risky's Bond's Model have <span class = "Math">\( \big[3\big]\)</span> <span class = "Math">\( \big[ \mathbb{R.V.} \big] \)</span> : </span>
@@ -984,8 +1019,8 @@
 						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 							Last <span class = "Math">\( \big[2\big]\)</span> are linked with a <span class = "Notes2">Pricing Model</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Therefore, We can estimate <span class = "Math">\( \big[\mathbb{PD}\big]\)</span> from <span class = "Math">\( \big[ \mathbb{CS}_{\mathbb{BOND}} \big] \)</span>. Similarly, for Multiple Bonds, the <span class = "Math">\( \left[ p_{\big(i,\: \big[...\big]\big),\: \big(j,\: \big[...\big]\big)} \right] \)</span>.
 						</span>
-						<div style = "height: 90px; width: 60%; margin: 0; padding: 0; margin-top: 10px; border: 1px solid #fb8500;">
-							<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 1px solid #fb8500; background-color: #fee6cc;">
+						<div style = "height: 90px; width: 60%; margin: 0; padding: 0; margin-top: 10px; border: 1px solid #fb8500; margin-left: 3%; ">
+							<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 1px solid #fb8500; background-color: rgba(251,133,0,.15);">
 								<div style = "position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); ">
 									<span class = "Math">\( \big[ r \% \big] \)</span>
 								</div>
@@ -1002,7 +1037,7 @@
 									</div>								
 								</div>
 							</div>
-							<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 0px solid #fb8500; background-color: #fee6cc; ">
+							<div style = "height: 100%; width: 33.33%; margin: 0; padding: 0; display: inline-block; float: left; position: relative; border-right: 0px solid #fb8500; background-color: rgba(251,133,0,.15); ">
 								<div style = "position: absolute; top: 40%; left: 50%; transform: translate(-50%, -50%); ">
 									<span class = "Math">\( \big[ \mathbb{IF\:DEFAULT} \big] \)</span>
 								</div>
@@ -1064,7 +1099,7 @@
 							<br>
 							If <span class = "Math">\( \big[T_{\mathbb{RD}} \leq\! T_{\mathbb{RISK\:HORI}}\big] \)</span> then, <span class = "Notes2">Risk-Esposure's Future-Value :</span> <span class = "Math">\( \big[ \big[\mathbb{FV}\big] \: \mathbb{OR} \: \big[\mathbb{DEFAULT}\big]   \big] \)</span>
 							<br>
-							If <span class = "Math">\( \big[T_{\mathbb{RD}} >\! T_{\mathbb{RISK\:HORI}}\big] \)</span> then, <span class = "Math">\( \big[ \mathbb{RECEIVALE} =\! \mathbb{ZCB} \big] \)</span>.
+							If <span class = "Math">\( \big[T_{\mathbb{RD}} >\! T_{\mathbb{RISK\:HORI}}\big] \)</span> then, <span class = "Math">\( \big[ \mathbb{RECEIVABLE} =\! \mathbb{ZCB} \big] \)</span>.
 						</div>
 					</div>
 				</div>
