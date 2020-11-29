@@ -669,7 +669,7 @@
 			</div>
 		</div>	
 
-		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 4330px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 8330px;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
 				<div class = 'Blog_Header' style = "background-color: #bde0fe">
 					Credit Derivative : CDS <span class = "Page_Number">[570]</span>
@@ -1103,7 +1103,7 @@
 						</div>
 					</div>
 				</div>
-				<div style = "height: 134px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 2px; border-right: 0px;">
+				<div style = "height: 550px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 2px; border-right: 0px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 60px; border-right: 0px solid #8093f1; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #8093f1">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #ccd3f9; font-size: 22px; color: #555b6e;
@@ -1119,10 +1119,89 @@
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 40px - 140px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-						<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 10px; padding-top: 14px;">
-							Obligor has : Maximum <span class = "Notes1">Loan Limit & Actual Loan</span> <span class = "Math">\( \big[ \mathbb{L}_{\mathbb{MAX}},\: \mathbb{L}\big] \)</span>.
+									text-align: center; background-color: rgba(0,0,0,.0);">
+						<div style = "margin: 0; padding: 0; height: 50px; width: 105%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 10px; padding-top: 14px;">
+							Obligor has : <span class = "Math">\( \big[\mathbb{MAX}\big] \)</span> <span class = "Notes1">Loan Limit & Actual Loan</span> <span class = "Math">\( \big[ \mathbb{L}_{\mathbb{MAX}} =\!\! $1,\: \mathbb{L}, \: \mathbb{L}_{T} =\! f\big(\mathbb{CR}_{\mathbb{OBLIGOR}}\big)\big] \)</span>.
+							
+							
 						</div>
+						<div style = "height: 90px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid rgba(251,133,0,.8); text-align: left;">
+							<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">Sometimes, <span class = "Math">\( \big[y \%\big] \)</span> changes w.r.t. <span class = "Notes2">Obligor's Credit-Rating</span>. Therefore <span class = "Math">\( \big[\mathbb{VOLATILITY}\big] \)</span> will decrease because, ONLY Risk is Now <span class = "Math">\( \big[\mathbb{DEFAULT}\big] \)</span></span>.
+						</div>	
+						<div style = "height: 70px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(251,133,0,.15); border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid rgba(251,133,0,.8); text-align: left;">
+							<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">If, <span class = "Math">\( \big[ \mathbb{L}_{\mathbb{MAX}} = \mathbb{L} \big] \)</span> then, it is just a <span class = "Notes">LOAN</span></span>.
+						</div>
+						<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #9d4edd; border-radius: 0px; margin-top: 10px; padding-left: 30px; border-bottom: 4px solid #9d4edd; font-size: 24px; text-align: left;">
+							Credit Risk Calculation <span class = "Page_Number1">[JP-61]</span>
+						</div>	
+						<div style = "height: 250px; width: 100%; margin: 0; padding: 0px; background-color: rgba(0,0,0,.0); text-align: left;">
+							<div style = "width: 60%; height: auto; min-height: 20px; display: inline-block; float: left; background-color: rgba(0,0,0,.0); border-right: 1px solid #9d4edd">
+								<div style = "height: 100%; width: 100%; margin: 0; padding: 10px;">
+									<span class = "Math">\(\mathbb{ASSUME}\)</span>, <span class = "Math">\( \big[A \: \rightarrow BBB\big] \)</span>
+									<br>
+									<br>
+									Hence, Change in <span class = "Notes2">UN-DRAWN Part : </span> 
+									<br>
+									<span class = "Math">\( \left[1 \:- \frac{\big(100\:-20\big)}{\big(100\:-4.6\big)} \right] = -\!\!16.1\%  \)</span>.
+									<br>
+									<br>
+									Hence, NEW <span class = "Notes2">DRAWN Amt. : </span> &nbsp; <span class = "Math">\( \big[ \mathbb{L} +\! \big(1 -\!\! \mathbb{L}\big) \times \! 16.1\% \big] \)</span>.
+									<br>
+									Now, apply the <span class = "Notes1">Revaluation Est.</span> on above Values. Hence calculate Risk. <span class = "Notes">INCOMPLETE...</span>
+								</div>
+							</div>
+							<div style = "width: calc(40% - 1px); height: 130px; display: inline-block; float: left; padding: 10px;">
+								<img src = "Commitment.png" style = "margin: auto; width: 110%; display: block" />
+							</div>
+						</div>
+					</div>
+				</div>
+				<div style = "height: 70px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 2px; border-right: 0px;">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 60px; border-right: 0px solid #8093f1; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #8093f1">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #ccd3f9; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							3
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: 120px; border-right: 0px solid #fb8500; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #ccd3f9">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 100%; border-radius: 50%; background-color: #ccd3f9; font-size: 18px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							LC
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 40px - 140px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									text-align: center; background-color: rgba(0,0,0,.0);">
+						<div style = "margin: 0; padding: 0; height: 50px; width: 105%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 10px; padding-top: 14px;">
+							This is Just a <span class = "Notes2">LOAN</span>.
+							<span class = "Notes">OFF-BALANCE-SHEET</span>
+						</div>
+						
+					</div>
+				</div>
+				<div style = "height: 70px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 2px; border-right: 0px;">
+					<div style = "margin: 0; padding: 0; height: 100%; width: 60px; border-right: 0px solid #8093f1; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #8093f1">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #ccd3f9; font-size: 22px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							4
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: 120px; border-right: 0px solid #fb8500; display: inline-block; float: left;
+									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #ccd3f9">
+						<div style = "margin: 0; padding: 0; height: 40px; width: 100%; border-radius: 50%; background-color: #ccd3f9; font-size: 18px; color: #555b6e;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+							SWAP
+						</div>
+					</div>
+					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 40px - 140px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									text-align: center; background-color: rgba(0,0,0,.0);">
+						<div style = "margin: 0; padding: 0; height: 50px; width: 105%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 10px; padding-top: 14px;">
+							This is Just a <span class = "Notes2">LOAN</span>.
+							<span class = "Notes">OFF-BALANCE-SHEET</span>
+						</div>
+						
 					</div>
 				</div>
 			</div>
