@@ -669,7 +669,7 @@
 			</div>
 		</div>	
 
-		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 8330px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #f94144; text-align: left; font-size: 18px; font-style: normal; height: 5330px;'>
 			<div style = "margin: 0; padding: 0px; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
 				<div class = 'Blog_Header' style = "background-color: #bde0fe">
 					Credit Derivative : CDS <span class = "Page_Number">[570]</span>
@@ -1180,7 +1180,7 @@
 						
 					</div>
 				</div>
-				<div style = "height: 70px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 2px; border-right: 0px;">
+				<div style = "height: 540px; width: 100%; margin: 0; padding: 0; border: 1px solid #8093f1; border-bottom: 0px solid #8093f1; margin-top: 2px; border-right: 0px;">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 60px; border-right: 0px solid #8093f1; display: inline-block; float: left;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center; background-color: #8093f1">
 						<div style = "margin: 0; padding: 0; height: 40px; width: 40px; border-radius: 50%; background-color: #ccd3f9; font-size: 22px; color: #555b6e;
@@ -1193,15 +1193,49 @@
 						<div style = "margin: 0; padding: 0; height: 40px; width: 100%; border-radius: 50%; background-color: #ccd3f9; font-size: 18px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 							SWAP
+							<br>
+							OR
+							<br>
+							FORWARD
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 40px - 140px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									text-align: center; background-color: rgba(0,0,0,.0);">
-						<div style = "margin: 0; padding: 0; height: 50px; width: 105%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 10px; padding-top: 14px;">
-							This is Just a <span class = "Notes2">LOAN</span>.
-							<span class = "Notes">OFF-BALANCE-SHEET</span>
+									text-align: center; background-color: rgba(0,0,0,.0);">						
+						<div style = "height: 170px; width: calc(100%); margin: 0; padding: 15px; background-color: rgba(242,204,143,.3); border-left: 15px solid #001233; margin-top: 0px; text-align: left;">
+							<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-align: left;">
+								SWAP's CREDIT-LOSS will happen, ONLY-IF
+							</span>
+							<br>
+							<br>
+							<span class = "Other_Span" style = "color: #395e7e; font-size: 16px; text-align: left;">
+								Counterparty's <span class = "Notes1">CREDIT-RATING</span> changes AND Counterparty is <span class = "Notes1">OTM</span>.
+								<br>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For BOND, the Issuer is ALWAYS OTM !!!
+								<BR>
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; MORE <span class = "Math">\(\mathbb{VOLATILITY}\)</span> <span class = "Math">\( \big[ \rightarrow \big] \)</span> MORE <span class = "Notes">$ @RISK</span> for, BAD Credit-Event.
+							</span>
 						</div>
-						
+						<div style = "margin: 0; padding: 0; height: 190px; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding: 12px;">
+							Credit-VaR will be <span class = "Notes">BOND-Like</span>, with below Future value :
+							<br>
+							<span class = "Math">\( V_{\mathbb{SWAP}, \: T}\)</span>
+							<br>
+							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+							<span class = "Math">\( =\! \begin{cases}
+													V_{\mathbb{SWAP}, \: \mathbb{RISK\:FREE}, \: T} - \mathbb{PD}_{\big[...\big], \big[ T, \: T_{\mathbb{SWAP}} \big]} \mathbb{EXPO}_{\mathbb{AVG.} \big[ T, \: T_{\mathbb{SWAP}} \big]} \big(1-\!\mathbb{R}\big),  &  \mathbb{!\:DEFAULT} \\[2ex]
+													V_{\mathbb{SWAP}, \: \mathbb{RISK\:FREE}, \: T} - \mathbb{EXPO}_{\mathbb{EXPECTED}, \: T} \big(1-\!\mathbb{R}\big), & \mathbb{DEFAULT}
+													\end{cases} \)</span>
+						</div>
+						<div style = "height: 170px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 0px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden; text-align: left;">
+							<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
+								NOTE : Calculation for <span class = "Math">\( \left[ \mathbb{EXPO}_{\mathbb{AVG.} \big[ T, \: T_{\mathbb{SWAP}} \big]} \right] \)</span> </span> <span class = "Page_Number1">[67-JP]</span> :
+							</span>
+							<br>
+							<br>
+							<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+								We typically calculate, <span class = "Math">\( \left[ \mathbb{MAX} \left[ \mathbb{EXPO}_{\big[ T_1, \: T_2, \: ..., \: T_{\mathbb{SWAP}}, \:\: 0 \big]} \right] \right] \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Then, adjust them w.r.t. <span class = "Notes2">Time-Value-Of-Money</span>.
+							</span>
+						</div>
 					</div>
 				</div>
 			</div>
