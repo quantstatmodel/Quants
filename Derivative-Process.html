@@ -106,7 +106,7 @@
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Ito's Lemma (Function should be <u>Continuous & 2<sup>nd</sup> differentiable</u>. AND, can be <u>Generalised Function</u> <a href="https://quant.stackexchange.com/questions/55028/the-most-general-conditions-under-which-ito-lemma-holds" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>) -
+					Ito's Lemma (Function should be <span class = "Notes2">Continuous & 2<sup>nd</sup> differentiable</span>. AND, can be <span class = "Notes2">Generalised Function</span> <a href="https://quant.stackexchange.com/questions/55028/the-most-general-conditions-under-which-ito-lemma-holds" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>) -
 					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
 									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
 					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dS =\! \mu_S dt + \sigma_S \: dW_t \implies \: \left[df =\! \left[ \mu_S \frac{\delta f}{\delta S} +  \frac{\delta f}{\delta t} + 0.5 \sigma_S^2 \frac{\delta^2 f}{\delta S^2} \right]dt +  \left[ \sigma_S \frac{\delta f}{\delta S} \right]dW_t \right] \)</span>
@@ -297,13 +297,29 @@
 									font-size: 16px;">
 					Under GBM, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r-0.5 \sigma^2 \big)T + \sigma W_T } \right] \)</span>
 					<br>
-					Assume a Process (apply - Girsanov Theorem) : <span class = 'Math'>\( \left[ W'_t = \big( W_t - \int\limits_{0}^{t} \sigma_s ds \big) = W_t - \sigma t \right] \)</span>
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> a Process (apply - Girsanov Theorem) : <span class = 'Math'>\( \left[ W'_t = \big( W_t - \int\limits_{0}^{t} \sigma_s ds \big) = W_t - \sigma t \right] \)</span>
 					<br>
 					So, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r+0.5 \sigma^2 \big)T + \sigma W'_T } \right] \)</span>
 					<br><br>
-					Option's Price <span class = 'Notes'>w.r.t. Stock Measure</span> : <br><br> <span class = 'Math'>\( \left[ \frac{c_0}{S_0} \right] = \mathbb{E}^{W'} \left[ \frac{c_T}{S_T} \right] = \mathbb{E}^{W'} \mathbb{MAX} \big[ S_T-K, 0 \big] = \mathbb{E}^{W'} \big[ S_T \big] N \big( d_1 \big) - K N \big( d_2 \big) \)</span>. See Page 351, HULL for reference.
+					Option's Price <span class = 'Notes2'>w.r.t. Stock Measure</span> : <br><br> <span class = 'Math'>\( \left[ \frac{c_0}{S_0} \right] = \mathbb{E}^{W'} \left[ \frac{c_T}{S_T} \right] = \mathbb{E}^{W'} \mathbb{MAX} \big[ S_T-K, 0 \big] = \mathbb{E}^{W'} \big[ S_T \big] N \big( d_1 \big) - K N \big( d_2 \big) \)</span>. See Page 351, HULL for reference.
 					<br><br>
 					So, We can say that : Under this New Measure, the Price Process has Expectation as is <span class = 'Math'>\( \left[ \mu_1 =\! \big( \mu +\! \sigma^2 \big) \right] \)</span>. So from this, We can calculate the Expectation.
+				</div>
+				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
+									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
+					Price of an Option with Payoff <span class = 'Math'>\( \left(  \mathbb{MAX} \left[ 1 - \frac{K}{S_T}, 0 \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/59382/pricing-an-option-with-payoff-left1-fracks-t-right" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+				</div>
+				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+					Under GBM, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r-0.5 \sigma^2 \big)T + \sigma W_T } \right] \Rightarrow \left[ \frac{1}{S_T} = \frac{1}{S_0} e^{ - \! \big( r-0.5 \sigma^2 \big)T + \big(-\!\sigma\big) W_T } \right] \)</span>
+					<br>
+					
+					<br>
+					<br>
+					Now, <span class = 'Math'>\( \left[ \:\: \mathbb{E}\left[ \mathbb{MAX} \left[ 1 - \frac{K}{S_T}, 0 \right] \right] = K \mathbb{E}\left[ \mathbb{MAX} \left[ \frac{1}{K} - \frac{1}{S_T}, 0 \right] \right]  \:\: \right] \)</span>.
+					<br>
+					Therefore, We can easily calculate this <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
