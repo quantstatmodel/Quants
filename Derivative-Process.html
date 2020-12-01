@@ -102,7 +102,7 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #da627d; height: 5550px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #da627d; height: 5950px;'>
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
@@ -294,16 +294,59 @@
 					Price of an Option with Payoff <span class = 'Math'>\( \big( S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px;">
-					Under GBM, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r-0.5 \sigma^2 \big)T + \sigma W_T } \right] \)</span>
+									font-size: 16px; overflow: hidden; padding-bottom: 0px;">
+					Let, <span class = 'Math'>\( \mathbb{NUMERAIRE}_{\mathbb{CH.}} : \left[ \mathbb{Q} \rightarrow \mathbb{Q}^{\big[1\big]} \right] : \left[ \frac{ d \mathbb{Q}^{\big[1\big]}}{ d \mathbb{Q}} =\! \left( \frac{S_T}{B_T} \right) \left( \frac{B_0}{S_0} \right) =\! \left( \frac{S_T}{S_0} \right) e^{-rT}  \:\:\left(=\! e^{-0.5 \sigma^2 T \:+ \sigma dW_T } \right)\right]  \)</span>
 					<br>
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> a Process (apply - Girsanov Theorem) : <span class = 'Math'>\( \left[ W'_t = \big( W_t - \int\limits_{0}^{t} \sigma_s ds \big) = W_t - \sigma t \right] \)</span>
+					Hence, Option's Price : <span class = 'Math'>\( \left[ e^{-rT} \mathbb{E}^{\mathbb{Q}} \big[ S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \big] \right] = \left[ e^{-rT} \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \left[ \frac{ d \mathbb{Q}}{d \mathbb{Q^{\big[1\big]}}} S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \right] \right]\)</span>
 					<br>
-					So, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r+0.5 \sigma^2 \big)T + \sigma W'_T } \right] \)</span>
-					<br><br>
-					Option's Price <span class = 'Notes2'>w.r.t. Stock Measure</span> : <br><br> <span class = 'Math'>\( \left[ \frac{c_0}{S_0} \right] = \mathbb{E}^{W'} \left[ \frac{c_T}{S_T} \right] = \mathbb{E}^{W'} \mathbb{MAX} \big[ S_T-K, 0 \big] = \mathbb{E}^{W'} \big[ S_T \big] N \big( d_1 \big) - K N \big( d_2 \big) \)</span>. See Page 351, HULL for reference.
-					<br><br>
-					So, We can say that : Under this New Measure, the Price Process has <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> as is <span class = 'Math'>\( \left[ \mu_1 =\! \big( \mu +\! \sigma^2 \big) \right] \)</span>. So from this, We can calculate the <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span>.
+					<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( =  \big[ S_0 \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[  \mathbb{MAX} \big[ S_T-K, \: 0 \big]\big] \big] \)</span>
+					<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( = \big[ S_0 \big[ \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[ S_T \mathbb{1}_{S_T\:>K} \big] - K \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[  \mathbb{1}_{S_T\:>K} \big] \big] \big] \)</span>
+					<br>
+					<br>
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> a Process <span class = 'Math'>\( \big[ {\mathbb{N}^{\alpha}}_{t, \: T} \big] \)</span>. This pays <span class = 'Math'>\( \big[ {S^{\alpha}}_{} \big] \)</span> at time <span class = 'Math'>\( \big[ T \big] \)</span>. BUT, <span class = 'Math'>\( \big[{\mathbb{N}^{\alpha}}_{t, \: T} \neq {S_{t}}^{\alpha} \big] \)</span> due to <span class = "Notes1">Jensen's inequality</span>.
+					<br>
+					Let, <span class = 'Math'>\( \mathbb{NUMERAIRE}_{\mathbb{CH.}} : \left[ \mathbb{Q}^{\big[1\big]} \rightarrow \mathbb{Q}^{\big[\alpha \big]} \right] : \left[\frac{ d \mathbb{Q}^{\big[\alpha \big]}}{ d \mathbb{Q}^{\big[1\big]}} =\!  \frac{ d \mathbb{Q}^{\big[\alpha \big]}}{ d \mathbb{Q}^{}}  \frac{ d \mathbb{Q}^{}}{ d \mathbb{Q}^{\big[1\big]}} = \! \left( \frac{{\mathbb{N}^{\alpha}}_{T, \: T} }{B_T} \right) \left( \frac{B_0}{{\mathbb{N}^{\alpha}}_{0, \: T} } \right) \left( \frac{S_0}{S_T}  e^{rT}  \right)  = \! \left(  \frac{ {S^{\alpha}}_{T} }{{\mathbb{N}^{\alpha}}_{0, \: T}} \right) \left( \frac{S_0}{S_T} \right) \right] \)</span>
+					<br>
+					So, <span class = 'Math'>\( \big[  \big[ \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[ S_T \mathbb{1}_{S_T\:>K} \big]\big] =\!  \left[ \mathbb{E}^{\mathbb{Q}^{\big[\alpha \big]}} \left[ \left( \frac{{\mathbb{N}^{\alpha}}_{0, \: T}}{{S^{\alpha}}_{T}} \right) \left( \frac{S_T}{S_0} \right) S_T \mathbb{1}_{S_T\:>K} \right]\right] = \! \left[ \frac{{\mathbb{N}^{2}}_{0, \: T}}{S_0} \mathbb{E}^{\mathbb{Q}^{\big[2 \big]}} \big[ \mathbb{1}_{S_T\:>K} \big] \right]_{\alpha \:=\!\: 2} \)</span>
+					<br>
+					<br>
+					Now,
+					<br>
+					Girsanov's Theorem <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0/55477#55477" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \big[ d {W_t}^{\mathbb{P}} = {\phi}_t dt + d {W_t}^{\mathbb{Q}}\big], \: \big[\mathbb{P} \rightarrow \mathbb{Q}\big], \: \left[\frac{d \mathbb{Q}}{d \mathbb{P}} = L_T\right], \: \left[ L_t = e^{-0.5 \int_0^t {\phi}_s^2 ds \:+ \int_0^t {\phi}_s d{W_s}^{\mathbb{P}} } \right] \)</span>.
+					<br>
+					<br>
+					Calculation for <span class = 'Math'>\(  \big[ \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[  \mathbb{1}_{S_T\:>K} \big] \big] \)</span> :
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\(  \big[ dS_t = \big(r +\!\sigma^2\big) S_t dt + {\sigma} S_t d {W_t}^{\mathbb{Q}^{\big[1\big]}} \big] \)</span>. Hence, We can estimate.
+					<br>
+					<br>
+					Calculation for <span class = 'Math'>\(  \big[ \mathbb{E}^{\mathbb{Q}^{\big[2\big]}} \big[  \mathbb{1}_{S_T\:>K} \big] \big] \)</span> :
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					Using Taylor's rule :
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( d\big({S_t}^2\big) = \left[  \big( r S_t \: 2 S_t + 0.5 \sigma^2 {S_t}^2 2 \big) dt \:+ \big( \sigma S_t 2S_t \big)  d {W_t}^{\mathbb{Q}^{}} \right] = \left[  \big( 2r +\! \sigma^2 \big) {S_t}^2 dt \:+ \big( 2\sigma  \big) {S_t}^2 d {W_t}^{\mathbb{Q}^{}} \right] \)</span>
+					<br>
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Now,
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( {\mathbb{N}^{2}}_{0, \: T} \:= e^{-rT} \mathbb{E}^{\mathbb{Q}^{}} \big[ {S_T}^{2} \big] \:= {S_0}^2 e^{-rT} \mathbb{E}^{\mathbb{Q}^{}} \left[ e^{\big[ 2r \:+ \sigma^2 \:\: -\: 0.5 \:\times 2^2 \sigma^2 \big] T \:\:+\:\: 2\sigma {W_T}^{\mathbb{Q}^{}} } \right] \)</span>
+					<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( = {S_0}^2 e^{-rT \:+ \big[ 2r \:+ \sigma^2 \:\: -\: 0.5 \:\times 2^2 \sigma^2 \big] T} \mathbb{E}^{\mathbb{Q}^{}} \left[ e^{2\sigma {W_T}^{\mathbb{Q}^{}} } \right], \: {W_T}^{\mathbb{Q}^{}} \sim \mathbb{N} \big(0, \: T\big) \)</span>
+					<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( = {S_0}^2 e^{-rT \:+ \big[ 2r \:+ \sigma^2 \:\: -\: 0.5 \:\times 2^2 \sigma^2 \big] T} e^{\big[ 0 \:+\: 0.5 \:\times 2^2 \sigma^2 T \big] } \)</span>
+					<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( = {S_0}^2 e^{ \big[r\: + \sigma^2\big]T } \)</span>
+					<br>
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Next,
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\(\frac{ d \mathbb{Q}^{\big[2 \big]}}{ d \mathbb{Q}^{}} =\! \left( \frac{{\mathbb{N}^{\alpha}}_{T, \: T} }{B_T} \right) \left( \frac{B_0}{{\mathbb{N}^{\alpha}}_{0, \: T} } \right) = \left[ {S_0}^{2} e^{\big[ 2r \:+ \sigma^2 \:\: -\: 0.5 \:\times 2^2 \sigma^2 \big] T \:\:+\:\: 2\sigma {W_T}^{\mathbb{Q}^{}} } \right] \left[ e^{-rT} \right] \left[ {S_0}^{-\!2} e^{ -\! \big[r\: + \sigma^2\big]T }\right]  \)</span>
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( =\!  e^{ \big[-\!2 \sigma^2 T \:+\: 2\sigma {W_T}^{\mathbb{Q}^{}}} \big] \)</span>
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\( =\!  e^{ \big[-\!0.5 \big(2 \sigma\big)^2T \:+\: 2\sigma {W_T}^{\mathbb{Q}^{}} \big]} \)</span>
+					<br>
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Finally, <span class = 'Math'>\(  \big[ dS_t = \big(r + \!2\sigma^2\big) S_t dt + {\sigma} S_t d {W_t}^{\mathbb{Q}^{\big[2\big]}} \big] \)</span>. Hence, We can estimate.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
