@@ -102,7 +102,7 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #00a896; padding-bottom: 20px; height: 1450px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #00a896; padding-bottom: 20px; height: 2110px;'>
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
 				<div style = "width: 97%; height: 140px; margin: 0 auto; margin-top: 10px; border: 1px solid #00a896; background-color: rgba(0,0,0,.0);">
 					<div style = "margin: 0; padding: 0; height: 100%; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
@@ -231,9 +231,36 @@
 						<br>
 						<span class = 'Math'>\( \mathbb{E} \left[ \left( \frac{S_{t+1}}{S_t} \right) 1_{ \left[\frac{S_{t+1}}{S_t} \:< K\right]} \right] =\! K \mathbb{E} \left[ 1_{\left[\frac{S_{t+1}}{S_t}\right]} \right] -\! \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right) 1_{\left[\frac{S_{t+1}}{S_t}\right]} \right] \)</span>
 						<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = 'Math'>\(=\! K P \left[ \left[\frac{S_{t+1}}{S_t}\right] <\! K \right] -\!  \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right)^+ \right] \)</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = 'Math'>\(=\! K \mathbb{P} \left[ \left[\frac{S_{t+1}}{S_t}\right] <\! K \right] -\!  \mathbb{E} \left[ \left( K -\! \left[\frac{S_{t+1}}{S_t}\right] \right)^+ \right] \)</span>
 						<br>
 						The 2<sup>nd</sup> Part can be calculated using PUT Options Pricing Formula.
+					</div>
+				</div>	
+				<div style = "width: 97%; height: auto; margin: 0 auto; margin-top: 10px; background-color: rgba(0,0,0,.0);">
+					<div style = "width: 100%; height: auto; margin: 0 auto; padding: 0;">
+						<div style = "margin: 0; padding: 0; height: 650px; width: 80px; border-right: 1px solid #00a896; display: inline-block; float: left;
+										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;
+										border: 1px solid #00a896; ">
+							<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
+											display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
+								7
+							</div>
+						</div>
+						<div style = "margin: 0; padding: 10px; height: 650px; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+										font-size: 16px; border: 1px solid #00a896; border-left: 0px;">
+							<span class = "Notes">Probability of ITM-Maturity w.r.t. Volatility</span> <a href="https://quant.stackexchange.com/questions/59276/probability-of-an-option-maturing-in-the-money-vs-volatility" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> ???
+							<br>
+							<br>
+							<span class = "Math">\( \mathbb{P} \big[S_T >\! K\big] = \mathbb{P} \left[S_0 e^{ \big(\mu - 0.5 \sigma^2 \big) T + \sigma W_T} >\! K\right] = \mathbb{P} \big[Z <\! d_2\big] \)</span>
+							<br><br>
+							Now, <br><span class = "Math">\( {\displaystyle \frac{\delta \mathbb{P} \big[S_T >\! K\big]}{\delta \sigma} }  \)</span>
+							<br>
+							&ensp;&ensp;&ensp;<span class = "Math">\( = {\displaystyle \frac{\delta \mathbb{P} \big[Z <\! d_2\big]}{\delta \sigma} }  =  {\displaystyle \frac{\delta }{\delta \sigma} \left[ \int_{-\! \infty}^{d_2}   f_Z \big(z\big) dz \right] }  =  \left[ {\displaystyle \frac{\delta }{\delta d_2} \int_{-\! \infty}^{d_2} }  f_Z \big(z\big) dz \right] \left[  \displaystyle \frac{\delta d_2 }{\delta \sigma} \right] = f_Z \big(d_2 \big)  \left[  \displaystyle \frac{\delta d_2 }{\delta \sigma} \right]\)</span>	
+
+							<div style = "width: 100%; height: 150px; margin: 0 auto; padding: 0; margin-top: 30px;">
+								<img src = "https://i.stack.imgur.com/8yQcy.png" style = "margin: auto; width: 80%; display: block; border: 1px solid #555;" />
+							</div>					
+						</div>
 					</div>
 				</div>						
 			</div>
@@ -245,7 +272,7 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							7
+							8
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -369,7 +396,7 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							8
+							9
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -390,7 +417,7 @@
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 						<div style = "margin: 0; padding: 0; height: 60px; width: 60px; border-radius: 50%; background-color: #f2b5d4; font-size: 22px; color: #555b6e;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							9
+							10
 						</div>
 					</div>
 					<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
