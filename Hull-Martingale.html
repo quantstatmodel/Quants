@@ -185,16 +185,16 @@
 						<br>
 						This means that that the Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{f_1}{f_2} \right] \)</span> is basically a <span class = "Math">\( \mathbb{MARTINGALE}\)</span>, i.e. it has NO <span class = "Math">\( \mathbb{DRIFT}\).
 					</div>
-					<div style = "height: 570px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 20px; border-bottom: 1px solid #7a49a5;">
+					<div style = "height: 580px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 20px; border-bottom: 1px solid #7a49a5;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; ">
 							Change in Numeraire <span class = "Page_Number1">[665]</span>
 						</span>
 						<br>
 						<br>
 						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-							<span class = "Math">\( \mathbb{ASSUME}\)</span>, <span class = "Math">\( \big[ \lambda \big] \)</span> is the <span class = "Notes1">Old</span> Market Price of Risk. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda \big) dt + \sigma_1 dW_t \right] \)</span>.
+							<span class = "Math">\( \mathbb{ASSUME}\)</span> : <span class = "Math">\( \big[ \lambda = \mathbb{RISK}_{\mathbb{MARKET\:PRICE}, \: \big[ \mathbb{OLD}\big]} \big] \)</span>. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda \big) dt + \sigma_1 dW_t \right] \)</span>.
 							<br>
-							<span class = "Math">\( \mathbb{ASSUME}\)</span>, <span class = "Math">\( \big[ \lambda_1 \big] \)</span> is the <span class = "Notes1">New</span> Market Price of Risk. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda_1 \big) dt + \sigma_1 dW_t \right] \)</span>.
+							<span class = "Math">\( \mathbb{ASSUME}\)</span> : <span class = "Math">\( \big[ \lambda_1 =  \mathbb{RISK}_{\mathbb{MARKET\:PRICE}, \: \big[\mathbb{NEW}\big]} \big] \)</span>. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda_1 \big) dt + \sigma_1 dW_t \right] \)</span>.
 							<br>
 							Therefore, change in <span class = "Math">\(\mathbb{DRIFT}\)</span> : <span class = "Math">\( \big[ \alpha = \big( \lambda_1 - \lambda  \big) \sigma_1 \big] \)</span>
 							<br>
@@ -204,9 +204,9 @@
 							<span class = "Math">\( \mathbb{ASSUME}\)</span> <span class = "Math">\( \left[ w =\!\! \frac{h}{g}  \right] \)</span>, and it's <span class = "Math">\(\mathbb{VOLATILITY}\)</span> is <span class = "Math">\( \big[ \sigma_w = \sigma_h - \sigma_g \big] \)</span>, using Ito's Lemma on Log-Price. Therefore, that <span class = "Math">\(\mathbb{DRIFT}\)</span> change <span class = "Math">\( \big[ \alpha =\! \sigma_w \sigma_1 \big] \)</span>. This is just, <span class = "Math">\( \mathbb{COV} \big[ f_1, w \big] \)</span> because,
 							<br>
 							<br>
-							<span class = "Math">\( \Delta f_1 = a \big(\Delta t\big) + f_1 \sum \sigma_{1, i} \epsilon_i \big( \Delta t \big)^{0.50} \)</span>
+							<span class = "Math">\( \Delta f_1 = a \big[\Delta t\big] + f_1 \sum \sigma_{1, i} \epsilon_i \sqrt{ \big[ \Delta t \big] } \)</span>
 							<br>
-							<span class = "Math">\( \Delta w = b \big(\Delta t\big) + w \sum \sigma_{w, i} \epsilon_i \big( \Delta t \big)^{0.50} \)</span>
+							<span class = "Math">\( \Delta w = b \big[\Delta t\big] + w \sum \sigma_{w, i} \epsilon_i \sqrt{ \big[ \Delta t \big]} \)</span>
 							<br>
 							<br>
 							So, the <span class = "Math">\( \mathbb{COV} \)</span> between them is -
