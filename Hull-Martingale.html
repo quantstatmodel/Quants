@@ -450,10 +450,10 @@
 					</div>
 					<div style = "height: 130px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
 									border: 1px solid #a0c4ff; padding-top: 10px;">
-						<u>DV01</u> is for SINGLE Bond. It is Bond's Price's <b>$</b> change w.r.t. Bond's Yield's 1BP change. This is SAME as <u>Modified Duration</u> i.e. Sensitivity BUT Price's <b>%</b> change. <a href="https://quant.stackexchange.com/questions/34101/whats-the-difference-between-pv01-and-dv01-of-a-bond" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>. For Portfolio case, it is <u>Market-Value weighted</u> Duration <a href="https://analystprep.com/cfa-level-1-exam/fixed-income/portfolio-duration-limitations/#:~:text=Portfolio%20duration%20is%20commonly%20estimated,%2B%20850%2C000%20%2B%20180%2C000%20%3D%201%2C200%2C000." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>. 
+						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[$\big]}\big]\)</span> w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{DV01}\big]\big[\mathbb{PV01}_{\mathbb{PORT.}}\big]\)</span>
 						<br>
-						<br>
-						<u>PV01</u> is for Bond-Portfolio & ALL FI Securities. It is FI's <b>$</b> Price's change w.r.t. Bond's Yield-Curve's 1BP change.
+						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[\%\big]}\big]\)</span> w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{MOD.\:DURATION}\big]]\)</span> <a href="https://quant.stackexchange.com/questions/34101/whats-the-difference-between-pv01-and-dv01-of-a-bond" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+						<br>&ensp;&ensp;&ensp; For <span class = "Notes2">Portfolio's Case</span>, it is <span class = "Math">\(\big[ \mathbb{DURATION}_{\mathbb{MARKET\:VALUE\:WEIGHTED}} \big]\)</span> <a href="https://analystprep.com/cfa-level-1-exam/fixed-income/portfolio-duration-limitations/#:~:text=Portfolio%20duration%20is%20commonly%20estimated,%2B%20850%2C000%20%2B%20180%2C000%20%3D%201%2C200%2C000." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</div>
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
@@ -510,7 +510,7 @@
 					</div>
 					<div style = "height: auto; min-height: 30px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
-						We <u>can price</u> : ZC Bonds i.e. <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>. However, the Formula will be <i>complex</i> <a href="https://quant.stackexchange.com/questions/46527/zero-coupon-bond-price-under-rendleman-bartter-model?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						We <span class = "Notes2">can price</span> : ZC Bonds i.e. <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>. However, the Formula will be <i>complex</i> <a href="https://quant.stackexchange.com/questions/46527/zero-coupon-bond-price-under-rendleman-bartter-model?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</div>
 					<div style = "height: 50px; width: 60%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #52b788; margin-top: 10px;
 									border: 1px solid #52b788;
@@ -524,7 +524,7 @@
 					</div>
 					<div style = "height: auto; min-height: 50px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
-						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. ALSO, We <u>can price</u> <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>
+						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. ALSO, We <span class = "Notes2">can price</span> <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>
 						<br>
 						<br>
 						<b>Parameter Estimation</b> : Use Discrete Version for Parameter Estimation. Example : Fit Weekly Data on Short Term IR. We can just use Regression for Estimation. MLE can also be used.
@@ -537,14 +537,14 @@
 					<div style = "height: 50px; width: 40%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #52b788; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr = a \big( b - r\big)dt + \sigma r^{0.5} dW_t \)</span>
+						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr = a \big( b - r\big)dt + \sigma \sqrt{\big[r\big]} dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 50px; width: 90%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: px solid #b7e4c7; font-size: 16px; margin-bottom: 30px;">
-						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. Additionally, <b>for Rate's Variance, when Rate is High, Variance is also High</b>. ALSO, We <u>can price</u> <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>
+						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. Additionally, for <span class = "Math">\( \big[\mathbb{VARIANCE}_{\mathbb{RATE}} \big]\)</span>, when Rate is High, <span class = "Math">\(\mathbb{VARIANCE}\)</span> is also High</b>. ALSO, We <span class = "Notes2">can price</span> <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>.
 						<br>
 						<br>
-						Above Eq<sup></sup> has UNIQUE Sol<sup>n</sup>. BUT, We can NOT get <u>Expression</u> of that Sol<sup>n</sup>. We can ONLY get <u>EXPECTATION</u> of that Sol<sup>n</sup>.
+						Above Eq<sup>n</sup> has UNIQUE Sol<sup>n</sup>. BUT, We can NOT get <span class = "Notes1">Expression</span> of that Sol<sup>n</sup>. We can ONLY get <span class = "Math">\(\mathbb{EXPECTATION}\)</span> of that Sol<sup>n</sup>.
 						<br>
 						<br>
 						<span class = 'Notes'>Heston Process</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dS_t =\! \mu S_t dt + \sigma_t S_t dW_{S, \: t}, \: d \sigma_t^2 =\! \kappa \big( \theta - \sigma_t^2 \big)dt + \xi \sigma_t dW_{\sigma, \: t} \)</span> <a href="https://en.wikipedia.org/wiki/Heston_model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
@@ -553,9 +553,9 @@
 						<span class = 'Notes'>OU Process</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr =\! a \big( b - r\big)dt + \sigma dW_t \)</span> <a href="https://quant.stackexchange.com/questions/40265/two-papers-two-different-solutions-of-the-ornstein-uhlenbeck-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 						<br>
 						<br>
-						<b>How to simulate this OU Process ?</b> <a href="https://quant.stackexchange.com/questions/8114/monte-carlo-simulating-cox-ingersoll-ross-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
+						<span class = "Notes2">How to simulate this OU Process ?</span> <a href="https://quant.stackexchange.com/questions/8114/monte-carlo-simulating-cox-ingersoll-ross-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
 						<br>
-						Use some Scheme like <span class = 'Notes'>Milstein Scheme</span>. This is a technique to approximate SDE's <u>Numerical Solution</u> for a Process (there is NO Guarantee that, the Next Value will remain POSITIVE). It's common to just set all zeroes equal to the minimum nonzero obs<sup>n</sup> in the dataset <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> - <br><span class = 'Math'>\( S_t =\! \mu_{S, t}dt +\! \sigma_{S, t}dW_t \)</span><br><span class = 'Math'>\(  \Rightarrow S_{t+1} = \! \big[ S_t + \mu_{S, t}\Delta t +\! \sigma_{S, t} \Delta W_t \big] + 0.5 \sigma_{S, t} \left[ \frac{d\sigma_{S, t}}{dS} \right] \big( \big( \Delta W_t \big)^2 - \Delta t \big) \)</span>.
+						Use some Scheme like <span class = 'Notes'>Milstein Scheme</span>. This is a technique to approximate SDE's <span class = "Notes1">Numerical Solution</span> for a Process. There is NO Guarantee that, the Next Value will remain <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span>. It's common to just set all zeroes equal to the minimum nonzero obs<sup>n</sup> in the dataset <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> - <br><span class = 'Math'>\( S_t =\! \mu_{S, t}dt +\! \sigma_{S, t}dW_t \)</span><br><span class = 'Math'>\(  \Rightarrow S_{t+1} = \! \big[ S_t + \mu_{S, t}\Delta t +\! \sigma_{S, t} \Delta W_t \big] + 0.5 \sigma_{S, t} \left[ \frac{d\sigma_{S, t}}{dS} \right] \big( \big( \Delta W_t \big)^2 - \Delta t \big) \)</span>.
 					</div>
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 40px'>
@@ -577,7 +577,7 @@
 					</div>
 					<div style = "height: auto; min-height: 10px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
-						We <u>can price</u> : ZC Bonds i.e. <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \left( 0, T\right) \)</span> & Option on it. NOTE : Volatility of 3m Forward-Rate is <b>SAME</b> for all Maturities.
+						We <span class = "Notes2">can price</span> : ZC Bonds i.e. <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \left( 0, T\right) \)</span> & Option on it. NOTE : Volatility of 3m Forward-Rate is <b>SAME</b> for all Maturities.
 					</div>
 					<div style = "height: 50px; width: 60%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fb8b24; margin-top: 10px;
 									border: 1px solid #fb8b24;
@@ -591,7 +591,7 @@
 					</div>
 					<div style = "height: auto; min-height: 10px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
-						We <u>can price</u> : ZC Bonds i.e. <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span> & Option on it. NOTE : Volatility of 3m Forward-Rate is <b>Decreasing function</b> for all Maturities.
+						We <span class = "Notes2">can price</span> : ZC Bonds i.e. <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span> & Option on it. NOTE : Volatility of 3m Forward-Rate is <b>Decreasing function</b> for all Maturities.
 					</div>
 					<div style = "height: 50px; width: 50%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fb8b24; margin-top: 10px;
 									border: 1px solid #fb8b24;
@@ -605,7 +605,7 @@
 					</div>
 					<div style = "height: auto; min-height: 50px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
-						<span class = 'Notes'>NO Analytics property</span>. In this Model, IR can ALWAYS Positive.
+						<span class = 'Notes'>NO Analytics property</span>. In this Model, IR can ALWAYS <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span>.
 					</div>
 				</div>
 			</div>
@@ -622,7 +622,7 @@
 					So Payoff for a given reset date is -  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{L \delta_k \mathbb{MAX} \big[R_k - R_K, \: 0 \big] }{ 1 + \delta_k r_k } \right] \)</span>.
 					<br>
 					<br>
-					Valuation is done using Black's Formula : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} N \big( d_1 \big) - R_K N \big( d_2 \big) \big) \)</span>. ALSO, the Underlying Volatility need to be multiplied with <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( t_k \big) ^{0.5} \)</span> because, Our Volatility time-horizon is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( t_k \big)  \)</span>.
+					Valuation is done using Black's Formula : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} \mathbb{N} \big( d_1 \big) - R_K \mathbb{N} \big( d_2 \big) \big) \)</span>. ALSO, the Underlying <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span> need to be multiplied with <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \sqrt{\big[t_k\big]} \right] \)</span> because, Our <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span> time-horizon is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t_k \big]  \)</span>.
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
 					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
@@ -639,9 +639,9 @@
 							NOTE : Spot Volatility & Flat Volatility
 						</div>						
 					</div>
-					<div style = "height: 120px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
+					<div style = "height: 140px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
 									border: 1px solid #a0c4ff; padding-top: 10px;">
-						As I said, CAP is basically a Portfolio of indiv. Options i.e. CAPLETs. If I use different Volatilities for each of them, then they are called <i>Spot</i> Volatilies. BUT, if I use same for all (BUT, <u>different</u> for different CAPs w.r.t. life) then, they called <i>Flat</i> Volatilities.
+						As I said, CAP is basically a Portfolio of indiv. Options i.e. CAPLETs. If I use different <span class = "Math">\(\mathbb{VOLAITLITY}\)</span> for each of them, then they are called <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{\mathbb{SPOT}} \big]\)</span>. BUT, if I use same for all (BUT, <span class = "Notes1">different</span> for different CAPs w.r.t. life) then, they called <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{\mathbb{FLAT}} \big]\)</span>.
 						<br>
 						Flats can be seen as Average of Spots therefore, are LESS Volatile.
 					</div>
@@ -663,10 +663,10 @@
 					</div>
 					<div style = "height: 170px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
 									border: 1px solid #a0c4ff; padding-top: 10px;">
-						<b>CAP - FLOOR = SWAPS</b>
+						<span class = "Notes2">CAP - FLOOR = SWAPS</span>
 						<br>
 						<br>
-						Assume that <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( LIBOR-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( LIBOR-R_k \big) \)</span>.
+						Assume that <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
 						<br>
 						Similar thing will happen for <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k < \! R_K \big] \)</span>.
 					</div>
@@ -683,13 +683,13 @@
 						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
 										display: inline-block; float: left; padding-left: 10px;
 										align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Valuation for FRA <span class = 'Notes'>My Note - Pg. 110</span>
+							NOTE : Valuation for FRA <span class = 'Page_Number1'>[110]</span> <span class = "Notes2">My Note</span>
 						</div>						
 					</div>
 					<div style = "height: 410px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
 									border: 1px solid #a0c4ff; padding-top: 10px;">
 						FRA is just like CAP BUT, with NO Optionality. Therefore, I can price this assuming the Prevailing IR as Forward IR.
-						Now, <u>IR-SWAP</u> is just a Portfolio of FRAs, for the Long Party. So I can price IR-SWAP similarly - Page : 184/863. <span style = 'font-size: 16px;'>Now, at the inception, the IR-SWAP's value is 0. So, FRA-Portfolio's value will be 0. BUT, individual FRA may NOT have 0 value. An Indiv. FRN's value is POSITIVE if Forward Rate comes as MORE than the Fixed Rate, and vice-versa. <br> </span><br>
+						Now, <u>IR-SWAP</u> is just a Portfolio of FRAs, for the Long Party. So I can price IR-SWAP similarly - Page : 184/863. <span style = 'font-size: 16px;'>Now, at the inception, the IR-SWAP's value is 0. So, FRA-Portfolio's value will be 0. BUT, individual FRA may NOT have <span class = "Math">\( \big[ 0 \big]\)</span> value. An Indiv. FRN's value is <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span> if Forward Rate comes as MORE than the Fixed Rate, and vice-versa. <br> </span><br>
 						<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 16px; margin-top: -10px;">
 							<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #a0c4ff; font-size: 22px;
 											 border: 1px solid #a0c4ff;
@@ -728,7 +728,7 @@
 					Adjustment - Convexity
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					HOW to price an Instrument which pays w.r.t. <u>Forward Bond Yield?</u> ANS : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T \big) \mathbb{E}^*\big[ y_T \big] \)</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> : Instrument pays w.r.t. <span class = "Notes2">Forward Bond Yield</span>. HOW to Price ??? ANS : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T \big) \mathbb{E}^*\big[ y_T \big] \)</span>.
 					<br>
 					<br>
 					In calculation, We generally replace <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \mathbb{E}^*\big[ y_T \big] \)</span> with the Forward Bond Yield i.e. <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[y_F\big] \)</span>, which to be derived from the Forward Bond Price <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[F_B\big] \)</span> (as per the Forward Bond Yield definition).
@@ -743,7 +743,7 @@
 					Adjustment - Time
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					HOW to price an Instrument which pays w.r.t. <u>some Variable in future BUT Payoff will happen Later?</u> ANS : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T_1 \big) \mathbb{E}^*\big[ V_T \big] \)</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> : Instrument pays w.r.t. <span class = "Notes2">some Variable in <span class = "Notes">future</span> BUT Payoff will happen <span class = "Notes">Later</span></span>. HOW to Price ??? ANS : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T_1 \big) \mathbb{E}^*\big[ V_T \big] \)</span>.
 					<br>
 					<br>
 					From above Payoff formula, it is evident that : The CORRECT Expectation will be <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E}^{**}\big[ V_T \big] \)</span>. So, We need to move from the World which is Forward Risk Neutral w.r.t <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T \big) \)</span> to <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T_1 \big) \)</span>. So, We define the Numeraire Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ W = \! \frac{P \big(0,T_1 \big)}{P \big(0,T \big)} \right] =\! \left[ \frac{1}{1\:+\:R \big(0,T, T_1 \big) \big( T_1 - T \big)} \right] \)</span>.
@@ -755,7 +755,7 @@
 					Adjustment - Quantos
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					Consider the FX for Domestic country <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[Y\big] \)</span> as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[S_{Y \to X}\big] \)</span>. So, it's process will be  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dS_{Y \to X} = \big( r_Y - r_X \big) S_{Y \to X} dt + \sigma S_{Y \to X} dW_t \)</span>
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> the FX for Domestic country <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[Y\big] \)</span> as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[S_{Y \to X}\big] \)</span>. Hence,  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dS_{Y \to X} = \big( r_Y - r_X \big) S_{Y \to X} dt + \sigma S_{Y \to X} dW_t \)</span>
 					<br>
 					<br>
 					So, from Ito's Lemma, We have : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( d \left( \frac{1}{S_{Y \to X}} \right) = \big( r_X - r_Y + \sigma^2 \big) \left( \frac{1}{S_{Y \to X}} \right) dt + \sigma \left( \frac{1}{S_{Y \to X}} \right) dW_t \)</span>
