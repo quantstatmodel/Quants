@@ -158,7 +158,7 @@
 				</div>
 
 				<div style = "height: 54px; width: 100%; margin: 0; padding: 0; color: #4E276E; border-radius: 0px; margin-top: 25px; padding-left: 30px; border-bottom: 4px solid #06d6a0; border-top: 4px solid #06d6a0; font-size: 24px; padding-top: 5px; background-color: rgba(6,214,160, 0.2);">
-					Insights on the Transition Matrix
+					Insights on the <span class = "Math">\( \big[\mathbb{TM}\big] \)</span>
 				</div>
 				<div style = "height: 330px; width: 100%; margin: 0; padding: 15px; background-color: rgba(6,214,160,0.06); border-bottom: 2px solid rgba(6,214,160,0.4);">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
@@ -193,7 +193,7 @@
 				</div>
 				<div style = "height: 560px; width: 100%; margin: 0; padding: 15px; background-color: rgba(6,214,160,0.06); border-bottom: 2px solid rgba(6,214,160,0.4);">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
-						From Average Cumulative Default Rate to Transition Matrix
+						From Average Cumulative Default Rate to <span class = "Math">\( \big[\mathbb{TM}\big] \)</span>
 					</span> <a href="https://quant.stackexchange.com/questions/59488/calculation-of-the-transition-matrix-for-credit-rating/59494?noredirect=1#comment85633_59494" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 					<br>
 					<br>
@@ -505,7 +505,7 @@
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> My Derivative's <span class = "Notes1">ONLY</span> Payoff is <span class = "Notes2">at time</span> <span class = "Math">\( \big[ T \big] \)</span> then, the above cVA will be <span class = "Math">\( \big[ f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. It is <span class = "Notes1">EASY</span> to understand that. So, the Derivative's Adjusted Value will be <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} - f_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>.
 					<br>
 					<br>
-					One such Derivative is ZCB, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
+					One such Derivative is <span class = "Math">\( \big[\mathbb{ZCB}\big] \)</span>, So <span class = "Math">\( \big[ B^{*}_{T_0} = B_{T_0} - B_{T_0} \sum_{i=1}^{n} q_{T_i} \big( 1-R \big) \big] \)</span>. Hence We have <span class = "Math">\( \left[ \frac{f^{*}_{T_0}}{B^{*}_{T_0}} \right] =\! \left[ \frac{f_{T_0}}{B_{T_0}} \right] \)</span>.
 					<br>
 					This gives <span class = "Math">\( \big[ f^{*}_{T_0} = f_{T_0} e^{- \big( y^{*} - y \big) T } \big] \)</span>. Here, <span class = "Math">\( \big[ y^{*}, y \big] \)</span> are the Yields for <span class = "Math">\( \big[\mathbb{ZCB}_{\mathbb{COUNTERPARTY}}\big], \: \big[\mathbb{ZCB}_{\mathbb{RISK\:FREE}}\big] \)</span>.
 				</div>	
@@ -883,7 +883,7 @@
 					</span>
 				</div>
 				<div style = "height: 630px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0); overflow: hidden; margin-top: 20px;">					
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ p_{i,\: \big[...\big]} \right] \)</span> is : Probability of Credit-Rating's Change to <span class = "Math">\( \big[ ...\! \big] \)</span> from Current using, <span class = "Notes2">Transition Matrix</span> for <span class = "Math">\( \big[i^{\mathbb{TH}}\big] \)</span> Company.
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ p_{i,\: \big[...\big]} \right] \)</span> is : <span class = "Math">\( \big[\mathbb{P}\big] \)</span> of Credit-Rating's Change to <span class = "Math">\( \big[ ...\! \big] \)</span> from Current, using the <span class = "Math">\( \big[\mathbb{TM}\big] \)</span> for <span class = "Math">\( \big[i^{\mathbb{TH}}\big] \)</span> Company.
 					<br>
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \left[ \begin{bmatrix} \:R_{1,\: \mathbb{AV\:CHANGE}}\: \\ \:R_{2,\: \mathbb{AV\:CHANGE}}\: \\ ... \\ \:R_{N,\: \mathbb{AV\:CHANGE}}\: \end{bmatrix} \sim \mathbb{N} \big(0, \big[\big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}} \times \sigma_{i,\: \mathbb{AV\:CHANGE}} \times \sigma_{j,\: \mathbb{AV\:CHANGE}}\big]\big]\big)\right] \)</span>
 					<BR>
@@ -898,7 +898,7 @@
 					Using Above, We get <span class = "Math">\( \left[ R_{i,\: \mathbb{AV\:CHANGE},\: \big[...\big]} =\! \Phi^{-1}\left(Z_{\big[...\big]}\right) \sigma_{i,\: \mathbb{AV\:CHANGE}}\:\:\forall i \right] \)</span>. <BR>Then, estimate the <span class = "Notes2">Joint Transition Probabilities Table</span> by : <br>
 					<span class = "Math">\( \mathbb{P}\big[ R_{i,\: \mathbb{AV\:CHANGE}} < R_{i,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}},\: R_{j,\: \mathbb{AV\:CHANGE}} < R_{j,\: \mathbb{AV\:CHANGE},\: \mathbb{DEFAULT}} \big] =\! p_{i,\:j\: \mathbb{DEFAULT}, \:\mathbb{EST}}\big] \)</span>
 					<br><br>
-					Here, We <span class = "Notes1">need values</span> for <span class = "Math">\( \big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}}\big] \)</span>. BUT, <span class = "Math">\( \big[\sigma_{i,\: \mathbb{AV\:CHANGE}}\big] \)</span> will <span class = "Notes1">CANCEL OUT</span>. <br><br>To understand this <span class = "Math">\( \big[\sigma\big] \)</span> case, <span class = "Math">\(\mathbb{ASSUME}\)</span> We have <span class = "Math">\( \big[2\big] \)</span> Obligors with <span class = "Notes">SAME</span> Credit-Rating BUT, 1<sup>ST</sup> has <span class = "Notes">HIGH</span> <span class = "Math">\( \big[\sigma\big] \)</span>. For this Obligor, <span class = "Notes1">THRESHOLDs</span> will be HIGH BUT, Transition Matrix will be SAME. <br>For Credit-Risk, <span class = "Notes2">Transition Matrix</span> is MORE Important.
+					Here, We <span class = "Notes1">need values</span> for <span class = "Math">\( \big[\rho_{i,\: j,\: \mathbb{AV\:CHANGE}}\big] \)</span>. BUT, <span class = "Math">\( \big[\sigma_{i,\: \mathbb{AV\:CHANGE}}\big] \)</span> will <span class = "Notes1">CANCEL OUT</span>. <br><br>To understand this <span class = "Math">\( \big[\sigma\big] \)</span> case, <span class = "Math">\(\mathbb{ASSUME}\)</span> We have <span class = "Math">\( \big[2\big] \)</span> Obligors with <span class = "Notes">SAME</span> Credit-Rating BUT, 1<sup>ST</sup> has <span class = "Notes">HIGH</span> <span class = "Math">\( \big[\sigma\big] \)</span>. For this Obligor, <span class = "Notes1">THRESHOLDs</span> will be HIGH BUT, <span class = "Math">\( \big[\mathbb{TM}\big] \)</span> will be SAME. <br>For Credit-Risk, <span class = "Math">\( \big[\mathbb{TM}\big] \)</span> is MORE Important.
 				</div>	
 
 				<div style = "height: 34px; width: 100%; margin: 0; padding: 0; color: #fb8500; border-radius: 0px; margin-top: 40px; padding-left: 60px; border-bottom: 4px solid #fb8500; font-size: 24px; position: relative;">
@@ -1481,7 +1481,7 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-						Typically, FASB do NOT NEED for Probability Weighted Scenarios. However, Bank will need : Consideration of Loss-Risk.
+						Typically, FASB do NOT NEED for <span class = "Math">\( \big[\mathbb{P}\big] \)</span> Weighted Scenarios. However, Bank will need : Consideration of Loss-Risk.
 						<br>
 						<span class = "Notes2">Multiple Scenarios</span> NOT required. However, Bank can reply on them to estimate <span class = "Math">\(\mathbb{ECL}\)</span>.
 					</span>
