@@ -350,13 +350,13 @@
 					Numeraire is Annuity
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					Forward Swap - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  S\big[t \leq T \:|\:\: T_1,T_2,...,T_N \big] \)</span>. Principal is $1.
+					Forward Swap - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  S\big[t \leq T \:|\:\: T_1,T_2,...,T_N \big] \)</span>. Principal is <span class = "Math">\(\big[$1\big]\)</span>.
 					<br>
 					<br>
 					PV of Fixed Leg - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \sum\limits_{i=0}^{N-\!1} s_0 \: \big[ T_{i+1}-T_i\big] \: P\big( 0,T_{i+1}\big) =\! s_0 A_0 \right]  \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( s_0 \)</span> is the Swap Rate, AND <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T=T_0 \big] \)</span>
 					<br>
 					<br>
-					If I add $1 at <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_N \big]  \)</span>, PV for the Floating leg at time <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_0 \big]  \)</span> is $1. Therefore, PV for the Floating leg at time <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t \big]  \)</span> is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ P\big( 0,T_0\big) - P\big( 0,T_N\big) \big] \)</span>.
+					If I add <span class = "Math">\(\big[$1\big]\)</span>. at <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_N \big]  \)</span>, PV for the Floating leg at time <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_0 \big]  \)</span> is <span class = "Math">\(\big[$1\big]\)</span>.. Therefore, PV for the Floating leg at time <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t \big]  \)</span> is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ P\big( 0,T_0\big) - P\big( 0,T_N\big) \big] \)</span>.
 					<br>
 					<br>
 					Equating Fixed Leg & Floating Leg, We have -  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 = \frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0} =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] \right]  \)</span>
@@ -371,7 +371,7 @@
 					Numeraire is Money Market Account
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					We here assume that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \)</span>. This is because, in <i>Money-Market-Account</i>, We start with $1 and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  r \)</span> is the Risk free rate
+					We here assume that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \)</span>. This is because, in <i>Money-Market-Account</i>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  r \)</span> is the Risk free rate
 					<br>
 					<br>
 					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! E^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  f_{1, 0} =\!\! \mathbb{E}^*\left[ f_{1, T} \left( e^{-\int\limits_{0}^{T} r dt} \right) \right]  =\!\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right)f_{1, T} \right] \)</span>
