@@ -104,32 +104,32 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #ef476f; height: 1150px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #ef476f; height: 1180px;'>
 			<div class = 'Blog_Header'>
 				Ratio of 2 Derivatives is Martingale
 			</div>
-			<div class = 'Stuff_Container'>
-				<div style = "width: 250px; height: auto; min-height: 100px; border: 1px solid #818181; display: inline-block; float: left">
+			<div class = 'Stuff_Container; padding-left: 0px;'>
+				<div style = "width: 250px; height: auto; min-height: 100px; border: 1px solid #818181; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 5px; margin-left: 5px;">
 					<div style = "height: 90px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
 						\(  \left[\frac{dS}{S}\!=\! \mu dt + \sigma dW_t \right] \)
 						<div class = "Top_Note">
-							SPOT
+							<span class = "Notes">SPOT</span>
 						</div>
 					</div>
 					<div style = "height: 90px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
 						\(  \left[\frac{df_1}{f_1}\!=\! \mu_1 dt + \sigma_1 dW_t \right] \)
 						<div class = "Top_Note">
-							Derivative 1
+							<span class = "Notes">Derivative 1</span>
 						</div>
 					</div>
 					<div style = "height: 90px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
 						\(  \left[\frac{df_2}{f_2}\!=\! \mu_2 dt + \sigma_2 dW_t \right] \)
 						<div class = "Top_Note">
-							Derivative 2
+							<span class = "Notes">Derivative 2</span>
 						</div>
 					</div>
 				</div>
-				<div style = "width: 740px; height: auto; min-height: 100px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; margin-left: 20px; padding-right: 10px; font-size: 18px;">
+				<div style = "width: calc((100% - 250px)/2 - 25px - 1px); height: auto; min-height: 100px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; margin-left: 20px; padding-right: 10px; font-size: 18px; background-color: rgba(0,0,0,.0); padding: 10px;">
 					We create a Portfolio : 
 					<br>
 					<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \Omega =\! \big[\sigma_2f_2 \big] f_1 - \big[\sigma_1f_1 \big] f_2 \)</span>
@@ -155,13 +155,13 @@
 					<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \lambda \)</span>
 					<br>
 					<br>
-					This <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \lambda \)</span> is called MARKET PRICE OF RISK for the Underlying. We see that, all Derivatives of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  S \)</span> will have SAME Market Price, dependent on the Underlying. So the Excess Return that a typical Derivative of Underlying will have is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \sigma_i\lambda \big) \)</span>. So if this MARKET PRICE OF RISK is Zero then, Derivative's growth rate will be <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  r \)</span>.
+					This <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \lambda \big] \)</span> is called <span class = "Notes2"><span class = "Notes">MARKET PRICE OF RISK</span> for the Underlying</span>. We see that, all Derivatives of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[  S \big] \)</span> will have SAME Market Price, dependent on the Underlying. So the Excess Return that a typical Derivative of Underlying will have is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \sigma_i\lambda \big] \)</span>. So if this <span class = "Math">\( \big[ \mathbb{RISK}_{\mathbb{MARKET\:PRICE}} = \! 0 \big] \)</span> then, Derivative's growth rate will be <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ r \big] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0; width: 1px; height: 10000vh; min-height: 200px; background-color: #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
 				</div>
-				<div style = "width: 700px; height: auto; min-height: 100px; border-right: 0px solid #818181; border-left: 0px solid #818181; display: inline-block; float: left; text-align: left; padding-right: 10px; font-size: 18px; overflow: hidden;  margin: bottom: 10px; margin-bottom: 20px; background-color: rgba(0,0,0,.0);">
-					<div style = "margin-left: 20px; ">
-						We now assume that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 \)</span>. This WORLD is called <i>FORWARD RISK NEUTRAL w.r.t. 2<sup>nd</sup> Derivative</i>.
+				<div style = "width: calc((100% - 250px)/2); height: auto; min-height: 100px; border-right: 0px solid #818181; border-left: 0px solid #818181; display: inline-block; float: left; text-align: left; font-size: 18px; overflow: hidden;  margin-bottom: 20px; background-color: rgba(0,0,0,.0);">
+					<div style = "padding: 10px;">
+						We now <span class = "Math">\( \mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 \right] \)</span>. <BR>This WORLD is called <i><span class = "Notes2"><span class = "Notes">FORWARD RISK NEUTRAL</span> w.r.t. 2<sup>nd</sup> Derivative</span>.
 						<br>
 						<br>
 						So We have : 
@@ -183,27 +183,25 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "margin-left: 120px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \!=\! -0.5 \big( \sigma_1 - \sigma_2 \big)^2 dt + \big( \sigma_1 - \sigma_2 \big) dW_t \)</span>
 						<br>
 						<br>
-						This means that that the Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{f_1}{f_2} \right] \)</span> is basically a Martingale, i.e. it has NO DRIFT term !!!
+						This means that that the Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{f_1}{f_2} \right] \)</span> is basically a <span class = "Math">\( \mathbb{MARTINGALE}\)</span>, i.e. it has NO <span class = "Math">\( \mathbb{DRIFT}\).
 					</div>
-					<div style = "width: 110%; height: 30px; background-color: rgba(0,0,0,.0); margin-left: -5%; padding-left: 15%; margin-top: 40px; margin-bottom: 0px;
-								padding-left: 5%; border-bottom: 1px solid #666666;">
-						<div style = "height: 100%: width: 100%; margin-left: 2%; background-color: rgba(0,0,0,.0); font-family: 'Fjalla One', sans-serif; color: #4c4c4c;
-									letter-spacing: 1px;"> 
-							Change in Numeraire [665]
-						</div>
-					</div>
-					<div style = "width: 102%; height: 510px; margin: 0; padding: 0; background-color: rgba(0,0,0,.0); padding-left: 2%; padding-top: 10px;">
-						<div style = "height: 100%; width: 100%; margin: 0; padding: 0;">
-							Assume, <span class = "Math">\( \lambda \)</span> is the <u>Old</u> Market Price of Risk. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda \big) dt + \sigma_1 dW_t \right] \)</span>.
+					<div style = "height: 570px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 20px; border-bottom: 1px solid #7a49a5;">
+						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; ">
+							Change in Numeraire <span class = "Page_Number1">[665]</span>
+						</span>
+						<br>
+						<br>
+						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+							<span class = "Math">\( \mathbb{ASSUME}\)</span>, <span class = "Math">\( \big[ \lambda \big] \)</span> is the <span class = "Notes1">Old</span> Market Price of Risk. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda \big) dt + \sigma_1 dW_t \right] \)</span>.
 							<br>
-							Assume, <span class = "Math">\( \lambda_1 \)</span> is the <u>New</u> Market Price of Risk. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda_1 \big) dt + \sigma_1 dW_t \right] \)</span>.
+							<span class = "Math">\( \mathbb{ASSUME}\)</span>, <span class = "Math">\( \big[ \lambda_1 \big] \)</span> is the <span class = "Notes1">New</span> Market Price of Risk. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda_1 \big) dt + \sigma_1 dW_t \right] \)</span>.
 							<br>
-							Therefore, change in Drift : <span class = "Math">\( \alpha = \big( \lambda_1 - \lambda  \big) \sigma_1 \)</span>
+							Therefore, change in <span class = "Math">\(\mathbb{DRIFT}\)</span> : <span class = "Math">\( \big[ \alpha = \big( \lambda_1 - \lambda  \big) \sigma_1 \big] \)</span>
 							<br>
 							<br>
-							Let, We are changing the Numeraire from <span class = "Math">\( g \)</span> to <span class = "Math">\( h \)</span>, then that Drift's change <span class = "Math">\( \alpha =\! \big( \sigma_h - \sigma_g  \big) \sigma_1 \)</span>.
+							Let, We change the <span class = "Math">\(\mathbb{NUMERAIRE}\)</span> from <span class = "Math">\( \big[g\big] \)</span> to <span class = "Math">\( \big[ h \big] \)</span>, then that <span class = "Math">\(\mathbb{DRIFT}\)</span> change <span class = "Math">\( \big[ \alpha =\! \big( \sigma_h - \sigma_g  \big) \sigma_1 \big] \)</span>.
 							<br>
-							Assume <span class = "Math">\( \left[ w =\!\! \frac{h}{g}  \right] \)</span>, and it's Volatility <span class = "Math">\( \big[ \sigma_w = \sigma_h - \sigma_g \big] \)</span> (using Ito's Lemma on Log-Price). Therefore, that Drift's change <span class = "Math">\( \big[ \alpha =\! \sigma_w \sigma_1 \big] \)</span>. This is just, <span class = "Math">\( \mathbb{COV} \big[ f_1, w \big] \)</span> because,
+							<span class = "Math">\( \mathbb{ASSUME}\)</span> <span class = "Math">\( \left[ w =\!\! \frac{h}{g}  \right] \)</span>, and it's <span class = "Math">\(\mathbb{VOLATILITY}\)</span> is <span class = "Math">\( \big[ \sigma_w = \sigma_h - \sigma_g \big] \)</span>, using Ito's Lemma on Log-Price. Therefore, that <span class = "Math">\(\mathbb{DRIFT}\)</span> change <span class = "Math">\( \big[ \alpha =\! \sigma_w \sigma_1 \big] \)</span>. This is just, <span class = "Math">\( \mathbb{COV} \big[ f_1, w \big] \)</span> because,
 							<br>
 							<br>
 							<span class = "Math">\( \Delta f_1 = a \big(\Delta t\big) + f_1 \sum \sigma_{1, i} \epsilon_i \big( \Delta t \big)^{0.50} \)</span>
@@ -216,8 +214,8 @@
 							&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[ \rho \big( \sigma_{1} f_1 \big) \big( \sigma_{w} w \big) = \mathbb{E}\big[ \big( \Delta f_1 \big) \big( \Delta w \big)  \big] - \mathbb{E}\big[ \big( \Delta f_1 \big) \big] \mathbb{E}\big[ \big( \Delta w \big) \big] = f_1 w \sum \sigma_{1, i} \sigma_{w, i} \big] \)</span>
 							<br>
 							<br>
-							So, We have <span class = "Math">\( \big[ \rho \sigma_{1} \sigma_{w} = \sum \sigma_{1, i} \sigma_{w, i} \big] \)</span>. If We assume : There is ONLY ONE Risk factor i.e. <span class = "Math">\( \big[ \epsilon \big] \)</span> then, above equ<sup>n</sup> will hold.
-						</div>
+							So, We have <span class = "Math">\( \big[ \rho \sigma_{1} \sigma_{w} = \sum \sigma_{1, i} \sigma_{w, i} \big] \)</span>. If We <span class = "Math">\(\mathbb{ASSUME}\)</span> : There is ONLY ONE Risk factor i.e. <span class = "Math">\( \big[ \epsilon \big] \)</span> then, above equ<sup>n</sup> will hold.
+						</span>
 					</div>
 				</div>
 			</div>
@@ -677,7 +675,7 @@
 						<span class = "Notes2"><span class = "Notes">CAP - FLOOR</span> = SWAPS</span>
 						<br>
 						<br>
-						Assume that <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
+						<span class = "Math">\( \mathbb{ASSUME}\)</span> that <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
 						<br>
 						Similar thing will happen for <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k < \! R_K \big] \)</span>.
 					</div>
