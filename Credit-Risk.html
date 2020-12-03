@@ -136,13 +136,13 @@
 					<div style = "height: 260px; width: 43%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: -8px; margin-bottom: 8px; padding: 5px; font-size: 16px; border: 1px solid #CCCCCC; border-radius: 8px; background-color: #fff">
 						<div style = "height: 100%; width: 100%; border: 8px solid #CCCCCC; border-radius: 8px;">
 							<div style = "height: 84px; width: 100%; margin: 0; padding: 0; background-color: #F9F9F9; padding: 8px;">
-								Prob. that : Bond rated <span class = "Notes1">below Caa</span> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
+								<span class = "Math">\( \big[\mathbb{P}\big] \)</span> that : Bond rated <span class = "Notes1">below Caa</span> will default DURING 3<sup>rd</sup> year, as seen from <span class = "Math" style = "font-size: 14px;">\( \big[T=0\big] \)</span>, is : <span class = "Math" style = "font-size: 14px;">\( 38.682 -\! 29.384 =\! 9.298 \% \)</span>.
 							</div>
 							<div style = "height: 58px; width: 100%; margin: 0; padding: 0; background-color: #fff; padding: 8px;">
-								Prob. that : Bond rated below <span class = "Notes1">below Caa</span> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
+								<span class = "Math">\( \big[\mathbb{P}\big] \)</span> that : Bond rated below <span class = "Notes1">below Caa</span> will survive UNTIL 2<sup>nd</sup> year is : <span class = "Math" style = "font-size: 14px;">\( 1 -\! 29.384 =\! 70.616 \% \)</span>.
 							</div>							
 							<div style = "height: calc(100% - 84px - 58px); width: 100%; margin: 0; padding: 0; background-color: #F9F9F9; padding: 8px; padding-right: 2px;">
-								Conditional Prob. <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes1">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
+								Conditional <span class = "Math">\( \big[\mathbb{P}\big] \)</span> <span class = "Notes">Hazard Rate = HR</span> that : Bond rated <span class = "Notes1">below Caa</span> will default DURING 3<sup>rd</sup> year, with NO DEFAULT earlier, is : <span class = "Math" style = "font-size: 14px;">\( 9.298/70.616 =\! 13.16 \% \)</span>.
 							</div>	
 						</div>
 					</div>
@@ -235,7 +235,7 @@
 					</div>
 				</div>
 				<div style = "height: 25px; width: 100%; margin: 0; padding: 15px; background-color: rgba(0,0,0,.0);">
-					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the Default Prob. Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) \overline {\lambda  \big( T \big)} \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :					
+					This is Approx. formula. This formula's logic is : A Bond's CS will be equal to, Bond's Default's Value multiplied by the <span class = "Math">\( \big[\mathbb{PD}\big] \)</span> Hence, <span class = "Math">\( \big[ s \:= \big(1 - R \big) \overline {\lambda  \big( T \big)} \big] \)</span>. Important obs<sup>n</sup> <a href="http://www.kamakuraco.com/Blog/tabid/231/EntryId/700/Credit-Spreads-and-Default-Probabilities-A-Simple-Model-Validation-Example.aspx" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :					
 				</div>
 				<div style = "height: 55px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 60px; border-bottom: 0px solid #EBDBF8; ">
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
@@ -480,7 +480,7 @@
 						<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 							<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 20px; padding-top: 14px; padding-right: 4px;">
-								There is <span class = "Notes">Sys. Risk</span> i.e. Default from one Bond will have Ripple effect to Default from Another Bond. Also Unlike Equity, the <span class = "Notes">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> Prob. for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> Prob. for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
+								There is <span class = "Notes">Sys. Risk</span> i.e. Default from one Bond will have <span class = "Notes2">Ripple effect</span> to Default from Another Bond. Also Unlike Equity, the <span class = "Notes">NonSys. Risk</span> can NOT be diversified-away because, Bonds' Return is VERY Skewed i.e. <span class = "Math">\( \big[99\%\big] \)</span> <span class = "Math">\( \big[\mathbb{P}\big] \)</span> for <span class = "Math">\( \big[7\%\big] \)</span> Return BUT, <span class = "Math">\( \big[1\%\big] \)</span> <span class = "Math">\( \big[\mathbb{P}\big] \)</span> for <span class = "Math">\( \big[-\!\!60\%\big] \)</span> Return due to Default. So, for Diversification benefit, We need VERY LARGE number of Bonds. So, Bond Traders will earn Extra Return to bear this Risk.
 							</div>
 						</div>
 					</div>
@@ -561,7 +561,7 @@
 						3 Properties
 					</div>
 					<div style = "height: 115px; width: 100%; margin: 0; padding: 0; background-color: #f7fcf8; padding-left: 13px; padding-right: 1px;margin-top: 0px; border-bottom: 1px solid #2d6a4f; padding-top: 8px;">
-						Prob. shall follow the <span class = "Notes2">Rank Order</span> - See Left for <span class = "Math">\( \big[ \mathbb{CR}_{\mathbb{AA}, \: 10\mathbb{Y}} \big] \)</span>.
+						<span class = "Math">\( \big[\mathbb{P}\big] \)</span> shall follow the <span class = "Notes2">Rank Order</span> - See Left for <span class = "Math">\( \big[ \mathbb{CR}_{\mathbb{AA}, \: 10\mathbb{Y}} \big] \)</span>.
 						<br>
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Notes1">BETTER Rating</span> have LESSER chance to Default.
 						<br>
@@ -821,7 +821,7 @@
 					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(= \mathbb{P} \left[ \Phi \left[ \frac{\Phi^{-1} \big[ Q_i \big( T \big)\big] - \sqrt{\big[ \rho \big]} F}{\sqrt{ 1 \:- \rho }} \right] < V \big( T, x \big) \right] \)</span>
 					<br>
 					<br>
-					So, there is <span class = "Math">\(  \big[ x\% \big]  \)</span> Prob. that, <span class = "Notes2">% of Defaults</span> in time <span class = "Math">\(  \big[ T \big]  \)</span> will be LESS than <span class = "Math">\(  \big[ V \big( T, x \big) \big]  \)</span>. Remember, <span class = "Math">\(  \big[ Q_i \big( T \big) \big]  \)</span> is the <span class = "Math">\(  \mathbb{PD}  \)</span> in time <span class = "Math">\(  \big[ T \big]  \)</span>.
+					So, there is <span class = "Math">\(  \big[ x\% \big]  \)</span> <span class = "Math">\( \big[\mathbb{P}\big] \)</span> that, <span class = "Notes2">% of Defaults</span> in time <span class = "Math">\(  \big[ T \big]  \)</span> will be LESS than <span class = "Math">\(  \big[ V \big( T, x \big) \big]  \)</span>. Remember, <span class = "Math">\(  \big[ Q_i \big( T \big) \big]  \)</span> is the <span class = "Math">\(  \mathbb{PD}  \)</span> in time <span class = "Math">\(  \big[ T \big]  \)</span>.
 					<br>
 					<br>
 					So If, the TOTAL Loan Port. is  <span class = "Math">\(  \big[ $L \big]  \)</span> then, the <span class = "Notes2">MAX Possible Loss</span> will be <span class = "Math">\(  \big[ $L \big(1-R\big) V \big( T, x \big) \big]  \)</span>. <BR>This is <span class = "Notes">Credit VaR</span> with appropriate <span class = "Math">\(  \mathbb{C.L.}  \)</span> And, the i<sup>th</sup> Bond's Contribution is <span class = "Math">\(  \big[ $L_i \big(1-R\big) V \big( T, x \big) \big]  \)</span>.
