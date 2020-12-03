@@ -183,7 +183,7 @@
 						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "margin-left: 120px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \!=\! -0.5 \big( \sigma_1 - \sigma_2 \big)^2 dt + \big( \sigma_1 - \sigma_2 \big) dW_t \)</span>
 						<br>
 						<br>
-						This means that that the Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{f_1}{f_2} \right] \)</span> is basically a <span class = "Math">\( \mathbb{MARTINGALE}\)</span>, i.e. it has NO <span class = "Math">\( \mathbb{DRIFT}\).
+						This means that that the Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{f_1}{f_2} \right] \)</span> is basically a <span class = "Math">\( \mathbb{MARTINGALE}\)</span> i.e. <span class = "Math">\( \big[ \mathbb{DRIFT} =\! 0\big]\).
 					</div>
 					<div style = "height: 580px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 20px; border-bottom: 1px solid #7a49a5;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; ">
@@ -313,7 +313,7 @@
 						So, if We already have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( ZC_{T_1} \big) \)</span>, then using the EURODOLLAR Future Rate, We can extend the ZC curve to <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( ZC_{T_2} \big) \)</span>
 						<br>
 						<br>
-						Ideally We should use the Forward Rate, NOT Future Rate. So We use <span class = 'Notes'>The <span class = 'Notes2'>Convexity Adjustment</span></span>. Which says that : The Difference between Futures Rate & Forward Rate is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( 0.5\sigma^2 T_1 T_2 \big) \)</span>, where <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \sigma \big] \)</span> is the Short-Rate's <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span>. So, for a <span class = "Math">\( \big[8 \mathbb{Y}\big]\)</span> EURODOLLAR Futures, we have <span class = "Math">\( \big[ T_1 =\! 8, T_2 =\! 8.25  \big] \)</span> <span class = 'Page_Number1'>[162]</span>.
+						Ideally We should use the Forward Rate, NOT Future Rate. So We use <span class = 'Notes'>The <span class = 'Notes2'>Convexity Adjustment</span></span>. Which says that : The Difference between Futures Rate & Forward Rate is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( 0.5\sigma^2 T_1 T_2 \big) \)</span>, where <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \sigma \big] \)</span> is the Short-Rate's <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span>. So, for a <span class = "Math">\( \big[8 \mathbb{Y}\big]\)</span> EURODOLLAR Futures, we have <span class = "Math">\( \big[ T_1 =\! 8, T_2 =\! 8.25  \big] \)</span> <span class = 'Page_Number1'>[162]</span>.
 					</div>					
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
@@ -348,16 +348,16 @@
 					Numeraire is Annuity
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					Forward Swap - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  S\big[t \leq T \:|\:\: T_1,T_2,...,T_N \big] \)</span>. Principal is <span class = "Math">\(\big[$1\big]\)</span>.
+					<span class = "Notes">Forward Swap</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  S\big[t \leq T \:|\:\: T_1,T_2,...,T_N \big] \)</span>. Principal is <span class = "Math">\(\big[$1\big]\)</span>.
 					<br>
 					<br>
-					PV of Fixed Leg - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \sum\limits_{i=0}^{N-\!1} s_0 \: \big[ T_{i+1}-T_i\big] \: P\big( 0,T_{i+1}\big) =\! s_0 A_0 \right]  \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( s_0 \)</span> is the Swap Rate, AND <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T=T_0 \big] \)</span>
+					Now, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \mathbb{PV}_{\mathbb{FIX\:LEG}, \:\big[ 0 \big] } =\! \left[ \sum\limits_{i=0}^{N-\!1} s_0 \: \big[ T_{i+1}-T_i\big] \: P\big( 0,T_{i+1}\big) =\! s_0 A_0 \right]\right]  \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ s_0 \big] \)</span> is the <span class = "Notes2">Swap Rate</span> AND <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T=T_0 \big] \)</span>.
 					<br>
 					<br>
-					If I add <span class = "Math">\(\big[$1\big]\)</span> at <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_N \big]  \)</span>, PV for the Floating leg at time <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_0 \big]  \)</span> is <span class = "Math">\(\big[$1\big]\)</span>. Therefore, PV for the Floating leg at time <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t \big]  \)</span> is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ P\big( 0,T_0\big) - P\big( 0,T_N\big) \big] \)</span>.
+					If I add <span class = "Math">\(\big[$1\big]\)</span> at <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_N \big]  \)</span>, <span class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FLOAT\:LEG}, \:\big[ T_0 \big] } =\! $1 \right]\)</span>. Therefore, <span class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FLOAT\:LEG}, \:\big[ 0 \big] } =\! \big[ P\big( 0,T_0\big) - P\big( 0,T_N\big) \big] \right]\)</span>.
 					<br>
 					<br>
-					Equating Fixed Leg & Floating Leg, We have :  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 = \frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0} =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] \right]  \)</span>
+					Equating Fixed Leg & Floating Leg, We have :  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 = \!\frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0} =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] \right]  \)</span>.
 					<br>
 					<br>
 					Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^A\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  s_0 =\!\! \mathbb{E}^A\big[ s_T \big] \).
@@ -376,21 +376,20 @@
 					Numeraire is Money Market Account
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					We here assume that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \)</span>. This is because, in <i>Money-Market-Account</i>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  r \)</span> is the Risk free rate
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \right] \)</span>. This is because, in <span class = "Notes2">Money-Market-Account</span>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ r \big] \)</span> is the <span class = "Notes1">RISK FREE RATE</span>.
 					<br>
 					<br>
-					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! E^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  f_{1, 0} =\!\! \mathbb{E}^*\left[ f_{1, T} \left( e^{-\int\limits_{0}^{T} r dt} \right) \right]  =\!\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right)f_{1, T} \right] \)</span>
+					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ f_{1, 0} =\!\! \mathbb{E}^*\left[ f_{1, T} \left( e^{-\!\!\int\limits_{0}^{T} r dt} \right) \right] \right]  =\!\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right)f_{1, T} \right] \)</span>
 					<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px; margin-top: 20px;">
 						<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #a0c4ff; font-size: 22px;
-										 border: 1px solid #a0c4ff;
-										display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left;">
+										 border: 1px solid #a0c4ff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left;">
 							Important
 						</div>
 						<div style = "height: 145px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #caf0f8; font-size: 18px;
 										display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left;  border: 1px solid #a0c4ff">
 							Price of any Derivative will be it's future Expected Value wherein, Expectation in taken in the Risk-Neutral World, because here Market Price of Risk is 0. Here, We need to simulate the Short-term Rate and take the Average for Discounting. 
 							<br>
-							In General Risk-Neutral Valuation, since We assume the Risk Free Rate is Constant, We can just discount Derivative's Expected Value and Discount with it.
+							In General Risk-Neutral Valuation, since We <span class = "Math">\(\mathbb{ASSUME}\)</span> the Risk Free Rate is Constant, We can just discount Derivative's Expected Value and Discount with it.
 						</div>
 					</div>
 				</div>
@@ -584,7 +583,7 @@
 									border-bottom: 1px solid #b7e4c7; font-size: 16px; padding-bottom: 6px;">
 						We <span class = "Notes2">can price</span> : <span class = "Math">\( \big[ \mathbb{ZCB} : P \big( 0, T\big) \big] \)</span> & Option on it. 
 						<br>&nbsp;&nbsp;&nbsp;
-						<span class = "Notes1">NOTE</span> : <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span> of <span class = "Math">\( \big[ \mathbb{FWD\:RATE}_{\big[3 \mathbb{m} \big]} \big]\)</span> is <span class = "Notes2">SAME</span> for all Maturities.
+						<span class = "Notes1">NOTE</span> : <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> of <span class = "Math">\( \big[ \mathbb{FWD\:RATE}_{\big[3 \mathbb{m} \big]} \big]\)</span> is <span class = "Notes2">SAME</span> for all Maturities.
 					</div>
 					<div style = "height: 50px; width: 60%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fb8b24; margin-top: 10px;
 									border: 1px solid #fb8b24;
@@ -600,7 +599,7 @@
 									border-bottom: 1px solid #b7e4c7; font-size: 16px; padding-bottom: 6px;">
 						We <span class = "Notes2">can price</span> : <span class = "Math">\( \big[ \mathbb{ZCB} : P \big( 0, T\big) \big] \)</span> & Option on it.
 						<br>&nbsp;&nbsp;&nbsp;
-						<span class = "Notes1">NOTE</span> : <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span> of <span class = "Math">\( \big[ \mathbb{FWD\:RATE}_{\big[3 \mathbb{m} \big]} \big]\)</span> is <span class = "Notes2">DECREASING</span> for all Maturities.
+						<span class = "Notes1">NOTE</span> : <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> of <span class = "Math">\( \big[ \mathbb{FWD\:RATE}_{\big[3 \mathbb{m} \big]} \big]\)</span> is <span class = "Notes2">DECREASING</span> for all Maturities.
 					</div>
 					<div style = "height: 50px; width: 50%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fb8b24; margin-top: 10px;
 									border: 1px solid #fb8b24;
@@ -628,10 +627,10 @@
 					A CAP has a number of Reset Dates starting from <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_0 \big] \)</span>. In each reset date, the LIBOR is observed. If LIBOR is more than the Strike Rate then Payoff is calculated based on the <i>Difference</i> multiplied with Principal. Payoff will be given in next reset date. Otherwise, NO Payoff. ALSO, on the 1<sup>st</sup> Payment date, NO Payoff. 
 					<br>
 					<br>
-					So Payoff for a given reset date is -  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{L \delta_k \mathbb{MAX} \big[R_k - R_K, \: 0 \big] }{ 1 + \delta_k r_k } \right] \)</span>.
+					So Payoff for a given reset date is :  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{L \delta_k \mathbb{MAX} \big[R_k - R_K, \: 0 \big] }{ 1 + \delta_k r_k } \right] \)</span>.
 					<br>
 					<br>
-					Valuation is done using Black's Formula : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} \mathbb{N} \big( d_1 \big) - R_K \mathbb{N} \big( d_2 \big) \big) \)</span>. ALSO, the Underlying <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span> need to be multiplied with <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \sqrt{\big[t_k\big]} \right] \)</span> because, Our <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{} \big]\)</span> time-horizon is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t_k \big]  \)</span>.
+					Valuation is done using <span class = "Notes2">Black's Formula</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} \mathbb{N} \big( d_1 \big) - R_K \mathbb{N} \big( d_2 \big) \big) \big] \)</span>. ALSO, the Underlying <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> need to be multiplied with <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \sqrt{\big[t_k\big]} \right] \)</span> because, Our <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> time-horizon is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t_k \big]  \)</span>.
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
 					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
@@ -650,9 +649,9 @@
 					</div>
 					<div style = "height: 140px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
 									border: 1px solid #a0c4ff; padding-top: 10px;">
-						As I said, CAP is basically a Portfolio of indiv. Options i.e. CAPLETs. If I use different <span class = "Math">\(\mathbb{VOLAITLITY}\)</span> for each of them, then they are called <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{\mathbb{SPOT}} \big]\)</span>. BUT, if I use same for all (BUT, <span class = "Notes1">different</span> for different CAPs w.r.t. life) then, they called <span class = "Math">\( \big[ \mathbb{VOLAITLITY}_{\mathbb{FLAT}} \big]\)</span>.
+						As I said, CAP is basically a Portfolio of indiv. Options i.e. CAPLETs. If I use different <span class = "Math">\(\mathbb{VOLATILITY}\)</span> for each of them, then they are called <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{SPOT}} \big]\)</span>. BUT, if I use same for all (BUT, <span class = "Notes1">different</span> for different CAPs w.r.t. life) then, they called <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{FLAT}} \big]\)</span>.
 						<br>
-						Flats can be seen as Average of Spots therefore, are LESS Volatile.
+						<span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{FLAT}} \big]\)</span> can be seen as <span class = "Math">\( \big[ \mathbb{AVERAGE}_{}\big[ \mathbb{VOLATILITY}_{\mathbb{SPOT}} \big]\big]\)</span> therefore, are <span class = "Notes2">LESS Volatile</span>.
 					</div>
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
@@ -707,7 +706,7 @@
 							</div>
 							<div style = "height: 100px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #caf0f8; font-size: 18px;
 											text-align: left;  border: 1px solid #a0c4ff; padding-top: 12px;">
-								If, at the time of IR-SWAP's inception, assume that the Term-Structure is upward sloping. Then, Forward IR will increase w.r.t. Maturity of FRN. So, for the initial days, FRNs will have <span class = "Math">\( \big[ -\!\!\mathbb{VE} \big]\)</span> values, AND for the final days, FRNs will have positive values.
+								If, at the time of IR-SWAP's inception, <span class = "Math">\(\mathbb{ASSUME}\)</span> that the Term-Structure is upward sloping. Then, Forward IR will increase w.r.t. Maturity of FRN. So, for the initial days, FRNs will have <span class = "Math">\( \big[ -\!\!\mathbb{VE} \big]\)</span> values, AND for the final days, FRNs will have positive values.
 							</div>
 						</div>
 						Also, IR-SWAP can be considered as Portfolio of Fixed Rate & Floating Rate (LIBOR) Bond. In such case, for the Floating Rate Bond, Bond's Value equals to Principal <span class = "Notes1">just after</span> an Interest Payment. <br>&ensp;&ensp;&ensp;AND, Principal + Interest <span class = "Notes1">just before</span> an Interest Payment.
