@@ -104,26 +104,26 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #ef476f; height: 1180px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #ef476f; height: 1380px;'>
 			<div class = 'Blog_Header' style = " background-color: #a0c4ff">
 				Ratio of 2 Derivatives is Martingale
 			</div>
 			<div class = 'Stuff_Container; padding-left: 0px;'>
 				<div style = "width: 250px; height: auto; min-height: 100px; border: 1px solid #818181; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 5px; margin-left: 5px;">
-					<div style = "height: 90px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: #f2f2f2; font-size: 23px; font-family: 'Fira Sans', sans-serif;">
-						\(  \left[\frac{dS}{S}\!=\! \mu dt + \sigma dW_t \right] \)
+					<div style = "height: 110px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: #f2f2f2; font-size: 23px; font-family: 'Fira Sans', sans-serif;">
+						\(  \left[{\displaystyle\frac{dS}{S}}\!=\! \mu dt + \sigma dW_t \right] \)
 						<div class = "Top_Note">
 							<span class = "Notes">SPOT</span>
 						</div>
 					</div>
-					<div style = "height: 90px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
-						\(  \left[\frac{df_1}{f_1}\!=\! \mu_1 dt + \sigma_1 dW_t \right] \)
+					<div style = "height: 110px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
+						\(  \left[{\displaystyle\frac{df_1}{f_1}}\!=\! \mu_1 dt + \sigma_1 dW_t \right] \)
 						<div class = "Top_Note">
 							<span class = "Notes">Derivative 1</span>
 						</div>
 					</div>
-					<div style = "height: 90px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
-						\(  \left[\frac{df_2}{f_2}\!=\! \mu_2 dt + \sigma_2 dW_t \right] \)
+					<div style = "height: 110px; width: 100%; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; position: relative; border-bottom: 1px solid #e5e5e5; background-color: rgba(0,0,0,0.0); font-size: 23px; font-family: 'Fira Sans', sans-serif;">
+						\(  \left[{\displaystyle\frac{df_2}{f_2}}\!=\! \mu_2 dt + \sigma_2 dW_t \right] \)
 						<div class = "Top_Note">
 							<span class = "Notes">Derivative 2</span>
 						</div>
@@ -132,76 +132,76 @@
 				<div style = "width: calc((100% - 250px)/2 - 25px - 1px); height: auto; min-height: 100px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; margin-left: 20px; padding-right: 10px; font-size: 18px; background-color: rgba(0,0,0,.0); padding: 10px;">
 					We create a Portfolio : 
 					<br>
-					<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \Omega =\! \big[\sigma_2f_2 \big] f_1 - \big[\sigma_1f_1 \big] f_2 \)</span>
+					<span class = "Math">\(  \Omega =\! \big[\sigma_2f_2 \big] f_1 - \big[\sigma_1f_1 \big] f_2 \)</span>
 					<br>
 					<br>
 					Return from Portfolio : 
 					<br>
-					<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \Delta\Omega =\! \big[\sigma_2f_2 \big] \big(\Delta f_1\big) - \big[\sigma_1f_1 \big] \big(\Delta f_2\big) \)</span>
+					<span class = "Math">\(  \Delta\Omega =\! \big[\sigma_2f_2 \big] \big(\Delta f_1\big) - \big[\sigma_1f_1 \big] \big(\Delta f_2\big) \)</span>
 					<br>
-					<span style = "margin-left: 55px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = \big[\sigma_2f_2 \big] \big( \mu_1 f_1 \Delta t + \sigma_1 f_1 \Delta W_t \big) -\! \big[\sigma_1f_1 \big] \big( \mu_2 f_2 \Delta t + \sigma_2 f_2 \Delta W_t \big) \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( = \big[\sigma_2f_2 \big] \big( \mu_1 f_1 \Delta t + \sigma_1 f_1 \Delta W_t \big) -\! \big[\sigma_1f_1 \big] \big( \mu_2 f_2 \Delta t + \sigma_2 f_2 \Delta W_t \big) \)</span>
 					<br>
-					<span style = "margin-left: 55px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = \big( \mu_1 \sigma_2 f_1 f_2  -  \mu_2 \sigma_1 f_1 f_2 \big)\big( \Delta t \big) \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( = \big( \mu_1 \sigma_2 f_1 f_2  -  \mu_2 \sigma_1 f_1 f_2 \big)\big( \Delta t \big) \)</span>
 					<br>
-					<span style = "margin-left: 55px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = r \Omega \big( \Delta t \big) \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( = r \Omega \big( \Delta t \big) \)</span>
 					<br>
 					<br>
 					So We have : 
 					<br>
-					<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( \mu_1 \sigma_2 f_1 f_2  -  \mu_2 \sigma_1 f_1 f_2 \big) = \big[\sigma_2f_2 \big] rf_1 - \big[\sigma_1f_1 \big] rf_2 \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\(  \big( \mu_1 \sigma_2 f_1 f_2  -  \mu_2 \sigma_1 f_1 f_2 \big) = \big[\sigma_2f_2 \big] rf_1 - \big[\sigma_1f_1 \big] rf_2 \)</span>
 					<br>
 					<br>
-					In above Equation <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ f_1f_2 \big] \)</span> will cancel out. So We have :				
-					<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \lambda \)</span>
+					In above Equation <span class = "Math">\(  \big[ f_1f_2 \big] \)</span> will cancel out. So We have :				
+					<span class = "Math">\(  \left[ {\displaystyle \frac{\mu_1 - r}{\sigma_1} } \right] =\! \left[ {\displaystyle\frac{\mu_2 - r}{\sigma_2}}  \right] =\! \lambda \)</span>
 					<br>
 					<br>
-					This <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \lambda \big] \)</span> is called <span class = "Notes2"><span class = "Notes">MARKET PRICE OF RISK</span> for the Underlying</span>. We see that, all Derivatives of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[  S \big] \)</span> will have SAME Market Price, dependent on the Underlying. So the Excess Return that a typical Derivative of Underlying will have is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \sigma_i\lambda \big] \)</span>. So if this <span class = "Math">\( \big[ \mathbb{RISK}_{\mathbb{MARKET\:PRICE}} = \! 0 \big] \)</span> then, Derivative's growth rate will be <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ r \big] \)</span>.
+					This <span class = "Math">\( \big[ \lambda \big] \)</span> is called <span class = "Notes2"><span class = "Notes">MARKET PRICE OF RISK</span> for the Underlying</span>. We see that, all Derivatives of <span class = "Math">\( \big[  S \big] \)</span> will have SAME Market Price, dependent on the Underlying. So the Excess Return that a typical Derivative of Underlying will have is <span class = "Math">\( \big[ \sigma_i\lambda \big] \)</span>. So if this <span class = "Math">\( \big[ \mathbb{RISK}_{\mathbb{MARKET\:PRICE}} = \! 0 \big] \)</span> then, Derivative's growth rate will be <span class = "Math">\( \big[ r \big] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0; width: 1px; height: 10000vh; min-height: 200px; background-color: #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
 				</div>
 				<div style = "width: calc((100% - 250px)/2); height: auto; min-height: 100px; border-right: 0px solid #818181; border-left: 0px solid #818181; display: inline-block; float: left; text-align: left; font-size: 18px; overflow: hidden;  margin-bottom: 20px; background-color: rgba(0,0,0,.0);">
 					<div style = "padding: 10px;">
-						We now <span class = "Math">\( \mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 \right] \)</span>. <BR>This WORLD is called <i><span class = "Notes2"><span class = "Notes">FORWARD RISK NEUTRAL</span> w.r.t. 2<sup>nd</sup> Derivative</span>.
+						We now <span class = "Math">\( \mathbb{ASSUME}\)</span> that<span class = "Math">\( \left[  \left[ {\displaystyle\frac{\mu_1 - r}{\sigma_1}} \right] =\! \left[ {\displaystyle\frac{\mu_2 - r}{\sigma_2}} \right] =\! \sigma_2 \right] \)</span>. <br><br>This World is called <i><span class = "Notes2"><span class = "Notes">FORWARD RISK NEUTRAL</span> w.r.t. 2<sup>nd</sup> Derivative</span>.
 						<br>
 						<br>
 						So We have : 
 						<br>
-						<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_1}{f_1}\!=\! \big(r + \sigma_1 \sigma_2\big) dt + \sigma_1 dW_t \right] \), \(  \left[\frac{df_2}{f_2}\!=\! \big(r + \sigma_2 \sigma_2\big) dt + \sigma_2 dW_t \right] \)</span>
+						<span  class = "Math">\(  \left[{\displaystyle\frac{df_1}{f_1}}\!=\! \big(r + \sigma_1 \sigma_2\big) dt + \sigma_1 dW_t \right] \), \(  \left[{\displaystyle\frac{df_2}{f_2}}\!=\! \big(r + \sigma_2 \sigma_2\big) dt + \sigma_2 dW_t \right] \)</span>
 						<br>
 						<br>
 						Using Ito's Lemma : 
 						<br>
-						<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ d \big(\mathbb{LOG} f_1\big) \!=\! \left(r + \sigma_1 \sigma_2 - 0.5\sigma_1^2 \right) dt + \sigma_1 dW_t \right] \)</span>
+						<span class = "Math">\(  \left[ d \big(\mathbb{LOG} f_1\big) \!=\! \left(r + \sigma_1 \sigma_2 - 0.5\sigma_1^2 \right) dt + \sigma_1 dW_t \right] \)</span>
 						<br>
-						<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ d \big(\mathbb{LOG} f_2\big) \!=\! \left(r + \sigma_2 \sigma_2 - 0.5\sigma_2^2 \right) dt + \sigma_2 dW_t \right] \)</span>
+						<span class = "Math">\(  \left[ d \big(\mathbb{LOG} f_2\big) \!=\! \left(r + \sigma_2 \sigma_2 - 0.5\sigma_2^2 \right) dt + \sigma_2 dW_t \right] \)</span>
 						<br>
 						<br>
 						This gives : 
 						<br>
-						<span style = "margin-left: 15px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ d \left(\mathbb{LOG} \frac{f_1}{f_2} \right) \!=\! \left(\sigma_1 \sigma_2 - 0.5\sigma_1^2 - 0.5\sigma_2^2 \right) dt + \big( \sigma_1 - \sigma_2 \big) dW_t \right] \)</span>
+						<span class = "Math">\(  \left[ d \left(\mathbb{LOG} {\displaystyle\frac{f_1}{f_2}} \right) \!=\! \left(\sigma_1 \sigma_2 - 0.5\sigma_1^2 - 0.5\sigma_2^2 \right) dt + \big( \sigma_1 - \sigma_2 \big) dW_t \right] \)</span>
 						<br>
-						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "margin-left: 120px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \!=\! -0.5 \big( \sigma_1 - \sigma_2 \big)^2 dt + \big( \sigma_1 - \sigma_2 \big) dW_t \)</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \!=\! -\!\!0.5 \big( \sigma_1 - \sigma_2 \big)^2 dt + \big( \sigma_1 - \sigma_2 \big) dW_t \)</span>
 						<br>
 						<br>
-						This means that that the Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{f_1}{f_2} \right] \)</span> is basically a <span class = "Math">\( \mathbb{MARTINGALE}\)</span> i.e. <span class = "Math">\( \big[ \mathbb{DRIFT} =\! 0\big]\).
+						This means that that the Ratio <span class = "Math">\(  \left[{\displaystyle\frac{f_1}{f_2}} \right] \)</span> is basically a <span class = "Math">\( \mathbb{MARTINGALE}\)</span> i.e. <span class = "Math">\( \big[ \mathbb{DRIFT} =\! 0\big]\).
 					</div>
-					<div style = "height: 580px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 20px; border-bottom: 1px solid #7a49a5;">
+					<div style = "height: 700px; width: calc(100%); margin: 0; padding: 15px; background-color: #EBDBF8; border-left: 15px solid #001233; margin-top: 20px; border-bottom: 1px solid #7a49a5;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; ">
 							Change in Numeraire <span class = "Page_Number1">[665]</span>
 						</span>
 						<br>
 						<br>
 						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-							<span class = "Math">\( \mathbb{ASSUME}\)</span> : <span class = "Math">\( \big[ \lambda = \mathbb{RISK}_{\mathbb{MARKET\:PRICE}, \: \big[ \mathbb{OLD}\big]} \big] \)</span>. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda \big) dt + \sigma_1 dW_t \right] \)</span>.
+							<span class = "Math">\( \mathbb{ASSUME}\)</span> : <span class = "Math">\( \big[ \lambda = \mathbb{RISK}_{\mathbb{MARKET\:PRICE}, \: \big[ \mathbb{OLD}\big]} \big] \)</span>. Hence, <span class = "Math">\( \left[{\displaystyle\frac{df_1}{f_1}}\!=\! \big( r + \sigma_1 \lambda \big) dt + \sigma_1 dW_t \right] \)</span>.
 							<br>
-							<span class = "Math">\( \mathbb{ASSUME}\)</span> : <span class = "Math">\( \big[ \lambda_1 =  \mathbb{RISK}_{\mathbb{MARKET\:PRICE}, \: \big[\mathbb{NEW}\big]} \big] \)</span>. Therefore, <span class = "Math">\( \left[\frac{df_1}{f_1}\!=\! \big( r + \sigma_1 \lambda_1 \big) dt + \sigma_1 dW_t \right] \)</span>.
-							<br>
-							Therefore, change in <span class = "Math">\(\mathbb{DRIFT}\)</span> : <span class = "Math">\( \big[ \alpha = \big( \lambda_1 - \lambda  \big) \sigma_1 \big] \)</span>
+							<span class = "Math">\( \mathbb{ASSUME}\)</span> : <span class = "Math">\( \big[ \lambda_1 =  \mathbb{RISK}_{\mathbb{MARKET\:PRICE}, \: \big[\mathbb{NEW}\big]} \big] \)</span>. Hence, <span class = "Math">\( \left[{\displaystyle\frac{df_1}{f_1}}\!=\! \big( r + \sigma_1 \lambda_1 \big) dt + \sigma_1 dW_t \right] \)</span>.
+							<br><br>
+							Therefore, change in <span class = "Math">\(\mathbb{DRIFT}\)</span> : <span class = "Math">\( \big[ \alpha = \big( \lambda_1 - \lambda  \big) \sigma_1 \big] \)</span>.
 							<br>
 							<br>
 							Let, We change the <span class = "Math">\(\mathbb{NUMERAIRE}\)</span> from <span class = "Math">\( \big[g\big] \)</span> to <span class = "Math">\( \big[ h \big] \)</span>, then that <span class = "Math">\(\mathbb{DRIFT}\)</span> change <span class = "Math">\( \big[ \alpha =\! \big( \sigma_h - \sigma_g  \big) \sigma_1 \big] \)</span>.
-							<br>
-							<span class = "Math">\( \mathbb{ASSUME}\)</span> <span class = "Math">\( \left[ w =\!\! \frac{h}{g}  \right] \)</span>, and it's <span class = "Math">\(\mathbb{VOLATILITY}\)</span> is <span class = "Math">\( \big[ \sigma_w = \sigma_h - \sigma_g \big] \)</span>, using Ito's Lemma on Log-Price. Therefore, that <span class = "Math">\(\mathbb{DRIFT}\)</span> change <span class = "Math">\( \big[ \alpha =\! \sigma_w \sigma_1 \big] \)</span>. This is just, <span class = "Math">\( \mathbb{COV} \big[ f_1, w \big] \)</span> because,
+							<br><br>
+							<span class = "Math">\( \mathbb{ASSUME}\)</span> <span class = "Math">\( \left[ w =\!\! {\displaystyle\frac{h}{g}}  \right] \)</span>, and it's <span class = "Math">\(\mathbb{VOLATILITY}\)</span> is <span class = "Math">\( \big[ \sigma_w = \sigma_h - \sigma_g \big] \)</span>, using Ito's Lemma on Log-Price. Therefore, that <span class = "Math">\(\mathbb{DRIFT}\)</span> change <span class = "Math">\( \big[ \alpha =\! \sigma_w \sigma_1 \big] \)</span>. This is just, <span class = "Math">\( \mathbb{COV} \big[ f_1, w \big] \)</span> because,
 							<br>
 							<br>
 							<span class = "Math">\( \Delta f_1 = a \big[\Delta t\big] + f_1 \sum \sigma_{1, i} \epsilon_i \sqrt{ \big[ \Delta t \big] } \)</span>
@@ -220,16 +220,16 @@
 				</div>
 			</div>
 		</div>
-		<div class = 'Indiv_Content' style = 'border-color: #007f5f; height: 1250px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #007f5f; height: 1340px;'>
 			<div style = 'height: auto; min-height: 200px; width: calc(50% - 1px); margin: 0; padding: 0; display: inline-block; float: left; border-right: 0px solid #818181; overflow: hidden;'>
 				<div class = 'Blog_Header'>
 					Numeraire is ZC Bond
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 \)</span>. 
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span class = "Math">\(  \left[ {\displaystyle\frac{\mu_1 - r}{\sigma_1}} \right] =\! \left[ {\displaystyle\frac{\mu_2 - r}{\sigma_2}} \right] =\! \sigma_2 \)</span>. 
 					<br>
 					<br>
-					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ f_{2, T} \big] \)</span>
+					So, <span class = "Math">\(  \left[ {\displaystyle\frac{f_{1, 0}}{f_{2, 0}}} \right] =\!\! \mathbb{E}^*\left[ {\displaystyle\frac{f_{1, T}}{f_{2, T}}} \right] \)</span>. So, <span class = "Math">\(  f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ f_{2, T} \big] \)</span>
 				</div>				
 				<div style = "height: 125px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
@@ -251,13 +251,13 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ S_T-\!K \big] =\!\! 0 \)</span>. This gives <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ K =\!\! \mathbb{E}^*\big[ S_T \big]\big] \)</span>
+						<span class = "Math">\( f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ S_T-\!K \big] =\!\! 0 \)</span>. This gives <span class = "Math">\( \big[ K =\!\! \mathbb{E}^*\big[ S_T \big]\big] \)</span>
 						<br>
 						<br>
 						So, Forward Price is just the <span class = "Notes">EXPECTED SPOT PRICE</span> in this World.
 					</span>
 				</div>				
-				<div style = "height: 260px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+				<div style = "height: 320px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #2d6a4f; color: #fff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
 						2
 					</div>
@@ -267,13 +267,13 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-						Forward Interest Rate : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{T_2\:-T_1}\right]\left[ \frac{P\big( 0,T_1\big)}{P\big( 0,T_2\big)}-1\right]\right] \)</span>
+						Forward Interest Rate : <span class = "Math">\( \left[  R \big(0,T_1, T_2 \big) =\!\! \left[ {\displaystyle\frac{1}{T_2\:-T_1}}\right]\left[ {\displaystyle\frac{P\big( 0,T_1\big)}{P\big( 0,T_2\big)}}-1\right]\right] \)</span>
 						<br>
 						<br>
-						So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{P\big( 0,T_2\big)}\right]\left[ \frac{P\big( 0,T_1\big)-P\big( 0,T_2\big)}{T_2\:-T_1}\right] =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right]\right] \)</span>
+						So, <span class = "Math">\( \left[ R \big(0,T_1, T_2 \big) =\!\! \left[ {\displaystyle\frac{1}{P\big( 0,T_2\big)}}\right]\left[ {\displaystyle\frac{P\big( 0,T_1\big)-P\big( 0,T_2\big)}{T_2\:-T_1}}\right] =\!\! \left[ {\displaystyle\frac{f_{1, 0}}{f_{2, 0}}} \right]\right] \)</span>
 						<br>
 						<br>
-						Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R \big(0,T_1, T_2 \big) =\!\! \mathbb{E}^*\big[ R \big(T_1,T_1, T_2 \big) \big]\big] \).
+						Now since, <span class = "Math">\(  \left[ {\displaystyle\frac{f_{1, 0}}{f_{2, 0}}} \right] =\!\! \mathbb{E}^*\left[ {\displaystyle\frac{f_{1, T}}{f_{2, T}}} \right] \)</span>, We have : <span  class = "Math">\( \big[ R \big(0,T_1, T_2 \big) =\!\! \mathbb{E}^*\big[ R \big(T_1,T_1, T_2 \big) \big]\big] \).
 					</span>
 				</div>				
 				<div style = "height: 280px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
@@ -288,10 +288,10 @@
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						<span class = "Notes2">EURODOLLAR Future</span> Rate : <span class = "Math">\( \left[  R \big(0,T_1, T_2 \big) =\!\! {\displaystyle \frac{ T_2 \big( \mathbb{ZC}_{T_2} \big) \:- T_1 \big( \mathbb{ZC}_{T_1} \big) }{T_2 \:-T_1} } \right], \: T_2 = T_1 + 90\mathbb{d} \)</span>
 						<br>
-						So, if We already have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \mathbb{ZC}_{T_1} \big] \)</span>, then using the EURODOLLAR Future Rate, We can extend the <span class = "Math">\(\mathbb{ZCB}\)</span> curve to <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \mathbb{ZC}_{T_2} \big] \)</span>
+						So, if We already have <span class = "Math">\(  \big[ \mathbb{ZC}_{T_1} \big] \)</span>, then using the EURODOLLAR Future Rate, We can extend the <span class = "Math">\(\mathbb{ZCB}\)</span> curve to <span class = "Math">\(  \big[ \mathbb{ZC}_{T_2} \big] \)</span>
 						<br>
 						<br>
-						Ideally We should use the Forward Rate, NOT Future Rate. So We use <span class = 'Notes'>The <span class = 'Notes2'>Convexity Adjustment</span></span>. Which says that : The Difference between Futures Rate & Forward Rate is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ 0.5\sigma^2 T_1 T_2 \big] \)</span>, where <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \sigma \big] \)</span> is the Short-Rate's <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span>. So, for a <span class = "Math">\( \big[8 \mathbb{Y}\big]\)</span> EURODOLLAR Futures, we have <span class = "Math">\( \big[ T_1 =\! 8, \: T_2 =\! 8.25  \big] \)</span> <span class = 'Page_Number1'>[162]</span>.
+						Ideally We should use the Forward Rate, NOT Future Rate. So We use <span class = 'Notes'>The <span class = 'Notes2'>Convexity Adjustment</span></span>. Which says that : The Difference between Futures Rate & Forward Rate is <span style class = "Math">\(  \big[ 0.5\sigma^2 T_1 T_2 \big] \)</span>, where <span class = "Math">\(  \big[ \sigma \big] \)</span> is the Short-Rate's <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span>. So, for a <span class = "Math">\( \big[8 \mathbb{Y}\big]\)</span> EURODOLLAR Futures, we have <span class = "Math">\( \big[ T_1 =\! 8, \: T_2 =\! 8.25  \big] \)</span> <span class = 'Page_Number1'>[162]</span>.
 					</span>
 				</div>				
 				<div style = "height: 180px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
@@ -304,11 +304,11 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( c =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ \mathbb{MAX} \big[ S_T - \! K, \: 0 \big] \big] \)</span>
+						<span class = "Math">\( c =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ \mathbb{MAX} \big[ S_T - \! K, \: 0 \big] \big] \)</span>
 						<br>
-						<span style = "margin-left: 20px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = P\big( 0,T\big) \big( \mathbb{E}^*\big[ S_T \big] \mathbb{N} \big( d_1 \big) - K \mathbb{N} \big( d_2 \big) \big) \)</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( = P\big( 0,T\big) \big( \mathbb{E}^*\big[ S_T \big] \mathbb{N} \big( d_1 \big) - K \mathbb{N} \big( d_2 \big) \big) \)</span>
 						<br>
-						<span style = "margin-left: 20px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = P\big( 0,T\big) \big( F_0 \mathbb{N} \big( d_1 \big) - K \mathbb{N} \big( d_2 \big) \big) \)</span>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( = P\big( 0,T\big) \big( F_0 \mathbb{N} \big( d_1 \big) - K \mathbb{N} \big( d_2 \big) \big) \)</span>
 					</span>
 				</div>
 			</div>
@@ -319,19 +319,19 @@
 					Numeraire is Annuity
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Notes">Forward Swap</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  S\big[t \leq T \:|\:\: T_1,T_2,...,T_N \big] \)</span>. Principal is <span class = "Math">\(\big[$1\big]\)</span>.
+					<span class = "Notes">Forward Swap</span> : <span class = "Math">\(  S\big[t \leq T \:|\:\: T_1,T_2,...,T_N \big] \)</span>. Principal is <span class = "Math">\(\big[$1\big]\)</span>.
 					<br>
 					<br>
-					Now, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \mathbb{PV}_{\mathbb{FIX\:LEG}, \:\big[ 0 \big] } =\! \left[ \sum\limits_{i=0}^{N-\!1} s_0 \: \big[ T_{i+1}-T_i\big] \: P\big( 0,T_{i+1}\big) =\! s_0 A_0 \right]\right]  \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ s_0 \big] \)</span> is the <span class = "Notes2">Swap Rate</span> AND <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T=T_0 \big] \)</span>.
+					Now, <span  class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FIX\:LEG}, \:\big[ 0 \big] } =\! \left[ \sum\limits_{i=0}^{N-\!1} s_0 \: \big[ T_{i+1}-T_i\big] \: P\big( 0,T_{i+1}\big) =\! s_0 A_0 \right]\right]  \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[ s_0 \big] \)</span> is the <span class = "Notes2">Swap Rate</span> AND <span class = "Math">\( \big[ T=T_0 \big] \)</span>.
 					<br>
 					<br>
-					If I add <span class = "Math">\(\big[$1\big]\)</span> at <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_N \big]  \)</span>, <span class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FLOAT\:LEG}, \:\big[ T_0 \big] } =\! $1 \right]\)</span>. Therefore, <span class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FLOAT\:LEG}, \:\big[ 0 \big] } =\! \big[ P\big( 0,T_0\big) - P\big( 0,T_N\big) \big] \right]\)</span>.
+					If I add <span class = "Math">\(\big[$1\big]\)</span> at <span class = "Math">\( \big[ T_N \big]  \)</span>, <span class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FLOAT\:LEG}, \:\big[ T_0 \big] } =\! $1 \right]\)</span>. Therefore, <span class = "Math">\( \left[ \mathbb{PV}_{\mathbb{FLOAT\:LEG}, \:\big[ 0 \big] } =\! \big[ P\big( 0,T_0\big) - P\big( 0,T_N\big) \big] \right]\)</span>.
 					<br>
 					<br>
-					Equating Fixed Leg & Floating Leg, We have :  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 = \!\frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0} =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] \right]  \)</span>.
+					Equating Fixed Leg & Floating Leg, We have :  <span class = "Math">\( \left[ s_0 = \!{\displaystyle\frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0}} =\!\! \left[ {\displaystyle\frac{f_{1, 0}}{f_{2, 0}}} \right] \right]  \)</span>.
 					<br>
 					<br>
-					Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^A\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  s_0 =\!\! \mathbb{E}^A\big[ s_T \big] \).
+					Now since, <span class = "Math">\(  \left[ {\displaystyle\frac{f_{1, 0}}{f_{2, 0}}} \right] =\!\! \mathbb{E}^A\left[ {\displaystyle\frac{f_{1, T}}{f_{2, T}}} \right] \)</span>, We have : <span class = "Math">\( \left[  s_0 =\!\! \mathbb{E}^A\big[ s_T \big] \right] \).
 				</div>
 				<div style = "height: 145px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden; text-align: left;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
@@ -340,17 +340,17 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-							This Equ<sup>n</sup> <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 =\!\! {\displaystyle \frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0}} \:\:=\!\! \left[ {\displaystyle \frac{f_{1, 0}}{f_{2, 0}} } \right] \right]  \)</span> is used for that <a href="https://quant.stackexchange.com/questions/3438/why-use-swap-rates-in-a-yield-curve/8293#8293" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+							This Equ<sup>n</sup> <span class = "Math">\( \left[ s_0 =\!\! {\displaystyle {\displaystyle\frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0}}} \:\:=\!\! \left[ {\displaystyle \frac{f_{1, 0}}{f_{2, 0}} } \right] \right]  \)</span> is used for that <a href="https://quant.stackexchange.com/questions/3438/why-use-swap-rates-in-a-yield-curve/8293#8293" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</span>
 				</div>
 				<div class = 'Blog_Header' style = 'margin-top: 30px;'>
 					Numeraire is Money Market Account
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \right] \)</span>. This is because, in <span class = "Notes2">Money-Market-Account</span>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \mathbb{RFR} =\!  r \big] \)</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span class = "Math">\( \left[  \left[ {\displaystyle\frac{\mu_1 - r}{\sigma_1}} \right] =\! \left[ {\displaystyle\frac{\mu_2 - r}{\sigma_2}} \right] =\! \sigma_2 =\! 0 \right] \)</span>. This is because, in <span class = "Notes2">Money-Market-Account</span>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span class = "Math">\(  \left[{\displaystyle\frac{df_2}{f_2}}\!=\! r dt \right] \)</span>, <span class = "Math">\( \big[ \mathbb{RFR} =\!  r \big] \)</span>.
 					<br>
 					<br>
-					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ f_{1, 0} =\!\! \mathbb{E}^*\left[ f_{1, T} \left( e^{-\!\!\int\limits_{0}^{T} r dt} \right) \right] \right]  =\!\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right)f_{1, T} \right] \)</span>
+					So, <span class = "Math">\(  \left[ {\displaystyle\frac{f_{1, 0}}{f_{2, 0}}} \right] =\!\! \mathbb{E}^*\left[ {\displaystyle\frac{f_{1, T}}{f_{2, T}}} \right] \)</span>. So, <span class = "Math">\( \left[ f_{1, 0} =\!\! \mathbb{E}^*\left[ f_{1, T} \left( e^{-\!\!\int\limits_{0}^{T} r dt} \right) \right] \right]  =\!\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right)f_{1, T} \right] \)</span>
 				</div>				
 				<div style = "height: 225px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden; text-align: left;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
@@ -448,20 +448,20 @@
 					</div>
 					<div style = "height: 230px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
 									border: 1px solid #a0c4ff; padding-top: 10px;">
-						Forward Bond Price - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ F_B =\!\! \frac{S_0 \: - I}{ P \big( 0, T\big)} \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( S_0 \)</span> is the Bond-Price, AND <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( I \)</span> is the PV of all Interest Payments during Bond life. All Prices are Dirty Price i.e. Cash Price. NOTE : General Formula for Forward Price is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ F =\!\! \big( S_0 - I \! \big)e^{rT} \right] \)</span>.
+						Forward Bond Price - <span class = "Math">\( \left[ F_B =\!\! {\displaystyle\frac{S_0 \: - I}{ P \big( 0, T\big)}} \right] \)</span>, <span class = "Math">\( S_0 \)</span> is the Bond-Price, AND <span class = "Math">\( I \)</span> is the PV of all Interest Payments during Bond life. All Prices are Dirty Price i.e. Cash Price. NOTE : General Formula for Forward Price is <span class = "Math">\( \left[ F =\!\! \big( S_0 - I \! \big)e^{rT} \right] \)</span>.
 						<br>
 						<br>
-						We have this Formula - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{\Delta \! F_B}{F_B} \right] \!=\!\! - \!\!D y_F \left[ \frac{\Delta \! y_F}{y_F} \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(D \)</span> is the <i>Modified Duration of that Bond</i>, AND <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ y_F \big] \)</span> is the Forward Bond Yield. Therefore, We can have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \sigma \big( F_B \big) =\!\! D y_F \big[ \sigma \big( y_F \big) \big] \)</span>. <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \sigma \big( y_F \big) \)</span> are MORE CONSTANT w.r.t. <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \sigma \left( F_B \right) \)</span>.
+						We have this Formula - <span class = "Math">\( \left[ {\displaystyle\frac{\Delta \! F_B}{F_B}} \right] \!=\!\! - \!\!D y_F \left[ {\displaystyle\frac{\Delta \! y_F}{y_F}} \right] \)</span>, <span class = "Math">\(D \)</span> is the <i>Modified Duration of that Bond</i>, AND <span class = "Math">\( \big[ y_F \big] \)</span> is the Forward Bond Yield. Therefore, We can have <span class = "Math">\( \sigma \big( F_B \big) =\!\! D y_F \big[ \sigma \big( y_F \big) \big] \)</span>. <span class = "Math">\( \sigma \big( y_F \big) \)</span> are MORE CONSTANT w.r.t. <span class = "Math">\( \sigma \left( F_B \right) \)</span>.
 					</div>
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 20px'>
 					IR Path & ZC Term Structure
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0,T \big) =\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right) $1 \right] \)</span>. Also, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0,T \big) =\! $1 \left[ e^{ -R_{0,T} T } \right] \)</span>
+					<span class = "Math">\( P \big( 0,T \big) =\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right) $1 \right] \)</span>. Also, <span class = "Math">\( P \big( 0,T \big) =\! $1 \left[ e^{ -R_{0,T} T } \right] \)</span>
 					<br>
 					<br>
-					So We have : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( e^{ -R_{0,T} T } = \! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right) \right] \Longrightarrow R_{0,T} = \! \left[ \frac{1}{T }\right] \mathbb{E}^*\left[  e^{- \overline{r} T}  \right] \)</span>
+					So We have : <span class = "Math">\( e^{ -R_{0,T} T } = \! \mathbb{E}^*\left[  e^{- \overline{r} T}  \right] \Rightarrow R_{0,T} = \!  \mathbb{E}^{*}\left[  e^{- \overline{r} T}  \right] \)</span>
 					<br>
 					<br>
 					Above Equation is used to construct the IR Term Structure from Short Rate Models.
@@ -470,7 +470,7 @@
 					Equlibrium Models - Model for Short Rates
 				</div>
 				<div style = "height: auto; min-height: 10px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 16px;">
-					All are Real-World Process. For Risk Neutral Process, decrease the Drift by <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{ \lambda \sigma }{r} \right] \)</span> for Vasicek Model. <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \big[ \lambda \big] \)</span> is Market Price of IR Risk. However if, the Parameters are estimated using Market observed Bond Prices then, We will get Risk-Neutral Parameters. From there, We can calculate Real-World Parameters.
+					All are Real-World Process. For Risk Neutral Process, decrease the Drift by <span class = "Math">\( \left[ {\displaystyle\frac{ \lambda \sigma }{r}} \right] \)</span> for Vasicek Model. <span class = "Math">\( \big[ \lambda \big] \)</span> is Market Price of IR Risk. However if, the Parameters are estimated using Market observed Bond Prices then, We will get Risk-Neutral Parameters. From there, We can calculate Real-World Parameters.
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
 					<div style = "height: 50px; width: 60%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #52b788; margin-top: 10px;
@@ -481,7 +481,7 @@
 					<div style = "height: 50px; width: 40%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #52b788; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{dr}{r} \right] =\! \mu  dt + \sigma  dW_t \)</span>
+						<span class = "Math">\( \left[ {\displaystyle\frac{dr}{r}} \right] =\! \mu  dt + \sigma  dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 30px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
@@ -495,11 +495,11 @@
 					<div style = "height: 50px; width: 40%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #52b788; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr = a \big( b - r\big)dt + \sigma dW_t \)</span>
+						<span class = "Math">\( dr = a \big( b - r\big)dt + \sigma dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 50px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
-						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. ALSO, We <span class = "Notes2">can price</span> <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>
+						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. ALSO, We <span class = "Notes2">can price</span> <span class = "Math">\( P \big( 0, T\big) \)</span>
 						<br>
 						<br>
 						<span class = "Notes2">Parameter Estimation</span> : Use Discrete Version for Parameter Estimation. Example : Fit Weekly Data on Short Term IR. We can just use Regression for Estimation. MLE can also be used.
@@ -512,32 +512,32 @@
 					<div style = "height: 50px; width: 40%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #52b788; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr = a \big( b - r\big)dt + \sigma \sqrt{\big[r\big]} dW_t \)</span>
+						<span class = "Math">\( dr = a \big( b - r\big)dt + \sigma \sqrt{\big[r\big]} dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 50px; width: 90%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: px solid #b7e4c7; font-size: 16px; margin-bottom: 30px;">
-						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. Additionally, for <span class = "Math">\( \big[\mathbb{VARIANCE}_{\mathbb{RATE}} \big]\)</span>, when Rate is High, <span class = "Math">\(\mathbb{VARIANCE}\)</span> is also High</b>. ALSO, We <span class = "Notes2">can price</span> <span style = "margin-left: 0px; font-size: 16px; font-family: 'Fira Sans', sans-serif;">\( P \big( 0, T\big) \)</span>.
+						This allows Mean Reversion in Rate. This is important. When Rate is high, Economic activity will become less. This will move down the Rate to increase activities. Similarly, for time when Rates are Less. Additionally, for <span class = "Math">\( \big[\mathbb{VARIANCE}_{\mathbb{RATE}} \big]\)</span>, when Rate is High, <span class = "Math">\(\mathbb{VARIANCE}\)</span> is also High</b>. ALSO, We <span class = "Notes2">can price</span> <span class = "Math">\( P \big( 0, T\big) \)</span>.
 						<br>
 						<br>
 						Above Eq<sup>n</sup> has UNIQUE Sol<sup>n</sup>. BUT, We can NOT get <span class = "Notes1">Expression</span> of that Sol<sup>n</sup>. We can ONLY get <span class = "Math">\(\mathbb{EXPECTATION}\)</span> of that Sol<sup>n</sup>.
 						<br>
 						<br>
-						<span class = 'Notes'>Heston Process</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dS_t =\! \mu S_t dt + \sigma_t S_t dW_{S, \: t}, \: d \sigma_t^2 =\! \kappa \big( \theta - \sigma_t^2 \big)dt + \xi \sigma_t dW_{\sigma, \: t} \)</span> <a href="https://en.wikipedia.org/wiki/Heston_model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+						<span class = 'Notes'>Heston Process</span> : <span class = "Math">\( dS_t =\! \mu S_t dt + \sigma_t S_t dW_{S, \: t}, \: d \sigma_t^2 =\! \kappa \big( \theta - \sigma_t^2 \big)dt + \xi \sigma_t dW_{\sigma, \: t} \)</span> <a href="https://en.wikipedia.org/wiki/Heston_model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 						<br>
 						<br>
-						<span class = 'Notes'>OU Process</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr =\! a \big( b - r\big)dt + \sigma dW_t \)</span> <a href="https://quant.stackexchange.com/questions/40265/two-papers-two-different-solutions-of-the-ornstein-uhlenbeck-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+						<span class = 'Notes'>OU Process</span> : <span class = "Math">\( dr =\! a \big( b - r\big)dt + \sigma dW_t \)</span> <a href="https://quant.stackexchange.com/questions/40265/two-papers-two-different-solutions-of-the-ornstein-uhlenbeck-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 						<br>
 						<br>
 						<span class = "Notes2">How to <span class = "Notes1">simulate</span> this OU Process ?</span> <a href="https://quant.stackexchange.com/questions/8114/monte-carlo-simulating-cox-ingersoll-ross-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
 						<br>
-						Use some Scheme like <span class = 'Notes'>Milstein Scheme</span>. This is a technique to approximate SDE's <span class = "Notes1">Numerical Solution</span> for a Process. There is NO Guarantee that, the Next Value will remain <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span>. It's common to just set all zeroes equal to the minimum nonzero obs<sup>n</sup> in the dataset <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> - <br><span class = 'Math'>\( S_t =\! \mu_{S, t}dt +\! \sigma_{S, t}dW_t \)</span><br><span class = 'Math'>\(  \Rightarrow S_{t+1} = \! \big[ S_t + \mu_{S, t}\Delta t +\! \sigma_{S, t} \Delta W_t \big] + 0.5 \sigma_{S, t} \left[ \frac{d\sigma_{S, t}}{dS} \right] \big( \big( \Delta W_t \big)^2 - \Delta t \big) \)</span>.
+						Use some Scheme like <span class = 'Notes'>Milstein Scheme</span>. This is a technique to approximate SDE's <span class = "Notes1">Numerical Solution</span> for a Process. There is NO Guarantee that, the Next Value will remain <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span>. It's common to just set all zeroes equal to the minimum nonzero obs<sup>n</sup> in the dataset <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> - <br><span class = 'Math'>\( S_t =\! \mu_{S, t}dt +\! \sigma_{S, t}dW_t \)</span><br><span class = 'Math'>\(  \Rightarrow S_{t+1} = \! \big[ S_t + \mu_{S, t}\Delta t +\! \sigma_{S, t} \Delta W_t \big] + 0.5 \sigma_{S, t} \left[ {\displaystyle\frac{d\sigma_{S, t}}{dS}} \right] \big( \big( \Delta W_t \big)^2 - \Delta t \big) \)</span>.
 					</div>
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 40px'>
 					NO-Arbitrage Models - Model for Short Rates
 				</div>
 				<div style = "height: auto; min-height: 1px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 16px;">
-					In all One-Factor Models, <span class = "Notes2">ALL</span> <span class = "Math">\(\mathbb{ZCB}\)</span> move-up when <span style = "margin-left: 0px; font-size: 18px; font-family: 'Fira Sans', sans-serif;">\( \big[r\big] \)</span> decreases, & vice-versa.
+					In all One-Factor Models, <span class = "Notes2">ALL</span> <span class = "Math">\(\mathbb{ZCB}\)</span> move-up when <span class = "Math">\( \big[r\big] \)</span> decreases, & vice-versa.
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
 					<div style = "height: 50px; width: 60%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fb8b24; margin-top: 10px;
@@ -548,7 +548,7 @@
 					<div style = "height: 50px; width: 40%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #fb8b24; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr =\! \alpha_t dt + \sigma dW_t \)</span>
+						<span class = "Math">\( dr =\! \alpha_t dt + \sigma dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 10px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px; padding-bottom: 6px;">
@@ -564,7 +564,7 @@
 					<div style = "height: 50px; width: 40%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #fb8b24; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dr =\! \big( \alpha_t -ar \big) dt + \sigma dW_t \)</span>
+						<span  class = "Math">\( dr =\! \big( \alpha_t -ar \big) dt + \sigma dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 10px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px; padding-bottom: 6px;">
@@ -580,7 +580,7 @@
 					<div style = "height: 50px; width: 50%; margin: 0 padding: 0; display: inline-block; float: left; background-color: #fff; margin-top: 10px;
 									border: 1px solid #fb8b24; border-left: 0px;
 									display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: left">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( d \mathbb{LOG} r =\! \big( \alpha_t -a \mathbb{LOG} r \big) dt + \sigma dW_t \)</span>
+						<span class = "Math">\( d \mathbb{LOG} r =\! \big( \alpha_t -a \mathbb{LOG} r \big) dt + \sigma dW_t \)</span>
 					</div>
 					<div style = "height: auto; min-height: 50px; width: 80%; margin: 0 padding: 0; display: inline-block; float: right; background-color: #fff; margin-top: 5px; margin-left: 20%;
 									border-bottom: 1px solid #b7e4c7; font-size: 16px;">
@@ -595,13 +595,13 @@
 					Valuation - CAP - An IR Option
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					A CAP has a number of Reset Dates starting from <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ T_0 \big] \)</span>. In each reset date, the LIBOR is observed. If LIBOR is more than the Strike Rate then Payoff is calculated based on the <i>Difference</i> multiplied with Principal. Payoff will be given in next reset date. Otherwise, NO Payoff. ALSO, on the 1<sup>st</sup> Payment date, NO Payoff. 
+					A CAP has a number of Reset Dates starting from <span class = "Math">\( \big[ T_0 \big] \)</span>. In each reset date, the <span class = "Math">\(\mathbb{LIBOR}\)</span> is observed. If <span class = "Math">\(\mathbb{LIBOR}\)</span> is more than the Strike Rate then Payoff is calculated based on the <i>Difference</i> multiplied with Principal. Payoff will be given in next reset date. Otherwise, NO Payoff. ALSO, on the 1<sup>st</sup> Payment date, NO Payoff. 
 					<br>
 					<br>
-					So Payoff for a given reset date is :  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \frac{L \delta_k \mathbb{MAX} \big[R_k - R_K, \: 0 \big] }{ 1 + \delta_k r_k } \right] \)</span>.
+					So Payoff for a given reset date is :  <span class = "Math">\( \left[ {\displaystyle\frac{L \delta_k \mathbb{MAX} \big[R_k - R_K, \: 0 \big] }{ 1 + \delta_k r_k }} \right] \)</span>.
 					<br>
 					<br>
-					Valuation is done using <span class = "Notes2">Black's Formula</span> : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} \mathbb{N} \big( d_1 \big) - R_K \mathbb{N} \big( d_2 \big) \big) \big] \)</span>. ALSO, the Underlying <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> need to be multiplied with <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \sqrt{\big[t_k\big]} \right] \)</span> because, Our <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> time-horizon is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ t_k \big]  \)</span>.
+					Valuation is done using <span class = "Notes2">Black's Formula</span> : <span class = "Math">\( \big[ c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} \mathbb{N} \big( d_1 \big) - R_K \mathbb{N} \big( d_2 \big) \big) \big] \)</span>. ALSO, the Underlying <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> need to be multiplied with <span class = "Math">\( \left[  \sqrt{\big[t_k\big]} \right] \)</span> because, Our <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> time-horizon is <span class = "Math">\( \big[ t_k \big]  \)</span>.
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
 					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
@@ -645,9 +645,9 @@
 						<span class = "Notes2"><span class = "Notes">CAP - FLOOR</span> = SWAPS</span>
 						<br>
 						<br>
-						<span class = "Math">\( \mathbb{ASSUME}\)</span> that <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
+						<span class = "Math">\( \mathbb{ASSUME}\)</span> that <span  class = "Math">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span class = "Math">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span class = "Math">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
 						<br>
-						Similar thing will happen for <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R_k < \! R_K \big] \)</span>.
+						Similar thing will happen for <span class = "Math">\( \big[ R_k < \! R_K \big] \)</span>.
 					</div>
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
@@ -680,7 +680,7 @@
 								If, at the time of IR-SWAP's inception, <span class = "Math">\(\mathbb{ASSUME}\)</span> that the Term-Structure is upward sloping. Then, Forward IR will increase w.r.t. Maturity of FRN. So, for the initial days, FRNs will have <span class = "Math">\( \big[ -\!\!\mathbb{VE} \big]\)</span> values, AND for the final days, FRNs will have positive values.
 							</div>
 						</div>
-						Also, IR-SWAP can be considered as Portfolio of Fixed Rate & Floating Rate (LIBOR) Bond. In such case, for the Floating Rate Bond, Bond's Value equals to Principal <span class = "Notes1">just after</span> an Interest Payment. <br>&ensp;&ensp;&ensp;AND, Principal + Interest <span class = "Notes1">just before</span> an Interest Payment.
+						Also, IR-SWAP can be considered as Portfolio of Fixed Rate & Floating Rate <span class = "Math">\(\mathbb{LIBOR}\)</span> Bond. In such case, for the Floating Rate Bond, Bond's Value equals to Principal <span class = "Notes1">just after</span> an Interest Payment. <br>&ensp;&ensp;&ensp;AND, Principal + Interest <span class = "Notes1">just before</span> an Interest Payment.
 					</div>
 				</div>
 				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
@@ -707,43 +707,43 @@
 					Adjustment - Convexity
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> : Instrument pays w.r.t. <span class = "Notes2">Forward Bond Yield</span>. HOW to Price ??? ANS : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T \big) \mathbb{E}^*\big[ y_T \big] \)</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> : Instrument pays w.r.t. <span class = "Notes2">Forward Bond Yield</span>. HOW to Price ??? ANS : <span class = "Math">\( P \big(0,T \big) \mathbb{E}^*\big[ y_T \big] \)</span>.
 					<br>
 					<br>
-					In calculation, We generally replace <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \mathbb{E}^*\big[ y_T \big] \)</span> with the Forward Bond Yield i.e. <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[y_F\big] \)</span>, which to be derived from the Forward Bond Price <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[F_B\big] \)</span> (as per the Forward Bond Yield definition).
+					In calculation, We generally replace <span class = "Math">\(  \mathbb{E}^*\big[ y_T \big] \)</span> with the Forward Bond Yield i.e. <span class = "Math">\(  \big[y_F\big] \)</span>, which to be derived from the Forward Bond Price <span class = "Math">\(  \big[F_B\big] \)</span> (as per the Forward Bond Yield definition).
 					<br>
 					<br>
-					However the relation between <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[F_B\big] \)</span> & <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[y_F\big] \)</span> is NOT-Linear i.e. <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[F_B = G \big( y_F \big)\big] \)</span>. Like, for ZC Bond, We have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ G \big( y_F \big) =\! \frac{1}{1+y_F \tau} \right] \)</span>.
+					However the relation between <span class = "Math">\(  \big[F_B\big] \)</span> & <span class = "Math">\(  \big[y_F\big] \)</span> is NOT-Linear i.e. <span class = "Math">\(  \big[F_B = G \big( y_F \big)\big] \)</span>. Like, for ZC Bond, We have <span class = "Math">\( \left[ G \big( y_F \big) =\! {\displaystyle\frac{1}{1+y_F \tau}} \right] \)</span>.
 					<br>
 					<br>
-					In the Convexity Adjustment, We will use : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \mathbb{E}^*\big[ y_T \big] = y_F + A \big] \)</span>. <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[A\big] \)</span> is the required Adjustment based on <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[G\big] \)</span>.
+					In the Convexity Adjustment, We will use : <span class = "Math">\( \big[ \mathbb{E}^*\big[ y_T \big] = y_F + A \big] \)</span>. <span class = "Math">\(  \big[A\big] \)</span> is the required Adjustment based on <span style class = "Math">\( \big[G\big] \)</span>.
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 20px; background-color: #e0aaff'>
 					Adjustment - Time
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> : Instrument pays w.r.t. <span class = "Notes2">some Variable in <span class = "Notes">future</span> BUT Payoff will happen <span class = "Notes">Later</span></span>. HOW to Price ??? ANS : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T_1 \big) \mathbb{E}^*\big[ V_T \big] \)</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> : Instrument pays w.r.t. <span class = "Notes2">some Variable in <span class = "Notes">future</span> BUT Payoff will happen <span class = "Notes">Later</span></span>. HOW to Price ??? ANS : <span  class = "Math">\( P \big(0,T_1 \big) \mathbb{E}^*\big[ V_T \big] \)</span>.
 					<br>
 					<br>
-					From above Payoff formula, it is evident that : The CORRECT Expectation will be <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E}^{**}\big[ V_T \big] \)</span>. So, We need to move from the World which is Forward Risk Neutral w.r.t <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T \big) \)</span> to <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( P \big(0,T_1 \big) \)</span>. So, We define the Numeraire Ratio <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ W = \! \frac{P \big(0,T_1 \big)}{P \big(0,T \big)} \right] =\! \left[ \frac{1}{1\:+\:R \big(0,T, T_1 \big) \big( T_1 - T \big)} \right] \)</span>.
+					From above Payoff formula, it is evident that : The CORRECT Expectation will be <span class = "Math">\( \mathbb{E}^{**}\big[ V_T \big] \)</span>. So, We need to move from the World which is Forward Risk Neutral w.r.t <span class = "Math">\( P \big(0,T \big) \)</span> to <span class = "Math">\( P \big(0,T_1 \big) \)</span>. So, We define the Numeraire Ratio <span class = "Math">\( \left[ W = \! {\displaystyle\frac{P \big(0,T_1 \big)}{P \big(0,T \big)}} \right] =\! \left[ {\displaystyle\frac{1}{1\:+\:R \big(0,T, T_1 \big) \big( T_1 - T \big)}} \right] \)</span>.
 					<br>
 					<br>
-					Change of Numeraire will result in increasing the Drift i.e. Expectation. Therefore, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E}^{**}\big[ V_T \big] = \! \mathbb{E}^{*}\big[ V_T \big] + A \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E}^{**}\big[ V_T \big] = \! \mathbb{E}^{*}\big[ V_T \big] +\! A \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big( A =\! \rho_{W,V} \sigma_V \sigma_W \big), \rho_{W,V} = -\!\rho_{R,V} \)</span>. AND, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[\sigma_W\big] \)</span> can be calculated from <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[\sigma_R\big] \)</span> using Ito's Lemma.
+					Change of Numeraire will result in increasing the Drift i.e. Expectation. Therefore, <span class = "Math">\( \mathbb{E}^{**}\big[ V_T \big] = \! \mathbb{E}^{*}\big[ V_T \big] + A \)</span>, <span class = "Math">\( \mathbb{E}^{**}\big[ V_T \big] = \! \mathbb{E}^{*}\big[ V_T \big] +\! A \)</span>, <span class = "Math">\( \big( A =\! \rho_{W,V} \sigma_V \sigma_W \big), \rho_{W,V} = -\!\rho_{R,V} \)</span>. AND, <span class = "Math">\( \big[\sigma_W\big] \)</span> can be calculated from <span  class = "Math">\( \big[\sigma_R\big] \)</span> using Ito's Lemma.
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 20px; background-color: #e0aaff'>
 					Adjustment - Quantos
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> the FX for Domestic country <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[Y\big] \)</span> as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[S_{Y \to X}\big] \)</span>. Hence,  <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( dS_{Y \to X} = \big( r_Y - r_X \big) S_{Y \to X} dt + \sigma S_{Y \to X} dW_t \)</span>
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> the FX for Domestic country <span class = "Math">\( \big[Y\big] \)</span> as <span class = "Math">\( \big[S_{Y \to X}\big] \)</span>. Hence,  <span class = "Math">\( dS_{Y \to X} = \big( r_Y - r_X \big) S_{Y \to X} dt + \sigma S_{Y \to X} dW_t \)</span>
 					<br>
 					<br>
-					So, from Ito's Lemma, We have : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( d \left( \frac{1}{S_{Y \to X}} \right) = \big( r_X - r_Y + \sigma^2 \big) \left( \frac{1}{S_{Y \to X}} \right) dt + \sigma \left( \frac{1}{S_{Y \to X}} \right) dW_t \)</span>
+					So, from Ito's Lemma, We have : <span class = "Math">\( d \left( {\displaystyle\frac{1}{S_{Y \to X}}} \right) = \big( r_X - r_Y + \sigma^2 \big) \left( {\displaystyle\frac{1}{S_{Y \to X}}} \right) dt + \sigma \left( {\displaystyle\frac{1}{S_{Y \to X}}} \right) dW_t \)</span>
 					<br>
 					<br>
-				Above process is Risk-Neutral process w.r.t. country <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[Y\big] \)</span>. Means, it is Forward Risk Neutral <span class = "Notes2"><span class = "Notes">w.r.t.</span> Money Market</span> for country <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[Y\big] \)</span>. Idially, We want to move to Forward Risk Neutral w.r.t. Money Market for country <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[X\big] \)</span>. So We use, the Numeraire Ratio as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ W =\! \left[ \frac{g_X}{g_Y} \right] S_{Y \to X} \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \: \!g \: \big] \)</span> is the Money-Market Account. So Drift in above equation will increase by <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ \big( \rho_{W,V} \sigma_V \sigma_W \big), V =\! \left[\frac{1}{S_{Y \to X}} \right] \right]\)</span>. BUT, We have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(\big[ \rho_{W,V} =\! -\!1, \sigma_W =\! \sigma \big] \)</span>. Hence the change in Drift will be just <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \!-\!\!\! \sigma^2 \big] \)</span>.
+				Above process is Risk-Neutral process w.r.t. country <span class = "Math">\( \big[Y\big] \)</span>. Means, it is Forward Risk Neutral <span class = "Notes2"><span class = "Notes">w.r.t.</span> Money Market</span> for country <span class = "Math">\( \big[Y\big] \)</span>. Idially, We want to move to Forward Risk Neutral w.r.t. Money Market for country <span class = "Math">\( \big[X\big] \)</span>. So We use, the Numeraire Ratio as <span class = "Math">\( \left[ W =\! \left[ {\displaystyle\frac{g_X}{g_Y}} \right] S_{Y \to X} \right] \)</span>, <span class = "Math">\( \big[ \: \!g \: \big] \)</span> is the Money-Market Account. So Drift in above equation will increase by <span class = "Math">\( \left[ \big( \rho_{W,V} \sigma_V \sigma_W \big), V =\! \left[{\displaystyle\frac{1}{S_{Y \to X}}} \right] \right]\)</span>. BUT, We have <span class = "Math">\(\big[ \rho_{W,V} =\! -\!1, \sigma_W =\! \sigma \big] \)</span>. Hence the change in Drift will be just <span class = "Math">\( \big[ \!-\!\!\! \sigma^2 \big] \)</span>.
 					<br>
 					<br>
-					Hence Final process will be <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( d \left( \frac{1}{S_{Y \to X}} \right) = \big( r_X - r_Y \big) \left( \frac{1}{S_{Y \to X}} \right) dt + \sigma \left( \frac{1}{S_{Y \to X}} \right) dW_t \)</span>
+					Hence Final process will be <span  class = "Math">\( d \left( {\displaystyle\frac{1}{S_{Y \to X}}} \right) = \big( r_X - r_Y \big) \left( {\displaystyle\frac{1}{S_{Y \to X}}} \right) dt + \sigma \left( {\displaystyle\frac{1}{S_{Y \to X}}} \right) dW_t \)</span>
 				</div>
 			</div>
 		</div>
