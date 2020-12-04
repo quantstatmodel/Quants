@@ -220,7 +220,7 @@
 				</div>
 			</div>
 		</div>
-		<div class = 'Indiv_Content' style = 'border-color: #007f5f; height: 1350px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #007f5f; height: 1250px;'>
 			<div style = 'height: auto; min-height: 200px; width: calc(50% - 1px); margin: 0; padding: 0; display: inline-block; float: left; border-right: 0px solid #818181; overflow: hidden;'>
 				<div class = 'Blog_Header'>
 					Numeraire is ZC Bond
@@ -231,7 +231,7 @@
 					<br>
 					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ f_{2, T} \big] \)</span>
 				</div>				
-				<div style = "height: 125px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left;">
+				<div style = "height: 125px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
 						IMPORTANT NOTE
 					</span>
@@ -240,104 +240,76 @@
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						Price of any Derivative will be it's <span class = "Notes2">future Expected Value</span> wherein, <br>&nbsp;&nbsp;<span class = Math>\(\mathbb{EXPECTATION}\)</span> in taken in a <span class = "Notes1">World which is <span class = "Notes2">Forward-Risk-Neutral</span></span> w.r.t. <span class = Math>\(\mathbb{ZCB}\)</span> expiring at same time.
 					</span>
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							1
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Forward Price - NON Interest Rate
-						</div>						
+				</div>				
+				<div style = "height: 160px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #2d6a4f; color: #fff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						1
 					</div>
-					<div style = "height: 110px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ S_T-K \big] =\!\! 0 \)</span>. This gives <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( K =\!\! \mathbb{E}^*\big[ S_T \big] \)</span>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Forward Price : NON Interest Rate
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ S_T-K \big] =\!\! 0 \)</span>. This gives <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ K =\!\! \mathbb{E}^*\big[ S_T \big]\big] \)</span>
 						<br>
 						<br>
-						So, Forward Price is just the <i>EXPECTED SPOT PRICE</i> in this World.
+						So, Forward Price is just the <span class = "Notes">EXPECTED SPOT PRICE</span> in this World.
+					</span>
+				</div>				
+				<div style = "height: 260px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #2d6a4f; color: #fff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						2
 					</div>
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 20px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							2
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Forward Price - YES Interest Rate
-						</div>						
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Forward Price : Yes Interest Rate
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						Forward Interest Rate : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{T_2-T_1}\right]\left[ \frac{P\big( 0,T_1\big)}{P\big( 0,T_2\big)}-1\right]\right] \)</span>
+						<br>
+						<br>
+						So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{P\big( 0,T_2\big)}\right]\left[ \frac{P\big( 0,T_1\big)-P\big( 0,T_2\big)}{T_2-T_1}\right] =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right]\right] \)</span>
+						<br>
+						<br>
+						Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R \big(0,T_1, T_2 \big) =\!\! \mathbb{E}^*\big[ R \big(T_1,T_1, T_2 \big) \big]\big] \).
+					</span>
+				</div>				
+				<div style = "height: 280px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #2d6a4f; color: #fff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						3
 					</div>
-					<div style = "height: 210px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						Forward Interest Rate - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{T_2-T_1}\right]\left[ \frac{P\big( 0,T_1\big)}{P\big( 0,T_2\big)}-1\right] \)</span>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						EURODOLLAR Future to extend ZC Rate
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Notes2">EURODOLLAR Future</span> Rate : <span class = "Math">\( \left[  R \big(0,T_1, T_2 \big) =\!\! {\displaystyle \frac{ T_2 \big( \mathbb{ZC}_{T_2} \big) \:- T_1 \big( \mathbb{ZC}_{T_1} \big) }{T_2 \:-T_1} } \right], \: T_2 = T_1 + 90\mathbb{d} \)</span>
+						<br>
+						So, if We already have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \mathbb{ZC}_{T_1} \big] \)</span>, then using the EURODOLLAR Future Rate, We can extend the <span class = "Math">\(\mathbb{ZCB}\)</span> curve to <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \mathbb{ZC}_{T_2} \big] \)</span>
 						<br>
 						<br>
-						So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{P\big( 0,T_2\big)}\right]\left[ \frac{P\big( 0,T_1\big)-P\big( 0,T_2\big)}{T_2-T_1}\right] =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] \)</span>
-						<br>
-						<br>
-						Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  R \big(0,T_1, T_2 \big) =\!\! \mathbb{E}^*\big[ R \big(T_1,T_1, T_2 \big) \big] \)
-					</div>					
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 20px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							3
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : EURODOLLAR Future to extend ZC Rate
-						</div>						
+						Ideally We should use the Forward Rate, NOT Future Rate. So We use <span class = 'Notes'>The <span class = 'Notes2'>Convexity Adjustment</span></span>. Which says that : The Difference between Futures Rate & Forward Rate is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ 0.5\sigma^2 T_1 T_2 \big] \)</span>, where <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \sigma \big] \)</span> is the Short-Rate's <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span>. So, for a <span class = "Math">\( \big[8 \mathbb{Y}\big]\)</span> EURODOLLAR Futures, we have <span class = "Math">\( \big[ T_1 =\! 8, \: T_2 =\! 8.25  \big] \)</span> <span class = 'Page_Number1'>[162]</span>.
+					</span>
+				</div>				
+				<div style = "height: 180px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #2d6a4f; color: #fff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						4
 					</div>
-					<div style = "height: 220px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						EURODOLLAR Future Rate - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{T_2-T_1}\right]\big[ T_2 \big( ZC_{T_2} \big) - T_1 \big( ZC_{T_1} \big) \big], \: T_2 = T_1 + 90d \)</span>
-						<br>
-						So, if We already have <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( ZC_{T_1} \big) \)</span>, then using the EURODOLLAR Future Rate, We can extend the ZC curve to <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( ZC_{T_2} \big) \)</span>
-						<br>
-						<br>
-						Ideally We should use the Forward Rate, NOT Future Rate. So We use <span class = 'Notes'>The <span class = 'Notes2'>Convexity Adjustment</span></span>. Which says that : The Difference between Futures Rate & Forward Rate is <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big( 0.5\sigma^2 T_1 T_2 \big) \)</span>, where <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \big[ \sigma \big] \)</span> is the Short-Rate's <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span>. So, for a <span class = "Math">\( \big[8 \mathbb{Y}\big]\)</span> EURODOLLAR Futures, we have <span class = "Math">\( \big[ T_1 =\! 8, T_2 =\! 8.25  \big] \)</span> <span class = 'Page_Number1'>[162]</span>.
-					</div>					
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							4
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Black's Model - CALL Options Price
-						</div>						
-					</div>
-					<div style = "height: 130px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Black Model - CALL Options Price
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( c =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ \mathbb{MAX} \big[ S_T - \! K, \: 0 \big] \big] \)</span>
 						<br>
-						<span style = "margin-left: 20px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = P\big( 0,T\big) \big( \mathbb{E}^*\big[ S_T \big] N \big( d_1 \big) - K N \big( d_2 \big) \big) \)</span>
+						<span style = "margin-left: 20px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = P\big( 0,T\big) \big( \mathbb{E}^*\big[ S_T \big] \mathbb{N} \big( d_1 \big) - K \mathbb{N} \big( d_2 \big) \big) \)</span>
 						<br>
-						<span style = "margin-left: 20px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = P\big( 0,T\big) \big( F_0 N \big( d_1 \big) - K N \big( d_2 \big) \big) \)</span>
-					</div>
+						<span style = "margin-left: 20px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( = P\big( 0,T\big) \big( F_0 \mathbb{N} \big( d_1 \big) - K \mathbb{N} \big( d_2 \big) \big) \)</span>
+					</span>
 				</div>
 			</div>
 			<div style = "margin: 0; padding: 0; width: 1px; height: 10000vh; min-height: 200px; background-color: #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
@@ -375,22 +347,22 @@
 					Numeraire is Money Market Account
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
-					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \right] \)</span>. This is because, in <span class = "Notes2">Money-Market-Account</span>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ r \big] \)</span> is the <span class = "Notes1">RISK FREE RATE</span>.
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> that<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  \left[ \frac{\mu_1 - r}{\sigma_1} \right] =\! \left[ \frac{\mu_2 - r}{\sigma_2} \right] =\! \sigma_2 =\! 0 \right] \)</span>. This is because, in <span class = "Notes2">Money-Market-Account</span>, We start with <span class = "Math">\(\big[$1\big]\)</span>. and then it grows as <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[\frac{df_2}{f_2}\!=\! r dt \right] \)</span>, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ \mathbb{RFR} =\!  r \big] \)</span>.
 					<br>
 					<br>
 					So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>. So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ f_{1, 0} =\!\! \mathbb{E}^*\left[ f_{1, T} \left( e^{-\!\!\int\limits_{0}^{T} r dt} \right) \right] \right]  =\!\! \mathbb{E}^*\left[ \left( e^{- \overline{r} T} \right)f_{1, T} \right] \)</span>
-					<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px; margin-top: 20px;">
-						<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #a0c4ff; font-size: 22px;
-										 border: 1px solid #a0c4ff; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left;">
-							Important
-						</div>
-						<div style = "height: 145px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #caf0f8; font-size: 18px;
-										display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left;  border: 1px solid #a0c4ff">
-							Price of any Derivative will be it's future Expected Value wherein, Expectation in taken in the Risk-Neutral World, because here Market Price of Risk is 0. Here, We need to simulate the Short-term Rate and take the Average for Discounting. 
-							<br>
-							In General Risk-Neutral Valuation, since We <span class = "Math">\(\mathbb{ASSUME}\)</span> the Risk Free Rate is Constant, We can just discount Derivative's Expected Value and Discount with it.
-						</div>
-					</div>
+				</div>				
+				<div style = "height: 225px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden; text-align: left;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
+						IMPORTANT NOTE
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						Price of any Derivative will be it's <span class = "Notes2">future Expected Value</span> wherein, <span class = "Math">\(\mathbb{EXPECTATION}\)</span> in taken in the <span class = "Notes">Risk-Neutral World</span>, because here <span class = "Math">\( \big[ \mathbb{RISK}_{\mathbb{MARKET\:PRICE}} = \! 0 \big] \)</span>. Here, We need to simulate the Short-term Rate and take the <span class = "Math">\(\mathbb{AVG.}\)</span> for Discounting. 
+						<br><br>
+						In General <span class = "Notes">Risk-Neutral Valuation</span>, We <span class = "Math">\(\mathbb{ASSUME}\)</span> the <span class = "Math">\( \big[\mathbb{RFR}\big]\)</span> is Constant. <br>&nbsp;&nbsp;We can just <span class = "Notes1">discount <span class = "Notes2">Derivative's Expected</span> Value</span> and Discount with it.
+					</span>
 				</div>
 			</div>
 		</div>
