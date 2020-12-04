@@ -251,7 +251,7 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ S_T-K \big] =\!\! 0 \)</span>. This gives <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ K =\!\! \mathbb{E}^*\big[ S_T \big]\big] \)</span>
+						<span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( f_{1, 0} =\!\! P\big( 0,T\big) \mathbb{E}^*\big[ S_T-\!K \big] =\!\! 0 \)</span>. This gives <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ K =\!\! \mathbb{E}^*\big[ S_T \big]\big] \)</span>
 						<br>
 						<br>
 						So, Forward Price is just the <span class = "Notes">EXPECTED SPOT PRICE</span> in this World.
@@ -267,10 +267,10 @@
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-						Forward Interest Rate : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{T_2-T_1}\right]\left[ \frac{P\big( 0,T_1\big)}{P\big( 0,T_2\big)}-1\right]\right] \)</span>
+						Forward Interest Rate : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[  R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{T_2\:-T_1}\right]\left[ \frac{P\big( 0,T_1\big)}{P\big( 0,T_2\big)}-1\right]\right] \)</span>
 						<br>
 						<br>
-						So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{P\big( 0,T_2\big)}\right]\left[ \frac{P\big( 0,T_1\big)-P\big( 0,T_2\big)}{T_2-T_1}\right] =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right]\right] \)</span>
+						So, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ R \big(0,T_1, T_2 \big) =\!\! \left[ \frac{1}{P\big( 0,T_2\big)}\right]\left[ \frac{P\big( 0,T_1\big)-P\big( 0,T_2\big)}{T_2\:-T_1}\right] =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right]\right] \)</span>
 						<br>
 						<br>
 						Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^*\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have : <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \big[ R \big(0,T_1, T_2 \big) =\!\! \mathbb{E}^*\big[ R \big(T_1,T_1, T_2 \big) \big]\big] \).
@@ -333,14 +333,14 @@
 					<br>
 					Now since, <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] =\!\! \mathbb{E}^A\left[ \frac{f_{1, T}}{f_{2, T}} \right] \)</span>, We have - <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\(  s_0 =\!\! \mathbb{E}^A\big[ s_T \big] \).
 				</div>
-				<div style = "height: 125px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden; text-align: left;">
+				<div style = "height: 145px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #a0aff4; padding-right: 0px; overflow: hidden; text-align: left;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px;">
 						LIBOR CURVE FOR LONGER TERM <span class = "Page_Number1">[181]</span>
 					</span>
 					<br>
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-							This Equ<sup>n</sup> <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 = \frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0} =\!\! \left[ \frac{f_{1, 0}}{f_{2, 0}} \right] \right]  \)</span> is used for that <a href="https://quant.stackexchange.com/questions/3438/why-use-swap-rates-in-a-yield-curve/8293#8293" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+							This Equ<sup>n</sup> <span style = "margin-left: 0px; font-size: 23px; font-family: 'Fira Sans', sans-serif;">\( \left[ s_0 =\!\! {\displaystyle \frac{P\big( 0,T_0\big) - P\big( 0,T_N\big)}{A_0}} \:\:=\!\! \left[ {\displaystyle \frac{f_{1, 0}}{f_{2, 0}} } \right] \right]  \)</span> is used for that <a href="https://quant.stackexchange.com/questions/3438/why-use-swap-rates-in-a-yield-curve/8293#8293" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</span>
 				</div>
 				<div class = 'Blog_Header' style = 'margin-top: 30px;'>
