@@ -393,56 +393,45 @@
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						<span class = "Notes2">Bond Holder can <span class = "Notes">pre-close</span></span> the Bond, by paying the <span class = "Notes1">PUT Price</span>. <br>Since here, this is right against the Bond Issuer, <span class = "Math">\(\big[y\big]\)</span> should be LOW. Bond Holder bought PUT Option from Bond Issuer. <br>&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Notes">Bank Deposits</span> are examples of such Bonds.
 					</span>
-				</div>
-
-
-				
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							3
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : DV01, PV01, Duration
-						</div>						
+				</div>							
+				<div style = "height: 240px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						3
 					</div>
-					<div style = "height: 130px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						DV01, PV01, Duration
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[$\big]}\big]\)</span> &nbsp;w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{DV01}\big]\big[\mathbb{PV01}_{\mathbb{PORT.}}\big]\)</span>
 						<br>
 						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[\%\big]}\big]\)</span> w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{MOD.\:DURATION}\big]]\)</span> <a href="https://quant.stackexchange.com/questions/34101/whats-the-difference-between-pv01-and-dv01-of-a-bond" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 						<br>&ensp;&ensp;&ensp; <span class = "Notes2">Portfolio's Case</span> : It is <span class = "Math">\(\big[ \mathbb{DURATION}_{\mathbb{MARKET\:VALUE\:WEIGHTED}} \big]\)</span> <a href="https://analystprep.com/cfa-level-1-exam/fixed-income/portfolio-duration-limitations/#:~:text=Portfolio%20duration%20is%20commonly%20estimated,%2B%20850%2C000%20%2B%20180%2C000%20%3D%201%2C200%2C000." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
-					</div>
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							4
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Forward Bond Price & Volatility
-						</div>						
-					</div>
-					<div style = "height: 230px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						Forward Bond Price - <span class = "Math">\( \left[ F_B =\!\! {\displaystyle\frac{S_0 \: - I}{ P \big( 0, T\big)}} \right] \)</span>, <span class = "Math">\( S_0 \)</span> is the Bond-Price, AND <span class = "Math">\( I \)</span> is the PV of all Interest Payments during Bond life. All Prices are Dirty Price i.e. Cash Price. NOTE : General Formula for Forward Price is <span class = "Math">\( \left[ F =\!\! \big( S_0 - I \! \big)e^{rT} \right] \)</span>.
 						<br>
 						<br>
-						We have this Formula - <span class = "Math">\( \left[ {\displaystyle\frac{\Delta \! F_B}{F_B}} \right] \!=\!\! - \!\!D y_F \left[ {\displaystyle\frac{\Delta \! y_F}{y_F}} \right] \)</span>, <span class = "Math">\(D \)</span> is the <i>Modified Duration of that Bond</i>, AND <span class = "Math">\( \big[ y_F \big] \)</span> is the Forward Bond Yield. Therefore, We can have <span class = "Math">\( \sigma \big( F_B \big) =\!\! D y_F \big[ \sigma \big( y_F \big) \big] \)</span>. <span class = "Math">\( \sigma \big( y_F \big) \)</span> are MORE CONSTANT w.r.t. <span class = "Math">\( \sigma \left( F_B \right) \)</span>.
+						<span class = "Math">\( \big[\mathbb{MAC.\:DURATION}\big] =\! \big[\mathbb{MOD.\:DURATION}\big] \left(1+\! {\displaystyle\frac{y_{\big[\mathbb{FQ} \:= 6\mathbb{m}\big]}}{2}} \right)  \)</span> <a href="https://quant.stackexchange.com/questions/49113/calculating-the-macaulay-duration-of-a-floating-rate-bond?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</span>
+				</div>							
+				<div style = "height: 420px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						4
 					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Forward Bond Price & Volatility
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						Forward Bond Price : <span class = "Math">\( \left[ F_{\mathbb{BOND}} =\!\! \left( {\displaystyle\frac{S_0 \: - I}{ P \big( 0, T\big)}} \right) \right]  \)</span>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[S_0\big] \)</span> is the Bond-Price, AND <span class = "Math">\( \big[I\big] \)</span> is the PV of <span class = "Notes1">ALL Interest Payments</span> during Bond life. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Prices are <span class = "Notes2"><span class = "Notes">Dirty Price</span> i.e. Cash Price</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General Formula for Forward Price is <span class = "Math">\( \left[ F =\!\! \big( S_0 - I \! \big)e^{rT} \right] \)</span>.
+						<br>
+						<br>
+						We have this Formula : <span class = "Math">\( \left[ \left[ {\displaystyle\frac{\Delta \! F_{\mathbb{BOND}}}{F_{\mathbb{BOND}}}} \right] \!=\!\! - \!\!D_{ y_{\big[F_{\mathbb{BOND}}\big]}} \left[ {\displaystyle\frac{\Delta \! y_{\big[F_{\mathbb{BOND}}\big]}}{y_{\big[F_{\mathbb{BOND}}\big]}}} \right] \right] \)</span>, <span class = "Math">\( \big[D =\!\! \big[\mathbb{MOD.\:DURATION}\big]\big] \)</span>, AND <span class = "Math">\( \big[ y_{\big[F_{\mathbb{BOND}}\big]} \big] \)</span> is the <span class = "Notes2">Forward Bond Yield</span>. 
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						Therefore, We can have <span class = "Math">\( \left[ \sigma \big( F_{\mathbb{BOND}} \big) =\!\! D_{ y_{\big[F_{\mathbb{BOND}}\big]}} \big[ \sigma \big( { y_{\big[F_{\mathbb{BOND}}\big]}} \big) \big] \right] \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hence, <span class = "Math">\( \left[ \sigma \big( {  y_{\big[F_{\mathbb{BOND}}\big]}} \big) \right] \)</span> are <span class = "Notes">MORE CONSTANT</span> w.r.t. <span class = "Math">\( \big[ \sigma \left( F_{\mathbb{BOND}} \right) \big] \)</span>.
+					</span>
 				</div>
+
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 20px'>
 					IR Path & ZC Term Structure
 				</div>
