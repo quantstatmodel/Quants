@@ -406,16 +406,33 @@
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[$\big]}\big]\)</span> &nbsp;w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{DV01}\big]\big[\mathbb{PV01}_{\mathbb{PORT.}}\big]\)</span>
 						<br>
-						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[\%\big]}\big]\)</span> w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{MOD.\:DURATION}\big]]\)</span> <a href="https://quant.stackexchange.com/questions/34101/whats-the-difference-between-pv01-and-dv01-of-a-bond" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+						<span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{PRICE\:CH.}\: \big[\%\big]}\big]\)</span> w.r.t <span class = "Math">\(\big[\mathbb{BOND}_{\mathbb{YIELD\:CH.}\: \big[\mathbb{BP}\big]}\big]\)</span> <span class = "Math">\(\:\Rightarrow\:\big[\mathbb{MOD.\:DURATION}\big] =\! \big[D\big]\)</span> <a href="https://quant.stackexchange.com/questions/34101/whats-the-difference-between-pv01-and-dv01-of-a-bond" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 						<br>&ensp;&ensp;&ensp; <span class = "Notes2">Portfolio's Case</span> : It is <span class = "Math">\(\big[ \mathbb{DURATION}_{\mathbb{MARKET\:VALUE\:WEIGHTED}} \big]\)</span> <a href="https://analystprep.com/cfa-level-1-exam/fixed-income/portfolio-duration-limitations/#:~:text=Portfolio%20duration%20is%20commonly%20estimated,%2B%20850%2C000%20%2B%20180%2C000%20%3D%201%2C200%2C000." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 						<br>
 						<br>
 						<span class = "Math">\( \big[\mathbb{MAC.\:DURATION}\big] =\! \big[\mathbb{MOD.\:DURATION}\big] \left(1+\! {\displaystyle\frac{y_{\big[\mathbb{FQ} \:= 6\mathbb{m}\big]}}{2}} \right)  \)</span> <a href="https://quant.stackexchange.com/questions/49113/calculating-the-macaulay-duration-of-a-floating-rate-bond?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					</span>
 				</div>							
-				<div style = "height: 420px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+				<div style = "height: 215px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
 						4
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Convexity
+					</span><a href="https://quant.stackexchange.com/questions/59472/duration-and-convexity" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\( \big[C_{\mathbb{BOND}}\big] =\! \big[\mathbb{CONVEXITY}\big] =\! \left[ {\displaystyle\frac{1}{P}} \right] \left[ {\displaystyle\frac{d^2 P}{d y^2}} \right]=\! \left[ {\displaystyle\frac{1}{P}} \right] \left[ {\displaystyle\frac{d}{d y}} \big[-\!\!PD\big] \right], \: D =\! \left[ {\displaystyle\frac{1}{P}} \right] \left[ {\displaystyle\frac{d P}{d y}} \right] \)</span>
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						<span class = "Math">\(=\! \left[D^2 -\! \left[ {\displaystyle\frac{d D}{d y}} \right]\right] \)</span>
+						<br>
+						This gives : <span class = "Math">\( \big[ \big( \Delta D\big) =\! \big[D^2 - \mathbb{CONVEXITY}\big] \big(\Delta y\big) \big] \)</span>.
+					</span>
+				</div>							
+				<div style = "height: 390px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						5
 					</div>
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
 						Forward Bond Price & Volatility
@@ -426,7 +443,7 @@
 						Forward Bond Price : <span class = "Math">\( \left[ F_{\mathbb{BOND}} =\!\! \left( {\displaystyle\frac{S_0 \: - I}{ P \big( 0, T\big)}} \right) \right]  \)</span>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[S_0\big] \)</span> is the Bond-Price, AND <span class = "Math">\( \big[I\big] \)</span> is the PV of <span class = "Notes1">ALL Interest Payments</span> during Bond life. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All Prices are <span class = "Notes2"><span class = "Notes">Dirty Price</span> i.e. Cash Price</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;General Formula for Forward Price is <span class = "Math">\( \left[ F =\!\! \big( S_0 - I \! \big)e^{rT} \right] \)</span>.
 						<br>
 						<br>
-						We have this Formula : <span class = "Math">\( \left[ \left[ {\displaystyle\frac{\Delta \! F_{\mathbb{BOND}}}{F_{\mathbb{BOND}}}} \right] \!=\!\! - \!\!D_{ y_{\big[F_{\mathbb{BOND}}\big]}} \left[ {\displaystyle\frac{\Delta \! y_{\big[F_{\mathbb{BOND}}\big]}}{y_{\big[F_{\mathbb{BOND}}\big]}}} \right] \right] \)</span>, <span class = "Math">\( \big[D =\!\! \big[\mathbb{MOD.\:DURATION}\big]\big] \)</span>, AND <span class = "Math">\( \big[ y_{\big[F_{\mathbb{BOND}}\big]} \big] \)</span> is the <span class = "Notes2">Forward Bond Yield</span>. 
+						We have this Formula : <span class = "Math">\( \left[ \left[ {\displaystyle\frac{\Delta \! F_{\mathbb{BOND}}}{F_{\mathbb{BOND}}}} \right] \!=\!\! - \!\!D_{ y_{\big[F_{\mathbb{BOND}}\big]}} \left[ {\displaystyle\frac{\Delta \! y_{\big[F_{\mathbb{BOND}}\big]}}{y_{\big[F_{\mathbb{BOND}}\big]}}} \right] \right] \)</span>, <span class = "Math">\( \big[ y_{\big[F_{\mathbb{BOND}}\big]} \big] \)</span> is the <span class = "Notes2">Forward Bond Yield. </span>
 						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
 						Therefore, We can have <span class = "Math">\( \left[ \sigma \big( F_{\mathbb{BOND}} \big) =\!\! D_{ y_{\big[F_{\mathbb{BOND}}\big]}} \big[ \sigma \big( { y_{\big[F_{\mathbb{BOND}}\big]}} \big) \big] \right] \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Hence, <span class = "Math">\( \left[ \sigma \big( {  y_{\big[F_{\mathbb{BOND}}\big]}} \big) \right] \)</span> are <span class = "Notes">MORE CONSTANT</span> w.r.t. <span class = "Math">\( \big[ \sigma \left( F_{\mathbb{BOND}} \right) \big] \)</span>.
 					</span>
@@ -578,108 +595,115 @@
 					<br>
 					<br>
 					Valuation is done using <span class = "Notes2">Black's Formula</span> : <span class = "Math">\( \big[ c =\!\! L \delta_k P\big( 0,t_{k+1}\big) \big( F_{0, \:t_k,\:t_{k+\!1}} \mathbb{N} \big( d_1 \big) - R_K \mathbb{N} \big( d_2 \big) \big) \big] \)</span>. <BR>Underlying <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> need to be multiplied with <span class = "Math">\( \left[  \sqrt{\big[t_k\big]} \right] \)</span> because, Our <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{} \big]\)</span> time-horizon is <span class = "Math">\( \big[ t_k \big]  \)</span>.
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							1
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Spot Volatility & Flat Volatility
-						</div>						
+				</div>				
+				<div style = "height: 220px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 12px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						1
 					</div>
-					<div style = "height: 140px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						As I said, CAP is basically a Portfolio of indiv. Options i.e. CAPLETs. If I use different <span class = "Math">\(\mathbb{VOLATILITY}\)</span> for each of them, then they are called <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{SPOT}} \big]\)</span>. BUT, if I use same for all (BUT, <span class = "Notes1">different</span> for different CAPs w.r.t. life) then, they called <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{FLAT}} \big]\)</span>.
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Spot Volatility & Flat Volatility
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						CAP is basically a <span class = "Notes2">Portfolio of indiv. Options</span> i.e. CAPLETs. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If I use different <span class = "Math">\(\mathbb{VOLATILITY}\)</span> for each of them, then they are called <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{SPOT}} \big]\)</span>.<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If I use same for all BUT, <span class = "Notes1">different</span> for different CAPs w.r.t. life then, they called <span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{FLAT}} \big]\)</span>.
+						<br>
 						<br>
 						<span class = "Math">\( \big[ \mathbb{VOLATILITY}_{\mathbb{FLAT}} \big]\)</span> can be seen as <span class = "Math">\( \big[ \mathbb{AVERAGE}_{}\big[ \mathbb{VOLATILITY}_{\mathbb{SPOT}} \big]\big]\)</span> therefore, are <span class = "Notes2">LESS Volatile</span>.
+					</span>
+				</div>				
+				<div style = "height: 260px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						2
 					</div>
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							2
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : PUT-CAll Parity for CAP & FLOOR
-						</div>						
-					</div>
-					<div style = "height: 170px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						PUT-CAll Parity for CAP & FLOOR
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						<span class = "Notes2"><span class = "Notes">CAP - FLOOR</span> = SWAPS</span>
 						<br>
 						<br>
-						<span class = "Math">\( \mathbb{ASSUME}\)</span> that <span  class = "Math">\( \big[ R_k > \! R_K \big] \)</span>. In this case, CAP will give Payoff as <span class = "Math">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless. So resultant Payoff is just Swap Payoff of <span class = "Math">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
-						<br>
+						<span class = "Math">\( \mathbb{ASSUME}\)</span> that <span  class = "Math">\( \big[ R_k > \! R_K \big] \)</span>.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						CAP will give Payoff as <span class = "Math">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>. FLOOR will be worthless.
+						<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+						So resultant Payoff is just Swap Payoff of <span class = "Math">\( \big( \mathbb{LIBOR}-R_k \big) \)</span>.
+						<br><br>
 						Similar thing will happen for <span class = "Math">\( \big[ R_k < \! R_K \big] \)</span>.
-					</div>
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							3
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : Valuation for FRA <span class = 'Page_Number1'>[110]</span> <span class = "Notes2">My Note</span>
-						</div>						
-					</div>
-					<div style = "height: 410px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						FRA is just like CAP BUT, with NO Optionality. Therefore, I can price this assuming the Prevailing IR as Forward IR.
-						Now, <span class = "Notes2">IR-SWAP</span> is just a Portfolio of FRAs, for the Long Party. So I can price IR-SWAP similarly <span class = "Page_Number1">[184]</span>. <span style = 'font-size: 16px;'>Now, at the inception, the IR-SWAP's value is <span class = "Math">\( \big[ 0 \big]\)</span>. So, FRA-Portfolio's value will be 0. BUT, individual FRA may NOT have <span class = "Math">\( \big[ 0 \big]\)</span> value. An Indiv. FRN's value is <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span> if Forward Rate comes as MORE than the Fixed Rate, and vice-versa. <br> </span><br>
-						<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 16px; margin-top: -10px;">
-							<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #a0c4ff; font-size: 22px;
-											 border: 1px solid #a0c4ff;
-											display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left;">
-								Important
-							</div>
-							<div style = "height: 100px; width: 100%; margin: 0; padding: 0; padding-left: 10px; background-color: #caf0f8; font-size: 18px;
-											text-align: left;  border: 1px solid #a0c4ff; padding-top: 12px;">
-								If, at the time of IR-SWAP's inception, <span class = "Math">\(\mathbb{ASSUME}\)</span> that the Term-Structure is upward sloping. Then, Forward IR will increase w.r.t. Maturity of FRN. So, for the initial days, FRNs will have <span class = "Math">\( \big[ -\!\!\mathbb{VE} \big]\)</span> values, AND for the final days, FRNs will have positive values.
-							</div>
-						</div>
-						Also, IR-SWAP can be considered as Portfolio of Fixed Rate & Floating Rate <span class = "Math">\(\mathbb{LIBOR}\)</span> Bond. In such case, for the Floating Rate Bond, Bond's Value equals to Principal <span class = "Notes1">just after</span> an Interest Payment. <br>&ensp;&ensp;&ensp;AND, Principal + Interest <span class = "Notes1">just before</span> an Interest Payment.
-					</div>
-				</div>
-				<div style = "height: auto; min-height: 100px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px; margin-left: 0px; margin-bottom: 10px;">
-					<div style = "height: 50px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 22px;
-									 border: 1px solid #a0c4ff; border-bottom: 0px; background-color: rgba(0,0,0,.0);
-									 display: flex; align-items: center; justify-content: left">
-						<div style = "height: 35px; width: 35px; margin: 0; padding: 0; border-radius: 50%; background-color: #ffbf69;
-										font-size: 16px; display: inline-block; float: left;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							1
-						</div>
-						<div style = "height: 35px; width: calc(100%-55px); margin: 0; padding: 0; border-radius: 50%;
-										display: inline-block; float: left; padding-left: 10px;
-										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
-							NOTE : SWAPTION & PUT Option
-						</div>						
-					</div>
-					<div style = "height: 120px; width: 100%; margin: 0; padding: 0; padding-left: 10px; font-size: 18px;
-									border: 1px solid #a0c4ff; padding-top: 10px;">
-						In SWAPTION, We are basically exchanging a Fixed Rate Option w.r.t Float Rate Option. I am paying Fixed Rate for 1<sup>st</sup> Option w.r.t. Float Rate Option. So basically, I shorted that Fixed Rate Option. Hence in SWAPTION, I get right to exchange that Fixed Rate Option w.r.t. the Principal. Since it is Shorting, the SWAPTION is equivalent to the PUT Option.
-					</div>
+					</span>
 				</div>				
-				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 20px; background-color: #e0aaff'>
+				<div style = "height: 240px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						3
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						SWAPTION is : PUT Option
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						In SWAPTION, We are basically exchanging a Fixed Rate Option w.r.t Float Rate Option. I am paying Fixed Rate for 1<sup>st</sup> Option w.r.t. Float Rate Option. 
+						<br>
+						<br>
+						So basically, I <span class = "Notes"><span class = "Notes1">shorted</span> that Fixed Rate Option. </span>
+						<br>
+						<br>
+						Hence in SWAPTION, I get right to exchange that Fixed Rate Option w.r.t. the Principal. <br>Since it is Shorting, the SWAPTION is equivalent to the PUT Option.
+					</span>
+				</div>				
+				<div style = "height: 200px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						4
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						SWAPTION is : option on options 
+					</span> <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						LONG Forward : LONG CALL Options + SHORT PUT Options 
+						<br>
+						<br>
+						IR-Swaps : <span class = "Notes1">A Series of</span> IR-Forwards. Hence, IR-Swaps : A Series of Caplets + Floorlet.
+						<br>
+						<br>
+						IR-Swaptions : <span class = "Notes2">Options on</span> A Series of Options.
+					</span>
+				</div>				
+				<div style = "height: 240px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						IMPORTANT NOTE : Valuation for FRA <span class = 'Page_Number1'>[110]</span>
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						FRA is just like CAP BUT, with NO Optionality. 
+						<br>
+						Now, <span class = "Math">\(\mathbb{ASSUME}\)</span> : The <span class = "Notes2">Prevailing IR is Forward IR</span>. With this, I can price FRA.
+						<br>
+						Now, IR-Swaps is : A <span class = "Notes">Portfolio of FRAs</span> for, the Long Party. So I can price IR-Swaps similarly <span class = "Page_Number1">[184]</span>. 
+						<br>
+						<br>
+						Now, at the inception, the IR-Swaps' value is <span class = "Math">\( \big[ 0 \big]\)</span>. So, FRA-Portfolio's value will be <span class = "Math">\( \big[ 0 \big]\)</span>. BUT, individual FRA may NOT have <span class = "Math">\( \big[ 0 \big]\)</span> value. 
+						<br>&nbsp;&nbsp;&nbsp;
+						An Indiv. FRA's value is <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span> if Forward Rate comes as <span class = "Notes1">MORE than</span> the Fixed Rate, and VICE-VERSA.
+					</span>
+				</div>			
+				<div style = "height: 180px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Important Note
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\(\mathbb{ASSUME}\)</span> : The <span class = "Notes2">Term-Structure is <span class = "Notes">upward sloping</span></span> at, at the time of IR-Swaps' inception. 
+						<br>
+						<br>Then, <span class = "Notes"><span class = "Notes2">Forward-IR</span> will increase</span> w.r.t. Maturity of FRA. <br>So, for the initial days, FRAs will have <span class = "Math">\( \big[ -\!\!\mathbb{VE} \big]\)</span> values, AND for the final days, FRAs will have <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span> values.
+					</span>
+				</div>		
+				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 40px; background-color: #e0aaff'>
 					Adjustment - Convexity
 				</div>
 				<div style = "height: auto; min-height: 20px; width: 100%; margin: 0; padding: 10px; text-align: left; font-size: 18px;">
