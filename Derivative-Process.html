@@ -532,15 +532,15 @@
 				</div>	
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 15px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Is this RIGHT ??? <span class = 'Math'>\( \left[ d \big( {\displaystyle\int\limits_{0}^{t}} W_sds \big) =\! W_tdt \right] \)</span> <a href="https://quant.stackexchange.com/questions/49339/more-questions-about-integral-of-brownian-motion-w-r-t-time?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Are They <span class = "Notes2">Indep. ??? </span> <span class = 'Math'>\( \left[ X_s = \! {\displaystyle\int\limits_0^s} f \big(u\big) dW_u \right] \)</span> & <span class = 'Math'>\( \big[ X_t - \: X_s \big] \)</span> <a href="https://quant.stackexchange.com/questions/43614/how-to-prove-that-x-s-ints-0-fudw-u-is-independant-from-x-t-x-s?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span>  <span class = 'Math'>\( \left[  I_t =\! f \big( t \big) =\! \left[ {\displaystyle\int\limits_{0}^{t}} W_sds \right] \right] \)</span>
+					We know : <span class = "Math">\( I \big(a, \: b\big) = \! \left[{\displaystyle\int\limits_a^b} f \big(u\big)dW_u \right]  \)</span>
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class = "Math">\( = \! \lim_{n\to\infty} \sum_{i\:=0}^{n-\!1} \left[ f\left(a + \: i \left[ {\displaystyle\frac{b-\!a}{n}} \right]\right) \left[ W_{\left[a \:\:+ \: \big(i\:+1\big) \left[ {\displaystyle\frac{b-\!a}{n}} \right]\right]} - W_{\left[a \:\:+ \: i \left[ {\displaystyle\frac{b-\!a}{n}} \right]\right]} \right] \right] \)</span>
 					<br>
-					So, <span class = 'Math'>\( \left[ {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} =\! W_t \right] \)</span>
-					<br>
-					AND, <span class = 'Math'>\( \left[ dI_t =\! {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} dt \right] =\! W_tdt \)</span>. Therefore, the Process <span class = 'Math'>\( \left[ Y_t =\!   {\displaystyle\int\limits_{0}^{t}} W_sds  \right] \)</span> is <span class = 'Notes1'>NOT MARTINGALE BUT NORMAL</span> <a href="https://quant.stackexchange.com/questions/29504/integral-of-brownian-motion-w-r-t-time" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process/57112#57112" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					Above proves that, They are Independent.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 10px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
