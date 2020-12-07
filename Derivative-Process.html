@@ -102,58 +102,84 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #da627d; height: 5950px;'>
-			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px;">
-					Ito's Lemma (Function should be <span class = "Notes2">Continuous & 2<sup>nd</sup> differentiable</span>. AND, can be <span class = "Notes2">Generalised Function</span> <a href="https://quant.stackexchange.com/questions/55028/the-most-general-conditions-under-which-ito-lemma-holds" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>) -
-					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
-									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dS =\! \mu_S dt + \sigma_S \: dW_t \implies \: \left[df =\! \left[ \mu_S \frac{\delta f}{\delta S} +  \frac{\delta f}{\delta t} + 0.5 \sigma_S^2 \frac{\delta^2 f}{\delta S^2} \right]dt +  \left[ \sigma_S \frac{\delta f}{\delta S} \right]dW_t \right] \)</span>
+		<div class = 'Indiv_Content' style = 'border-color: #da627d; height: 9950px;'>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">								
+				<div style = "height: 660px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 12px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						1
 					</div>
-					<br>
-					Derivation : Using <i>Taylor's Expansion</i> on <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big( S, t \big) \)</span>, We have :
-					<br>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( df =\! \left[ \frac{\delta f}{\delta S} \right]dS \:+ \left[ \frac{\delta f}{\delta t} \right]dt \:+ 0.5\left[ \frac{\delta^2 f}{\delta^2 S} \right]dS^2 \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \frac{\delta f}{\delta S} \right] \big(  \mu_S dt + \sigma_S \: dW_t \big) \:+ \left[ \frac{\delta f}{\delta t} \right]dt \:+ 0.5\left[ \frac{\delta^2 f}{\delta^2 S} \right] \big(  \mu_S dt + \sigma_S \: dW_t \big)^2  \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \frac{\delta f}{\delta S} \right] \big(  \mu_S dt + \sigma_S \: dW_t \big) \:+ \left[ \frac{\delta f}{\delta t} \right]dt \:+ 0.5\left[ \frac{\delta^2 f}{\delta^2 S} \right] \big(  \mu_S dt + \sigma_S \: \xi dt^{0.5} \big)^2, \: dW_t = \xi dt^{0.5}, \:  \xi \sim \! N \big(0, 1 \big)  \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \mu_S \frac{\delta f}{\delta S} +\!  \frac{\delta f}{\delta t} \right]dt \:+ \left[ \sigma_S \frac{\delta f}{\delta S} \right]dW_t \:+ 0.5\left[ \frac{\delta^2 f}{\delta^2 S} \right]  \big( \sigma_S^2 \: \xi^2 dt \big) \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \mu_S \frac{\delta f}{\delta S} +\!  \frac{\delta f}{\delta t} \right]dt \:+ \left[ \sigma_S \frac{\delta f}{\delta S} \right]dW_t \:+ 0.5\left[ \frac{\delta^2 f}{\delta^2 S} \right]  \big( \sigma_S^2 \: \mathbb{E} \left[ \xi^2 \right] dt \big) \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \mu_S \frac{\delta f}{\delta S} +\!  \frac{\delta f}{\delta t} \right]dt \:+ \left[ \sigma_S \frac{\delta f}{\delta S} \right]dW_t \:+ 0.5\left[ \frac{\delta^2 f}{\delta^2 S} \right]  \big( \sigma_S^2 \: dt \big) \)</span>
-				</div>
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px;">
-					Ito's Lemma for <span class = "Notes">2 Processes</span> i.e. <span class = 'Math'>\( \left[ \frac{X_t}{Y_t} \right] \)</span> <a href="https://quant.stackexchange.com/questions/22569/problem-with-deriving-the-dynamics-of-a-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> -
-					<div style = 'height: 150px; width: 840px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
-									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					 <span class = 'Math'>\( d f \big(X, Y\big) =\!  \)</span>
-					 <br>
-					 <span class = 'Math'>\( \left[ \frac{\delta f \big(X, Y\big) }{\delta X} \right] dX +\! \left[ \frac{\delta f \big(X, Y\big) }{\delta Y} \right] dY +\! 0.5 \left( \left[ \frac{\delta^2 f \big(X, Y\big) }{\delta X^2} \right] \big(dX \big)^2 +\! \left[ \frac{\delta^2 f \big(X, Y\big) }{\delta Y^2} \right] \big(dY \big)^2 \right) +\! \left[ \frac{\delta^2 f \big(X, Y\big) }{\delta X \delta Y} \right] \big(dX \big) \big(dY \big) \)</span>
+					<div>
+						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+							Ito's Lemma
+						</span>
+					</div>
+					<div style = "background-color: rgba(0,0,0,.0); height: 50px; width: 30%; margin-left: 5%; position: relative; color: #000; border-bottom: 2px solid #000;  border-top: 2px solid #000; margin-top: 10px; padding-left: 10px;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);">
+							<span class = "Other_Span" style = "color: #000; letter-spacing: 1px; text-transform: uppercase;">
+								Important Note
+							</span>
+						</div>
 					</div>
 					
+					<div style = "background-color: rgba(0,0,0,.0); height: 50px; width: 90%; margin-left: 5%; position: relative; color: #000; border-bottom: 0px solid #000;  border-top: 0px solid #000; margin-top: 1px; padding-left: 10px; margin-bottom: 5px;">
+						<div style = "position: absolute; top: 50%; transform: translateY(-50%);">
+							<span class = "Other_Span" style = "color: #000; letter-spacing: 1px;">
+								Function should be <span class = "Notes2">Continuous & 2<sup>nd</sup> Differentiable</span>. AND, can be <span class = "Notes2">Generalised Function</span> <a href="https://quant.stackexchange.com/questions/55028/the-most-general-conditions-under-which-ito-lemma-holds" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+							</span>
+						</div>
+					</div>
+					<div>
+						<span class = "Math" style = "color: #395e7e">\( \big[dS =\! \mu_S dt + \sigma_S \: dW_t\big] \implies \: \left[df =\! \left[ \mu_S {\displaystyle\frac{\delta f}{\delta S}} +  {\displaystyle\frac{\delta f}{\delta t}} + 0.5 \sigma_S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt +  \left[ \sigma_S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \right] \)</span>
+					</div>
+					<div style = "; margin-top: 30px;">
+						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px">
+							Derivation : Using <span class = "Notes2">Taylor's Expansion</span> on <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[ S, \: t \big] \)</span>, We have :
+							<br>&nbsp;
+							<br>&nbsp;
+							<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( df \:=\! \left[ {\displaystyle\frac{\delta f}{\delta S}} \right]dS \:+ \left[ {\displaystyle\frac{\delta f}{\delta t}} \right]dt \:+ 0.5\left[ {\displaystyle\frac{\delta^2 f}{\delta^2 S}} \right]dS^2 \)</span>
+							<br>&nbsp;
+							<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ {\displaystyle\frac{\delta f}{\delta S}} \right] \big(  \mu_S dt + \sigma_S \: dW_t \big) \:+ \left[ {\displaystyle\frac{\delta f}{\delta t}} \right]dt \:+ 0.5\left[ {\displaystyle\frac{\delta^2 f}{\delta^2 S}} \right] \big(  \mu_S dt +\! \sigma_S \: dW_t \big)^2  \)</span>
+							<br>&nbsp;
+							<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ {\displaystyle\frac{\delta f}{\delta S}} \right] \big(  \mu_S dt + \sigma_S \: dW_t \big) \:+ \left[ {\displaystyle\frac{\delta f}{\delta t}} \right]dt \:+ 0.5\left[ {\displaystyle\frac{\delta^2 f}{\delta^2 S}} \right] \left(  \mu_S dt +\! \sigma_S \: \xi \sqrt{\big[dt\big]} \right)^2, \: \big[dW_t \sim \! \mathbb{N} \big(0, \: dt \big)\big]  \)</span>
+							<br>&nbsp;
+							<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \mu_S {\displaystyle\frac{\delta f}{\delta S}} +\!  {\displaystyle\frac{\delta f}{\delta t}} \right]dt \:+ \left[ \sigma_S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \:+ 0.5\left[ {\displaystyle\frac{\delta^2 f}{\delta^2 S}} \right]  \big( \sigma_S^2 \: \xi^2 dt \big) \)</span>
+							<br>&nbsp;
+							<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \mu_S {\displaystyle\frac{\delta f}{\delta S}} +\!  {\displaystyle\frac{\delta f}{\delta t}} \right]dt \:+ \left[ \sigma_S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \:+ 0.5\left[ {\displaystyle\frac{\delta^2 f}{\delta^2 S}} \right]  \big( \sigma_S^2 \: \mathbb{E} \left[ \xi^2 \right] dt \big) \)</span>
+							<br>&nbsp;
+							<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\: = \left[ \mu_S {\displaystyle\frac{\delta f}{\delta S}} +\!  {\displaystyle\frac{\delta f}{\delta t}} \right]dt \:+ \left[ \sigma_S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \:+ 0.5\left[ {\displaystyle\frac{\delta^2 f}{\delta^2 S}} \right]  \big( \sigma_S^2 \: dt \big) \)</span>
+						</span>
+					</div>
+				</div>				
+				<div style = "height: 230px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						2
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Ito's Lemma for <span class = "Notes2">2 Processes</span> 
+					</span><span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; ">i.e. <span class = 'Math'>\( \left[ {\displaystyle\frac{X_t}{Y_t}} \right] \)</span> <a href="https://quant.stackexchange.com/questions/22569/problem-with-deriving-the-dynamics-of-a-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a></span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = 'Math'>\( d f \big(X, Y\big) =\!  \)</span>
+						<br><br>
+						 <span class = 'Math'>\( \left[ {\displaystyle\frac{\delta f \big(X, Y\big) }{\delta X}} \right] dX +\! \left[ {\displaystyle\frac{\delta f \big(X, Y\big) }{\delta Y}} \right] dY +\! 0.5 \left( \left[ {\displaystyle\frac{\delta^2 f \big(X, Y\big) }{\delta X^2}} \right] \big(dX \big)^2 +\! \left[ {\displaystyle\frac{\delta^2 f \big(X, Y\big) }{\delta Y^2}} \right] \big(dY \big)^2 \right) +\! \left[ {\displaystyle\frac{\delta^2 f \big(X, Y\big) }{\delta X \delta Y}} \right] \big(dX \big) \big(dY \big) \)</span>
+						</span>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 140px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ S_t =\! S_0 + \int\limits_{0}^{t} \mu_u S_u du + \int\limits_{0}^{t} \sigma_u S_u dW_u \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[  \int\limits_{0}^{T} \sigma^2_s ds = -2\mathbb{LOG} \frac{S_T}{S_0} + \int\limits_{0}^{T} \frac{2}{S_u} dS_u \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
+				<div style = "margin: 0; padding: 10px; height: 140px; width: calc(100% + 40px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 20px; overflow: hidden;">
+					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ S_t =\! S_0 +\! {\displaystyle\int\limits_{0}^{t}} \mu_u S_u du +\! {\displaystyle\int\limits_{0}^{t}} \sigma_u S_u dW_u \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[  {\displaystyle\int\limits_{0}^{T}} \sigma^2_s ds =\! -\!\!2\mathbb{LOG} {\displaystyle\frac{S_T}{S_0}} + \! {\displaystyle\int\limits_{0}^{T}} {\displaystyle\frac{2}{S_u}} dS_u \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
 					Using <i>Taylor's expansion</i>, We can Have :
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( d \mathbb{LOG} S_t =\! \frac{1}{S_t} dS_t - 0.5\frac{1}{S_t^2} \big( d S_t \big)^2 \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\:\:\:\:\:\:\:\: =\! \frac{1}{S_t} dS_t - 0.5\frac{1}{S_t^2} \big( \mu_t S_t dt + \sigma_t S_t dW_t \big)^2  \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\:\:\:\:\:\:\:\: =\! \frac{1}{S_t} dS_t - 0.5\frac{1}{S_t^2} \big( \sigma_t^2 S_t^2 dt \big)^2  \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\:\:\:\:\:\:\:\: =\! \frac{1}{S_t} dS_t - 0.5 \big( \sigma_t^2 dt \big)^2  \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( d \mathbb{LOG} S_t =\! {\displaystyle\frac{1}{S_t}} dS_t - 0.5{\displaystyle\frac{1}{S_t^2}} \big( d S_t \big)^2 \)</span>
+					<br>&nbsp;&nbsp;&nbsp;
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\:\:\:\:\:\:\:\: =\! {\displaystyle\frac{1}{S_t}} dS_t - 0.5{\displaystyle\frac{1}{S_t^2}} \big( \mu_t S_t dt + \sigma_t S_t dW_t \big)^2  \)</span>
+					<br>&nbsp;&nbsp;&nbsp;
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\:\:\:\:\:\:\:\: =\! {\displaystyle\frac{1}{S_t}} dS_t - 0.5{\displaystyle\frac{1}{S_t^2}} \big( \sigma_t^2 S_t^2 dt \big)^2  \)</span>
+					<br>&nbsp;&nbsp;&nbsp;
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\:\:\:\:\:\:\:\: =\! {\displaystyle\frac{1}{S_t}} dS_t - 0.5 \big( \sigma_t^2 dt \big)^2  \)</span>
 					<br><br>
 					This proves the Result.
 				</div>
@@ -167,20 +193,19 @@
 					Derivation : Using <i>Taylor's Expansion</i> on <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big( W_t, t \big) \)</span>, We have :
 					<br>
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dY_t =\! \left[ \frac{\delta Y_t}{\delta t} \right]dt \:+ \left[ \frac{\delta Y_t}{\delta W_t} \right]dW_t \:+ 0.5\left[ \frac{\delta^2 Y_t}{\delta^2 W_t} \right]{dW_t}^2 \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dY_t =\! \left[ {\displaystyle\frac{\delta Y_t}{\delta t}} \right]dt \:+ \left[ {\displaystyle\frac{\delta Y_t}{\delta W_t}} \right]dW_t \:+ 0.5\left[ {\displaystyle\frac{\delta^2 Y_t}{\delta^2 W_t}} \right]{dW_t}^2 \)</span>
 					<br>
 					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = 2t {W_t}^3 dt \:+ 3t^2 {W_t}^2 dW_t \:+ 3t^2 W_t dt \)</span>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 110px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ X_t =\! e^{-\alpha t} \big( X_0 + \sigma \int\limits_{0}^{t} e^{\alpha s} dW_s \big) \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ X_t =\! X_0 \: - \alpha \int\limits_{0}^{t} X_s ds + \sigma W_t \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
+				<div style = "margin: 0; padding: 10px; height: 115px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 4px;">
+					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ X_t =\! e^{-\alpha t} \big( X_0 + \sigma {\displaystyle\int\limits_{0}^{t}} e^{\alpha s} dW_s \big) \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ X_t =\! X_0 \: - \alpha {\displaystyle\int\limits_{0}^{t}} X_s ds + \sigma W_t \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dX_t =\! d\big( e^{-\alpha t} \big( X_0 + \sigma \int\limits_{0}^{t} e^{\alpha s} dW_s \big) \big) \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dX_t =\! d\big( e^{-\alpha t} \big( X_0 + \sigma {\displaystyle\int\limits_{0}^{t}} e^{\alpha s} dW_s \big) \big) \)</span>
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\: = - \alpha e^{-\alpha t} \big( X_0 + \sigma \int\limits_{0}^{t} e^{\alpha s} dW_s \big)dt + e^{-\alpha t} \sigma e^{\alpha t} dW_t \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\: = - \alpha e^{-\alpha t} \big( X_0 + \sigma {\displaystyle\int\limits_{0}^{t}} e^{\alpha s} dW_s \big)dt + e^{-\alpha t} \sigma e^{\alpha t} dW_t \)</span>
 					<br>
 					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\: = - \alpha X_t dt + \sigma dW_t \)</span>
 					<br>
@@ -207,40 +232,40 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 35px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					if <span class = 'Math'>\( \big[ dS_t = \sigma dW_t \big] \)</span> i.e. <span class = "Notes">Bachelier Model</span> then WHAT is the Process for <span class = 'Math'>\( \left[ \frac{1}{T} \int\limits_{0}^{T} S_t dt \right] \)</span> <a href="https://quant.stackexchange.com/questions/4674/what-is-the-average-stock-price-under-the-bachelier-model/4713" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+									padding-top: 10px;">
+					if <span class = 'Math'>\( \big[ dS_t = \sigma dW_t \big] \)</span> i.e. <span class = "Notes1">Bachelier Model</span> then WHAT is the Process for <span class = 'Math'>\( \left[ {\displaystyle\frac{1}{T}} {\displaystyle\int\limits_{0}^{T}} S_t dt \right] \)</span> <a href="https://quant.stackexchange.com/questions/4674/what-is-the-average-stock-price-under-the-bachelier-model/4713" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					We have <span class = 'Math'>\( \left[ \frac{1}{T} \int\limits_{0}^{T} S_t dt \right] =\! \left[ \frac{1}{T} \int\limits_{0}^{T} \big( S_0 + \sigma W_t \big) dt \right] =\! S_0 +\! \sigma \left[ \frac{1}{T} \int\limits_{0}^{T}  W_t  dt \right] \)</span>. Ofcourse, this is a <span class = 'Math'>\( \big[ \mathbb{N} \big(.,\: .\big) \big] \)</span>. BUT, I need to calculate the <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> and <span class = 'Math'>\( \mathbb{VARIANCE} \)</span>.
+					We have <span class = 'Math'>\( \left[ {\displaystyle\frac{1}{T}} {\displaystyle\int\limits_{0}^{T}} S_t dt \right] =\! \left[ {\displaystyle\frac{1}{T}} {\displaystyle\int\limits_{0}^{T}} \big( S_0 + \sigma W_t \big) dt \right] =\! S_0 +\! \sigma \left[ {\displaystyle\frac{1}{T}} {\displaystyle\int\limits_{0}^{T}}  W_t  dt \right] \)</span>. Ofcourse, this is a <span class = 'Math'>\( \big[ \mathbb{N} \big(.,\: .\big) \big] \)</span>. BUT, I need to calculate the <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> and <span class = 'Math'>\( \mathbb{VARIANCE} \)</span>.
 					<br>
 					<br>
-					<span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> : <span class = 'Math'>\( \mathbb{E} \left[ \frac{1}{T} \int\limits_{0}^{T}  W_t  dt \right] =\! \frac{1}{T} \mathbb{E} \left[  \int\limits_{0}^{T} d \big(tW_t \big) -\!  \int\limits_{0}^{T} tdW_t \right] =\! \frac{1}{T} \mathbb{E} \left[  \big(TW_T \big) -\!  \int\limits_{0}^{T} tdW_t \right] =\! 0 \)</span>
+					<span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\frac{1}{T}} {\displaystyle\int\limits_{0}^{T}}  W_t  dt \right] =\! {\displaystyle\frac{1}{T}} \mathbb{E} \left[ {\displaystyle \int\limits_{0}^{T}} d \big(tW_t \big) -\!  {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! {\displaystyle\frac{1}{T}} \mathbb{E} \left[  \big(TW_T \big) -\!  {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! 0 \)</span>
 					<br>
 					<br>
-					<span class = 'Math'>\( \mathbb{VARIANCE} \)</span> : We will calculate <span class = 'Math'>\( \mathbb{E} \left[ \big( \frac{1}{T} \int\limits_{0}^{T}  W_t  dt \big)^2 \right] =\! \frac{1}{T^2} \left[ \frac{1}{3}T^3 \right] \)</span>. This is <span class = "Notes1">EASY</span> using above break-up.
+					<span class = 'Math'>\( \mathbb{VARIANCE} \)</span> : We will calculate <span class = 'Math'>\( \mathbb{E} \left[ \big( {\displaystyle\frac{1}{T}} {\displaystyle\int\limits_{0}^{T}}  W_t  dt \big)^2 \right] =\! {\displaystyle\frac{1}{T^2}} \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>. This is <span class = "Notes2">EASY</span> using above break-up.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 35px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					if <span class = 'Math'>\( \big[ dS_t = \mu_t dt + \sigma_t dW_t \big] \)</span> then WHAT is the Process for <span class = 'Math'>\( \left[ \int\limits_{0}^{T} S_t dt \right] \)</span> <a href="https://quant.stackexchange.com/questions/30484/differential-of-integral-of-a-stochastic-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+									padding-top: 10px;">
+					if <span class = 'Math'>\( \big[ dS_t = \mu_t dt + \sigma_t dW_t \big] \)</span> then What is the Process for <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} S_t dt \right] \)</span> <a href="https://quant.stackexchange.com/questions/30484/differential-of-integral-of-a-stochastic-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( Y_T = \left[ \int\limits_{0}^{T} S_t dt \right] =\! \left[ \int\limits_{0}^{T} \big( S_0 + \int\limits_{0}^{t} \mu_s ds + \int\limits_{0}^{t} \sigma_s dW_s \big) dt \right] =\! S_0T + \left[ \int\limits_{0}^{T} \int\limits_{0}^{t} \mu_s dsdt \right]+ \left[ \int\limits_{0}^{T} \int\limits_{0}^{t} \sigma_s dsdW_t \right] \)</span>
+					<span class = 'Math'>\( Y_T = \left[ {\displaystyle\int\limits_{0}^{T}} S_t dt \right] =\! \left[ {\displaystyle\int\limits_{0}^{T}} \big( S_0 + {\displaystyle\int\limits_{0}^{t}} \mu_s ds + \int\limits_{0}^{t} \sigma_s dW_s \big) dt \right] =\! S_0T + \left[ {\displaystyle\int\limits_{0}^{T}} {\displaystyle\int\limits_{0}^{t}} \mu_s dsdt \right]+ \left[ {\displaystyle\int\limits_{0}^{T}} {\displaystyle\int\limits_{0}^{t}} \sigma_s dsdW_t \right] \)</span>
 					<br>
 					<br>
-					Now, use Fubini's Formula - For insight on <span class = "Notes">Integrations' exchange</span> see <a href="https://quant.stackexchange.com/questions/30730/variance-of-time-integral-of-squared-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Now, use <span class = "Notes2">Fubini's Formula</span> : For insight on <span class = "Notes">Integrations' exchange</span> see <a href="https://quant.stackexchange.com/questions/30730/variance-of-time-integral-of-squared-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 					<br><br>
-					<span class = 'Math'>\( \left[ \int\limits_{0}^{T} \int\limits_{0}^{t} \mu_s dsdt \right] = \left[ \int\limits_{0}^{T} \int\limits_{s}^{T} \mu_s dtds \right] = \left[ \int\limits_{0}^{T} \big( T-s \big) \mu_s ds \right] = \left[ T \int\limits_{0}^{T} \mu_s ds \right] - \left[ \int\limits_{0}^{T}  s \mu_s ds \right] \)</span>
-					<br><br>Similarly -
+					<span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} {\displaystyle\int\limits_{0}^{t}} \mu_s dsdt \right] = \left[ {\displaystyle\int\limits_{0}^{T}} {\displaystyle\int\limits_{s}^{T}} \mu_s dtds \right] = \left[ \int\limits_{0}^{T} \big( T-s \big) \mu_s ds \right] = \left[ T {\int\limits_{0}^{T}} \mu_s ds \right] - \left[ {\displaystyle\int\limits_{0}^{T}}  s \mu_s ds \right] \)</span>
+					<br><br>Similarly :
 					<br><br>
-					<span class = 'Math'>\( \left[ \int\limits_{0}^{T} \int\limits_{0}^{t} \sigma_s dsdW_t \right] = \left[ T \int\limits_{0}^{T} \sigma_s dW_s \right] - \left[ \int\limits_{0}^{T}  s \sigma_s dW_s \right] \)</span>
+					<span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} {\displaystyle\int\limits_{0}^{t}} \sigma_s dsdW_t \right] = \left[ T {\displaystyle\int\limits_{0}^{T}} \sigma_s dW_s \right] - \left[ {\displaystyle\int\limits_{0}^{T}}  s \sigma_s dW_s \right] \)</span>
 					<br>
 					<br>
 					So We have :
 					<br>
-					<span class = 'Math'>\( Y_T = TS_T - \left[ \int\limits_{0}^{T}  s \mu_s ds \right] - \left[ \int\limits_{0}^{T}  s \sigma_s dW_s \right]\)</span>. Finally :
+					<span class = 'Math'>\( Y_T = TS_T - \left[ {\displaystyle\int\limits_{0}^{T}}  s \mu_s ds \right] - \left[ {\displaystyle\int\limits_{0}^{T}}  s \sigma_s dW_s \right]\)</span>. Finally :
 					<span class = 'Math'>\( dY_T = TdS_T + S_TdT - T \mu_T dT - T \sigma_T dW_T = S_TdT \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
@@ -250,7 +275,7 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					This is NOT POSSIBLE to derive because, here the Price follows a <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \) </span>.
+					This is <span class = "Notes1">NOT POSSIBLE to <span class = "Notes">derive</span></span> because, here the Price follows a <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \) </span>.
 				</div>	
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
@@ -259,45 +284,44 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Using Ito's Lemma - 
+					Using Ito's Lemma :
 					<span class = 'Math'>\( dY_t = \left[ .5k e^{.5kt}S_t -.5k S_t e^{.5kt}   \right]dt + \left[ 0.5 \beta e^{.5kt} \right] dW_t = \left[ 0.5 \beta e^{.5kt} \right] dW_t \)</span>. <br>Therefore, it just has a <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \big[ dS_t =\! \mu_t dt + f \big( W_t \big) dW_t \big] \)</span> then WHAT is <span class = 'Math'>\( \big[ F \big] \)</span> that makes <span class = 'Math'>\( \left[ M_t =\! S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} \right] \)</span> <span class = 'Notes'>Martingale ? </span>  &nbsp;<a href="https://quant.stackexchange.com/questions/17290/transformation-into-martingale?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \big[ dS_t =\! \mu_t dt + f \big( W_t \big) dW_t \big] \)</span> then WHAT is <span class = 'Math'>\( \big[ F \big] \)</span> that makes <span class = 'Math'>\( M_t =\! S_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du}  \)</span> <span class = 'Notes1'>Martingale ? </span>  &nbsp;<a href="https://quant.stackexchange.com/questions/17290/transformation-into-martingale?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
 					Use Ito's Lemma on <span class = 'Math'>\( \big[ M_t \big] \)</span>
 					<br>
-					<span class = 'Math'>\(  dM_t = dS_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t d \left[ e^{\int\limits_{0}^{t} F \big( S_u \big) du} \right] = \big( \mu_t dt + f \big( W_t \big) dW_t \big) e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} F \big( S_t \big) dt \)</span>
+					<span class = 'Math'>\(  dM_t = dS_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t d \left[ e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} \right] = \big( \mu_t dt + f \big( W_t \big) dW_t \big) e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} F \big( S_t \big) dt \)</span>
 					<br>
 					For Martingale, We need to show : The Term for <span class = 'Math'>\( \big( dt \big) \)</span> is <span class = 'Math'>\( \big[ 0 \big] \) </span>. So,
 					<br>
-					<span class = 'Math'>\( \left[ \mu_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} + S_t e^{\int\limits_{0}^{t} F \big( S_u \big) du} F \big( S_t \big) = 0 \right]\)</span>. This gives <span class = 'Math'>\( \left[ F \big( S_t \big) = -\! \left[ \frac{\mu_t}{S_t} \right] \right] \)</span>.
+					<span class = 'Math'>\( \left[ \mu_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} F \big( S_t \big) = 0 \right]\)</span>. This gives <span class = 'Math'>\( \left[ F \big( S_t \big) = -\! \left[ {\displaystyle\frac{\mu_t}{S_t}} \right] \right] \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% + 30px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Price of an Option with Payoff <span class = 'Math'>\( \left[ 1 + \big( \frac{T}{2} + \mathbb{LOG} S_T \big)^2 \right]^{0.5} \)</span> will NOT EXCEED <span class = 'Math'>\( \big( 1+T \big)^{0.5} \)</span>. Given <span class = 'Math'>\( \big[ \sigma = 1, r = 0 \big] \)</span>
+					Option's Price with Payoff <span class = 'Math'>\( \left[\sqrt{ 1 + \left( {\displaystyle\frac{T}{2}} + \mathbb{LOG} S_T \right)^2} \right] \)</span> will NOT EXCEED <span class = 'Math'>\( \sqrt{\big[1+T\big]}  \)</span>. Given <span class = 'Math'>\( \big[ \sigma = 1, r = 0 \big] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \left[ 1 + \big( \frac{T}{2} + \mathbb{LOG} S_T \big)^2 \right]^{0.5} = \left[ 1 + \big( \frac{T}{2} + \big( r - 0.5 \sigma^2 \big)T + \sigma dW_T \big)^2 \right]^{0.5} = \big[ 1 + \big(  dW_T \big)^2 \big]^{0.5} \)</span>
+					<span class = 'Math'>\( \left[ \sqrt{ 1 + \left( {\displaystyle\frac{T}{2}} + \mathbb{LOG} S_T \right)^2 }\right] = \left[\sqrt{ 1 + \left( {\displaystyle\frac{T}{2}} + \big( r - 0.5 \sigma^2 \right)T + \sigma dW_T \big)^2} \right] = \left[\sqrt{ 1 + \big(  dW_T \big)^2 } \right]\)</span>
 					<br>
-					So, <span class = 'Math'>\( \mathbb{E} \big[ 1 + \big(  dW_T \big)^2 \big]^{0.5} \leq \big[ 1 + \mathbb{E} \big(  dW_T \big)^2 \big]^{0.5} = \big( 1+T \big)^{0.5} \)</span> <a href="https://quant.stackexchange.com/questions/39929/how-might-i-answer-this-past-exam-question-relating-to-the-value-of-a-european-o?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					So, <span class = 'Math'>\( \sqrt{ \mathbb{E} \big[ 1 + \big(  dW_T \big)^2 \big]} \:\leq\: \sqrt{\big[ 1 + \mathbb{E} \big(  dW_T \big)^2 \big]} \:=\: \sqrt{\big[ 1+T \big]} \)</span> <a href="https://quant.stackexchange.com/questions/39929/how-might-i-answer-this-past-exam-question-relating-to-the-value-of-a-european-o?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Price of an Option with Payoff <span class = 'Math'>\( \big( S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					Option's Price with Payoff <span class = 'Math'>\( \big( S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \big) \)</span> <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px; overflow: hidden; padding-bottom: 0px;">
-					Let, <span class = 'Math'>\( \mathbb{NUMERAIRE}_{\mathbb{CH.}} : \left[ \mathbb{Q} \rightarrow \mathbb{Q}^{\big[1\big]} \right] : \left[ \frac{ d \mathbb{Q}^{\big[1\big]}}{ d \mathbb{Q}} =\! \left( \frac{S_T}{B_T} \right) \left( \frac{B_0}{S_0} \right) =\! \left( \frac{S_T}{S_0} \right) e^{-rT}  \:\:\left(=\! e^{-0.5 \sigma^2 T \:+ \sigma dW_T } \right)\right]  \)</span>
+					Let, <span class = 'Math'>\( \mathbb{NUMERAIRE}_{\mathbb{CH.}} : \left[ \mathbb{Q} \rightarrow \mathbb{Q}^{\big[1\big]} \right] : \left[ {\displaystyle\frac{ d \mathbb{Q}^{\big[1\big]}}{ d \mathbb{Q}}} =\! \left( {\displaystyle\frac{S_T}{B_T}} \right) \left( \frac{B_0}{S_0} \right) =\! \left( {\displaystyle\frac{S_T}{S_0}} \right) e^{-rT}  \:\:\left(=\! e^{-0.5 \sigma^2 T \:+ \sigma dW_T } \right)\right]  \)</span>
 					<br>
-					Hence, Option's Price : <span class = 'Math'>\( \left[ e^{-rT} \mathbb{E}^{\mathbb{Q}} \big[ S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \big] \right] = \left[ e^{-rT} \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \left[ \frac{ d \mathbb{Q}}{d \mathbb{Q^{\big[1\big]}}} S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \right] \right]\)</span>
+					Hence, Option's Price : <span class = 'Math'>\( \left[ e^{-rT} \mathbb{E}^{\mathbb{Q}} \big[ S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \big] \right] = \left[ e^{-rT} \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \left[ {\displaystyle\frac{ d \mathbb{Q}}{d \mathbb{Q^{\big[1\big]}}}} S_T \mathbb{MAX} \big[ S_T-K, \: 0 \big] \right] \right]\)</span>
 					<br>
 					<br>&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 					<span class = 'Math'>\( =  \big[ S_0 \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[  \mathbb{MAX} \big[ S_T-K, \: 0 \big]\big] \big] \)</span>
@@ -307,14 +331,14 @@
 					<br>
 					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> a Process <span class = 'Math'>\( \big[ {\mathbb{N}^{\alpha}}_{t, \: T} \big] \)</span>. This pays <span class = 'Math'>\( \big[ {S^{\alpha}}_{} \big] \)</span> at time <span class = 'Math'>\( \big[ T \big] \)</span>. BUT, <span class = 'Math'>\( \big[{\mathbb{N}^{\alpha}}_{t, \: T} \neq {S_{t}}^{\alpha} \big] \)</span> due to <span class = "Notes1">Jensen's inequality</span>.
 					<br>
-					Let, <span class = 'Math'>\( \mathbb{NUMERAIRE}_{\mathbb{CH.}} : \left[ \mathbb{Q}^{\big[1\big]} \rightarrow \mathbb{Q}^{\big[\alpha \big]} \right] : \left[\frac{ d \mathbb{Q}^{\big[\alpha \big]}}{ d \mathbb{Q}^{\big[1\big]}} =\!  \frac{ d \mathbb{Q}^{\big[\alpha \big]}}{ d \mathbb{Q}^{}}  \frac{ d \mathbb{Q}^{}}{ d \mathbb{Q}^{\big[1\big]}} = \! \left( \frac{{\mathbb{N}^{\alpha}}_{T, \: T} }{B_T} \right) \left( \frac{B_0}{{\mathbb{N}^{\alpha}}_{0, \: T} } \right) \left( \frac{S_0}{S_T}  e^{rT}  \right)  = \! \left(  \frac{ {S^{\alpha}}_{T} }{{\mathbb{N}^{\alpha}}_{0, \: T}} \right) \left( \frac{S_0}{S_T} \right) \right] \)</span>
+					Let, <span class = 'Math'>\( \mathbb{NUMERAIRE}_{\mathbb{CH.}} : \left[ \mathbb{Q}^{\big[1\big]} \rightarrow \mathbb{Q}^{\big[\alpha \big]} \right] : \left[{\displaystyle\frac{ d \mathbb{Q}^{\big[\alpha \big]}}{ d \mathbb{Q}^{\big[1\big]}}} =\!  {\displaystyle\frac{ d \mathbb{Q}^{\big[\alpha \big]}}{ d \mathbb{Q}^{}}}  {\displaystyle\frac{ d \mathbb{Q}^{}}{ d \mathbb{Q}^{\big[1\big]}}} = \! \left( {\displaystyle\frac{{\mathbb{N}^{\alpha}}_{T, \: T} }{B_T}} \right) \left( {\displaystyle\frac{B_0}{{\mathbb{N}^{\alpha}}_{0, \: T} }} \right) \left( {\displaystyle\frac{S_0}{S_T}}  e^{rT}  \right)  = \! \left(  {\displaystyle\frac{ {S^{\alpha}}_{T} }{{\mathbb{N}^{\alpha}}_{0, \: T}}} \right) \left( {\displaystyle\frac{S_0}{S_T}} \right) \right] \)</span>
 					<br>
-					So, <span class = 'Math'>\( \big[  \big[ \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[ S_T \mathbb{1}_{S_T\:>K} \big]\big] =\!  \left[ \mathbb{E}^{\mathbb{Q}^{\big[\alpha \big]}} \left[ \left( \frac{{\mathbb{N}^{\alpha}}_{0, \: T}}{{S^{\alpha}}_{T}} \right) \left( \frac{S_T}{S_0} \right) S_T \mathbb{1}_{S_T\:>K} \right]\right] = \! \left[ \frac{{\mathbb{N}^{2}}_{0, \: T}}{S_0} \mathbb{E}^{\mathbb{Q}^{\big[2 \big]}} \big[ \mathbb{1}_{S_T\:>K} \big] \right]_{\alpha \:=\!\: 2} \)</span>
+					So, <span class = 'Math'>\( \big[  \big[ \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[ S_T \mathbb{1}_{S_T\:>K} \big]\big] =\!  \left[ \mathbb{E}^{\mathbb{Q}^{\big[\alpha \big]}} \left[ \left( {\displaystyle\frac{{\mathbb{N}^{\alpha}}_{0, \: T}}{{S^{\alpha}}_{T}}} \right) \left( {\displaystyle\frac{S_T}{S_0}} \right) S_T \mathbb{1}_{S_T\:>K} \right]\right] = \! \left[ {\displaystyle\frac{{\mathbb{N}^{2}}_{0, \: T}}{S_0}} \mathbb{E}^{\mathbb{Q}^{\big[2 \big]}} \big[ \mathbb{1}_{S_T\:>K} \big] \right]_{\alpha \:=\!\: 2} \)</span>
 					<br>
 					<br>
 					Now,
 					<br>
-					Girsanov's Theorem <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0/55477#55477" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \big[ d {W_t}^{\mathbb{P}} = {\phi}_t dt + d {W_t}^{\mathbb{Q}}\big], \: \big[\mathbb{P} \rightarrow \mathbb{Q}\big], \: \left[\frac{d \mathbb{Q}}{d \mathbb{P}} = L_T\right], \: \left[ L_t = e^{-0.5 \int_0^t {\phi}_s^2 ds \:+ \int_0^t {\phi}_s d{W_s}^{\mathbb{P}} } \right] \)</span>.
+					Girsanov's Theorem <a href="https://quant.stackexchange.com/questions/55402/find-a-formula-for-the-price-of-a-derivative-paying-maxs-ts-t-k-0/55477#55477" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \big[ d {W_t}^{\mathbb{P}} = {\phi}_t dt + d {W_t}^{\mathbb{Q}}\big], \: \big[\mathbb{P} \rightarrow \mathbb{Q}\big], \: \left[{\displaystyle\frac{d \mathbb{Q}}{d \mathbb{P}}} = L_T\right], \: \left[ L_t = e^{-0.5 {\displaystyle\int_0^t} {\phi}_s^2 ds \:+ {\displaystyle\int_0^t} {\phi}_s d{W_s}^{\mathbb{P}} } \right] \)</span>.
 					<br>
 					<br>
 					Calculation for <span class = 'Math'>\(  \big[ \mathbb{E}^{\mathbb{Q}^{\big[1\big]}} \big[  \mathbb{1}_{S_T\:>K} \big] \big] \)</span> :
@@ -340,47 +364,45 @@
 					<br>
 					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Next,
 					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
-					<span class = 'Math'>\(\frac{ d \mathbb{Q}^{\big[2 \big]}}{ d \mathbb{Q}^{}} =\! \left( \frac{{\mathbb{N}^{\alpha}}_{T, \: T} }{B_T} \right) \left( \frac{B_0}{{\mathbb{N}^{\alpha}}_{0, \: T} } \right) = \left[ {S_0}^{2} e^{\big[ 2r \:+ \sigma^2 \:\: -\: 0.5 \:\times 2^2 \sigma^2 \big] T \:\:+\:\: 2\sigma {W_T}^{\mathbb{Q}^{}} } \right] \left[ e^{-rT} \right] \left[ {S_0}^{-\!2} e^{ -\! \big[r\: + \sigma^2\big]T }\right]  \)</span>
-					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<span class = 'Math'>\({\displaystyle\frac{ d \mathbb{Q}^{\big[2 \big]}}{ d \mathbb{Q}^{}}} =\! \left( {\displaystyle\frac{{\mathbb{N}^{\alpha}}_{T, \: T} }{B_T}} \right) \left( {\displaystyle\frac{B_0}{{\mathbb{N}^{\alpha}}_{0, \: T} }} \right) = \left[ {S_0}^{2} e^{\big[ 2r \:+ \sigma^2 \:\: -\: 0.5 \:\times 2^2 \sigma^2 \big] T \:\:+\:\: 2\sigma {W_T}^{\mathbb{Q}^{}} } \right] \left[ e^{-rT} \right] \left[ {S_0}^{-\!2} e^{ -\! \big[r\: + \sigma^2\big]T }\right]  \)</span>
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 					<span class = 'Math'>\( =\!  e^{ \big[-\!2 \sigma^2 T \:+\: 2\sigma {W_T}^{\mathbb{Q}^{}}} \big] \)</span>
-					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
+					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp;
 					<span class = 'Math'>\( =\!  e^{ \big[-\!0.5 \big(2 \sigma\big)^2T \:+\: 2\sigma {W_T}^{\mathbb{Q}^{}} \big]} \)</span>
 					<br>
 					<br> &ensp;&ensp;&ensp;&ensp;&ensp;&ensp;&ensp; Finally, <span class = 'Math'>\(  \big[ dS_t = \big(r + \!2\sigma^2\big) S_t dt + {\sigma} S_t d {W_t}^{\mathbb{Q}^{\big[2\big]}} \big] \)</span>. Hence, We can estimate.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 70px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Price of an Option with Payoff <span class = 'Math'>\( \left(  \mathbb{MAX} \left[ 1 - \frac{K}{S_T}, \: 0 \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/59382/pricing-an-option-with-payoff-left1-fracks-t-right" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					Option's Price with Payoff <span class = 'Math'>\( \left(  \mathbb{MAX} \left[ 1 - {\displaystyle\frac{K}{S_T}}, \: 0 \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/59382/pricing-an-option-with-payoff-left1-fracks-t-right" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Under GBM, We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r\:-0.5 \sigma^2 \big)T \:+\: \sigma W_T } \right] \Rightarrow \left[ \frac{1}{S_T} = \frac{1}{S_0} e^{ - \! \big( r\:-0.5 \sigma^2 \big)T \:+\: \big(-\!\sigma\big) W_T } \right] \)</span>
+					<span class = "Notes2">Under GBM,</span> We have : <span class = 'Math'>\( \left[ S_T = S_0 e^{ \big( r\:-0.5 \sigma^2 \big)T \:+\: \sigma W_T } \right] \Rightarrow \left[ {\displaystyle\frac{1}{S_T}} = {\displaystyle\frac{1}{S_0}} e^{ - \! \big( r\:-0.5 \sigma^2 \big)T \:+\: \big(-\!\sigma\big) W_T } \right] \)</span>
 					<br>
 					
 					<br>
 					<br>
-					Now, <span class = 'Math'>\( \left[ \:\: \mathbb{E}\left[ \mathbb{MAX} \left[ 1 - \frac{K}{S_T}, 0 \right] \right] = K \mathbb{E}\left[ \mathbb{MAX} \left[ \frac{1}{K} - \frac{1}{S_T}, 0 \right] \right]  \:\: \right] \)</span>.
+					Now, <span class = 'Math'>\( \left[ \:\: \mathbb{E}\left[ \mathbb{MAX} \left[ 1 - {\displaystyle\frac{K}{S_T}}, 0 \right] \right] = K \mathbb{E}\left[ \mathbb{MAX} \left[ {\displaystyle\frac{1}{K}} - {\displaystyle\frac{1}{S_T}}, 0 \right] \right]  \:\: \right] \)</span>.
 					<br>
 					Therefore, We can easily calculate this <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 60px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Price of an Option with Payoff $1 if <span class = 'Math'>\( \big( {S_T}^2 \geq K \big) \)</span> <a href="https://quant.stackexchange.com/questions/51655/pricing-call-option-using-risk-neutral-martingale-approach-with-squared-stock-pr?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					Option's Price with Payoff $1 if <span class = 'Math'>\( \big( {S_T}^2 \geq K \big) \)</span> <a href="https://quant.stackexchange.com/questions/51655/pricing-call-option-using-risk-neutral-martingale-approach-with-squared-stock-pr?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					SIMPLE !!! Just calculate : <span class = 'Math'>\( \mathbb{P} \left[ {S_T} \geq K^{0.5} \right] \)</span>
+					<span class = "Notes2">SIMPLE</span> Just calculate : <span class = 'Math'>\( \mathbb{P} \left[ {S_T} \geq K^{0.5} \right] \)</span>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \big( B_t \big) \)</span> is a <span class = "Notes">Brownian Motion</span> with Drift & SD as <span class = 'Math'>\( \big( \mu, \sigma \big) \)</span>. Then calculate <span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{t} B \big( s \big) e^{-ks} ds \right] \)</span> <a href="https://quant.stackexchange.com/questions/40332/expectation-of-an-integral-of-a-function-of-a-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \big[ B_t \big] \)</span> is a <span class = "Notes">Brownian Motion</span> with Drift & SD as <span class = 'Math'>\( \big( \mu, \sigma \big) \)</span>. Then calculate <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} B \big( s \big) e^{-ks} ds \right] \)</span> <a href="https://quant.stackexchange.com/questions/40332/expectation-of-an-integral-of-a-function-of-a-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Use Fubini's Theorem <a href="https://stats.stackexchange.com/questions/172306/can-we-switch-integral-and-expectation-by-fubinis-theorem" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{t} B \big( s \big) e^{-ks} ds \right] = \int\limits_{0}^{t} \mathbb{E} \big[ B \big( s \big) \big] e^{-ks} ds =  \int\limits_{0}^{t} \big( \mu s \big) e^{-ks} ds \)</span>
+					Use <span class = "Notes2">Fubini's Theorem</span> <a href="https://stats.stackexchange.com/questions/172306/can-we-switch-integral-and-expectation-by-fubinis-theorem" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} B \big( s \big) e^{-ks} ds \right] = {\displaystyle\int\limits_{0}^{t}} \mathbb{E} \big[ B \big( s \big) \big] e^{-ks} ds =  {\displaystyle\int\limits_{0}^{t}} \big( \mu s \big) e^{-ks} ds \)</span>.
 				</div>
 				
 
@@ -397,10 +419,10 @@
 									font-size: 16px; border-bottom: 1px solid #00a896;">
 					Itô isometry <a href="https://en.wikipedia.org/wiki/Itô_isometry" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>-
 					<br>
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> that : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( W_t \)</span> is a Weiner Process.
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> that : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[W_t\big] \)</span> is a Weiner Process.
 					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
 									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E} \left[ \big( \int\limits_{0}^{T} X_t dW_t \big)\big( \int\limits_{0}^{T} Y_t dW_t \big) \right] =\! \mathbb{E} \left[ \int\limits_{0}^{T} X_tY_t dt \right] \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} X_t dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} Y_t dW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} X_tY_t dt \right] \)</span>
 					</div>	
 					<br>		
 				</div>
@@ -410,7 +432,7 @@
 					<br>
 					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
 									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \big( t \big) W_t =\! \left[ \int\limits_{0}^{t} f' \big( s \big) W_s ds + \int\limits_{0}^{t} f \big( s \big) dW_s \right] \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \big( t \big) W_t =\! \left[ {\displaystyle\int\limits_{0}^{t}} f' \big( s \big) W_s ds + {\displaystyle\int}\limits_{0}^{t} f \big( s \big) dW_s \right] \)</span>
 					</div>	
 					<br>		
 				</div>
@@ -420,7 +442,7 @@
 					<br>
 					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
 									align-items: left; justify-content: center; flex-direction: column; text-align: left; padding-top: 20px;'>
-					This is Wiener Process : <span class = 'Math'>\( \left[ W_t = \rho W_{1, t} + \big( 1-\rho^2 \big)^{0.5} W_{2, t} \right] \)</span>. <br>Where We have : <span class = 'Math'>\( \big[ W_{1, t}, W_{2, t} \big] \)</span> are <span class = 'Notes'>2 Independent Wieners</span>.
+					This is Wiener Process : <span class = 'Math'>\( \left[ W_t = \rho W_{1, t} + \sqrt{\big( 1-\rho^2 \big)} W_{2, t} \right] \)</span>. <br>Where We have : <span class = 'Math'>\( \big[ W_{1, t}, W_{2, t} \big] \)</span> are <span class = 'Notes'>2 Independent Wieners</span>.
 					</div>	
 					<br>		
 				</div>
@@ -430,21 +452,21 @@
 					Black Scholes Partial Differential Equation derivation -
 					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
 									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dS =\! \mu S dt + \sigma S \: dW_t \implies \: \left[df =\! \frac{\delta f}{\delta t} + \big( rS \big) \frac{\delta f}{\delta S} + 0.5\big( \sigma S \big)^2 \frac{\delta^2 f}{\delta S^2} = rf \right] \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dS =\! \mu S dt + \sigma S \: dW_t \implies \: \left[df =\! {\displaystyle\frac{\delta f}{\delta t}} + \big( rS \big) {\displaystyle\frac{\delta f}{\delta S}} + 0.5\big( \sigma S \big)^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} = rf \right] \)</span>
 					</div>
 					<br>
-					Create a Portfolio : <span class = "Math">\( \big[1\big] \)</span> SHORT Option (CALL) <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( \frac{\delta f}{\delta S} \right) \)</span> LONG Share/Underlying. So, We have the Portfolio PnL :
+					Create a Portfolio : <span class = "Math">\( \big[1\big] \)</span> SHORT Option (CALL) <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( {\displaystyle\frac{\delta f}{\delta S}} \right) \)</span> LONG Share/Underlying. So, We have the Portfolio PnL :
 					<br>
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( d\Pi =\! \frac{\delta f}{\delta S} dS \:- df \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( d\Pi =\! {\displaystyle\frac{\delta f}{\delta S}} dS \:- df \)</span>
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = \frac{\delta f}{\delta S} \big[ \mu S dt + \sigma S dW_t \big] \:- \left[ \mu S \frac{\delta f}{\delta S} + \frac{\delta f}{\delta t} + 0.5\sigma^2 S^2 \frac{\delta^2 f}{\delta S^2} \right]dt - \left[ \sigma S \frac{\delta f}{\delta S} \right]dW_t \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = {\displaystyle\frac{\delta f}{\delta S}} \big[ \mu S dt + \sigma S dW_t \big] \:- \left[ \mu S {\displaystyle\frac{\delta f}{\delta S}} + {\displaystyle\frac{\delta f}{\delta t}} + 0.5\sigma^2 S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt - \left[ \sigma S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \)</span>
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = -\! \left[ \frac{\delta f}{\delta t} + 0.5\sigma^2 S^2 \frac{\delta^2 f}{\delta S^2} \right]dt \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = -\! \left[ {\displaystyle\frac{\delta f}{\delta t}} + 0.5\sigma^2 S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt \)</span>
 					<br>
 					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \Pi dt \)</span>
 					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \left(  \frac{\delta f}{\delta S} S \:- f \right) dt \)</span>
+					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \left(  {\displaystyle\frac{\delta f}{\delta S}} S \:- f \right) dt \)</span>
 					<br>
 					<br>
 					This will give the Final Result. To solve this for CALL Options price, we need to apply the <span class = 'Notes'>Boundary condition</span> as <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f_T = \mathbb{MAX} \big[ S_T - K, 0\big] \)</span>. Similarly for the PUT Options. Ofcourse for different kind of Derivatives i.e. for different shapes of <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \)</span>, We will get different values.
@@ -454,13 +476,13 @@
 				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Find the <span class = "Notes">Expectations</span> of <span class = 'Math'>\( \left[ \int\limits_{0}^{T} tdW_t \right], \left[ \big[ \int\limits_{0}^{T} tdW_t \big]^2 \right], \left[ W_T \int\limits_{0}^{T} tdW_t \right], \left[ \int\limits_{0}^{T} \left[ \frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 } \right] dt \right] \)</span>
+					Find the <span class = "Notes">Expectations</span> of <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ \big[ {\displaystyle\int\limits_{0}^{T}} tdW_t \big]^2 \right], \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Notes'>Deterministic-Function's ITO-Integral</span> is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span> Hence : <span class = 'Math'>\( \left[ \int\limits_{0}^{T} f(t) dW_t \sim N \big(0, \: \int\limits_{0}^{T} f \big(t\big)^2 dt \big) \right] \)</span>
+					<span class = 'Notes'>Deterministic-Function's ITO-Integral</span> is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span> Hence : <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} f(t) dW_t \sim N \big(0, \: {\displaystyle\int\limits_{0}^{T}} f \big(t\big)^2 dt \big) \right] \)</span>
 					<br>
-					So,  <span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{T} tdW_t \right] =\! 0 \)</span>
+					So,  <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! 0 \)</span>
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">					
 				</div>
@@ -468,7 +490,7 @@
 									font-size: 16px;">
 					We use Ito's isometry -
 					<br>
-					 <span class = 'Math'>\( \mathbb{E} \left[ \big( \int\limits_{0}^{T} tdW_t \big)^2 \right] =\! \mathbb{E} \left[ \big( \int\limits_{0}^{T} tdW_t \big)\big( \int\limits_{0}^{T} tdW_t \big) \right] =\! \mathbb{E} \left[ \int\limits_{0}^{T} ttdt \right] =\! \left[ \frac{1}{3}T^3 \right] \)</span>
+					 <span class = 'Math'>\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)^2 \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} ttdt \right] =\! \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">					
 				</div>
@@ -476,94 +498,94 @@
 									font-size: 16px;">
 					We use Ito's isometry -
 					<br>
-					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  \int\limits_{0}^{T} tdW_t  \right] =\! \mathbb{E} \left[ \big( \int\limits_{0}^{T} 1dW_t \big)\big( \int\limits_{0}^{T} tdW_t \big) \right] =\! \mathbb{E} \left[ \int\limits_{0}^{T} tdt \right] =\! \left[ \frac{1}{2}T^2 \right] \)</span>
+					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  {\displaystyle\int\limits_{0}^{T}} tdW_t  \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} 1dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdt \right] =\! \left[ {\displaystyle\frac{1}{2}}T^2 \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">		
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \left[ f \big( x \big) = \mathbb{TAN}^{-1}x \right] \)</span>, So, We have : <span class = 'Math'>\( \left[f' \big( x \big) = \! \left[ \frac{1}{ \big( 1 + x^2 \big) } \right] , f'' \big( x \big) = -\! \left[ \frac{2x}{ \big( 1 + x^2 \big)^2 } \right] \right] \)</span>
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \left[ f \big( x \big) = \mathbb{TAN}^{-1}x \right] \)</span>, So, We have : <span class = 'Math'>\( \left[f' \big( x \big) = \! \left[ {\displaystyle\frac{1}{ \big( 1 + x^2 \big) }} \right] , f'' \big( x \big) = -\! \left[ {\displaystyle\frac{2x}{ \big( 1 + x^2 \big)^2 }} \right] \right] \)</span>
 					<br>
 					<br>
 					Use Ito's Lemma -
 					<br>
-					<span class = 'Math'>\( f \big( W_t \big) = f \big( W_0 \big) + \int\limits_{0}^{t} f' \big( W_t \big) dW_s + 0.5\int\limits_{0}^{t} f'' \big( W_t \big) dt \)</span>
+					<span class = 'Math'>\( f \big( W_t \big) = f \big( W_0 \big) + {\displaystyle\int\limits_{0}^{t}} f' \big( W_t \big) dW_s + 0.5{\displaystyle\int\limits_{0}^{t}} f'' \big( W_t \big) dt \)</span>
 					<br>
 					So,
-					<span class = 'Math'>\( \mathbb{TAN}^{-1} W_t =  \int\limits_{0}^{t} \left[ \frac{1}{ \big( 1 + {W_s}^2 \big) } \right] dW_s - 0.5\int\limits_{0}^{t} \left[ \frac{2 W_s}{ \big( 1 + {W_s}^2 \big)^2 } \right] dt \)</span>
+					<span class = 'Math'>\( \mathbb{TAN}^{-1} W_t =  {\displaystyle\int}\limits_{0}^{t} \left[ {\displaystyle\frac{1}{ \big( 1 + {W_s}^2 \big) }} \right] dW_s - 0.5{\displaystyle\int}\limits_{0}^{t} \left[ {\displaystyle\frac{2 W_s}{ \big( 1 + {W_s}^2 \big)^2 }} \right] dt \)</span>
 					<br>
-					But, the 2<sup>nd</sup> Term in above Expression is <span class = 'Math'>\( \big[0\big] \)</span>. So, We have : <span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{T} \frac{W_s}{ \big( 1 + {W_s}^2 \big)^2 } dt \right] =\! -\! \mathbb{E} \left[ \mathbb{TAN}^{-1} W_T \right] \)</span>. <a href="https://quant.stackexchange.com/questions/28009/how-to-compute-the-expectation-of-integral-of-this-random-function?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					But, the 2<sup>nd</sup> Term in above Expression is <span class = 'Math'>\( \big[0\big] \)</span>. So, We have : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{T} {\displaystyle\frac{W_s}{ \big( 1 + {W_s}^2 \big)^2 }} dt \right] =\! -\! \mathbb{E} \left[ \mathbb{TAN}^{-1} W_T \right] \)</span>. <a href="https://quant.stackexchange.com/questions/28009/how-to-compute-the-expectation-of-integral-of-this-random-function?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>	
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 275px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Is this RIGHT ??? <span class = 'Math'>\( \left[ d \big( \int\limits_{0}^{t} W_sds \big) =\! W_tdt \right] \)</span> <a href="https://quant.stackexchange.com/questions/49339/more-questions-about-integral-of-brownian-motion-w-r-t-time?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Is this RIGHT ??? <span class = 'Math'>\( \left[ d \big( {\displaystyle\int\limits_{0}^{t}} W_sds \big) =\! W_tdt \right] \)</span> <a href="https://quant.stackexchange.com/questions/49339/more-questions-about-integral-of-brownian-motion-w-r-t-time?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span>  <span class = 'Math'>\( \left[  I_t =\! f \big( t \big) =\! \left[ \int\limits_{0}^{t} W_sds \right] \right] \)</span>
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span>  <span class = 'Math'>\( \left[  I_t =\! f \big( t \big) =\! \left[ {\displaystyle\int\limits_{0}^{t}} W_sds \right] \right] \)</span>
 					<br>
-					So, <span class = 'Math'>\( \left[ \frac{\delta f \big( t \big)}{\delta t} =\! W_t \right] \)</span>
+					So, <span class = 'Math'>\( \left[ {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} =\! W_t \right] \)</span>
 					<br>
-					AND, <span class = 'Math'>\( \left[ dI_t =\! \frac{\delta f \big( t \big)}{\delta t} dt \right] =\! W_tdt \)</span>. Therefore, the Process <span class = 'Math'>\( \left[ Y_t =\!   \int\limits_{0}^{t} W_sds  \right] \)</span> is <span class = 'Notes'>NOT MARTINGALE BUT NORMAL</span> <a href="https://quant.stackexchange.com/questions/29504/integral-of-brownian-motion-w-r-t-time" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process/57112#57112" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					AND, <span class = 'Math'>\( \left[ dI_t =\! {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} dt \right] =\! W_tdt \)</span>. Therefore, the Process <span class = 'Math'>\( \left[ Y_t =\!   {\displaystyle\int\limits_{0}^{t}} W_sds  \right] \)</span> is <span class = 'Notes'>NOT MARTINGALE BUT NORMAL</span> <a href="https://quant.stackexchange.com/questions/29504/integral-of-brownian-motion-w-r-t-time" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process/57112#57112" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 165px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Is this BIVARIATE NORMAL ??? <span class = 'Math'>\( \left[ W_t, \:  \int\limits_{0}^{t} W_sds \right] \)</span> <a href="https://quant.stackexchange.com/questions/43513/show-that-w-t-int-0t-w-s-ds-has-a-normal-joint-distribution?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Is this BIVARIATE NORMAL ??? <span class = 'Math'>\( \left[ W_t, \:  {\displaystyle\int}\limits_{0}^{t} W_sds \right] \)</span> <a href="https://quant.stackexchange.com/questions/43513/show-that-w-t-int-0t-w-s-ds-has-a-normal-joint-distribution?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					We have : <span class = 'Math'>\( \big[ d \big( tW_t \big)  =\! W_t dt + t dW_t \big] \Rightarrow \left[ tW_t =\!  \int\limits_{0}^{t} W_sds +  \int\limits_{0}^{t} sdW_s \right] \Rightarrow \left[ \int\limits_{0}^{t} W_sds = tW_t - \int\limits_{0}^{t} sdW_s \right] \)</span>
+					We have : <span class = 'Math'>\( \big[ d \big( tW_t \big)  =\! W_t dt + t dW_t \big] \Rightarrow \left[ tW_t =\!  {\displaystyle\int\limits_{0}^{t}} W_sds +  {\displaystyle\int}\limits_{0}^{t} sdW_s \right] \Rightarrow \left[ {\displaystyle\int}\limits_{0}^{t} W_sds = tW_t - {\displaystyle\int}\limits_{0}^{t} sdW_s \right] \)</span>
 					<br>
-					So, <br><span class = 'Math'>\( \left[ \int\limits_{0}^{t}W_sds \right] = \left[ tW_t - \int\limits_{0}^{t} sdW_s \right] = \left[ t\int\limits_{0}^{t} dW_s - \int\limits_{0}^{t} sW_s \right] = \left[ \int\limits_{0}^{t}\big( t-s \big) dW_s \right] \)</span>
+					So, <br><span class = 'Math'>\( \left[ {\displaystyle\int}\limits_{0}^{t}W_sds \right] = \left[ tW_t - {\displaystyle\int}\limits_{0}^{t} sdW_s \right] = \left[ t{\displaystyle\int}\limits_{0}^{t} dW_s - {\displaystyle\int}\limits_{0}^{t} sW_s \right] = \left[ {\displaystyle\int}\limits_{0}^{t}\big( t-s \big) dW_s \right] \)</span>
 					<br>
 					<br>
-					Now, <span class = 'Math'>\( \left[ \lambda_1 W_t + \lambda_2  \int\limits_{0}^{t} W_sds \right] = \left[ \lambda_1  \int\limits_{0}^{t} dW_s + \lambda_2 \int\limits_{0}^{t}\big( t-s \big) dW_s \right] = \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] \)</span>. This is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>.
+					Now, <span class = 'Math'>\( \left[ \lambda_1 W_t + \lambda_2  {\displaystyle\int}\limits_{0}^{t} W_sds \right] = \left[ \lambda_1  {\displaystyle\int}\limits_{0}^{t} dW_s + \lambda_2 {\displaystyle\int}\limits_{0}^{t}\big( t-s \big) dW_s \right] = \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] \)</span>. This is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>.
 					<br>
 					<br>
 					Let calculate the <span class = 'Math'>\( \mathbb{MEAN} \)</span> and <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> : <br>
-					<span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = 0 \)</span>
+					<span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = 0 \)</span>
 					<br>
-					<span class = 'Math'>\( \mathbb{V} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = \mathbb{E} \left[ \int\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right]^2 = \mathbb{E} \left[ \int\limits_{0}^{t} \big[  \lambda_1 + \lambda_2 \big( t-s \big) \big]^2 ds \right] \)</span>. <br>&ensp;&ensp;&ensp;&ensp;This can easily be derived Now.
+					<span class = 'Math'>\( \mathbb{V} \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right]^2 = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} \big[  \lambda_1 + \lambda_2 \big( t-s \big) \big]^2 ds \right] \)</span>. <br>&ensp;&ensp;&ensp;&ensp;This can easily be derived Now.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 445px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Calculate <span class = 'Math'>\( \left( \mathbb{V} \left[ \int\limits_{0}^{t} {W_s}^2ds \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/30730/variance-of-time-integral-of-squared-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Calculate <span class = 'Math'>\( \left( \mathbb{V} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^2ds \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/30730/variance-of-time-integral-of-squared-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Start with : <span class = 'Math'>\( \left[ d \big( {W_t}^4 \big) = 4 {W_t}^3 dW_t + 0.5 \times 12 \times {W_t}^2 dt \right] \Rightarrow \left[ {W_t}^4 = 4 \int\limits_{0}^{t} W_s^3 dW_s + 6 \int\limits_{0}^{t} {W_s}^2 ds \right] \)</span>
-					<br> Now, <span class = 'Math'>\( X \sim \mathbb{N} \big( \mu, \sigma \big) \Rightarrow \mathbb{E} \left[ X^{2n} \right] = \left[ \big( \sigma^2 \big)^n  \frac{ \big( 2n \big) ! }{ \big( n \big) ! \: 2^n } \right]  \)</span><a href="https://www.randomservices.org/random/special/Normal.html" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link </span></i></a>.
+					Start with : <span class = 'Math'>\( \left[ d \big( {W_t}^4 \big) = 4 {W_t}^3 dW_t + 0.5 \times 12 \times {W_t}^2 dt \right] \Rightarrow \left[ {W_t}^4 = 4 {\displaystyle\int}\limits_{0}^{t} W_s^3 dW_s + 6 {\displaystyle\int}\limits_{0}^{t} {W_s}^2 ds \right] \)</span>
+					<br> Now, <span class = 'Math'>\( X \sim \mathbb{N} \big( \mu, \sigma \big) \Rightarrow \mathbb{E} \left[ X^{2n} \right] = \left[ \big( \sigma^2 \big)^n  {\displaystyle\frac{ \big( 2n \big) ! }{ \big( n \big) ! \: 2^n }} \right]  \)</span><a href="https://www.randomservices.org/random/special/Normal.html" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link </span></i></a>.
 					<br>
 					<br>
 					<span class = 'Math'>\( \mathbb{V} \left[ {W_t}^4 \right] = \mathbb{E} \left[ {W_t}^8 \right] - \mathbb{E}^2 \left[ {W_t}^4 \right] \)</span>. We can easily calculate this.
 					<br><br>
-					<span class = 'Math'>\( \mathbb{V} \left[ \int\limits_{0}^{t} {W_s}^3 dW_s \right] = \mathbb{E} \left[ \int\limits_{0}^{t} {W_s}^3 dW_s \right]^2 = \mathbb{E} \left[ \int\limits_{0}^{t} {W_s}^6 ds \right] = \int\limits_{0}^{t} \mathbb{E} \left[ {W_s}^6 \right] ds = \int\limits_{0}^{t} s^3 \frac{ \big( 6 \big) ! }{ \big( 3 \big) ! \: 2^3 } ds = 15\left[ \frac{t^4}{4} \right] \)</span>
+					<span class = 'Math'>\( \mathbb{V} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s \right] = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s \right]^2 = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^6 ds \right] = {\displaystyle\int}\limits_{0}^{t} \mathbb{E} \left[ {W_s}^6 \right] ds = {\displaystyle\int}\limits_{0}^{t} s^3 {\displaystyle\frac{ \big( 6 \big) ! }{ \big( 3 \big) ! \: 2^3 }} ds = 15\left[ {\displaystyle\frac{t^4}{4}} \right] \)</span>
 					<br><br>
-					<span class = 'Math'>\( \mathbb{COV} \left[ \int\limits_{0}^{t} {W_s}^3 dW_s, \int\limits_{0}^{t} {W_s}^2 ds \right] = \mathbb{E} \left[ \big( \int\limits_{0}^{t} {W_s}^3 dW_s \big)\big( \int\limits_{0}^{t} {W_s}^2 ds \big) \right]  \)</span>
+					<span class = 'Math'>\( \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s, {\displaystyle\int}\limits_{0}^{t} {W_s}^2 ds \right] = \mathbb{E} \left[ \big( {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s \big)\big( {\displaystyle\int}\limits_{0}^{t} {W_s}^2 ds \big) \right]  \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But, <span class = 'Math'>\( \int\limits_{0}^{t} {W_s}^2 ds = \int\limits_{0}^{t} \int\limits_{0}^{s} d \big( {W_u}^2 \big) ds = \int\limits_{0}^{t} \int\limits_{0}^{s} \big( 2 W_u dW_u + du \big) ds =  2\int\limits_{0}^{t} \int\limits_{0}^{s} W_u dW_u ds + \frac{t^2}{2} \)</span>
-					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = 'Math'>\( =  2\int\limits_{0}^{t} \int\limits_{u}^{t} W_u ds dW_u + \frac{t^2}{2} =  2\int\limits_{0}^{t} W_u \big( \int\limits_{u}^{t} ds \big) dW_u + \frac{t^2}{2} =  2\int\limits_{0}^{t} \big( t-u \big)  W_u dW_u + \frac{t^2}{2} \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;But, <span class = 'Math'>\( {\displaystyle\int}\limits_{0}^{t} {W_s}^2 ds = {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{s} d \big( {W_u}^2 \big) ds = {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{s} \big( 2 W_u dW_u + du \big) ds =  2{\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{s} W_u dW_u ds + {\displaystyle\frac{t^2}{2}} \)</span>
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = 'Math'>\( =  2{\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{u}^{t} W_u ds dW_u + {\displaystyle\frac{t^2}{2}} =  2{\displaystyle\int}\limits_{0}^{t} W_u \big( {\displaystyle\int}\limits_{u}^{t} ds \big) dW_u + {\displaystyle\frac{t^2}{2}} =  2{\displaystyle\int}\limits_{0}^{t} \big( t-u \big)  W_u dW_u + {\displaystyle\frac{t^2}{2}} \)</span>
 					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;For insight on <span class = "Notes">Integrations' exchange</span> see <a href="https://quant.stackexchange.com/questions/30730/variance-of-time-integral-of-squared-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 					<br><br>
-					So, <span class = 'Math'>\( \mathbb{COV} \left[ \int\limits_{0}^{t} {W_s}^3 dW_s, \int\limits_{0}^{t} {W_s}^2 ds \right] = \mathbb{E} \left[ \big( \int\limits_{0}^{t} {W_s}^3 dW_s \big)\big( 2\int\limits_{0}^{t} \big( t-s \big)  W_s dW_s + \frac{t^2}{2} \big) \right]  \)</span>
+					So, <span class = 'Math'>\( \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s, {\displaystyle\int}\limits_{0}^{t} {W_s}^2 ds \right] = \mathbb{E} \left[ \big( {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s \big)\big( 2{\displaystyle\int}\limits_{0}^{t} \big( t-s \big)  W_s dW_s + {\displaystyle\frac{t^2}{2}} \big) \right]  \)</span>
 					<br><br>
 					This gives :
 					<br>
-					<span class = 'Math'>\( 2 \mathbb{E} \left[ \big( \int\limits_{0}^{t} {W_s}^3 dW_s \big)\big( \int\limits_{0}^{t} \big( t-s \big)  W_s dW_s  \big) \right] + 0 = 2 \mathbb{E} \left[ \int\limits_{0}^{t} {W_s}^3  \big( t-s \big)  W_s ds \right] = 2 \int\limits_{0}^{t} \big( t-s \big) \mathbb{E} \left[ {W_s}^4  \right] ds \)</span>
+					<span class = 'Math'>\( 2 \mathbb{E} \left[ \big( {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s \big)\big( {\displaystyle\int}\limits_{0}^{t} \big( t-s \big)  W_s dW_s  \big) \right] + 0 = 2 \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^3  \big( t-s \big)  W_s ds \right] = 2 {\displaystyle\int}\limits_{0}^{t} \big( t-s \big) \mathbb{E} \left[ {W_s}^4  \right] ds \)</span>
 					<br><br>From above Expressions, We can easily calculate final Expression for the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 685px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Calculate <span class = 'Math'>\( \left[ \mathbb{COV} \left[ \int\limits_{0}^{t_1} \sigma_t dW_t, \int\limits_{0}^{t_2} \sigma_t dW_t \right] \right] \)</span> <a href="https://quant.stackexchange.com/questions/42483/how-to-calculate-the-covariance-between-two-stochastic-integrals/42484?noredirect=1#comment80754_42484" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Calculate <span class = 'Math'>\( \left[ \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t, {\displaystyle\int}\limits_{0}^{t_2} \sigma_t dW_t \right] \right] \)</span> <a href="https://quant.stackexchange.com/questions/42483/how-to-calculate-the-covariance-between-two-stochastic-integrals/42484?noredirect=1#comment80754_42484" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
 					Without Loss of Generality, assume : <span class = 'Math'>\( \big( t_1 < t_2 \big) \)</span>. So,
 					<br><br>
-					<span class = 'Math'>\( \mathbb{COV} \left[ \int\limits_{0}^{t_1} \sigma_t dW_t, \int\limits_{0}^{t_1} \sigma_t dW_t + \int\limits_{t_1}^{t_2} \sigma_t dW_t \right] = \mathbb{COV} \left[ \int\limits_{0}^{t_1} \sigma_t dW_t, \int\limits_{0}^{t_1} \sigma_t dW_t \right] = \mathbb{E} \left[ \int\limits_{0}^{t_1} {\sigma_t}^2 dt \right] = \left[ \int\limits_{0}^{t_1} {\sigma_t}^2 dt \right] \)</span>
+					<span class = 'Math'>\( \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t, {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t + {\displaystyle\int}\limits_{t_1}^{t_2} \sigma_t dW_t \right] = \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t, {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t \right] = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t_1} {\sigma_t}^2 dt \right] = \left[ {\displaystyle\int}\limits_{0}^{t_1} {\sigma_t}^2 dt \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 145px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
@@ -625,7 +647,7 @@
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 65px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Prove that <span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{t} f \big( W_s \big) dW_s \right] = 0 \) </span> <a href="https://quant.stackexchange.com/questions/57083/expectation-on-a-function-of-wiener-process?noredirect=1#comment80476_57083" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Prove that <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} f \big( W_s \big) dW_s \right] = 0 \) </span> <a href="https://quant.stackexchange.com/questions/57083/expectation-on-a-function-of-wiener-process?noredirect=1#comment80476_57083" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px; background-color: rgba(0,0,0,.0);">
@@ -634,15 +656,15 @@
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 20px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Calculate the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> of : <span class = 'Math'>\( \left[ \int\limits_{0}^{t} f \big( s \big) W_s ds \right] \) </span> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Calculate the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> of : <span class = 'Math'>\( \left[ {\displaystyle\int}\limits_{0}^{t} f \big( s \big) W_s ds \right] \) </span> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 220px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px; background-color: rgba(0,0,0,.0);">
 					We know that <span class = 'Math'>\( \mathbb{MEAN} \)</span> of <span class = 'Math'>\( \big[W_t\big] \) </span> is <span class = 'Math'>\( \big[ 0 \big] \) </span> AND, each of them is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>. Therefore above Expression is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span> with <span class = 'Math'>\( \mathbb{MEAN} \)</span> <span class = 'Math'>\( \big[ 0 \big] \) </span>. Hence, the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> will be as follows : <span class = "Notes1">Just a SIMPLE Calculation</span> 
 					<br>
-					<span class = 'Math'>\( \mathbb{E} \left[ \int\limits_{0}^{t} f \big( s \big) W_s ds \right]^2 \)</span>
+					<span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} f \big( s \big) W_s ds \right]^2 \)</span>
 					<br>
-					<span class = 'Math'>\(=\! \mathbb{E} \left[ \int\limits_{0}^{t} \int\limits_{0}^{t} f \big( s \big) f \big( u \big) W_sW_u dsdu \right] =\! \int\limits_{0}^{t} \int\limits_{0}^{t} f \big( s \big) f \big( u \big) \mathbb{E} \big[ W_sW_u \big] dsdu =\! \int\limits_{0}^{t} \int\limits_{0}^{t} f \big( s \big) f \big( u \big) min \big[ s,u \big] dsdu  \)</span>
+					<span class = 'Math'>\(=\! \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) W_sW_u dsdu \right] =\! {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) \mathbb{E} \big[ W_sW_u \big] dsdu =\! {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) min \big[ s,u \big] dsdu  \)</span>
 				</div>
 
 			</div>
