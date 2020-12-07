@@ -102,7 +102,7 @@
 		</div>
 	</header>
 	<div class = 'Blog_Container'>
-		<div class = 'Indiv_Content' style = 'border-color: #da627d; height: 9950px;'>
+		<div class = 'Indiv_Content' style = 'border-color: #da627d; height: 6850px;'>
 			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: 50%; height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">								
 				<div style = "height: 660px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 12px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
@@ -167,7 +167,7 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 140px; width: calc(100% + 40px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px; overflow: hidden;">
-					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ S_t =\! S_0 +\! {\displaystyle\int\limits_{0}^{t}} \mu_u S_u du +\! {\displaystyle\int\limits_{0}^{t}} \sigma_u S_u dW_u \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[  {\displaystyle\int\limits_{0}^{T}} \sigma^2_s ds =\! -\!\!2\mathbb{LOG} {\displaystyle\frac{S_T}{S_0}} + \! {\displaystyle\int\limits_{0}^{T}} {\displaystyle\frac{2}{S_u}} dS_u \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
+					if <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[ S_t =\! S_0 +\! {\displaystyle\int}\limits_{0}^{t} \mu_u S_u du +\! {\displaystyle\int\limits_{0}^{t}} \sigma_u S_u dW_u \right] \)</span> then <span style = "margin-left: 0px; font-size: 25px; font-family: 'Fira Sans', sans-serif;">\( \left[  {\displaystyle\int\limits_{0}^{T}} \sigma^2_s ds =\! -\!\!2\mathbb{LOG} {\displaystyle\frac{S_T}{S_0}} + \! {\displaystyle\int\limits_{0}^{T}} {\displaystyle\frac{2}{S_u}} dS_u \right] \)</span><a href="https://quant.stackexchange.com/questions/14102/worked-examples-of-applying-itos-lemma" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>	
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
@@ -210,7 +210,7 @@
 					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\:\: = - \alpha X_t dt + \sigma dW_t \)</span>
 					<br>
 					<br>
-					This is just the SAME as the 2<sup>nd</sup> part..
+					This is just the SAME as the 2<sup>nd</sup> part.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 90px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
@@ -266,7 +266,7 @@
 					So We have :
 					<br>
 					<span class = 'Math'>\( Y_T = TS_T - \left[ {\displaystyle\int\limits_{0}^{T}}  s \mu_s ds \right] - \left[ {\displaystyle\int\limits_{0}^{T}}  s \sigma_s dW_s \right]\)</span>. Finally :
-					<span class = 'Math'>\( dY_T = TdS_T + S_TdT - T \mu_T dT - T \sigma_T dW_T = S_TdT \)</span>
+					<span class = 'Math'>\( dY_T = TdS_T + S_TdT - T \mu_T dT - T \sigma_T dW_T = S_TdT \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
@@ -275,7 +275,7 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					This is <span class = "Notes1">NOT POSSIBLE to <span class = "Notes">derive</span></span> because, here the Price follows a <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \) </span>.
+					This is <span class = "Notes1">NOT POSSIBLE to <span class = "Notes">derive</span></span> because, here the Price follows a <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \)</span>.
 				</div>	
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
@@ -285,7 +285,7 @@
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
 					Using Ito's Lemma :
-					<span class = 'Math'>\( dY_t = \left[ .5k e^{.5kt}S_t -.5k S_t e^{.5kt}   \right]dt + \left[ 0.5 \beta e^{.5kt} \right] dW_t = \left[ 0.5 \beta e^{.5kt} \right] dW_t \)</span>. <br>Therefore, it just has a <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>.
+					<span class = 'Math'>\( dY_t = \left[ .5k e^{.5kt}S_t -.5k S_t e^{.5kt}   \right]dt + \left[ 0.5 \beta e^{.5kt} \right] dW_t = \left[ 0.5 \beta e^{.5kt} \right] dW_t \)</span>. <br>Therefore, it just has a <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
@@ -298,11 +298,11 @@
 					<br>
 					<span class = 'Math'>\(  dM_t = dS_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t d \left[ e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} \right] = \big( \mu_t dt + f \big( W_t \big) dW_t \big) e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} F \big( S_t \big) dt \)</span>
 					<br>
-					For Martingale, We need to show : The Term for <span class = 'Math'>\( \big( dt \big) \)</span> is <span class = 'Math'>\( \big[ 0 \big] \) </span>. So,
+					For Martingale, We need to show : The Term for <span class = 'Math'>\( \big( dt \big) \)</span> is <span class = 'Math'>\( \big[ 0 \big] \)</span>. So,
 					<br>
 					<span class = 'Math'>\( \left[ \mu_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} F \big( S_t \big) = 0 \right]\)</span>. This gives <span class = 'Math'>\( \left[ F \big( S_t \big) = -\! \left[ {\displaystyle\frac{\mu_t}{S_t}} \right] \right] \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% + 30px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% + 30px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 15px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
 					Option's Price with Payoff <span class = 'Math'>\( \left[\sqrt{ 1 + \left( {\displaystyle\frac{T}{2}} + \mathbb{LOG} S_T \right)^2} \right] \)</span> will NOT EXCEED <span class = 'Math'>\( \sqrt{\big[1+T\big]}  \)</span>. Given <span class = 'Math'>\( \big[ \sigma = 1, r = 0 \big] \)</span>
 				</div>
@@ -394,7 +394,7 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = "Notes2">SIMPLE</span> Just calculate : <span class = 'Math'>\( \mathbb{P} \left[ {S_T} \geq K^{0.5} \right] \)</span>
+					<span class = "Notes2">SIMPLE</span> Just calculate : <span class = 'Math'>\( \mathbb{P} \left[ {S_T} \geq K^{0.5} \right] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
@@ -414,99 +414,114 @@
 			</div>
 			<div style = "margin: 0; padding: 0; width: 1px; height: 10000vh; min-height: 200px; background-color: #818181; display: inline-block; float: left; text-align: left; overflow: hidden;">
 			</div>
-			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left">
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 1px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px; border-bottom: 1px solid #00a896;">
-					Itô isometry <a href="https://en.wikipedia.org/wiki/Itô_isometry" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>-
-					<br>
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> that : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[W_t\big] \)</span> is a Weiner Process.
-					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
-									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} X_t dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} Y_t dW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} X_tY_t dt \right] \)</span>
-					</div>	
-					<br>		
-				</div>
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 1px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px; border-bottom: 1px solid #00a896;">
-					Itô Product Rule <a href="https://quant.stackexchange.com/questions/38731/show-that-the-two-solutions-of-the-sde-are-equivalent?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> -
-					<br>
-					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
-									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \big( t \big) W_t =\! \left[ {\displaystyle\int\limits_{0}^{t}} f' \big( s \big) W_s ds + {\displaystyle\int}\limits_{0}^{t} f \big( s \big) dW_s \right] \)</span>
-					</div>	
-					<br>		
-				</div>
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 1px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px; border-bottom: 1px solid #00a896;">
-					2 Independent Wiener Processes <a href="https://quant.stackexchange.com/questions/31125/is-this-process-of-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> -
-					<br>
-					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
-									align-items: left; justify-content: center; flex-direction: column; text-align: left; padding-top: 20px;'>
-					This is Wiener Process : <span class = 'Math'>\( \left[ W_t = \rho W_{1, t} + \sqrt{\big( 1-\rho^2 \big)} W_{2, t} \right] \)</span>. <br>Where We have : <span class = 'Math'>\( \big[ W_{1, t}, W_{2, t} \big] \)</span> are <span class = 'Notes'>2 Independent Wieners</span>.
-					</div>	
-					<br>		
-				</div>
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 1px); border-right: 0px solid #00a896; display: inline-block; float: left;
-									font-size: 16px;">
-					<br>
-					Black Scholes Partial Differential Equation derivation -
-					<div style = 'height: 100px; width: 700px; margin: 0; padding: 0; background-color: #89bbfe; padding-left: 10px; margin-left: 20px; margin-top: 4px;
-									display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: left; '>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( dS =\! \mu S dt + \sigma S \: dW_t \implies \: \left[df =\! {\displaystyle\frac{\delta f}{\delta t}} + \big( rS \big) {\displaystyle\frac{\delta f}{\delta S}} + 0.5\big( \sigma S \big)^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} = rf \right] \)</span>
+			<div style = "margin: 0; padding: 0; padding-bottom: 20px; width: calc(50% - 1px); height: auto; min-height: 200px; border-right: 0px solid #818181; display: inline-block; float: left; text-align: left; overflow: hidden">
+				<div style = "height: 190px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						1
 					</div>
-					<br>
-					Create a Portfolio : <span class = "Math">\( \big[1\big] \)</span> SHORT Option (CALL) <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left( {\displaystyle\frac{\delta f}{\delta S}} \right) \)</span> LONG Share/Underlying. So, We have the Portfolio PnL :
-					<br>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( d\Pi =\! {\displaystyle\frac{\delta f}{\delta S}} dS \:- df \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = {\displaystyle\frac{\delta f}{\delta S}} \big[ \mu S dt + \sigma S dW_t \big] \:- \left[ \mu S {\displaystyle\frac{\delta f}{\delta S}} + {\displaystyle\frac{\delta f}{\delta t}} + 0.5\sigma^2 S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt - \left[ \sigma S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = -\! \left[ {\displaystyle\frac{\delta f}{\delta t}} + 0.5\sigma^2 S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \Pi dt \)</span>
-					<br>
-					<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \left(  {\displaystyle\frac{\delta f}{\delta S}} S \:- f \right) dt \)</span>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Ito isometry
+					</span> <a href="https://en.wikipedia.org/wiki/Itô_isometry" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 					<br>
 					<br>
-					This will give the Final Result. To solve this for CALL Options price, we need to apply the <span class = 'Notes'>Boundary condition</span> as <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f_T = \mathbb{MAX} \big[ S_T - K, 0\big] \)</span>. Similarly for the PUT Options. Ofcourse for different kind of Derivatives i.e. for different shapes of <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \)</span>, We will get different values.
-					<br><br>
-					Solution of above Differential equation will be the Price of a Tradable Security. If, for a Derivative's Price, above equation does not hold, then that Derivative can NOT be any Tradable Security. Therefore <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ e^S \right] \)</span> can NOT be a Derivative (there will be Arbitrage Opportunity).
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = 'Math'>\( \mathbb{ASSUME} \)</span> that : <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \big[W_t\big] \)</span> is a Weiner Process.
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} X_t dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} Y_t dW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} X_tY_t dt \right] \)</span>
+					</span>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					Find the <span class = "Notes">Expectations</span> of <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ \big[ {\displaystyle\int\limits_{0}^{T}} tdW_t \big]^2 \right], \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
+				<div style = "height: 160px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						2
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Ito Product Rule
+					</span> <a href="https://quant.stackexchange.com/questions/38731/show-that-the-two-solutions-of-the-sde-are-equivalent?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \big( t \big) W_t =\! \left[ {\displaystyle\int\limits_{0}^{t}} f' \big( s \big) W_s ds + {\displaystyle\int}\limits_{0}^{t} f \big( s \big) dW_s \right] \)</span>
+					</span>
+				</div>
+				<div style = "height: 160px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						3
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						2 Independent Wiener Processes
+					</span> <a href="https://quant.stackexchange.com/questions/31125/is-this-process-of-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						This is Wiener Process : <span class = 'Math'>\( \left[ W_t = \rho W_{1, t} + \sqrt{\big( 1-\rho^2 \big)} W_{2, t} \right] \)</span>. <br>Where We have : <span class = 'Math'>\( \big[ W_{1, t}, W_{2, t} \big] \)</span> are <span class = 'Notes'>2 Independent Wieners. </span>
+					</span>
+				</div>
+				<div style = "height: 460px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						4
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Black Scholes Partial Differential Equation derivation						
+					</span> 		
+					<span class = "Math" style = "color: #395e7e;">\( dS =\! \mu S dt + \sigma S \: dW_t \implies \: \left[df =\! {\displaystyle\frac{\delta f}{\delta t}} + \big( rS \big) {\displaystyle\frac{\delta f}{\delta S}} + 0.5\big( \sigma S \big)^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} = rf \right] \)</span>			
+					<br>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						Create a Portfolio : <span class = "Math">\( \big[1\big] \)</span> SHORT CALL Option & <span class = "Math">\( \left[ {\displaystyle\frac{\delta f}{\delta S}} \right] \)</span> LONG Share/Underlying. So, We have the Portfolio PnL :
+						<br>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( d\Pi =\! {\displaystyle\frac{\delta f}{\delta S}} dS \:- df \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = {\displaystyle\frac{\delta f}{\delta S}} \big[ \mu S dt + \sigma S dW_t \big] \:- \left[ \mu S {\displaystyle\frac{\delta f}{\delta S}} + {\displaystyle\frac{\delta f}{\delta t}} + 0.5\sigma^2 S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt - \left[ \sigma S {\displaystyle\frac{\delta f}{\delta S}} \right]dW_t \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = -\! \left[ {\displaystyle\frac{\delta f}{\delta t}} + 0.5\sigma^2 S^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} \right]dt \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \Pi dt \)</span>
+						<br>
+						<span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \:\:\:\:\:\: = r \left(  {\displaystyle\frac{\delta f}{\delta S}} S \:- f \right) dt \)</span>
+						<br>
+						<br>
+						This will give the Final Result. To solve this for CALL Options price, we need to apply the <span class = 'Notes'>Boundary condition</span> as <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f_T = \mathbb{MAX} \big[ S_T - K, 0\big] \)</span>. Similarly for the PUT Options. Ofcourse for different kind of Derivatives i.e. for different shapes of <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( f \)</span>, We will get different values.
+						<br><br>
+						Solution of above Differential equation will be the Price of a Tradable Security. If, for a Derivative's Price, above equation does not hold, then that Derivative can NOT be any Tradable Security. Therefore <span style = "margin-left: 0px; font-size: 20px; font-family: 'Fira Sans', sans-serif;">\( \left[ e^S \right] \)</span> can NOT be a Derivative (there will be Arbitrage Opportunity).
+					</span>
+				</div>
+
+				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
+					Find the <span class = "Notes2">Expectations</span> of <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right]^2 \right], \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Notes'>Deterministic-Function's ITO-Integral</span> is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span> Hence : <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} f(t) dW_t \sim N \big(0, \: {\displaystyle\int\limits_{0}^{T}} f \big(t\big)^2 dt \big) \right] \)</span>
+					<span class = 'Notes'>Deterministic-Function's Ito-Integral</span> is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span> Hence : <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} f(t) dW_t \sim N \big(0, \: {\displaystyle\int\limits_{0}^{T}} f \big(t\big)^2 dt \big) \right] \)</span>.
 					<br>
-					So,  <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! 0 \)</span>
+					So,  <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! 0 \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">					
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					We use Ito's isometry -
+					We use <span class = "Notes1">Ito's isometry : </span>
 					<br>
-					 <span class = 'Math'>\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)^2 \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} ttdt \right] =\! \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>
+					 <span class = 'Math'>\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)^2 \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} ttdt \right] =\! \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">					
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					We use Ito's isometry -
+					We use <span class = "Notes1">Ito's isometry : </span>
 					<br>
-					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  {\displaystyle\int\limits_{0}^{T}} tdW_t  \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} 1dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdt \right] =\! \left[ {\displaystyle\frac{1}{2}}T^2 \right] \)</span>
+					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  {\displaystyle\int\limits_{0}^{T}} tdW_t  \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} 1dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdt \right] =\! \left[ {\displaystyle\frac{1}{2}}T^2 \right] \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">		
+				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">	
+				</div>	
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
 					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \left[ f \big( x \big) = \mathbb{TAN}^{-1}x \right] \)</span>, So, We have : <span class = 'Math'>\( \left[f' \big( x \big) = \! \left[ {\displaystyle\frac{1}{ \big( 1 + x^2 \big) }} \right] , f'' \big( x \big) = -\! \left[ {\displaystyle\frac{2x}{ \big( 1 + x^2 \big)^2 }} \right] \right] \)</span>
 					<br>
 					<br>
-					Use Ito's Lemma -
+					<span class = "Notes1">Use Ito's Lemma : </span>
 					<br>
 					<span class = 'Math'>\( f \big( W_t \big) = f \big( W_0 \big) + {\displaystyle\int\limits_{0}^{t}} f' \big( W_t \big) dW_s + 0.5{\displaystyle\int\limits_{0}^{t}} f'' \big( W_t \big) dt \)</span>
 					<br>
@@ -515,9 +530,8 @@
 					<br>
 					But, the 2<sup>nd</sup> Term in above Expression is <span class = 'Math'>\( \big[0\big] \)</span>. So, We have : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{T} {\displaystyle\frac{W_s}{ \big( 1 + {W_s}^2 \big)^2 }} dt \right] =\! -\! \mathbb{E} \left[ \mathbb{TAN}^{-1} W_T \right] \)</span>. <a href="https://quant.stackexchange.com/questions/28009/how-to-compute-the-expectation-of-integral-of-this-random-function?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>	
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 275px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 15px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
 					Is this RIGHT ??? <span class = 'Math'>\( \left[ d \big( {\displaystyle\int\limits_{0}^{t}} W_sds \big) =\! W_tdt \right] \)</span> <a href="https://quant.stackexchange.com/questions/49339/more-questions-about-integral-of-brownian-motion-w-r-t-time?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -526,11 +540,10 @@
 					<br>
 					So, <span class = 'Math'>\( \left[ {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} =\! W_t \right] \)</span>
 					<br>
-					AND, <span class = 'Math'>\( \left[ dI_t =\! {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} dt \right] =\! W_tdt \)</span>. Therefore, the Process <span class = 'Math'>\( \left[ Y_t =\!   {\displaystyle\int\limits_{0}^{t}} W_sds  \right] \)</span> is <span class = 'Notes'>NOT MARTINGALE BUT NORMAL</span> <a href="https://quant.stackexchange.com/questions/29504/integral-of-brownian-motion-w-r-t-time" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process/57112#57112" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					AND, <span class = 'Math'>\( \left[ dI_t =\! {\displaystyle\frac{\delta f \big( t \big)}{\delta t}} dt \right] =\! W_tdt \)</span>. Therefore, the Process <span class = 'Math'>\( \left[ Y_t =\!   {\displaystyle\int\limits_{0}^{t}} W_sds  \right] \)</span> is <span class = 'Notes1'>NOT MARTINGALE BUT NORMAL</span> <a href="https://quant.stackexchange.com/questions/29504/integral-of-brownian-motion-w-r-t-time" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process/57112#57112" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 165px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 10px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
 					Is this BIVARIATE NORMAL ??? <span class = 'Math'>\( \left[ W_t, \:  {\displaystyle\int}\limits_{0}^{t} W_sds \right] \)</span> <a href="https://quant.stackexchange.com/questions/43513/show-that-w-t-int-0t-w-s-ds-has-a-normal-joint-distribution?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -540,7 +553,7 @@
 					So, <br><span class = 'Math'>\( \left[ {\displaystyle\int}\limits_{0}^{t}W_sds \right] = \left[ tW_t - {\displaystyle\int}\limits_{0}^{t} sdW_s \right] = \left[ t{\displaystyle\int}\limits_{0}^{t} dW_s - {\displaystyle\int}\limits_{0}^{t} sW_s \right] = \left[ {\displaystyle\int}\limits_{0}^{t}\big( t-s \big) dW_s \right] \)</span>
 					<br>
 					<br>
-					Now, <span class = 'Math'>\( \left[ \lambda_1 W_t + \lambda_2  {\displaystyle\int}\limits_{0}^{t} W_sds \right] = \left[ \lambda_1  {\displaystyle\int}\limits_{0}^{t} dW_s + \lambda_2 {\displaystyle\int}\limits_{0}^{t}\big( t-s \big) dW_s \right] = \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] \)</span>. This is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>.
+					Now, <span class = 'Math'>\( \left[ \lambda_1 W_t + \lambda_2  {\displaystyle\int}\limits_{0}^{t} W_sds \right] = \left[ \lambda_1  {\displaystyle\int}\limits_{0}^{t} dW_s + \lambda_2 {\displaystyle\int}\limits_{0}^{t}\big( t-s \big) dW_s \right] = \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] \)</span>. This is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>.
 					<br>
 					<br>
 					Let calculate the <span class = 'Math'>\( \mathbb{MEAN} \)</span> and <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> : <br>
@@ -548,9 +561,8 @@
 					<br>
 					<span class = 'Math'>\( \mathbb{V} \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right] = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} \lambda_1 + \lambda_2 \big( t-s \big) dW_s \right]^2 = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} \big[  \lambda_1 + \lambda_2 \big( t-s \big) \big]^2 ds \right] \)</span>. <br>&ensp;&ensp;&ensp;&ensp;This can easily be derived Now.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 445px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 10px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
 					Calculate <span class = 'Math'>\( \left( \mathbb{V} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^2ds \right] \right) \)</span> <a href="https://quant.stackexchange.com/questions/30730/variance-of-time-integral-of-squared-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
@@ -576,18 +588,17 @@
 					<span class = 'Math'>\( 2 \mathbb{E} \left[ \big( {\displaystyle\int}\limits_{0}^{t} {W_s}^3 dW_s \big)\big( {\displaystyle\int}\limits_{0}^{t} \big( t-s \big)  W_s dW_s  \big) \right] + 0 = 2 \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {W_s}^3  \big( t-s \big)  W_s ds \right] = 2 {\displaystyle\int}\limits_{0}^{t} \big( t-s \big) \mathbb{E} \left[ {W_s}^4  \right] ds \)</span>
 					<br><br>From above Expressions, We can easily calculate final Expression for the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 685px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 10px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
 					Calculate <span class = 'Math'>\( \left[ \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t, {\displaystyle\int}\limits_{0}^{t_2} \sigma_t dW_t \right] \right] \)</span> <a href="https://quant.stackexchange.com/questions/42483/how-to-calculate-the-covariance-between-two-stochastic-integrals/42484?noredirect=1#comment80754_42484" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Without Loss of Generality, assume : <span class = 'Math'>\( \big( t_1 < t_2 \big) \)</span>. So,
+					Without Loss of Generality, <span class = "Math">\(\mathbb{ASSUME}\)</span> that : <span class = 'Math'>\( \big[ t_1 < t_2 \big] \)</span>. So,
 					<br><br>
 					<span class = 'Math'>\( \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t, {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t + {\displaystyle\int}\limits_{t_1}^{t_2} \sigma_t dW_t \right] = \mathbb{COV} \left[ {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t, {\displaystyle\int}\limits_{0}^{t_1} \sigma_t dW_t \right] = \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t_1} {\sigma_t}^2 dt \right] = \left[ {\displaystyle\int}\limits_{0}^{t_1} {\sigma_t}^2 dt \right] \)</span>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 145px;
+				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 10px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
 					Calculate <span class = 'Math'>\( \mathbb{E} \big[ \big( W_s + W_t - 2W_0 \big)^2 \big] \)</span> <a href="https://quant.stackexchange.com/questions/9755/how-to-compute-mathbbe-left-w-s-w-t-2w-02-right?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
@@ -596,16 +607,15 @@
 									font-size: 16px;">
 					 <span class = 'Math'>\( \mathbb{E} \big[ \big( W_s + W_t - 2W_0 \big)^2 \big] = \mathbb{E} \big[ \big( W_s - W_0 \big)^2 \big] + \mathbb{E} \big[ \big( W_t - W_0 \big)^2 \big] + 2\mathbb{E} \big[ \big( W_t - W_0 \big) \big( W_s - W_0 \big) \big] \)</span>
 					<br><br>
-					Hence, We get with Assumption that <span class = 'Math'>\( \big( s < t \big) \)</span> : 
+					<span class = "Math">\(\mathbb{ASSUME}\)</span> that <span class = 'Math'>\( \big( s < t \big) \)</span> : 
 					<span class = 'Math'>\( s + t + 2\mathbb{E} \big[ W_tW_s \big] = s + t + 2\mathbb{E} \big[ W_s \big( W_t - W_s + W_s \big) \big] \)</span>
 					<br><br>
-					This gives : <span class = 'Math'>\( s + t + 2\mathbb{E} \big[ {W_s}^2 \big] + 2\mathbb{E} \big[ W_s \big( W_t - W_s \big) \big] =  s + t + 2s \)</span>
+					This gives : <span class = 'Math'>\( s + t + 2\mathbb{E} \big[ {W_s}^2 \big] + 2\mathbb{E} \big[ W_s \big( W_t - W_s \big) \big] =  \big[s + t + 2s\big] \)</span>.
 					<br><br>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 165px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 10px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Calculate <span class = 'Math'>\( \mathbb{E} \left[ e^{W_{0.5T} \:+ W_T  | \: \mathbb{F}_t } \right] \)</span>. <span class = 'Notes'>Is this Martingale</span> <a href="https://quant.stackexchange.com/questions/17978/questions-about-exponential-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Calculate <span class = 'Math'>\( \mathbb{E} \left[ e^{W_{0.5T} \:+ W_T  | \: \mathbb{F}_t } \right] \)</span>. <span class = 'Notes1'>Is this Martingale</span> <a href="https://quant.stackexchange.com/questions/17978/questions-about-exponential-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
@@ -615,58 +625,61 @@
 					If it is Martingale then, the 2 Processes <span class = 'Math'>\( \big[ W_T \:- W_{0.25T} \big], \big[ W_{0.5T} \:- W_{0.125T} \big] \)</span> should be Independent. So,
 					<br>
 					<span class = 'Math'>\( \big[ W_T \:- W_{0.25T} \big] = \big[ W_T \:- W_{0.50T} \:+ W_{0.50T} \:- W_{0.25T} \big] \)</span>. AND, <br>
-					<span class = 'Math'>\( \big[ W_{0.5T} \:- W_{0.125T} \big] = \big[ W_{0.5T} \:- W_{0.25T} \:+ W_{0.25T} \:- W_{0.125T} \big] \)</span> <br><br> They are NOT Independent. So <u>NOT Martingale</u>.
+					<span class = 'Math'>\( \big[ W_{0.5T} \:- W_{0.125T} \big] = \big[ W_{0.5T} \:- W_{0.25T} \:+ W_{0.25T} \:- W_{0.125T} \big] \)</span> <br><br> They are NOT Independent. So <SPAN CLASS = "Notes2">NOT Martingale. </span>
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 195px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 15px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Calculate <span class = 'Math'>\( \mathbb{E}\big[X_2\big] \), where <span class = 'Math'>\( \left[ X_t = e^{W_t} \right] \) </span> <a href="https://quant.stackexchange.com/questions/44854/expectation-in-a-stochastic-differential-equation?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Calculate <span class = 'Math'>\( \mathbb{E}\big[X_2\big] \), where <span class = 'Math'>\( \left[ X_t = e^{W_t} \right] \)</span> <a href="https://quant.stackexchange.com/questions/44854/expectation-in-a-stochastic-differential-equation?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \big[ W_t \big] \) </span> has <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>. So, <span class = 'Math'>\( \left[ X_t = e^{W_t} \right] \) </span> has <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \) </span>. So <span class = 'Math'>\( \left[ \mathbb{E} \big[ X_t \big] = e^{0 + 0.5t} \Rightarrow \mathbb{E} \big[ X_2 \big] = e \right] \) </span>
+					<span class = 'Math'>\( \big[ W_t \big] \)</span> has <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>. So, <span class = 'Math'>\( \left[ X_t = e^{W_t} \right] \)</span> has <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \)</span>. So <span class = 'Math'>\( \left[ \mathbb{E} \big[ X_t \big] = e^{0 + 0.5t} \Rightarrow \mathbb{E} \big[ X_2 \big] = e \right] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
 									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					Is this Wiener Process <span class = 'Math'>\( \left[ Y_t = t^{0.5}Z \right] \) </span> <a href="https://quant.stackexchange.com/questions/31122/do-we-have-a-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					Is this Wiener Process <span class = 'Math'>\( \left[ Y_t = t^{0.5}Z \right] \)</span> <a href="https://quant.stackexchange.com/questions/31122/do-we-have-a-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \big[ Y_{t+s} - Y_t = \big( \big( t+s \big)^{0.5} - \big( t \big)^{0.5} \big)Z \big] \) </span>. This does NOT distributed as <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span> with <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> <span class = 'Math'>\( t \) </span>. So, NOT Wiener Process.
+					<span class = 'Math'>\( \big[ Y_{t+s} - Y_t = \big( \big( t+s \big)^{0.5} - \big( t \big)^{0.5} \big)Z \big] \)</span>. This does NOT distributed as <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span> with <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> <span class = 'Math'>\( \big[t\big] \)</span>. So, NOT Wiener Process.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 20px;">
-					<span class = 'Notes'>Is this Martingale</span> <span class = 'Math'>\( \left[ e^{-0.5 \sigma^2 t + \sigma W_t} \right] \) </span> <a href="https://quant.stackexchange.com/questions/17978/questions-about-exponential-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					<span class = 'Notes1'>Is this Martingale</span> <span class = 'Math'>\( \left[ e^{-0.5 \sigma^2 t + \sigma W_t} \right] \)</span> <a href="https://quant.stackexchange.com/questions/17978/questions-about-exponential-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					This is NOT Martingale. Because, given that <span class = 'Math'>\( \big[ W_t \big] \) </span> is a <span class = 'Math'>\( \big[ \mathbb{N} \big(0,\: .\big) \big] \)</span>, the entire Expression is a <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \) </span>, which can NOT have <span class = "Math">\( \big[0\big] \)</span> <span class = 'Math'>\( \mathbb{MEAN} \)</span>.
+					This is NOT Martingale. Because, given that <span class = 'Math'>\( \big[ W_t \big] \)</span> is a <span class = 'Math'>\( \big[ \mathbb{N} \big(0,\: .\big) \big] \)</span>, the entire Expression is a <span class = 'Math'>\( \big[ \mathbb{LN} \big(., \: .\big) \big] \)</span>, which can NOT have <span class = "Math">\( \big[0\big] \)</span> <span class = 'Math'>\( \mathbb{MEAN} \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 65px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					Prove that <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} f \big( W_s \big) dW_s \right] = 0 \) </span> <a href="https://quant.stackexchange.com/questions/57083/expectation-on-a-function-of-wiener-process?noredirect=1#comment80476_57083" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 15px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
+					Prove that <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} f \big( W_s \big) dW_s \right] = 0 \)</span> <a href="https://quant.stackexchange.com/questions/57083/expectation-on-a-function-of-wiener-process?noredirect=1#comment80476_57083" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 80px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px; background-color: rgba(0,0,0,.0);">
-					Here the <span class = 'Math'>\( \big( dW_s \big) \) </span> is the increments which are Independent & <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>. So, <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> will be <span class = 'Math'>\( \big[0\big] \)</span>. Now, in this Integral, I am just adding Weights to those Increments. So Total <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> will be added to <span class = 'Math'>\( \big[ 0 \big] \) </span>. 
+					Here the <span class = 'Math'>\( \big[ dW_s \big] \)</span> is the increments which are Independent & <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>. So, <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> will be <span class = 'Math'>\( \big[0\big] \)</span>. Now, in this Integral, I am just adding Weights to those Increments. So Total <span class = 'Math'>\( \mathbb{EXPECTATION} \)</span> will be added to <span class = 'Math'>\( \big[ 0 \big] \)</span>. 
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 20px;
-									font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
-									padding-top: 20px;">
-					Calculate the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> of : <span class = 'Math'>\( \left[ {\displaystyle\int}\limits_{0}^{t} f \big( s \big) W_s ds \right] \) </span> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 20px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 10px;">
+					Calculate the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> of : <span class = 'Math'>\( \left[ {\displaystyle\int}\limits_{0}^{t} f \big( s \big) W_s ds \right] \)</span> <a href="https://quant.stackexchange.com/questions/57111/calculate-variance-of-a-function-of-stochastic-process" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 220px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px; background-color: rgba(0,0,0,.0);">
-					We know that <span class = 'Math'>\( \mathbb{MEAN} \)</span> of <span class = 'Math'>\( \big[W_t\big] \) </span> is <span class = 'Math'>\( \big[ 0 \big] \) </span> AND, each of them is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span>. Therefore above Expression is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \) </span> with <span class = 'Math'>\( \mathbb{MEAN} \)</span> <span class = 'Math'>\( \big[ 0 \big] \) </span>. Hence, the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> will be as follows : <span class = "Notes1">Just a SIMPLE Calculation</span> 
+					We know that <span class = 'Math'>\( \mathbb{MEAN} \)</span> of <span class = 'Math'>\( \big[W_t\big] \)</span> is <span class = 'Math'>\( \big[ 0 \big] \)</span> AND, each of them is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>. Therefore above Expression is <span class = 'Math'>\( \big[ \mathbb{N} \big(0, \: .\big) \big] \)</span>. Hence, the <span class = 'Math'>\( \mathbb{VARIANCE} \)</span> will be as follows : <span class = "Notes1">Just a SIMPLE Calculation</span> 
 					<br>
 					<span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} f \big( s \big) W_s ds \right]^2 \)</span>
 					<br>
-					<span class = 'Math'>\(=\! \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) W_sW_u dsdu \right] =\! {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) \mathbb{E} \big[ W_sW_u \big] dsdu =\! {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) min \big[ s,u \big] dsdu  \)</span>
+					<span class = 'Math'>\(=\! \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) W_sW_u dsdu \right] =\! {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) \mathbb{E} \big[ W_sW_u \big] dsdu =\! {\displaystyle\int}\limits_{0}^{t} {\displaystyle\int}\limits_{0}^{t} f \big( s \big) f \big( u \big) min \big[ s,u \big] dsdu  \)</span>.
 				</div>
-
+				<div style = "margin: 0; padding: 10px; height: 90px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+									padding-top: 2px;">
+					HOW to <span class = 'Notes1'>SIMULATE</span> this ??? <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{t}} e^{a W\big(s\big)}ds \right] \)</span> <a href="https://quant.stackexchange.com/questions/44584/how-to-numerically-simulate-exponential-stochastic-integral?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+				</div>
+				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+					We have : <span class = 'Math'>\( \left[ f\big(t\big) =\! {\displaystyle\int\limits_{0}^{t}} e^{a W\big(s\big)}ds \right] \Rightarrow  \big[df\big(t\big) =\! e^{a W\big(t\big)}dt\big]   \)</span>. Use this Eq<sup>n</sup> to simulate Data.
+				</div>
 			</div>
 		</div>	
 	</div>	
