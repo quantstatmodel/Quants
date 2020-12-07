@@ -394,15 +394,15 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = "Notes2">SIMPLE</span> Just calculate : <span class = 'Math'>\( \mathbb{P} \left[ {S_T} \geq K^{0.5} \right] \)</span>.
+					<span class = "Notes2">SIMPLE</span> Just calculate : <span class = 'Math'>\( \mathbb{P} \left[ {S_T} \:\geq \sqrt{\big[K\big]} \right] \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% + 20px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 25px;font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \big[ B_t \big] \)</span> is a <span class = "Notes">Brownian Motion</span> with Drift & SD as <span class = 'Math'>\( \big( \mu, \sigma \big) \)</span>. Then calculate <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} B \big( s \big) e^{-ks} ds \right] \)</span> <a href="https://quant.stackexchange.com/questions/40332/expectation-of-an-integral-of-a-function-of-a-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \big[ B_t \big] \)</span> is a <span class = "Notes">Brownian Motion</span> with <span class = 'Math'>\( \big( \mathbb{DRIFT} =\! \mu,\: \mathbb{SD} =\! \sigma \big) \)</span>. Then calculate <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} B \big( s \big) e^{-ks} ds \right] \)</span> <a href="https://quant.stackexchange.com/questions/40332/expectation-of-an-integral-of-a-function-of-a-brownian-motion?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Use <span class = "Notes2">Fubini's Theorem</span> <a href="https://stats.stackexchange.com/questions/172306/can-we-switch-integral-and-expectation-by-fubinis-theorem" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} B \big( s \big) e^{-ks} ds \right] = {\displaystyle\int\limits_{0}^{t}} \mathbb{E} \big[ B \big( s \big) \big] e^{-ks} ds =  {\displaystyle\int\limits_{0}^{t}} \big( \mu s \big) e^{-ks} ds \)</span>.
+					Use <span class = "Notes2">Fubini's Theorem</span> <a href="https://stats.stackexchange.com/questions/172306/can-we-switch-integral-and-expectation-by-fubinis-theorem" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a> : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{t}} B \big( s \big) e^{-ks} ds \right] = \left[{\displaystyle\int\limits_{0}^{t}} \mathbb{E} \big[ B \big( s \big) \big] e^{-ks} ds\right] =  \left[{\displaystyle\int\limits_{0}^{t}} \big( \mu s \big) e^{-ks} ds\right] \)</span>.
 				</div>
 				
 
@@ -463,7 +463,7 @@
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
 						Black Scholes Partial Differential Equation derivation						
 					</span> 		
-					<span class = "Math" style = "color: #395e7e;">\( dS =\! \mu S dt + \sigma S \: dW_t \implies \: \left[df =\! {\displaystyle\frac{\delta f}{\delta t}} + \big( rS \big) {\displaystyle\frac{\delta f}{\delta S}} + 0.5\big( \sigma S \big)^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} = rf \right] \)</span>			
+					<span class = "Math" style = "color: #395e7e;">\( \big[dS =\! \mu S dt + \sigma S \: dW_t\big] \implies \: \left[df =\! {\displaystyle\frac{\delta f}{\delta t}} + \big( rS \big) {\displaystyle\frac{\delta f}{\delta S}} + 0.5\big( \sigma S \big)^2 {\displaystyle\frac{\delta^2 f}{\delta S^2}} = rf \right] \)</span>			
 					<br>
 					<br>
 					<br>
@@ -490,11 +490,11 @@
 
 				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Find the <span class = "Notes2">Expectations</span> of <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right]^2 \right], \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
+					Find the <span class = "Math">\(\big[\mathbb{EXPECTATION}\big]\)</span> of <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right]^2 \right], \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Notes'>Deterministic-Function's Ito-Integral</span> is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span> Hence : <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} f(t) dW_t \sim N \big(0, \: {\displaystyle\int\limits_{0}^{T}} f \big(t\big)^2 dt \big) \right] \)</span>.
+					<span class = 'Notes2'>Deterministic-Function's Ito-Integral</span> is <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>. Hence : <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} f\big(t\big) dW_t \sim N \big(0, \: {\displaystyle\int\limits_{0}^{T}} f \big(t\big)^2 dt \big) \right] \)</span>.
 					<br>
 					So,  <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! 0 \)</span>.
 				</div>
@@ -504,7 +504,7 @@
 									font-size: 16px;">
 					We use <span class = "Notes1">Ito's isometry : </span>
 					<br>
-					 <span class = 'Math'>\( \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)^2 \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} ttdt \right] =\! \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>.
+					 <span class = 'Math'>\( \mathbb{E} \left[ \left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right)^2 \right] =\! \mathbb{E} \left[ \left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right)\left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} ttdt \right] =\! \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">					
 				</div>
@@ -512,7 +512,7 @@
 									font-size: 16px;">
 					We use <span class = "Notes1">Ito's isometry : </span>
 					<br>
-					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  {\displaystyle\int\limits_{0}^{T}} tdW_t  \right] =\! \mathbb{E} \left[ \big( {\displaystyle\int\limits_{0}^{T}} 1dW_t \big)\big( {\displaystyle\int\limits_{0}^{T}} tdW_t \big) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdt \right] =\! \left[ {\displaystyle\frac{1}{2}}T^2 \right] \)</span>.
+					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  {\displaystyle\int\limits_{0}^{T}} tdW_t  \right] =\! \mathbb{E} \left[ \left( {\displaystyle\int\limits_{0}^{T}} 1dW_t \right)\left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdt \right] =\! \left[ {\displaystyle\frac{1}{2}}T^2 \right] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">	
 				</div>	
