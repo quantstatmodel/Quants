@@ -366,7 +366,7 @@
 				</div>
 			</div>
 		</div>
-		<div class = 'Indiv_Content' style = 'border-color: #fb5607; height: 3150px'>
+		<div class = 'Indiv_Content' style = 'border-color: #fb5607; height: 3250px'>
 			<div style = 'height: auto; min-height: 200px; width: calc(50% - 1px); margin: 0; padding: 0; display: inline-block; float: left; border-right: 0px solid #818181; overflow: hidden;'>								
 				<div style = "height: 130px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
@@ -672,7 +672,7 @@
 						IR-Swaptions : <span class = "Notes2">Options on</span> A Series of Options.
 					</span>
 				</div>				
-				<div style = "height: 230px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 0px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+				<div style = "height: 300px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 0px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
 						IMPORTANT NOTE : Valuation for FRA & IR-Swaps <span class = 'Page_Number1'>[110]</span>
 					</span>
@@ -680,7 +680,11 @@
 					<br>
 					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
 						FRA is : Like CAP BUT, with NO Optionality. 
-						<br>
+						<div style = "width: 100%; height: auto; margin: 0; padding: 5px; padding-left: 25px; background-color: rgba(0,0,0,.0); margin-bottom: 5px;">
+							<span class = "Notes2">EASY</span> FRA is : <span class = "Math">\( \big[ \mathbb{ZCB}_{T_i} \:- \big(1+\! \tau_{\big[T_i, \: T_{i+\!1}\big]}K\big)\mathbb{ZCB}_{T_{i+\!1}} \big] \)</span> <a href="https://quant.stackexchange.com/questions/25583/interest-rate-convexity-fundamental-question" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+							<br>
+							<span class = "Math">\(\mathbb{ZCB}\)</span> do NOT have : <span class = "Math">\( \big[\mathbb{VOLATILITY}_{\mathbb{EXPO.}} \big]\)</span> because, We consider it's <span class = "Notes">Price is Given. </span> &nbsp;Hence, the FRA & IR-Swaps.
+						</div>
 						Now, <span class = "Math">\(\mathbb{ASSUME}\)</span> : The <span class = "Notes2">Prevailing IR is Forward IR</span>. With this, I can price FRA.
 						<br>
 						Now, IR-Swaps is : A <span class = "Notes">Portfolio of FRAs</span> for, the Long Party. So I can price IR-Swaps similarly <span class = "Page_Number1">[184]</span>. 
