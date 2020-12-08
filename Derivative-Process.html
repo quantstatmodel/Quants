@@ -110,7 +110,7 @@
 					</div>
 					<div>
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
-							Ito's Lemma
+							Ito Lemma
 						</span>
 					</div>
 					<div style = "background-color: rgba(0,0,0,.0); height: 50px; width: 30%; margin-left: 5%; position: relative; color: #000; border-bottom: 2px solid #000;  border-top: 2px solid #000; margin-top: 10px; padding-left: 10px;">
@@ -155,7 +155,7 @@
 						2
 					</div>
 					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
-						Ito's Lemma for <span class = "Notes2">2 Processes</span> 
+						Ito Lemma for <span class = "Notes2">2 Processes</span> 
 					</span><span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; ">i.e. <span class = 'Math'>\( \left[ {\displaystyle\frac{X_t}{Y_t}} \right] \)</span> <a href="https://quant.stackexchange.com/questions/22569/problem-with-deriving-the-dynamics-of-a-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a></span>
 					<br>
 					<br>
@@ -284,7 +284,7 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Using Ito's Lemma :
+					Using Ito Lemma :
 					<span class = 'Math'>\( dY_t = \left[ .5k e^{.5kt}S_t -.5k S_t e^{.5kt}   \right]dt + \left[ 0.5 \beta e^{.5kt} \right] dW_t = \left[ 0.5 \beta e^{.5kt} \right] dW_t \)</span>. <br>Therefore, it just has a <span class = 'Math'>\( \big[ \mathbb{N} \big(., \: .\big) \big] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px;
@@ -294,7 +294,7 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					Use Ito's Lemma on <span class = 'Math'>\( \big[ M_t \big] \)</span>
+					Use Ito Lemma on <span class = 'Math'>\( \big[ M_t \big] \)</span>
 					<br>
 					<span class = 'Math'>\(  dM_t = dS_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t d \left[ e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} \right] = \big( \mu_t dt + f \big( W_t \big) dW_t \big) e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} + S_t e^{{\displaystyle\int\limits_{0}^{t}} F \big( S_u \big) du} F \big( S_t \big) dt \)</span>
 					<br>
@@ -507,19 +507,19 @@
 					</span>
 				</div>
 
-				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
+				<div style = "margin: 0; padding: 10px; height: 120px; width: calc(100% + 120px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 45px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
-					Find : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \:\: \mathbb{E} \left[ \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right]^2 \right], \:\:\mathbb{E} \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right],\:\: \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
+					<span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right], \:\: \mathbb{E} \left[ \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right]^2 \right], \:\:\mathbb{E} \left[ W_T {\displaystyle\int\limits_{0}^{T}} tdW_t \right],\:\: \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{1}{ \big( 1 + {W_t}^2 \big) }} \right] dW_t \right],\:\: \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{W_t}{ \big( 1 + {W_t}^2 \big)^2 }} \right] dt \right] \)</span>
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
 					We have : <span class = 'Math'>\( \left[ {\displaystyle\int\limits_{0}^{T}} f\big(t\big) dW_t \sim \mathbb{N} \big(0, \: {\displaystyle\int\limits_{0}^{T}} f \big(t\big)^2 dt \big) \right] \)</span>. So,  <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdW_t \right] =\! 0 \)</span>.
 				</div>
-				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">					
+				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 5px;">					
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					We use <span class = "Notes1">Ito's isometry : </span>
+					We use <span class = "Notes1">Ito isometry : </span>
 					<br>
 					 <span class = 'Math'>\( \mathbb{E} \left[ \left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right)^2 \right] =\! \mathbb{E} \left[ \left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right)\left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} ttdt \right] =\! \left[ {\displaystyle\frac{1}{3}}T^3 \right] \)</span>.
 				</div>
@@ -527,25 +527,36 @@
 				</div>
 				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					We use <span class = "Notes1">Ito's isometry : </span>
+					We use <span class = "Notes1">Ito isometry : </span>
 					<br>
 					 <span class = 'Math'>\( \mathbb{E} \left[ W_T  {\displaystyle\int\limits_{0}^{T}} tdW_t  \right] =\! \mathbb{E} \left[ \left( {\displaystyle\int\limits_{0}^{T}} 1dW_t \right)\left( {\displaystyle\int\limits_{0}^{T}} tdW_t \right) \right] =\! \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} tdt \right] =\! \left[ {\displaystyle\frac{1}{2}}T^2 \right] \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">	
-				</div>	
-				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% - 81px); border-right: 0px solid #00a896; display: inline-block; float: left;
+				</div>
+				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% + 220px); border-right: 0px solid #00a896; display: inline-block; float: left;
 									font-size: 16px;">
-					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> <span class = 'Math'>\( \left[ f \big( x \big) = \mathbb{TAN}^{-1}x \right] \)</span>, So, We have : <span class = 'Math'>\( \left[f' \big( x \big) = \! \left[ {\displaystyle\frac{1}{ \big( 1 + x^2 \big) }} \right] , f'' \big( x \big) = -\! \left[ {\displaystyle\frac{2x}{ \big( 1 + x^2 \big)^2 }} \right] \right] \)</span>
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> : <span class = 'Math'>\( {\displaystyle\int}\limits_{0}^{t} \mathbb{E} \left[ {X_s}^2 \right] ds =\! {\displaystyle\int}\limits_{0}^{t} \mathbb{E} \left[ {\displaystyle\frac{1}{ \big( 1 + {W_s} \big)^2 }} \right]^2 ds =\! {\displaystyle\int}\limits_{0}^{t} \left[ {\displaystyle\int}\limits_{\:\:-\!\infty}^{\infty} {\displaystyle\frac{1}{ \big( 1 + s{z}^2 \big)^2 }} {\displaystyle\frac{1}{\sqrt{\big[2\pi\big]}}} e^{-{\displaystyle\frac{z^2}{2}}} dz \right] ds, \:\: \left[ W_s = Z \sqrt{\big[s\big]} \right] \)</span>
+					<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+					<span class = 'Math'>\( \leq \! {\displaystyle\int}\limits_{0}^{t} \left[ {\displaystyle\int}\limits_{\:\:-\!\infty}^{\infty}  {\displaystyle\frac{1}{\sqrt{\big[2\pi\big]}}} e^{-{\displaystyle\frac{z^2}{2}}} dz \right] ds = \! {\displaystyle\int}\limits_{0}^{t} \big[ 1 \big] ds \:\:= \! t < \infty \)</span>
+					<br>
+					<span class = "Notes2">Ito Integral : </span><span class = 'Math'>\( \left[ I_t = \!  {\displaystyle\int}\limits_{0}^{t} \big[ X_s \big] dW_s \right] \)</span> is <span class = "Notes">Martingale</span> if  <span class = 'Math'>\( \left[ {\displaystyle\int}\limits_{0}^{t} \mathbb{E} \left[ {X_s}^2 \right] ds < \infty \right] \)</span>. <span class = "Math"> \( \big[X_s\big]\) </span> can be <span class = "Notes"><span class = "Notes2">Any</span> Adapted Process. </span>
+					<br>So, <span class = 'Math'>\( \big[ \mathbb{E} \big[I_i\big] = \! I_0 \:\:= 0 \big] \)</span>. Hence, <span class = 'Math'>\( \left[\mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{1}{ \big( 1 + {W_t}^2 \big) }} \right] dW_t \right] \!= 0 \right] \)</span> <a href="https://quant.stackexchange.com/questions/59830/expectation-of-int-0t-frac11w-s2-text-dw-s" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+				</div>
+				<div style = "margin: 0; padding: 0px; height: 1px; width: calc(100% - 0px); border: 1px solid #ffa69e; display: inline-block; float: left; margin-top: 25px;">	
+				</div>		
+				<div style = "margin: 0; padding: 10px; height: 100%; width: calc(100% + 281px); border-right: 0px solid #00a896; display: inline-block; float: left;
+									font-size: 16px;">
+					<span class = 'Math'>\( \mathbb{ASSUME} \)</span> that : <span class = 'Math'>\( \left[ f \big( x \big) = \mathbb{TAN}^{-1}x \right] \)</span>. So, We have : <span class = 'Math'>\( \left[f' \big( x \big) = \! \left[ {\displaystyle\frac{1}{ \big( 1 + x^2 \big) }} \right] , \:\: f'' \big( x \big) = -\! \left[ {\displaystyle\frac{2x}{ \big( 1 + x^2 \big)^2 }} \right] \right] \)</span>
 					<br>
 					<br>
-					<span class = "Notes1">Use Ito's Lemma : </span>
+					<span class = "Notes1">Use Ito Lemma : </span>
 					<br>
 					<span class = 'Math'>\( f \big( W_t \big) = f \big( W_0 \big) + {\displaystyle\int\limits_{0}^{t}} f' \big( W_t \big) dW_s + 0.5{\displaystyle\int\limits_{0}^{t}} f'' \big( W_t \big) dt \)</span>
 					<br>
 					So,
 					<span class = 'Math'>\( \mathbb{TAN}^{-1} W_t =  {\displaystyle\int}\limits_{0}^{t} \left[ {\displaystyle\frac{1}{ \big( 1 + {W_s}^2 \big) }} \right] dW_s - 0.5{\displaystyle\int}\limits_{0}^{t} \left[ {\displaystyle\frac{2 W_s}{ \big( 1 + {W_s}^2 \big)^2 }} \right] dt \)</span>
 					<br>
-					But, the 2<sup>nd</sup> Term in above Expression is <span class = 'Math'>\( \big[0\big] \)</span>. So, We have : <span class = 'Math'>\( \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{T} {\displaystyle\frac{W_s}{ \big( 1 + {W_s}^2 \big)^2 }} dt \right] =\! -\! \mathbb{E} \left[ \mathbb{TAN}^{-1} W_T \right] \)</span>. <a href="https://quant.stackexchange.com/questions/28009/how-to-compute-the-expectation-of-integral-of-this-random-function?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
+					But, <span class = 'Math'>\( \left[ \mathbb{E} \left[ {\displaystyle\int\limits_{0}^{T}} \left[ {\displaystyle\frac{1}{ \big( 1 + {W_t}^2 \big) }} \right] dW_t \right] \!= 0 \right] \)</span>. Hence, <span class = 'Math'>\( \left[ \mathbb{E} \left[ {\displaystyle\int}\limits_{0}^{T} {\displaystyle\frac{W_s}{ \big( 1 + {W_s}^2 \big)^2 }} dt \right] =\! -\! \mathbb{E} \left[ \mathbb{TAN}^{-1} W_T \right] \right] \)</span> <a href="https://quant.stackexchange.com/questions/28009/how-to-compute-the-expectation-of-integral-of-this-random-function?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
 				</div>	
 				<div style = "margin: 0; padding: 10px; height: 100px; width: calc(100% - 0px); border-right: 0px solid #00a896; display: inline-block; float: left; margin-top: 15px; font-size: 16px; background-color: #f8edeb; border-top: 1px solid #ffa69e; border-bottom: 1px solid #ffa69e; padding-right: 10px; font-size: 20px;
 									padding-top: 10px;">
