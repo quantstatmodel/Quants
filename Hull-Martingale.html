@@ -366,7 +366,7 @@
 				</div>
 			</div>
 		</div>
-		<div class = 'Indiv_Content' style = 'border-color: #fb5607; height: 3250px'>
+		<div class = 'Indiv_Content' style = 'border-color: #fb5607; height: 3650px'>
 			<div style = 'height: auto; min-height: 200px; width: calc(50% - 1px); margin: 0; padding: 0; display: inline-block; float: left; border-right: 0px solid #818181; overflow: hidden;'>								
 				<div style = "height: 130px; width: calc(100%); margin: 0; padding: 15px; background-color: #efd3d7; border-left: 15px solid #001233; margin-top: 10px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
 					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
@@ -513,18 +513,74 @@
 						<br>
 						<br>
 						Above Eq<sup>n</sup> has UNIQUE Sol<sup>n</sup>. BUT, We can NOT get <span class = "Notes1">Expression</span> of that Sol<sup>n</sup>. We can ONLY get <span class = "Math">\(\mathbb{EXPECTATION}\)</span> of that Sol<sup>n</sup>.
-						<br>
-						<br>
-						<span class = 'Notes'>Heston Process</span> : <span class = "Math">\( dS_t =\! \mu S_t dt + \sigma_t S_t dW_{S, \: t}, \: d \sigma_t^2 =\! \kappa \big( \theta - \sigma_t^2 \big)dt + \xi \sigma_t dW_{\sigma, \: t} \)</span> <a href="https://en.wikipedia.org/wiki/Heston_model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
-						<br>
-						<br>
-						<span class = 'Notes'>OU Process</span> : <span class = "Math">\( dr =\! a \big( b - r\big)dt + \sigma dW_t \)</span> <a href="https://quant.stackexchange.com/questions/40265/two-papers-two-different-solutions-of-the-ornstein-uhlenbeck-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>
-						<br>
-						<br>
-						<span class = "Notes2">How to <span class = "Notes1">simulate</span> this OU Process ?</span> <a href="https://quant.stackexchange.com/questions/8114/monte-carlo-simulating-cox-ingersoll-ross-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>
-						<br>
-						Use some Scheme like <span class = 'Notes'>Milstein Scheme</span>. This is a technique to approximate SDE's <span class = "Notes1">Numerical Solution</span> for a Process. There is NO Guarantee that, the Next Value will remain <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span>. It's common to just <span class = "Notes">set all ZEROs equal</span> to the <span class = "Math">\(\big[\mathbb{MIN.}\big]\)</span> NON-Zero Obs<sup>n</sup> in the dataset <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> - <br><span class = 'Math'>\( S_t =\! \mu_{S, t}dt +\! \sigma_{S, t}dW_t \)</span><br><span class = 'Math'>\(  \Rightarrow S_{t+1} = \! \big[ S_t + \mu_{S, t}\Delta t +\! \sigma_{S, t} \Delta W_t \big] + 0.5 \sigma_{S, t} \left[ {\displaystyle\frac{d\sigma_{S, t}}{dS}} \right] \big( \big( \Delta W_t \big)^2 - \Delta t \big) \)</span>.
 					</div>
+				</div>
+				<div style = "height: 110px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 12px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						1
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						CEV Process
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\( \big[ dS_t =\!\mu S_t dt + \sigma_t {S_t}^{\alpha} dW_{S, \: t} \big] \)</span>. Called, <span class = "Notes2">Constant Elasticity Of Variance</span> <a href="https://en.wikipedia.org/wiki/Constant_elasticity_of_variance_model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</span>
+				</div>
+				<div style = "height: 190px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						2
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						SABR Process
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\( \big[ dS_t =\!\sigma_t {S_t}^{\alpha} dW_{S, \: t}\big], \big[\: d \sigma_t =\! \xi \sigma_t dW_{\sigma, \: t}\big], \: \big[ -\!\!1 \leq\! \alpha \leq\! \! 1, \: \xi \geq \!0 \big] \)</span> <a href="https://en.wikipedia.org/wiki/SABR_volatility_model#:~:text=In%20mathematical%20finance%2C%20the%20SABR,the%20parameters%20of%20the%20model." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+						<br><br>
+						<span class = "Math">\( \big[\alpha \big] \)</span> is : The <span class = "Notes2">Elasticity Parameter. </span> <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;If, <span class = "Math">\( \big[\alpha <\! 1\big] \)</span> then, <span class = "Notes1">Price's <span class = "Notes">Fall</span> means <span class = "Notes">Increase</span></span> in <span class = "Math">\( \big[\mathbb{VOLATILITY}\big] \)</span> & VICE-VERSA.
+					</span>
+				</div>
+				<div style = "height: 110px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						3
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						Heston Process
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\( \big[dS_t =\! \mu S_t dt + \sigma_t S_t dW_{S, \: t}\big], \: \big[d \sigma_t^2 =\! \kappa \big( \theta - \sigma_t^2 \big)dt + \xi \sigma_t dW_{\sigma, \: t}\big] \)</span> <a href="https://en.wikipedia.org/wiki/Heston_model" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</span>
+				</div>	
+				<div style = "height: 110px; width: calc(100%); margin: 0; padding: 15px; background-color: #eae2b7; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 1px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<div style = "height: 40px; width: 40px; border-radius: 50%; position: absolute; right: 10px; top: 10px; background-color: #fff; color: #000; border: 1px solid #818181; display: flex; align-items: left; justify-content: center; flex-direction: column; text-align: center; font-size: 22px">
+						4
+					</div>
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						OU Process
+					</span>
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						<span class = "Math">\(\big[ dr =\! a \big( b - r\big)dt + \sigma dW_t \big] \)</span> <a href="https://quant.stackexchange.com/questions/40265/two-papers-two-different-solutions-of-the-ornstein-uhlenbeck-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a>.
+					</span>
+				</div>		
+				<div style = "height: 270px; width: calc(100%); margin: 0; padding: 15px; background-color: #e5e9fc; border-left: 15px solid #001233; margin-top: 2px; border-bottom: 0px solid #fca311; padding-right: 0px; overflow: hidden; text-align: left; position: relative;">
+					<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+						How to <span class = "Notes1">simulate</span> this <span class = "Notes2">OU Process</span>
+					</span> <a href="https://quant.stackexchange.com/questions/8114/monte-carlo-simulating-cox-ingersoll-ross-process?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic; font-style: italic; font-style: italic;'>Link</span></i></a>&nbsp; ?
+					<br>
+					<br>
+					<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+						Use some Scheme like <span class = 'Notes'>Milstein Scheme. </span> &nbsp;This is a technique to <span class = "Math">\(\big[\mathbb{APPROX}\big]\)</span>  SDE's <span class = "Notes1">Numerical Solution</span> for a Process. There is NO Guarantee that, the Next Value will remain <span class = "Math">\( \big[ +\!\!\mathbb{VE} \big]\)</span>. 
+						<BR>
+						<BR>It's common to just <span class = "Notes">set all ZEROs equal</span> to the <span class = "Math">\(\big[\mathbb{MIN.}\big]\)</span> NON-Zero Obs<sup>n</sup> in the dataset <a href="https://quant.stackexchange.com/questions/40173/calibration-of-cox-ingersoll-ross-process-that-hits-zero-feller-condition-viola?rq=1" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> : 
+						<br><span class = 'Math'>\( S_t =\! \mu_{S, t}dt +\! \sigma_{S, t}dW_t \)</span><br><span class = 'Math'>\(  \Rightarrow S_{t+1} = \! \big[ S_t + \mu_{S, t}\Delta t +\! \sigma_{S, t} \Delta W_t \big] + 0.5 \sigma_{S, t} \left[ {\displaystyle\frac{d\sigma_{S, t}}{dS}} \right] \big( \big( \Delta W_t \big)^2 - \Delta t \big) \)</span>.
+					</span>
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 40px'>
 					NO-Arbitrage Models - Model for Short Rates
@@ -734,7 +790,7 @@
 					From above Payoff formula, it is evident that : The CORRECT <span class = Math>\(\mathbb{EXPECTATION}\)</span> will be <span class = "Math">\( \mathbb{E}^{**}\big[ V_T \big] \)</span>. So, We need to move from the World which is <span class = "Notes2">Forward Risk Neutral</span> w.r.t. <span class = "Math">\( P \big(0,T \big) \)</span> to <span class = "Math">\( P \big(0,T_1 \big) \)</span>. <BR>So, We define the <span class = "Notes">Numeraire Ratio</span> <span class = "Math">\( \left[ W = \! {\displaystyle\frac{P \big(0,T_1 \big)}{P \big(0,T \big)}} \right] =\! \left[ {\displaystyle\frac{1}{1\:+\:R \big(0,T, T_1 \big) \big( T_1 - T \big)}} \right] \)</span>.
 					<br>
 					<br>
-					Hence, <span class = "Math">\( \big[ \mathbb{E}^{**}\big[ V_T \big] = \! \mathbb{E}^{*}\big[ V_T \big] +\! A \big]\)</span>, <span class = "Math">\( \big( A =\! \rho_{W,V} \sigma_V \sigma_W \big), \rho_{W,V} = -\!\rho_{R,V} \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[\sigma_W\big] \)</span> can be calculated from <span  class = "Math">\( \big[\sigma_R\big] \)</span> using Ito's Lemma.
+					Hence, <span class = "Math">\( \big[ \mathbb{E}^{**}\big[ V_T \big] = \! \mathbb{E}^{*}\big[ V_T \big] +\! A \big], \: \big[ A =\! \rho_{W,V} \sigma_V \sigma_W \big], \: \big[\rho_{W,V} = -\!\rho_{R,V}\big] \)</span>. <br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \big[\sigma_W\big] \)</span> can be calculated from <span  class = "Math">\( \big[\sigma_R\big] \)</span> using Ito's Lemma.
 				</div>
 				<div class = 'Blog_Header' style = 'width: 110%; margin-left: -0%; margin-top: 20px; background-color: #e0aaff'>
 					Adjustment - Quantos
