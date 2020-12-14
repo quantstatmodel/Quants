@@ -122,7 +122,7 @@ library(OIsurv)  ### For Survival Analysis
 		summary(Survival_Model)
 }
 
-{	### Page : 126 (EXAMPLE 3.4.3) & Page : 129 (EXAMPLE 3.4.4) 
+{	### Page : 126 (EXAMPLE 3.4.3) & Page : 129 (EXAMPLE 3.4.4) & Page : 132 (EXAMPLE 3.4.6)
 	Data_Survival = read.csv(paste(Source, "/chap3coxphx.csv", sep = ""))
 		print(Data_Survival)
 
@@ -134,4 +134,8 @@ library(OIsurv)  ### For Survival Analysis
 
 	Survival_Model_CPH = coxph(Surv(start_time, end_time, default_flag) ~ ltv_utd + seasoning + hpi + ir, data = Train_Data, method = 'efron')
 		summary(Survival_Model_CPH)	
+
+	### Prediction
+		predict(Survival_Model_CPH, type = 'lp', newdata = Train_Data)
+		predict(Survival_Model_CPH, type = 'lp', newdata = Test_Data)
 }
