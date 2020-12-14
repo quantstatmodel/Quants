@@ -5,6 +5,7 @@ Source = "/Users/arunchaitali/Dropbox/ARUN & CHAITALI/Quant-Understanding/Data"
 library(caret)
 library(dplyr)
 library(vars)
+library(OIsurv)  ### For Survival Analysis
 
 {	### Page : 106
 	Get_Data =  read.csv(paste(Source, "/chap3ltpdpanel.csv", sep = ""))
@@ -12,6 +13,8 @@ library(vars)
 
 	Data = dplyr::mutate_at(Get_Data, vars(contains('date')), funs((as.Date(., format = '%Y-%m-%d'))))
 		print(head(Data))
+		### 1) 'tob'                   : Number of Qs Since Origination
+		### 2) 'start_time / end_time' : Represent : The window to include into ***CPH function*** to fit the model
 
 	Default_Rate_Q = Data %>%
 					dplyr::group_by(report_date, year) %>%
@@ -86,4 +89,49 @@ library(vars)
 								dplyr::select(report_date, year, default_rate, pd)
 		print(head(Train_Data1))
 		print(cor(Train_Data1$default_rate, Train_Data1$pd))
+}
+
+##### Calculations on : The SURVIVAL ANALYSIS
+
+{	### Page : 123 (EXAMPLE 3.4.1)
+	Data_Survival = data.frame(`ACC ID`          = 1:12,
+							Time           = c(3, 3, 6, 5, 1, 7, 3, 4, 2, 6, 8, 8),
+							`Default Flag` = c(0, 1, 0, 0, 1, 0, 0, 1, 1, 1, 0, 0),
+							check.names    = FALSE)
+		print(Data_Survival)
+	
+	Survival_Calc = 
+		Reduce('rbind', lapply(split(Data_Survival, as.character(Data_Survival[, 'Time'])),
+						function(Time_Data) {
+							Time = Time_Data[1, 'Time']
+							N_j = sum(Data_Survival[, 'Time'] >= Time)  ### This is IMP. Calculation
+							D_j = sum(Time_Data[, 'Default Flag'])
+							
+							return(data.frame(Time = Time, 
+											`ACC ID` = paste(Time_Data[, 'ACC ID'], collapse = ", "),
+											N_j = N_j, D_j = D_j, S_j = NA, check.names = FALSE))
+						})) %>%
+			mutate(S_j = cumprod(1 - .[, 'D_j'] / .[, 'N_j']))
+		print(Survival_Calc)
+}
+
+{	### Page : 125
+	Data_Survival = Data_Survival
+
+	Survival_Model = survfit(Surv(Data_Survival$Time, Data_Survival$'Default Flag') ~ 1)
+		summary(Survival_Model)
+}
+
+{	### Page : 126 (EXAMPLE 3.4.3) & Page : 129 (EXAMPLE 3.4.4) 
+	Data_Survival = read.csv(paste(Source, "/chap3coxphx.csv", sep = ""))
+		print(Data_Survival)
+
+	Survival_Model_KM = survfit(Surv(Data_Survival$Time, Data_Survival$Status) ~ Data_Survival$Product)  ### Just like Before
+		summary(Survival_Model_KM)
+
+	Survival_Model_CPH = coxph(Surv(Data_Survival$Time, Data_Survival$Status) ~ Data_Survival$Product, method = 'breslow') ### Product = PT
+		summary(Survival_Model_CPH)
+
+	Survival_Model_CPH = coxph(Surv(start_time, end_time, default_flag) ~ ltv_utd + seasoning + hpi + ir, data = Train_Data, method = 'efron')
+		summary(Survival_Model_CPH)	
 }
