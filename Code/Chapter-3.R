@@ -16,6 +16,7 @@ library(OIsurv)  ### For Survival Analysis
 		### 1) 'tob'                   : Number of Qs Since Origination
 		### 2) 'start_time / end_time' : Represent : The window to include into ***CPH function*** to fit the model
 
+	### This is ***NOT used*** ANYWHERE Here
 	Default_Rate_Q = Data %>%
 					dplyr::group_by(report_date, year) %>%
 					dplyr::summarise(dr_QoQ = mean(default_flag)) %>%
@@ -77,7 +78,7 @@ library(OIsurv)  ### For Survival Analysis
 	Logit_Model = glm(default_flag ~ seasoning + hpi, family = binomial(link = 'logit'), data = Train_Data)
 		print(summary(Logit_Model))
 
-	Train_Data$predict_logit <- round(predict(Logit_Model, newdata = Train_Data, type = 'response'), 7)
+	Train_Data$predict_logit = round(predict(Logit_Model, newdata = Train_Data, type = 'response'), 7)
 		Pred_Train_Data = ROCR::prediction(Train_Data$predict_logit, Train_Data$default_flag)
 		Pref_Train_Data = ROCR::performance(Pred_Train_Data, 'tpr', 'fpr')
 		print(ROCR::performance(Pred_Train_Data, 'auc'))
@@ -151,7 +152,7 @@ library(OIsurv)  ### For Survival Analysis
 	# 	2) UER increases by 8.50%
 	#	3) Regression Equation : (−0.05204) + (−0.05204) (Delta_GDP) + (1.40331) (UER)
 
-	Old_Phi = 5.83/100
+	Old_Phi = 5.83/100  ### The ***Link Function***
 	New_Phi = (-0.05204) + (-0.05204) * (-12.94 / 100) + (1.40331) * (8.50/100)
 
 	PD_Info = PD_Info %>% mutate('New PD' = (New_Phi / Old_Phi) * PD)
