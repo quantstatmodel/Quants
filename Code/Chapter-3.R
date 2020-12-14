@@ -139,3 +139,21 @@ library(OIsurv)  ### For Survival Analysis
 		predict(Survival_Model_CPH, type = 'lp', newdata = Train_Data)
 		predict(Survival_Model_CPH, type = 'lp', newdata = Test_Data)
 }
+
+{	### Page : 158 : Appendix : A -> Proportional Shift for the PD
+	PD_Info = data.frame('Segment' = c('Corporate', 'Corporate', 'Corporate', 'SME', 'SME'),
+						'PD' = c(0.50, 2, 3, 3.5, 4)/100,
+						check.names = FALSE)
+		print(PD_Info)
+
+	# Assume that :
+	# 	1) GDP increases by -2.94%
+	# 	2) UER increases by 8.50%
+	#	3) Regression Equation : (−0.05204) + (−0.05204) (Delta_GDP) + (1.40331) (UER)
+
+	Old_Phi = 5.83/100
+	New_Phi = (-0.05204) + (-0.05204) * (-12.94 / 100) + (1.40331) * (8.50/100)
+
+	PD_Info = PD_Info %>% mutate('New PD' = (New_Phi / Old_Phi) * PD)
+		print(PD_Info)
+}
