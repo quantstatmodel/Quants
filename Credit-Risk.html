@@ -451,25 +451,47 @@
 							Sample MORE from, the <span class = "Notes1">Recent History. </span>
 						</span>
 					</div>
-					<div style = "height: 220px; width: calc(95% - 1px); margin-left: 5%; background-color: #f2dbdf; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px; margin-top: 8px;">
-						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
-							Fit a GLM & Estimate the Default Probability						
-						</span> 	
-						<br>
-						<br>
-						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
-							Fit <span class = "Notes2">GLM</span> on Training DB. Explanatory Variables are below. We will get the <span class = "Math">\(\big[\mathbb{PD}\big]\)</span>.
+					<div style = "height: 500px; width: calc(95% - 1px); margin-left: 5%; background-color: #f2dbdf; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px; margin-top: 8px;">
+						<div style = "height: 215px; background-color: rgba(0,0,0,.0)">
+							<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+								Fit a GLM & Estimate the Default Probability						
+							</span> 	
 							<br>
-							&nbsp;&nbsp;The <span class = "Notes" style = "background-color: #013a63; border-radius: 5px;">SCORE</span> Variable is estimated from the <span class = "Notes"><span class = "Notes1">GLM-Prediction's <span class = "Notes">w.r.t.</span> Other Variables</span> Score-Function</span> <a href="https://stats.stackexchange.com/questions/501639/how-to-properly-define-the-score-function-from-prediction-of-glm" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <span class = "Page_Number1">[58-TB]</span>.
-							<div style = "margin-top: 10px;">
-								<div style = "height: 29px; width: 160px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Credit Score</span></div></div>
-								<div style = "height: 29px; width: 230px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Annual Income</span></div></div>
-								<div style = "height: 29px; width: 240px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Time Since Default</span></div></div>
-								<div style = "height: 29px; width: 250px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Employment Length</span></div></div>
-								<div style = "height: 29px; width: 160px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Utilisation</span></div></div>
-								<div style = "height: 29px; width: 110px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #013a63; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">SCORE</span></div></div>
+							<br>
+							<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+								Fit <span class = "Notes2">GLM</span> on Training DB. Explanatory Variables are below. We will get the <span class = "Math">\(\big[\mathbb{PD}\big]\)</span>.
+								<br>
+								&nbsp;&nbsp;The <span class = "Notes" style = "background-color: #013a63; border-radius: 5px;">SCALED-SCORE</span> Variable is estimated using, <span class = "Notes"><span class = "Notes1">GLM-Prediction <span class = "Notes">w.r.t.</span> Other Variables</span></span> <a href="https://stats.stackexchange.com/questions/501639/how-to-properly-define-the-score-function-from-prediction-of-glm" target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> <span class = "Page_Number1">[58-TB]</span>.
+								<div style = "margin-top: 10px;">
+									<div style = "height: 29px; width: 160px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Credit Score</span></div></div>
+									<div style = "height: 29px; width: 230px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Annual Income</span></div></div>
+									<div style = "height: 29px; width: 240px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Time Since Default</span></div></div>
+									<div style = "height: 29px; width: 250px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Employment Length</span></div></div>
+									<div style = "height: 29px; width: 160px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #bc4749; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">Utilisation</span></div></div>
+									<div style = "height: 29px; width: 180px; padding: 4px; margin: 8px; border: 1px solid #fbf6f7; border-radius: 5px; background-color: #013a63; color: #fbf6f7; position: relative; display: inline-block; float: left;"><div style = "position: absolute; top: 50%; left: 50%; transform: translate(-50%, -50%)"><span class = "Other_Span" style = "color: #fff; font-size: 16px;">SCALED-SCORE</span></div></div>
+								</div>
+							</span>	
+						</div>
+						<div style = "height: 40px; width: 25%; margin: 0; padding: 0; border-bottom: 2px solid #000;  border-top: 2px solid #000; padding-left: 20px; margin-bottom: 8px; position: relative; margin-left: 20px;">
+							<div style = "position: absolute; top: 50%; transform: translateY(-50%);">
+								<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
+									Scaled-Score
+								</span>
 							</div>
-						</span>						
+						</div>
+						<div style = "height: 120px; width: 100%; margin: 0; padding: 10ps; border-bottom: 0px solid #000;  border-top: 0px solid #000; padding-left: 15px; margin-bottom: 0px; position: relative; margin-left: 20px;">
+							<span class = "Other_Span" style = "color: #395e7e; font-size: 14px;">
+								Typically in Credit-Scoring, We choose a <span class = "Notes1">Baseline Score</span> e.g. <span class = "Math">\( \big[600\big] \)</span>.
+								<br>&nbsp;&nbsp;&nbsp; 
+								AND, We define : Some <span class = "Notes1">Meaning</span> to <span class = "Math">\( \big[600\big] \)</span> i.e. <span class = "Math">\( \big[600\big] : \big[\mathbb{ODD} = 30\!:\!1\big] \)</span>.
+								<br>&nbsp;&nbsp;&nbsp; 
+								AND, We define : A <span class = "Math">\( \big[20\mathbb{BP}\big] \)</span> <span class = "Notes1">Jump</span> means, <span class = "Math">\( \big[\mathbb{ODD}\big] \)</span> Doubles.
+								<br>
+								Hence, <span class = "Math">\( \left[ \mathbb{LOG}{\displaystyle\frac{1-p}{p}} = \sum_{i}c_iX_i \right] \Rightarrow \left[ C+\!D \sum_{i}c_iX_i =\! C+\!D \mathbb{LOG} \left[ {\displaystyle\frac{72}{1}} \right] \!| \left[ {\displaystyle\frac{2 \times \! 72}{1}} \right] \right] =\! \big[660\big] \!|  \big[700\big] \)</span>
+								<br>&nbsp;&nbsp;&nbsp; 
+								Solve for <span class = "Math">\( \big[ C, D  \big] \)</span>. AND, <span class = "Math">\( \left[ \mathbb{SCORE}_{\mathbb{SCALED}} = C+\!D \mathbb{LOG} {\displaystyle\frac{1-p}{p}} \right] \)</span>.
+							</span>
+						</div>					
 					</div>
 					<div style = "height: 250px; width: calc(95% - 1px); margin-left: 5%; background-color: #ebc8ce; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px; margin-top: 8px;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
