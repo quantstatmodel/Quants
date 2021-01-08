@@ -117,7 +117,7 @@
 					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = "Math">\( \big[ \mathbb{H}_n = \mathbb{PD}_{\mathbb{COND},\: \mathbb{DURING}\big[n+\!1\big],\: \mathbb{GIVEN}\big[\mathbb{NO\:DEFAULT\:TILL }\big[n\big]\big]} = \mathbb{P}\big[N =\! n+1 |\: N > n\big] =\! \rho\big] \)</span>.
 					<br>
 					<br>
-					So, <span class = "Math">\( \big[ S_1 =\! \big(1 -\! \rho\big)\big], \: \big[D_1 =\! \rho\big] \)</span>.
+					<span class = "Math">\( \mathbb{CONSIDER} \)</span> <span class = "Math">\( \big[ S_1 =\! \big(1 -\! \rho\big)\big], \: \big[D_1 =\! \rho\big] \)</span>.
 					<br>
 					<br>
 					So, <br>
@@ -131,7 +131,7 @@
 					<span class = "Math">\(\big[S_2 = D_3 +\! S_3\big] \Rightarrow S_3 =\! \big(1 -\! \rho\big)^2 -\! \big[ \rho \big(1 -\! \rho\big)^2 \big] =\! \big(1 - \rho\big)^3 \)</span>.
 				</div>
 				<div style = "margin: 0; padding: 10px; margin-top: 30px;">
-					<div>Average Cumulative Default Rate (%, 20Y) <span class = "Notes">ACDR</span></div>
+					<div><span class = "Notes2">AVG. Cumulative Default Rate</span> (%, 20Y) <span class = "Notes">ACDR</span></div>
 					<div style = "height: 220px; width: 57%; margin: 0; padding: 0; display: inline-block; float: left; background-color: rgba(0,0,0,.0); margin-top: 10px;">
 						<img src = "ACDR.png" style = "margin: auto; width: 100%; display: block" />
 					</div>
@@ -148,11 +148,11 @@
 							</div>	
 						</div>
 					</div>
-					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = 'Notes2'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ \lambda \big( t \big) \big] \)</span>. AND, <span class = "Notes2">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ V \big( t \big) \big] \)</span>. So,
+					<span class = "Math">\( \mathbb{ASSUME} \)</span> <span class = 'Notes2'>HR</span> at time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ \lambda \big( t \big) \big] \)</span>. AND, <span class = "Notes2">Cumulative Survival Prob.</span> till time <span = class = "Math">\( \big[ t \big] \)</span> is <span = class = "Math">\( \big[ S \big( t \big) \big] \)</span>. So,
 					<br><br>
-					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ {\displaystyle\frac{D_{n\:+1}}{S_n}} \right] \!=\!\!\! \left[ {\displaystyle\frac{S_{n} \:-\: S_{n\:+1}}{S_n}} \right] = \rho \right] \Rightarrow \left[ \left[ {\displaystyle\frac{V \big( t \: +dt \big) \:- V \big( t \big)}{V \big( t \big)}} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ {\displaystyle\frac{dV \big( t \big)}{V \big( t \big)}} \right] = - \lambda \big( t \big) dt \right] \)</span>
+					&nbsp;&nbsp;&nbsp;<span class = "Math">\( \left[ \left[ {\displaystyle\frac{D_{n\:+1}}{S_n}} \right] \!=\!\!\! \left[ {\displaystyle\frac{S_{n} \:-\: S_{n\:+1}}{S_n}} \right] = \rho \right] \Rightarrow \left[ \left[ {\displaystyle\frac{S \big( t \: +dt \big) \:- S \big( t \big)}{S \big( t \big)}} \right] = - \lambda \big( t \big) dt \right] \Rightarrow \left[ \left[ {\displaystyle\frac{dV \big( t \big)}{S \big( t \big)}} \right] = - \lambda \big( t \big) dt \right] \)</span>
 					<br>
-					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ V \big( t \big) = e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ 1 -\! Q \big( t \big) = \left[e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau}\right] \!=\!\! \left[e^{-\! \big[ \overline {\lambda  \big( t \big)} \big] t} \right]\right] \Rightarrow \left[ \overline {\lambda  \big( T \big)} =\! \left[{\displaystyle\frac{-\mathbb{LOG}\big(1-\!Q\big(T\big)\big)}{T}} \right]\right] \)</span>
+					&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class = "Math">\( \Rightarrow \left[ S \big( t \big) = e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau} \right] \Rightarrow \left[ 1 -\! Q \big( t \big) = \left[e^{-\! \int_{0}^{t} \lambda \big( \tau \big) \,d \tau}\right] \!=\!\! \left[e^{-\! \big[ \overline {\lambda  \big( t \big)} \big] t} \right]\right] \Rightarrow \left[ \overline {\lambda  \big( T \big)} =\! \left[{\displaystyle\frac{-\mathbb{LOG}S\big(T\big)}{T}} \right]\right] \)</span>
 					<br>
 					<br>
 					<b>BBG's Default Risk Data</b> <a href="https://www.bloomberg.com/professional/blog/assessing-firms-credit-default-risk-supply-chain-impacts/#:~:text=The%20Bloomberg%20Default%20Risk%20(DRSK,4.85%25%20probability%20of%20Carillion%27s%20default." target="_blank"><i><span style = 'font-size: 16px; font-style: italic;'>Link</span></i></a> :
@@ -664,7 +664,7 @@
 						<div style = "margin: 0; padding: 0; height: 100%; width: calc(100% - 80px); border-right: 0px solid #00a896; display: inline-block; float: left;
 										display: flex; align-items: center; justify-content: center; flex-direction: column; text-align: center;">
 							<div style = "margin: 0; padding: 0; height: 100%; width: 100%; border-radius: 0%; background-color: rgba(0,0,0,.0); font-size: 18px; color: #555b6e; text-align: left !important; padding-left: 20px; padding-top: 14px;">
-								Corporate Bonds are <span class = "Notes">Illiquid</span>. So, Traders demands HIGH Return.
+								Corporate Bonds are <span class = "Notes">Illiquid. </span> So, Traders demands HIGH Return.
 							</div>
 						</div>
 					</div>
