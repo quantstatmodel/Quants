@@ -411,7 +411,7 @@
 					</span> 	
 					<br>
 					<br>
-					<div style = "height: 200px; width: calc(95% - 1px); margin-left: 5%; background-color: #f2dbdf; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px;">
+					<div style = "height: 250px; width: calc(95% - 1px); margin-left: 5%; background-color: #f2dbdf; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
 							Define the Default						
 						</span> 	
@@ -421,6 +421,8 @@
 							<span class = "Math">\(\mathbb{ASSUME}\)</span> that: Payment is Monthly. AND, Default is trigerred <span class = "Math">\(\big[3\mathbb{m}\big]\)</span> <span class = "Notes">in Arreas. <span class = "Notes2">This is Official Def<sup>n</sup> of Default.</span></span>&nbsp; Also, Default happens in <span class = "Math">\(\big[\mathbb{FEB}, \: \mathbb{MAR}, \: \mathbb{MAY} \big]\)</span>. Hence,
 							<br>&ensp;&ensp; <span class = "Notes2">Instant Cure : </span>&ensp;Status will be <span class = "Notes1">Up-Yo-Date. </span> Hence, Default will be Triggered on <span class = "Math">\(\big[\mathbb{MAY} \big]\)</span>.
 							<br>&ensp;&ensp; <span class = "Notes2">Probationary P : </span>&ensp;Status will be updated <span class = "Notes1">ONLY</span> after such Period, typically <span class = "Math">\(\big[6\mathbb{m}\big]\)</span>. This reduces Noise.
+							<br>
+							From Modelling POV, <span class = "Math">\(\big[\mathbb{PD}_{1\mathbb{Y}}\big]\)</span> is : Beginning of <span class = "Math">\(\big[1 \mathbb{Y}\big]\)</span> ACC is <span class = "Notes2">NOT Default <span class = "Notes">BUT, defaulted</span></span> in that <span class = "Math">\(\big[1 \mathbb{Y}\big]\)</span>. <br>&ensp;&ensp;&ensp;If <span class = "Notes1">NOT cured</span> then, it will NOT part for 2<sup>nd</sup> Year.
 						</span>
 					</div>
 					<div style = "height: 270px; width: calc(95% - 1px); margin-left: 5%; background-color: #f2dbdf; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px; margin-top: 8px;">
@@ -540,16 +542,18 @@
 							</span>	
 						</div>
 					</div>
-					<div style = "height: 250px; width: calc(95% - 1px); margin-left: 5%; background-color: #ebc8ce; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px; margin-top: 8px;">
+					<div style = "height: 280px; width: calc(95% - 1px); margin-left: 5%; background-color: #ebc8ce; border: 1px solid #fbf6f7; border-right: 0px; padding: 10px; margin-top: 8px;">
 						<span class = "Other_Span" style = "color: #395e7e; letter-spacing: 1px; text-transform: uppercase;">
 							Lifetime Estimation : Default Probability <span class = 'Page_Number1'>[108-TB]</span>						
 						</span> 	
 						<br>
 						<br>
 						<span class = "Other_Span" style = "color: #395e7e; font-size: 16px;">
+							Typically <span class = "Math">\( \big[ \mathbb{PD}_{1\mathbb{Y}} \big]  \)</span> is : A <span class = "Notes2">Snapshot</span> of <span class = "Math">\( \big[ \mathbb{PD}_{\mathbb{LIFETIME}} \big] \)</span> <span class = "Notes">Term-Structure</span> <span class = "Page_Number1">[43-TB]</span>.
+							<br>
 							We divide entire Lifetime in <span class = "Notes1">Appropriate Intervals <span class = "Notes">e.g. Quarterly</span></span> i.e. <span class = "Math">\( \big[T_1, T_2, ..., T_n\big] \)</span>.
 							<br>
-							Based on the Macro-Eco. Scenario, We have <span class = "Math">\( \left[ \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_i\big]} \right] \)</span>. Hence, We get <span class = "Math">\( \left[ \mathbb{PD}_{\mathbb{MARGINAL}\: \big[T_i\big]} =\! \mathbb{PS}_{\big[< T_i\big]} \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_i\big]}  =\! \left[ \prod_{j\: < i}^{} \left(1-\! \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_j\big]}\right)\right] \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_i\big]} \right] \)</span>
+							Based on the Macro-Eco. Scenario, We have <span class = "Math">\( \left[ \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_i\big]} \right] \)</span>. Hence, We get : <br>&ensp;&ensp;&ensp;<span class = "Math">\( \left[ \mathbb{PD}_{\mathbb{MARGINAL}\: \big[T_i\big]} =\! \mathbb{PS}_{\big[< T_i\big]} \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_i\big]}  =\! \left[ \prod_{j\: < i}^{} \left(1-\! \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_j\big]}\right)\right] \mathbb{PD}_{\mathbb{PROJ.}\: \big[T_i\big]} \right] \)</span>
 							<br><br>
 							Finally, <span class = "Math">\( \left[ \mathbb{PD}_{\mathbb{CUM.\: LIFETIME}\: \big[T_i\big]} =\! \sum_{j \:\leq i}^{} \mathbb{PD}_{\mathbb{MARGINAL}\: \big[T_j\big]} \right] \)</span> <span class = 'Page_Number1'>[115-TB]</span>.
 						</span>
