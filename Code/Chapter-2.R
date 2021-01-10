@@ -230,6 +230,14 @@ library(pROC)    ### ROC -> Receiver Operating Characteristic
 		RMSE = sqrt(mean((Data_PD$mean_dr - Data_PD$mean_pd)^2)); print(RMSE)
 }
 
+{	### Page : 63 // Cross Validation
+	Number_Of_Folds = 20 ## -> g
+	Size_Of_Folds = floor(nrow(Train_Test_Data)/m) 
+
+	AUC_Vector = GINI_Vector = KS_Vector = rep(NA, Number_Of_Folds)
+
+}
+
 {	### Page : 80 | EXAMPLE 2.5.1
 	Portfolio_Data = data.frame(Rating = LETTERS[1:5], `Number of Accounts` = c(10, 40, 25, 15, 10), `Number of Defaults` = c(2, 1, 0, 0, 0), check.names = FALSE)
 		print(Portfolio_Data)
